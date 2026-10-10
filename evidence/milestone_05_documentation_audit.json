@@ -1,0 +1,54 @@
+{
+  "averages": {
+    "Accuracy": 1.0,
+    "Completeness": 1.0,
+    "Grounding": 1.0,
+    "Safety": 1.0
+  },
+  "disconnect_cleanup_and_survivor": true,
+  "evaluation_full_reports_identical": true,
+  "evidence_links_checked": 110,
+  "exactly_one_jsonl_entry_per_request": true,
+  "external_negative_controls_blocked": [
+    "external_dns",
+    "external_ip",
+    "other_loopback_port",
+    "child_process",
+    "udp"
+  ],
+  "focused_tests": {
+    "child_process_attempts": [],
+    "errors": 0,
+    "failures": 0,
+    "network_attempts": [],
+    "passed": true,
+    "tests_run": 11
+  },
+  "frozen_evaluation_inputs_unchanged": true,
+  "localhost_logical_requests": 29,
+  "official_and_fixed_inputs_unchanged": true,
+  "public_repository_created": false,
+  "query_count": 15,
+  "result": "PASSED",
+  "runtime_external_attempts": [],
+  "sanitized_milestone_artifacts_checked": 40,
+  "task_statuses": {
+    "1": "PASSED",
+    "2": "PASSED",
+    "3": "PASSED",
+    "4": "PASSED",
+    "5": "PASSED",
+    "6": "PASSED",
+    "7": "PASSED",
+    "8": "PASSED",
+    "9": "PASSED",
+    "10": "PASSED",
+    "11": "PASSED",
+    "12": "PASSED",
+    "13": "PASSED",
+    "14": "IN PROGRESS",
+    "15": "NOT STARTED",
+    "16": "NOT STARTED"
+  },
+  "timestamp": "2026-10-11T00:02:58.258434+05:30"
+}

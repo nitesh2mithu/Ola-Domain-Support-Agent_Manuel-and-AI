@@ -1,0 +1,95 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 28827.79it/s]
+<project-root>/scripts/ask_support.py:16: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app=SupportSession()
+<project-root>/support/session.py:67: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+  return self.histories.setdefault(session_id, InMemoryChatMessageHistory())
+{
+  "offline": {
+    "child_process_attempts": [],
+    "network_attempts": []
+  },
+  "transcript": [
+    {
+      "content": "Check OLA-0001 status.",
+      "role": "human"
+    },
+    {
+      "content": "{\"answer\":\"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0001\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":82,\"days_since_created\":7,\"escalated\":false,\"escalation_score\":0.093333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
+      "role": "ai"
+    },
+    {
+      "content": "What is its escalation score?",
+      "role": "human"
+    },
+    {
+      "content": "{\"answer\":\"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0001\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":82,\"days_since_created\":7,\"escalated\":false,\"escalation_score\":0.093333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
+      "role": "ai"
+    }
+  ],
+  "turns": [
+    {
+      "history_messages_before": 0,
+      "kickoff_executed": true,
+      "masked_query": "Check OLA-0001 status.",
+      "response": {
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "citations": [],
+        "guardrails": [],
+        "outcome": "answered",
+        "ticket": {
+          "days_since_created": 7,
+          "error": null,
+          "escalated": false,
+          "escalation_score": 0.093333,
+          "escalation_threshold": 0.613333,
+          "found": true,
+          "recommend_escalation": false,
+          "record_id": "OLA-0001",
+          "resolution_time_hours": 82,
+          "status": "Open"
+        }
+      },
+      "tool_calls": [
+        {
+          "arguments": {
+            "record_id": "OLA-0001"
+          },
+          "tool": "check_support_ticket_status"
+        }
+      ]
+    },
+    {
+      "history_messages_before": 2,
+      "kickoff_executed": true,
+      "masked_query": "What is its escalation score?",
+      "response": {
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "citations": [],
+        "guardrails": [],
+        "outcome": "answered",
+        "ticket": {
+          "days_since_created": 7,
+          "error": null,
+          "escalated": false,
+          "escalation_score": 0.093333,
+          "escalation_threshold": 0.613333,
+          "found": true,
+          "recommend_escalation": false,
+          "record_id": "OLA-0001",
+          "resolution_time_hours": 82,
+          "status": "Open"
+        }
+      },
+      "tool_calls": [
+        {
+          "arguments": {
+            "record_id": "OLA-0001"
+          },
+          "tool": "check_support_ticket_status"
+        }
+      ]
+    }
+  ]
+}

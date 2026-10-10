@@ -1,0 +1,8 @@
+PASS: complete reports from two separate Python processes are identical
+PASS: 60 records regenerate identically; SHA-256: 359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111
+PASS: 12/12 required topics covered; each document has 4 body sentences
+PASS: 8/8 acceptance tests passed in each process
+Observed types: {"amount_inr": ["int"], "category": ["str"], "days_since_created": ["int"], "escalated": ["bool"], "record_id": ["str"], "resolution_time_hours": ["int"], "status": ["str"]}
+Observed ranges: {"amount_inr": {"maximum": 4988, "minimum": 325}, "days_since_created": {"maximum": 30, "minimum": 0}, "resolution_time_hours": {"maximum": 161, "minimum": 1}}
+Policy sentence counts: {"knowledge_base/01_ticket_priority.md": 4, "knowledge_base/02_severity_sla.md": 4, "knowledge_base/03_escalation_matrix.md": 4, "knowledge_base/04_refund_compensation.md": 4, "knowledge_base/05_communication_channels.md": 4, "knowledge_base/06_business_hours.md": 4, "knowledge_base/07_repeat_complaints.md": 4, "knowledge_base/08_service_credit.md": 4, "knowledge_base/09_feedback.md": 4, "knowledge_base/10_vip_handling.md": 4, "knowledge_base/11_outage_communication.md": 4, "knowledge_base/12_ticket_retention.md": 4}
+Offline attempts: [] []

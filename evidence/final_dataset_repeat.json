@@ -1,0 +1,861 @@
+{
+  "all_records": [
+    {
+      "amount_inr": 1828,
+      "category": "Product Defect",
+      "days_since_created": 7,
+      "escalated": false,
+      "record_id": "OLA-0001",
+      "resolution_time_hours": 82,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 3456,
+      "category": "Billing",
+      "days_since_created": 18,
+      "escalated": false,
+      "record_id": "OLA-0002",
+      "resolution_time_hours": 15,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 4931,
+      "category": "Billing",
+      "days_since_created": 16,
+      "escalated": false,
+      "record_id": "OLA-0003",
+      "resolution_time_hours": 33,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 3679,
+      "category": "Billing",
+      "days_since_created": 7,
+      "escalated": false,
+      "record_id": "OLA-0004",
+      "resolution_time_hours": 57,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 1307,
+      "category": "Account Access",
+      "days_since_created": 25,
+      "escalated": false,
+      "record_id": "OLA-0005",
+      "resolution_time_hours": 1,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 2757,
+      "category": "Product Defect",
+      "days_since_created": 6,
+      "escalated": false,
+      "record_id": "OLA-0006",
+      "resolution_time_hours": 51,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 2817,
+      "category": "Billing",
+      "days_since_created": 27,
+      "escalated": false,
+      "record_id": "OLA-0007",
+      "resolution_time_hours": 49,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 1022,
+      "category": "Product Defect",
+      "days_since_created": 23,
+      "escalated": false,
+      "record_id": "OLA-0008",
+      "resolution_time_hours": 129,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 2962,
+      "category": "General Inquiry",
+      "days_since_created": 9,
+      "escalated": false,
+      "record_id": "OLA-0009",
+      "resolution_time_hours": 18,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 1866,
+      "category": "Account Access",
+      "days_since_created": 22,
+      "escalated": false,
+      "record_id": "OLA-0010",
+      "resolution_time_hours": 3,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 827,
+      "category": "Product Defect",
+      "days_since_created": 30,
+      "escalated": false,
+      "record_id": "OLA-0011",
+      "resolution_time_hours": 71,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 1332,
+      "category": "Technical Issue",
+      "days_since_created": 11,
+      "escalated": true,
+      "record_id": "OLA-0012",
+      "resolution_time_hours": 110,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 584,
+      "category": "Technical Issue",
+      "days_since_created": 22,
+      "escalated": false,
+      "record_id": "OLA-0013",
+      "resolution_time_hours": 38,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 3786,
+      "category": "Product Defect",
+      "days_since_created": 5,
+      "escalated": false,
+      "record_id": "OLA-0014",
+      "resolution_time_hours": 74,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 4562,
+      "category": "Technical Issue",
+      "days_since_created": 26,
+      "escalated": false,
+      "record_id": "OLA-0015",
+      "resolution_time_hours": 85,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 458,
+      "category": "Technical Issue",
+      "days_since_created": 24,
+      "escalated": false,
+      "record_id": "OLA-0016",
+      "resolution_time_hours": 102,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 2193,
+      "category": "Technical Issue",
+      "days_since_created": 12,
+      "escalated": false,
+      "record_id": "OLA-0017",
+      "resolution_time_hours": 44,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 4089,
+      "category": "Billing",
+      "days_since_created": 8,
+      "escalated": false,
+      "record_id": "OLA-0018",
+      "resolution_time_hours": 44,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 2169,
+      "category": "Technical Issue",
+      "days_since_created": 7,
+      "escalated": false,
+      "record_id": "OLA-0019",
+      "resolution_time_hours": 62,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 4788,
+      "category": "Billing",
+      "days_since_created": 11,
+      "escalated": false,
+      "record_id": "OLA-0020",
+      "resolution_time_hours": 72,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 1133,
+      "category": "Account Access",
+      "days_since_created": 7,
+      "escalated": true,
+      "record_id": "OLA-0021",
+      "resolution_time_hours": 24,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 898,
+      "category": "Account Access",
+      "days_since_created": 27,
+      "escalated": false,
+      "record_id": "OLA-0022",
+      "resolution_time_hours": 4,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 520,
+      "category": "Billing",
+      "days_since_created": 19,
+      "escalated": false,
+      "record_id": "OLA-0023",
+      "resolution_time_hours": 58,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 2059,
+      "category": "Technical Issue",
+      "days_since_created": 16,
+      "escalated": true,
+      "record_id": "OLA-0024",
+      "resolution_time_hours": 63,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 938,
+      "category": "General Inquiry",
+      "days_since_created": 22,
+      "escalated": false,
+      "record_id": "OLA-0025",
+      "resolution_time_hours": 1,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 2786,
+      "category": "Product Defect",
+      "days_since_created": 24,
+      "escalated": true,
+      "record_id": "OLA-0026",
+      "resolution_time_hours": 80,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 2157,
+      "category": "Billing",
+      "days_since_created": 0,
+      "escalated": false,
+      "record_id": "OLA-0027",
+      "resolution_time_hours": 62,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 871,
+      "category": "General Inquiry",
+      "days_since_created": 30,
+      "escalated": false,
+      "record_id": "OLA-0028",
+      "resolution_time_hours": 17,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 4988,
+      "category": "General Inquiry",
+      "days_since_created": 16,
+      "escalated": false,
+      "record_id": "OLA-0029",
+      "resolution_time_hours": 21,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 4344,
+      "category": "Billing",
+      "days_since_created": 17,
+      "escalated": false,
+      "record_id": "OLA-0030",
+      "resolution_time_hours": 24,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 916,
+      "category": "General Inquiry",
+      "days_since_created": 0,
+      "escalated": true,
+      "record_id": "OLA-0031",
+      "resolution_time_hours": 16,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 474,
+      "category": "General Inquiry",
+      "days_since_created": 8,
+      "escalated": false,
+      "record_id": "OLA-0032",
+      "resolution_time_hours": 10,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 3981,
+      "category": "Technical Issue",
+      "days_since_created": 2,
+      "escalated": true,
+      "record_id": "OLA-0033",
+      "resolution_time_hours": 14,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 1030,
+      "category": "General Inquiry",
+      "days_since_created": 25,
+      "escalated": false,
+      "record_id": "OLA-0034",
+      "resolution_time_hours": 18,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 4322,
+      "category": "Billing",
+      "days_since_created": 8,
+      "escalated": true,
+      "record_id": "OLA-0035",
+      "resolution_time_hours": 25,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 4417,
+      "category": "General Inquiry",
+      "days_since_created": 29,
+      "escalated": false,
+      "record_id": "OLA-0036",
+      "resolution_time_hours": 7,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 3059,
+      "category": "Product Defect",
+      "days_since_created": 16,
+      "escalated": false,
+      "record_id": "OLA-0037",
+      "resolution_time_hours": 91,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 1840,
+      "category": "Account Access",
+      "days_since_created": 7,
+      "escalated": true,
+      "record_id": "OLA-0038",
+      "resolution_time_hours": 8,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 1804,
+      "category": "Billing",
+      "days_since_created": 18,
+      "escalated": false,
+      "record_id": "OLA-0039",
+      "resolution_time_hours": 33,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 552,
+      "category": "Billing",
+      "days_since_created": 8,
+      "escalated": false,
+      "record_id": "OLA-0040",
+      "resolution_time_hours": 11,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 1949,
+      "category": "General Inquiry",
+      "days_since_created": 17,
+      "escalated": false,
+      "record_id": "OLA-0041",
+      "resolution_time_hours": 3,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 4677,
+      "category": "Technical Issue",
+      "days_since_created": 4,
+      "escalated": true,
+      "record_id": "OLA-0042",
+      "resolution_time_hours": 73,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 3334,
+      "category": "Account Access",
+      "days_since_created": 25,
+      "escalated": false,
+      "record_id": "OLA-0043",
+      "resolution_time_hours": 31,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 3469,
+      "category": "Billing",
+      "days_since_created": 11,
+      "escalated": false,
+      "record_id": "OLA-0044",
+      "resolution_time_hours": 59,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 806,
+      "category": "Account Access",
+      "days_since_created": 22,
+      "escalated": false,
+      "record_id": "OLA-0045",
+      "resolution_time_hours": 4,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 1569,
+      "category": "Billing",
+      "days_since_created": 8,
+      "escalated": false,
+      "record_id": "OLA-0046",
+      "resolution_time_hours": 17,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 2281,
+      "category": "Billing",
+      "days_since_created": 5,
+      "escalated": false,
+      "record_id": "OLA-0047",
+      "resolution_time_hours": 58,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 4508,
+      "category": "Account Access",
+      "days_since_created": 15,
+      "escalated": false,
+      "record_id": "OLA-0048",
+      "resolution_time_hours": 5,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 1936,
+      "category": "Billing",
+      "days_since_created": 3,
+      "escalated": false,
+      "record_id": "OLA-0049",
+      "resolution_time_hours": 5,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 3285,
+      "category": "Billing",
+      "days_since_created": 27,
+      "escalated": true,
+      "record_id": "OLA-0050",
+      "resolution_time_hours": 31,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 2172,
+      "category": "General Inquiry",
+      "days_since_created": 12,
+      "escalated": false,
+      "record_id": "OLA-0051",
+      "resolution_time_hours": 1,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 4552,
+      "category": "General Inquiry",
+      "days_since_created": 14,
+      "escalated": false,
+      "record_id": "OLA-0052",
+      "resolution_time_hours": 10,
+      "status": "Resolved"
+    },
+    {
+      "amount_inr": 1783,
+      "category": "Product Defect",
+      "days_since_created": 9,
+      "escalated": true,
+      "record_id": "OLA-0053",
+      "resolution_time_hours": 60,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 2569,
+      "category": "General Inquiry",
+      "days_since_created": 1,
+      "escalated": true,
+      "record_id": "OLA-0054",
+      "resolution_time_hours": 18,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 4350,
+      "category": "Billing",
+      "days_since_created": 29,
+      "escalated": true,
+      "record_id": "OLA-0055",
+      "resolution_time_hours": 68,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 1522,
+      "category": "Billing",
+      "days_since_created": 28,
+      "escalated": false,
+      "record_id": "OLA-0056",
+      "resolution_time_hours": 14,
+      "status": "Closed"
+    },
+    {
+      "amount_inr": 982,
+      "category": "Billing",
+      "days_since_created": 12,
+      "escalated": false,
+      "record_id": "OLA-0057",
+      "resolution_time_hours": 34,
+      "status": "Open"
+    },
+    {
+      "amount_inr": 325,
+      "category": "General Inquiry",
+      "days_since_created": 19,
+      "escalated": true,
+      "record_id": "OLA-0058",
+      "resolution_time_hours": 19,
+      "status": "Escalated"
+    },
+    {
+      "amount_inr": 4282,
+      "category": "Product Defect",
+      "days_since_created": 18,
+      "escalated": false,
+      "record_id": "OLA-0059",
+      "resolution_time_hours": 161,
+      "status": "In Progress"
+    },
+    {
+      "amount_inr": 2573,
+      "category": "Technical Issue",
+      "days_since_created": 22,
+      "escalated": false,
+      "record_id": "OLA-0060",
+      "resolution_time_hours": 89,
+      "status": "In Progress"
+    }
+  ],
+  "category_counts": {
+    "Account Access": 8,
+    "Billing": 20,
+    "General Inquiry": 13,
+    "Product Defect": 9,
+    "Technical Issue": 10
+  },
+  "category_weights": {
+    "Account Access": 20,
+    "Billing": 20,
+    "General Inquiry": 20,
+    "Product Defect": 20,
+    "Technical Issue": 20
+  },
+  "child_process_attempts": [],
+  "errors": 0,
+  "escalated_count": 14,
+  "escalated_percentage": 23.333333333333332,
+  "failures": 0,
+  "field_types_observed": {
+    "amount_inr": [
+      "int"
+    ],
+    "category": [
+      "str"
+    ],
+    "days_since_created": [
+      "int"
+    ],
+    "escalated": [
+      "bool"
+    ],
+    "record_id": [
+      "str"
+    ],
+    "resolution_time_hours": [
+      "int"
+    ],
+    "status": [
+      "str"
+    ]
+  },
+  "network_attempts": [],
+  "observed_ranges": {
+    "amount_inr": {
+      "maximum": 4988,
+      "minimum": 325
+    },
+    "days_since_created": {
+      "maximum": 30,
+      "minimum": 0
+    },
+    "resolution_time_hours": {
+      "maximum": 161,
+      "minimum": 1
+    }
+  },
+  "policies": [
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/01_ticket_priority.md",
+      "required_content_anchors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "highest priority"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service.",
+        "Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use.",
+        "Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request.",
+        "When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity."
+      ],
+      "sha256": "bab83b53eab4704bfae1d10f133dec0e0742ad63dc2032d02bc7ae48eb082554",
+      "topic": "ticket-priority classification rules"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/02_severity_sla.md",
+      "required_content_anchors": [
+        "15 elapsed minutes",
+        "24 support hours",
+        "72 support hours",
+        "120 support hours"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours.",
+        "For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours.",
+        "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours.",
+        "These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+      ],
+      "sha256": "99253eaf449ee424badaaea911f3626f7a6264b873904aa331830a360cfdb112",
+      "topic": "SLA-by-severity policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/03_escalation_matrix.md",
+      "required_content_anchors": [
+        "billing specialist",
+        "technical specialist",
+        "account-security specialist",
+        "duty incident lead",
+        "handoff"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Route billing and refund disputes to the billing specialist, technical issues and product defects to the technical specialist, and account-access failures to the account-security specialist.",
+        "Escalate a P1 safety report immediately to the duty incident lead, who coordinates the responsible specialist and emergency guidance when appropriate.",
+        "Escalate a P2 ticket to the support supervisor if its acknowledgement deadline is missed, and escalate any unresolved ticket before its resolution target expires.",
+        "The receiving owner must accept the handoff, and the original owner remains responsible for customer updates until acceptance is recorded."
+      ],
+      "sha256": "b47244736ab5ce7ecb71883de250bd4360606ce957a06cf5aa4479e1ad058816",
+      "topic": "escalation matrix"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/04_refund_compensation.md",
+      "required_content_anchors": [
+        "duplicate charge",
+        "original payment method",
+        "5 to 7 business days",
+        "INR 200",
+        "approval"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered.",
+        "Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval.",
+        "A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval.",
+        "Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+      ],
+      "sha256": "4275edaebc7852ced642d0b00f164ce2659bb0459a1a4960b78dd861e2f91586",
+      "topic": "refund/compensation policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/05_communication_channels.md",
+      "required_content_anchors": [
+        "in-app support",
+        "email",
+        "consents",
+        "account-verification",
+        "password"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Use in-app support as the primary communication channel for rider and driver ticket updates, with email as the alternative when account access is unavailable.",
+        "A support agent may offer a callback for an urgent issue only after the customer requests or consents to the call.",
+        "Before sharing ticket details on an alternative channel, complete the approved account-verification process and avoid exposing another customer's information.",
+        "Never request an OTP, full payment-card details, or an account password, and keep every customer update attached to the ticket record."
+      ],
+      "sha256": "b9f430e54066d13b30396e2feac128652da6ccf5ad3f3c44d1cad585e82320f1",
+      "topic": "customer-communication-channel policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/06_business_hours.md",
+      "required_content_anchors": [
+        "09:00 to 18:00",
+        "Asia/Kolkata",
+        "holidays",
+        "on-call",
+        "pause"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar.",
+        "Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays.",
+        "P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks.",
+        "For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+      ],
+      "sha256": "66dd6543cf44f22cc650a1733d0c4408ddeb828553405a081ea4c5f6f38a06de",
+      "topic": "business-hours/holiday-support policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/07_repeat_complaints.md",
+      "required_content_anchors": [
+        "30 days",
+        "reopen",
+        "root cause",
+        "second repeat"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket.",
+        "Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history.",
+        "Assign a support supervisor to review the root cause on the second repeat, and raise priority when the facts show greater impact rather than because of complaint count alone.",
+        "Tell the customer which owner is investigating and avoid asking for evidence already present in the linked history."
+      ],
+      "sha256": "bbb5edbf374489c00e8ad1c8474615e3cd6b3f3262ac1ffa49bd82c6a52db2fc",
+      "topic": "repeat-complaint-handling policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/08_service_credit.md",
+      "required_content_anchors": [
+        "noncash",
+        "INR 150",
+        "30 days",
+        "cannot be transferred",
+        "approval"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss.",
+        "Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance.",
+        "Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval.",
+        "Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the credit."
+      ],
+      "sha256": "d85fe4e458a242199b6d2e606e917ba819616b3acebe9d4a273fe98e8f97f958",
+      "topic": "service-credit policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/09_feedback.md",
+      "required_content_anchors": [
+        "optional",
+        "1 to 5",
+        "48 hours",
+        "supervisor review",
+        "aggregated"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "After a ticket is resolved, offer one optional in-app feedback survey asking for a satisfaction rating from 1 to 5 and a short comment.",
+        "If the customer does not respond, send at most one reminder after 48 hours and do not make feedback a condition of receiving support.",
+        "A rating of 1 or 2 or a comment indicating an unresolved issue triggers a supervisor review of the resolution.",
+        "Store feedback against the ticket using the ticket-retention policy, and report aggregated themes without identifying individual customers."
+      ],
+      "sha256": "85e6258851231f46c67481cfc2a0609b420a2d96e78c5f9997f73eb6c743049e",
+      "topic": "feedback-collection process"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/10_vip_handling.md",
+      "required_content_anchors": [
+        "verified account flag",
+        "named support owner",
+        "4 support hours",
+        "does not change safety priority"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Identify VIP eligibility only from a verified account flag rather than from a customer's claim in a message.",
+        "Assign an eligible VIP ticket a named support owner and provide an update at least every 4 support hours while work remains open.",
+        "VIP handling does not change safety priority, refund eligibility, compensation limits, or the requirement to verify account access.",
+        "When a VIP complaint remains unresolved at its normal SLA deadline, the named owner must involve the support supervisor and communicate the next review time."
+      ],
+      "sha256": "649aa5eb38d340af50e6759113b89d69cd48b65821f275eb14847ace4d944c36",
+      "topic": "VIP-customer handling policy"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/11_outage_communication.md",
+      "required_content_anchors": [
+        "incident record",
+        "15 elapsed minutes",
+        "30 elapsed minutes",
+        "no unconfirmed",
+        "recovery"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions.",
+        "Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruption continues.",
+        "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise.",
+        "After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+      ],
+      "sha256": "7fc6f000bcfcfce55339d292244028f87154f9cbac3aeb8ceb6973f792514b96",
+      "topic": "outage-communication protocol"
+    },
+    {
+      "content_anchors_present": true,
+      "path": "knowledge_base/12_ticket_retention.md",
+      "required_content_anchors": [
+        "180 days",
+        "delete identifying details",
+        "masked phone",
+        "legal hold",
+        "30 days"
+      ],
+      "sentence_count": 4,
+      "sentences": [
+        "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process.",
+        "For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved.",
+        "Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs.",
+        "An authorized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released."
+      ],
+      "sha256": "e25dc5be81fc9a610cfc4766275171396422ff7fc1b0e546f23af6ad83cc5699",
+      "topic": "data-retention policy for tickets"
+    }
+  ],
+  "python_version": "3.11.17",
+  "record_count": 60,
+  "regeneration_sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "result": "PASSED",
+  "seed": 42,
+  "sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "status_counts": {
+    "Closed": 11,
+    "Escalated": 14,
+    "In Progress": 13,
+    "Open": 12,
+    "Resolved": 10
+  },
+  "status_weights": {
+    "Closed": 15,
+    "Escalated": 20,
+    "In Progress": 25,
+    "Open": 20,
+    "Resolved": 20
+  },
+  "tests_run": 8
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-11T00:42:21.893150+05:30",
+  "initial_local_commit": "ee0427c",
+  "finding": "git status shows untracked support/",
+  "root_cause": "submission scanner directory allowlist omitted support package",
+  "status": "OPEN",
+  "runtime_tests_affected": false
+}

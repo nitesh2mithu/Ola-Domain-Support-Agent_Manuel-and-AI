@@ -1,0 +1,16 @@
+{
+  "added": {
+    "jsonpatch": "1.34",
+    "jsonpointer": "3.2.0",
+    "langchain-core": "1.6.9",
+    "langchain-protocol": "0.0.19",
+    "langsmith": "0.14.7",
+    "requests-toolbelt": "1.0.0",
+    "uuid-utils": "0.17.1",
+    "xxhash": "4.0.1",
+    "zstandard": "0.25.0"
+  },
+  "current_packages": 162,
+  "previous_packages": 153,
+  "previous_versions_unchanged": true
+}

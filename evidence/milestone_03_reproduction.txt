@@ -1,0 +1,6 @@
+PASS: initial and fresh-process persisted-index retrieval, calibration, answers and metrics match exactly
+PASS: index counts remain fixed=33 and sentence=24; initial before=0, fresh-process before=33/24
+PASS: fixed/sentence calibration clusters separated; label hash unchanged
+PASS: in-scope and fallback CLI runs succeeded with no prohibited attempts
+PASS: final RAG suite {'child_process_attempts': [], 'errors': 0, 'failures': 0, 'network_attempts': [], 'passed': True, 'tests_run': 8}
+Recommendation: Deploy fixed chunking: fixed chunks achieved mean document precision 1.0000 and recall 1.0000, while sentence chunks achieved precision 0.5556 and recall 1.0000 on the same six labelled queries. Selection prioritizes recall and then precision, with complete sentence boundaries breaking metric ties. These small-corpus measurements support this deployment choice but do not establish performance on broader or near-domain questions.

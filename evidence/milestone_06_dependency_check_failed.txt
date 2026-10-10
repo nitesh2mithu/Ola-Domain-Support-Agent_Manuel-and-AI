@@ -1,0 +1,2 @@
+error: Failed to initialize cache at `<HOME>/.cache/uv`
+  cause: failed to create directory `<HOME>/.cache/uv`: Operation not permitted (os error 1)

@@ -1,0 +1,20 @@
+{
+  "category_counts": {
+    "Account Access": 8,
+    "Billing": 20,
+    "General Inquiry": 13,
+    "Product Defect": 9,
+    "Technical Issue": 10
+  },
+  "escalated_count": 14,
+  "escalated_percentage": 23.333333333333332,
+  "record_count": 60,
+  "sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "status_counts": {
+    "Closed": 11,
+    "Escalated": 14,
+    "In Progress": 13,
+    "Open": 12,
+    "Resolved": 10
+  }
+}

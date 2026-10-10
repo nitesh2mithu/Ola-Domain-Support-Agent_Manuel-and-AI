@@ -1,0 +1,1 @@
+PASS: CLI actual two-turn memory, ticket tool calls, validated responses and zero offline attempts

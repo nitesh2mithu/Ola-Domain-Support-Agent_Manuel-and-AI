@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT_CAPSTONE>/scripts/inspect_submission.py", line 78, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<PROJECT_CAPSTONE>/scripts/inspect_submission.py", line 52, in main
+    assert required and required.issubset(set(paths)),"Missing source package: "+folder
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Missing source package: knowledge_base

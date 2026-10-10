@@ -1,0 +1,29 @@
+{
+  "intended_text_files_inspected": 215,
+  "findings": {
+    "personal_paths": [],
+    "credential_material": [],
+    "raw_fabricated_phone": [
+      "tests/milestone_05_focused.py"
+    ]
+  },
+  "nontext": [],
+  "root_files": [
+    "REQUIREMENTS_TRACKER.md",
+    "requirements-smoke.txt",
+    "PROJECT_STATUS.md",
+    "requirements-smoke.lock",
+    "Problem_Statement.md",
+    "requirements-api.txt",
+    "requirements-api.lock",
+    "DEVELOPMENT_PROCESS.md",
+    "README.md",
+    "dataset.py",
+    "requirements-rag.lock",
+    "requirements-rag.txt",
+    ".gitignore",
+    "ERROR_LOG.md",
+    "requirements-crew.lock",
+    "requirements-crew.txt"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label_policy": "Defined from policy content before embeddings or retrieval results. Relevant documents contain facts necessary to answer the question; cross-references alone are not relevant. Labels stay fixed across both strategies.",
+  "calibration": [
+    {"id": "C1", "query": "How should support handle a verified VIP customer?", "in_scope": true, "relevant_documents": ["10_vip_handling"]},
+    {"id": "C2", "query": "How is customer feedback collected after a ticket is resolved?", "in_scope": true, "relevant_documents": ["09_feedback"]},
+    {"id": "C3", "query": "What should happen when the same customer repeats a complaint within 30 days?", "in_scope": true, "relevant_documents": ["07_repeat_complaints"]},
+    {"id": "C4", "query": "Explain photosynthesis in plants.", "in_scope": false, "relevant_documents": []},
+    {"id": "C5", "query": "How do I bake a chocolate cake?", "in_scope": false, "relevant_documents": []}
+  ],
+  "evaluation": [
+    {"id": "Q1", "query": "When can a duplicate charge be refunded and how long does processing take?", "in_scope": true, "relevant_documents": ["04_refund_compensation"]},
+    {"id": "Q2", "query": "What hours is standard support available and what happens on holidays?", "in_scope": true, "relevant_documents": ["06_business_hours"]},
+    {"id": "Q3", "query": "How long are closed support tickets retained and when are identifying details deleted?", "in_scope": true, "relevant_documents": ["12_ticket_retention"]},
+    {"id": "Q4", "query": "How often must outage notices be updated?", "in_scope": true, "relevant_documents": ["11_outage_communication"]},
+    {"id": "Q5", "query": "What is the maximum standard noncash service credit and how long is it valid?", "in_scope": true, "relevant_documents": ["08_service_credit"]},
+    {"id": "Q6", "query": "How are P1 and P2 priorities classified and what are their acknowledgement targets?", "in_scope": true, "relevant_documents": ["01_ticket_priority", "02_severity_sla"]},
+    {"id": "Q7", "query": "How can I calculate the orbital period of a planet?", "in_scope": false, "relevant_documents": []}
+  ]
+}

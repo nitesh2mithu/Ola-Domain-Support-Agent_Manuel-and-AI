@@ -1,0 +1,4 @@
+# Direct dependencies verified on CPython 3.11.17; full snapshot in requirements-smoke.lock.
+crewai==1.15.27
+autogen-agentchat==0.7.5
+pydantic==2.12.5

@@ -1,0 +1,2091 @@
+{
+  "acceptance": {
+    "child_process_attempts": [],
+    "errors": 0,
+    "failures": 0,
+    "network_attempts": [],
+    "passed": true,
+    "tests_run": 8
+  },
+  "chunk_manifest": {
+    "fixed": [
+      {
+        "chunk_id": "01_ticket_priority:fixed:000:f1252f8593080a60",
+        "document_id": "01_ticket_priority",
+        "end": 300,
+        "source": "knowledge_base/01_ticket_priority.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use. Assign P3 priority to a nonblocking technical i",
+        "title": "Ticket-priority classification rules"
+      },
+      {
+        "chunk_id": "01_ticket_priority:fixed:001:467e14d88ab04b30",
+        "document_id": "01_ticket_priority",
+        "end": 527,
+        "source": "knowledge_base/01_ticket_priority.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "service use. Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity.",
+        "title": "Ticket-priority classification rules"
+      },
+      {
+        "chunk_id": "02_severity_sla:fixed:000:b78b055efceb846b",
+        "document_id": "02_severity_sla",
+        "end": 300,
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours. For P3 severity, acknowledge within 4 support hours and target resolution ",
+        "title": "SLA-by-severity policy"
+      },
+      {
+        "chunk_id": "02_severity_sla:fixed:001:97d2fcf7d3f66970",
+        "document_id": "02_severity_sla",
+        "end": 540,
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "y, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadli",
+        "title": "SLA-by-severity policy"
+      },
+      {
+        "chunk_id": "02_severity_sla:fixed:002:62fc1a72f6be9210",
+        "document_id": "02_severity_sla",
+        "end": 654,
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "port-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times.",
+        "title": "SLA-by-severity policy"
+      },
+      {
+        "chunk_id": "03_escalation_matrix:fixed:000:16e3b8257f0eff0c",
+        "document_id": "03_escalation_matrix",
+        "end": 300,
+        "source": "knowledge_base/03_escalation_matrix.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Route billing and refund disputes to the billing specialist, technical issues and product defects to the technical specialist, and account-access failures to the account-security specialist. Escalate a P1 safety report immediately to the duty incident lead, who coordinates the responsible specialist",
+        "title": "Escalation matrix"
+      },
+      {
+        "chunk_id": "03_escalation_matrix:fixed:001:27645d729395448a",
+        "document_id": "03_escalation_matrix",
+        "end": 540,
+        "source": "knowledge_base/03_escalation_matrix.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "ty incident lead, who coordinates the responsible specialist and emergency guidance when appropriate. Escalate a P2 ticket to the support supervisor if its acknowledgement deadline is missed, and escalate any unresolved ticket before its resolution target expires. The receiving owner must accept the",
+        "title": "Escalation matrix"
+      },
+      {
+        "chunk_id": "03_escalation_matrix:fixed:002:16a193f597c602d8",
+        "document_id": "03_escalation_matrix",
+        "end": 643,
+        "source": "knowledge_base/03_escalation_matrix.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "solution target expires. The receiving owner must accept the handoff, and the original owner remains responsible for customer updates until acceptance is recorded.",
+        "title": "Escalation matrix"
+      },
+      {
+        "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+        "document_id": "04_refund_compensation",
+        "end": 300,
+        "source": "knowledge_base/04_refund_compensation.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su",
+        "title": "Refund and compensation policy"
+      },
+      {
+        "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+        "document_id": "04_refund_compensation",
+        "end": 540,
+        "source": "knowledge_base/04_refund_compensation.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+        "title": "Refund and compensation policy"
+      },
+      {
+        "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+        "document_id": "04_refund_compensation",
+        "end": 626,
+        "source": "knowledge_base/04_refund_compensation.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.",
+        "title": "Refund and compensation policy"
+      },
+      {
+        "chunk_id": "05_communication_channels:fixed:000:b16e1773936c4fbb",
+        "document_id": "05_communication_channels",
+        "end": 300,
+        "source": "knowledge_base/05_communication_channels.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Use in-app support as the primary communication channel for rider and driver ticket updates, with email as the alternative when account access is unavailable. A support agent may offer a callback for an urgent issue only after the customer requests or consents to the call. Before sharing ticket deta",
+        "title": "Customer communication channel policy"
+      },
+      {
+        "chunk_id": "05_communication_channels:fixed:001:587121898580a804",
+        "document_id": "05_communication_channels",
+        "end": 540,
+        "source": "knowledge_base/05_communication_channels.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "requests or consents to the call. Before sharing ticket details on an alternative channel, complete the approved account-verification process and avoid exposing another customer's information. Never request an OTP, full payment-card details, or an account password, and keep every customer update att",
+        "title": "Customer communication channel policy"
+      },
+      {
+        "chunk_id": "05_communication_channels:fixed:002:24464a73f6de63f2",
+        "document_id": "05_communication_channels",
+        "end": 567,
+        "source": "knowledge_base/05_communication_channels.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": ", or an account password, and keep every customer update attached to the ticket record.",
+        "title": "Customer communication channel policy"
+      },
+      {
+        "chunk_id": "06_business_hours:fixed:000:3a9ed78829619321",
+        "document_id": "06_business_hours",
+        "end": 300,
+        "source": "knowledge_base/06_business_hours.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e",
+        "title": "Business-hours and holiday-support policy"
+      },
+      {
+        "chunk_id": "06_business_hours:fixed:001:efbb0d33b4eb8416",
+        "document_id": "06_business_hours",
+        "end": 540,
+        "source": "knowledge_base/06_business_hours.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": " business-day refund processing uses Monday through Friday excluding listed holidays. P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt autom",
+        "title": "Business-hours and holiday-support policy"
+      },
+      {
+        "chunk_id": "06_business_hours:fixed:002:63203da5aeb66f2c",
+        "document_id": "06_business_hours",
+        "end": 627,
+        "source": "knowledge_base/06_business_hours.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "s received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution.",
+        "title": "Business-hours and holiday-support policy"
+      },
+      {
+        "chunk_id": "07_repeat_complaints:fixed:000:5de3ff2c88a5bdac",
+        "document_id": "07_repeat_complaints",
+        "end": 300,
+        "source": "knowledge_base/07_repeat_complaints.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history. Assign a support supervisor",
+        "title": "Repeat-complaint handling policy"
+      },
+      {
+        "chunk_id": "07_repeat_complaints:fixed:001:857bbf4d2651a994",
+        "document_id": "07_repeat_complaints",
+        "end": 540,
+        "source": "knowledge_base/07_repeat_complaints.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "preserving the original history. Assign a support supervisor to review the root cause on the second repeat, and raise priority when the facts show greater impact rather than because of complaint count alone. Tell the customer which owner is investigating and avoid asking for evidence already present",
+        "title": "Repeat-complaint handling policy"
+      },
+      {
+        "chunk_id": "07_repeat_complaints:fixed:002:80dff3857347202e",
+        "document_id": "07_repeat_complaints",
+        "end": 563,
+        "source": "knowledge_base/07_repeat_complaints.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": " investigating and avoid asking for evidence already present in the linked history.",
+        "title": "Repeat-complaint handling policy"
+      },
+      {
+        "chunk_id": "08_service_credit:fixed:000:73e5b77be6988721",
+        "document_id": "08_service_credit",
+        "end": 300,
+        "source": "knowledge_base/08_service_credit.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+        "title": "Service-credit policy"
+      },
+      {
+        "chunk_id": "08_service_credit:fixed:001:e019600e4052eaa0",
+        "document_id": "08_service_credit",
+        "end": 540,
+        "source": "knowledge_base/08_service_credit.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": " account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr",
+        "title": "Service-credit policy"
+      },
+      {
+        "chunk_id": "08_service_credit:fixed:002:80846bbe499e9ad7",
+        "document_id": "08_service_credit",
+        "end": 545,
+        "source": "knowledge_base/08_service_credit.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "the ticket and communicate those terms before issuing the credit.",
+        "title": "Service-credit policy"
+      },
+      {
+        "chunk_id": "09_feedback:fixed:000:a3d8734f888a96c1",
+        "document_id": "09_feedback",
+        "end": 300,
+        "source": "knowledge_base/09_feedback.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "After a ticket is resolved, offer one optional in-app feedback survey asking for a satisfaction rating from 1 to 5 and a short comment. If the customer does not respond, send at most one reminder after 48 hours and do not make feedback a condition of receiving support. A rating of 1 or 2 or a commen",
+        "title": "Feedback-collection process"
+      },
+      {
+        "chunk_id": "09_feedback:fixed:001:396018a7a8a6b896",
+        "document_id": "09_feedback",
+        "end": 520,
+        "source": "knowledge_base/09_feedback.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "ndition of receiving support. A rating of 1 or 2 or a comment indicating an unresolved issue triggers a supervisor review of the resolution. Store feedback against the ticket using the ticket-retention policy, and report aggregated themes without identifying individual customers.",
+        "title": "Feedback-collection process"
+      },
+      {
+        "chunk_id": "10_vip_handling:fixed:000:84af5ee5110bd235",
+        "document_id": "10_vip_handling",
+        "end": 300,
+        "source": "knowledge_base/10_vip_handling.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Identify VIP eligibility only from a verified account flag rather than from a customer's claim in a message. Assign an eligible VIP ticket a named support owner and provide an update at least every 4 support hours while work remains open. VIP handling does not change safety priority, refund eligibil",
+        "title": "VIP-customer handling policy"
+      },
+      {
+        "chunk_id": "10_vip_handling:fixed:001:ef855ef57bfbc213",
+        "document_id": "10_vip_handling",
+        "end": 528,
+        "source": "knowledge_base/10_vip_handling.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "IP handling does not change safety priority, refund eligibility, compensation limits, or the requirement to verify account access. When a VIP complaint remains unresolved at its normal SLA deadline, the named owner must involve the support supervisor and communicate the next review time.",
+        "title": "VIP-customer handling policy"
+      },
+      {
+        "chunk_id": "11_outage_communication:fixed:000:e594a15651293c24",
+        "document_id": "11_outage_communication",
+        "end": 300,
+        "source": "knowledge_base/11_outage_communication.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruptio",
+        "title": "Outage-communication protocol"
+      },
+      {
+        "chunk_id": "11_outage_communication:fixed:001:2a50f755af392acd",
+        "document_id": "11_outage_communication",
+        "end": 540,
+        "source": "knowledge_base/11_outage_communication.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "ation and update it every 30 elapsed minutes while disruption continues. Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factua",
+        "title": "Outage-communication protocol"
+      },
+      {
+        "chunk_id": "11_outage_communication:fixed:002:2a8cb59e2a16f2bb",
+        "document_id": "11_outage_communication",
+        "end": 609,
+        "source": "knowledge_base/11_outage_communication.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "y is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days.",
+        "title": "Outage-communication protocol"
+      },
+      {
+        "chunk_id": "12_ticket_retention:fixed:000:3abdf5185121cb8d",
+        "document_id": "12_ticket_retention",
+        "end": 300,
+        "source": "knowledge_base/12_ticket_retention.md",
+        "start": 0,
+        "strategy": "fixed",
+        "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further",
+        "title": "Data-retention policy for tickets"
+      },
+      {
+        "chunk_id": "12_ticket_retention:fixed:001:1382f4294a33c865",
+        "document_id": "12_ticket_retention",
+        "end": 540,
+        "source": "knowledge_base/12_ticket_retention.md",
+        "start": 240,
+        "strategy": "fixed",
+        "text": "close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved. Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected reco",
+        "title": "Data-retention policy for tickets"
+      },
+      {
+        "chunk_id": "12_ticket_retention:fixed:002:8dd6ff87848d42ae",
+        "document_id": "12_ticket_retention",
+        "end": 649,
+        "source": "knowledge_base/12_ticket_retention.md",
+        "start": 480,
+        "strategy": "fixed",
+        "text": "orized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released.",
+        "title": "Data-retention policy for tickets"
+      }
+    ],
+    "sentence": [
+      {
+        "chunk_id": "01_ticket_priority:sentence:000:f59c0fd2b775b400",
+        "document_id": "01_ticket_priority",
+        "end": 252,
+        "source": "knowledge_base/01_ticket_priority.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use.",
+        "title": "Ticket-priority classification rules"
+      },
+      {
+        "chunk_id": "01_ticket_priority:sentence:001:4ae8f4dba0c52b2d",
+        "document_id": "01_ticket_priority",
+        "end": 527,
+        "source": "knowledge_base/01_ticket_priority.md",
+        "start": 253,
+        "strategy": "sentence",
+        "text": "Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity.",
+        "title": "Ticket-priority classification rules"
+      },
+      {
+        "chunk_id": "02_severity_sla:sentence:000:e5ba0f35e59164a0",
+        "document_id": "02_severity_sla",
+        "end": 225,
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours.",
+        "title": "SLA-by-severity policy"
+      },
+      {
+        "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+        "document_id": "02_severity_sla",
+        "end": 654,
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 226,
+        "strategy": "sentence",
+        "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times.",
+        "title": "SLA-by-severity policy"
+      },
+      {
+        "chunk_id": "03_escalation_matrix:sentence:000:818d94033c29fb0e",
+        "document_id": "03_escalation_matrix",
+        "end": 341,
+        "source": "knowledge_base/03_escalation_matrix.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Route billing and refund disputes to the billing specialist, technical issues and product defects to the technical specialist, and account-access failures to the account-security specialist. Escalate a P1 safety report immediately to the duty incident lead, who coordinates the responsible specialist and emergency guidance when appropriate.",
+        "title": "Escalation matrix"
+      },
+      {
+        "chunk_id": "03_escalation_matrix:sentence:001:4d586eecb9c6fbaf",
+        "document_id": "03_escalation_matrix",
+        "end": 643,
+        "source": "knowledge_base/03_escalation_matrix.md",
+        "start": 342,
+        "strategy": "sentence",
+        "text": "Escalate a P2 ticket to the support supervisor if its acknowledgement deadline is missed, and escalate any unresolved ticket before its resolution target expires. The receiving owner must accept the handoff, and the original owner remains responsible for customer updates until acceptance is recorded.",
+        "title": "Escalation matrix"
+      },
+      {
+        "chunk_id": "04_refund_compensation:sentence:000:d9ace4c0918f616e",
+        "document_id": "04_refund_compensation",
+        "end": 295,
+        "source": "knowledge_base/04_refund_compensation.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval.",
+        "title": "Refund and compensation policy"
+      },
+      {
+        "chunk_id": "04_refund_compensation:sentence:001:3848988ea6bf42e0",
+        "document_id": "04_refund_compensation",
+        "end": 626,
+        "source": "knowledge_base/04_refund_compensation.md",
+        "start": 296,
+        "strategy": "sentence",
+        "text": "A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.",
+        "title": "Refund and compensation policy"
+      },
+      {
+        "chunk_id": "05_communication_channels:sentence:000:38618264f6bc9b1b",
+        "document_id": "05_communication_channels",
+        "end": 273,
+        "source": "knowledge_base/05_communication_channels.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Use in-app support as the primary communication channel for rider and driver ticket updates, with email as the alternative when account access is unavailable. A support agent may offer a callback for an urgent issue only after the customer requests or consents to the call.",
+        "title": "Customer communication channel policy"
+      },
+      {
+        "chunk_id": "05_communication_channels:sentence:001:57a3f38ee2c76b88",
+        "document_id": "05_communication_channels",
+        "end": 567,
+        "source": "knowledge_base/05_communication_channels.md",
+        "start": 274,
+        "strategy": "sentence",
+        "text": "Before sharing ticket details on an alternative channel, complete the approved account-verification process and avoid exposing another customer's information. Never request an OTP, full payment-card details, or an account password, and keep every customer update attached to the ticket record.",
+        "title": "Customer communication channel policy"
+      },
+      {
+        "chunk_id": "06_business_hours:sentence:000:114c384cf5726487",
+        "document_id": "06_business_hours",
+        "end": 325,
+        "source": "knowledge_base/06_business_hours.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays.",
+        "title": "Business-hours and holiday-support policy"
+      },
+      {
+        "chunk_id": "06_business_hours:sentence:001:c1371503f1ddf5c5",
+        "document_id": "06_business_hours",
+        "end": 627,
+        "source": "knowledge_base/06_business_hours.md",
+        "start": 326,
+        "strategy": "sentence",
+        "text": "P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution.",
+        "title": "Business-hours and holiday-support policy"
+      },
+      {
+        "chunk_id": "07_repeat_complaints:sentence:000:c9d3c8b51fed299d",
+        "document_id": "07_repeat_complaints",
+        "end": 272,
+        "source": "knowledge_base/07_repeat_complaints.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history.",
+        "title": "Repeat-complaint handling policy"
+      },
+      {
+        "chunk_id": "07_repeat_complaints:sentence:001:e87ad897caa9c5e4",
+        "document_id": "07_repeat_complaints",
+        "end": 563,
+        "source": "knowledge_base/07_repeat_complaints.md",
+        "start": 273,
+        "strategy": "sentence",
+        "text": "Assign a support supervisor to review the root cause on the second repeat, and raise priority when the facts show greater impact rather than because of complaint count alone. Tell the customer which owner is investigating and avoid asking for evidence already present in the linked history.",
+        "title": "Repeat-complaint handling policy"
+      },
+      {
+        "chunk_id": "08_service_credit:sentence:000:87342290dbfac260",
+        "document_id": "08_service_credit",
+        "end": 297,
+        "source": "knowledge_base/08_service_credit.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance.",
+        "title": "Service-credit policy"
+      },
+      {
+        "chunk_id": "08_service_credit:sentence:001:ba76ac0c2b042949",
+        "document_id": "08_service_credit",
+        "end": 545,
+        "source": "knowledge_base/08_service_credit.md",
+        "start": 298,
+        "strategy": "sentence",
+        "text": "Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the credit.",
+        "title": "Service-credit policy"
+      },
+      {
+        "chunk_id": "09_feedback:sentence:000:4f4e0b885cb98dac",
+        "document_id": "09_feedback",
+        "end": 269,
+        "source": "knowledge_base/09_feedback.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "After a ticket is resolved, offer one optional in-app feedback survey asking for a satisfaction rating from 1 to 5 and a short comment. If the customer does not respond, send at most one reminder after 48 hours and do not make feedback a condition of receiving support.",
+        "title": "Feedback-collection process"
+      },
+      {
+        "chunk_id": "09_feedback:sentence:001:468ec8fc3d93f5d4",
+        "document_id": "09_feedback",
+        "end": 520,
+        "source": "knowledge_base/09_feedback.md",
+        "start": 270,
+        "strategy": "sentence",
+        "text": "A rating of 1 or 2 or a comment indicating an unresolved issue triggers a supervisor review of the resolution. Store feedback against the ticket using the ticket-retention policy, and report aggregated themes without identifying individual customers.",
+        "title": "Feedback-collection process"
+      },
+      {
+        "chunk_id": "10_vip_handling:sentence:000:705a49f14f5678e3",
+        "document_id": "10_vip_handling",
+        "end": 238,
+        "source": "knowledge_base/10_vip_handling.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Identify VIP eligibility only from a verified account flag rather than from a customer's claim in a message. Assign an eligible VIP ticket a named support owner and provide an update at least every 4 support hours while work remains open.",
+        "title": "VIP-customer handling policy"
+      },
+      {
+        "chunk_id": "10_vip_handling:sentence:001:89b7ae00c938ccd4",
+        "document_id": "10_vip_handling",
+        "end": 528,
+        "source": "knowledge_base/10_vip_handling.md",
+        "start": 239,
+        "strategy": "sentence",
+        "text": "VIP handling does not change safety priority, refund eligibility, compensation limits, or the requirement to verify account access. When a VIP complaint remains unresolved at its normal SLA deadline, the named owner must involve the support supervisor and communicate the next review time.",
+        "title": "VIP-customer handling policy"
+      },
+      {
+        "chunk_id": "11_outage_communication:sentence:000:2f6146f10782d5d1",
+        "document_id": "11_outage_communication",
+        "end": 312,
+        "source": "knowledge_base/11_outage_communication.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruption continues.",
+        "title": "Outage-communication protocol"
+      },
+      {
+        "chunk_id": "11_outage_communication:sentence:001:a1e71105c32d8029",
+        "document_id": "11_outage_communication",
+        "end": 609,
+        "source": "knowledge_base/11_outage_communication.md",
+        "start": 313,
+        "strategy": "sentence",
+        "text": "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days.",
+        "title": "Outage-communication protocol"
+      },
+      {
+        "chunk_id": "12_ticket_retention:sentence:000:e6c1ea1c4aeadb47",
+        "document_id": "12_ticket_retention",
+        "end": 363,
+        "source": "knowledge_base/12_ticket_retention.md",
+        "start": 0,
+        "strategy": "sentence",
+        "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved.",
+        "title": "Data-retention policy for tickets"
+      },
+      {
+        "chunk_id": "12_ticket_retention:sentence:001:6b4d893bfc18e8e8",
+        "document_id": "12_ticket_retention",
+        "end": 649,
+        "source": "knowledge_base/12_ticket_retention.md",
+        "start": 364,
+        "strategy": "sentence",
+        "text": "Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released.",
+        "title": "Data-retention policy for tickets"
+      }
+    ]
+  },
+  "first_upsert": {
+    "fixed": {
+      "after": 33,
+      "before": 33,
+      "collection": "ola_fixed_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 33
+    },
+    "sentence": {
+      "after": 24,
+      "before": 24,
+      "collection": "ola_sentence_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 24
+    }
+  },
+  "index_fingerprint": "6a3978d64ba278e0e3f61ec2963f83ed30cb9f0cde2b6637c6c54a6cd10efdd3",
+  "label_policy": "Defined from policy content before embeddings or retrieval results. Relevant documents contain facts necessary to answer the question; cross-references alone are not relevant. Labels stay fixed across both strategies.",
+  "labels_sha256": "b1740a9fc39295b218ac387bd2b39138f8f158080ab39e39049d01a59845c3b7",
+  "model": {
+    "files": {
+      "1_Pooling/config.json": {
+        "bytes": 190,
+        "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+      },
+      "config.json": {
+        "bytes": 612,
+        "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+      },
+      "config_sentence_transformers.json": {
+        "bytes": 116,
+        "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3"
+      },
+      "data_config.json": {
+        "bytes": 39265,
+        "sha256": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54"
+      },
+      "model.safetensors": {
+        "bytes": 90868376,
+        "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+      },
+      "modules.json": {
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      "sentence_bert_config.json": {
+        "bytes": 53,
+        "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+      },
+      "special_tokens_map.json": {
+        "bytes": 112,
+        "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+      },
+      "tokenizer.json": {
+        "bytes": 466247,
+        "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+      },
+      "tokenizer_config.json": {
+        "bytes": 350,
+        "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+      },
+      "vocab.txt": {
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "local_path": ".models/all-MiniLM-L6-v2",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "runtime_network_required": false,
+    "setup_network_required": true
+  },
+  "python": "3.11.17",
+  "recommendation": "Deploy fixed chunking: fixed chunks achieved mean document precision 1.0000 and recall 1.0000, while sentence chunks achieved precision 0.5556 and recall 1.0000 on the same six labelled queries. Selection prioritizes recall and then precision, with complete sentence boundaries breaking metric ties. These small-corpus measurements support this deployment choice but do not establish performance on broader or near-domain questions.",
+  "recommended_strategy": "fixed",
+  "second_upsert": {
+    "fixed": {
+      "after": 33,
+      "before": 33,
+      "collection": "ola_fixed_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 33
+    },
+    "sentence": {
+      "after": 24,
+      "before": 24,
+      "collection": "ola_sentence_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 24
+    }
+  },
+  "strategies": {
+    "fixed": {
+      "calibration": {
+        "clusters_separated": true,
+        "gap": 0.5983424186706543,
+        "maximum_out_of_scope": 0.09160292148590088,
+        "measurements": [
+          {
+            "id": "C1",
+            "in_scope": true,
+            "query": "How should support handle a verified VIP customer?",
+            "relevant_documents": [
+              "10_vip_handling"
+            ],
+            "top1_chunk_id": "10_vip_handling:fixed:000:84af5ee5110bd235",
+            "top1_cosine_similarity": 0.7244850397109985,
+            "top1_document_id": "10_vip_handling"
+          },
+          {
+            "id": "C2",
+            "in_scope": true,
+            "query": "How is customer feedback collected after a ticket is resolved?",
+            "relevant_documents": [
+              "09_feedback"
+            ],
+            "top1_chunk_id": "09_feedback:fixed:001:396018a7a8a6b896",
+            "top1_cosine_similarity": 0.7236592769622803,
+            "top1_document_id": "09_feedback"
+          },
+          {
+            "id": "C3",
+            "in_scope": true,
+            "query": "What should happen when the same customer repeats a complaint within 30 days?",
+            "relevant_documents": [
+              "07_repeat_complaints"
+            ],
+            "top1_chunk_id": "07_repeat_complaints:fixed:000:5de3ff2c88a5bdac",
+            "top1_cosine_similarity": 0.6899453401565552,
+            "top1_document_id": "07_repeat_complaints"
+          },
+          {
+            "id": "C4",
+            "in_scope": false,
+            "query": "Explain photosynthesis in plants.",
+            "relevant_documents": [],
+            "top1_chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "top1_cosine_similarity": 0.09160292148590088,
+            "top1_document_id": "04_refund_compensation"
+          },
+          {
+            "id": "C5",
+            "in_scope": false,
+            "query": "How do I bake a chocolate cake?",
+            "relevant_documents": [],
+            "top1_chunk_id": "01_ticket_priority:fixed:000:f1252f8593080a60",
+            "top1_cosine_similarity": 0.0184209942817688,
+            "top1_document_id": "01_ticket_priority"
+          }
+        ],
+        "method": "midpoint between maximum out-of-scope and minimum in-scope calibration similarity; no threshold if clusters overlap",
+        "minimum_in_scope": 0.6899453401565552,
+        "threshold": 0.390774130821228
+      },
+      "evaluation": [
+        {
+          "hits": [
+            {
+              "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+              "cosine_similarity": 0.7824878096580505,
+              "document_id": "04_refund_compensation",
+              "metadata": {
+                "document_id": "04_refund_compensation",
+                "end": 300,
+                "source": "knowledge_base/04_refund_compensation.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Refund and compensation policy"
+              },
+              "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+            },
+            {
+              "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+              "cosine_similarity": 0.4911179542541504,
+              "document_id": "04_refund_compensation",
+              "metadata": {
+                "document_id": "04_refund_compensation",
+                "end": 626,
+                "source": "knowledge_base/04_refund_compensation.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "Refund and compensation policy"
+              },
+              "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+            },
+            {
+              "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+              "cosine_similarity": 0.48661696910858154,
+              "document_id": "04_refund_compensation",
+              "metadata": {
+                "document_id": "04_refund_compensation",
+                "end": 540,
+                "source": "knowledge_base/04_refund_compensation.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Refund and compensation policy"
+              },
+              "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+            }
+          ],
+          "id": "Q1",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "04_refund_compensation"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "1/1 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "04_refund_compensation"
+            ],
+            "retrieved_parent_documents": [
+              "04_refund_compensation"
+            ],
+            "true_positives": 1
+          },
+          "query": "When can a duplicate charge be refunded and how long does processing take?",
+          "relevant_documents": [
+            "04_refund_compensation"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+            "citations": [
+              "04_refund_compensation"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+                "document_id": "04_refund_compensation",
+                "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+                "document_id": "04_refund_compensation",
+                "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+                "document_id": "04_refund_compensation",
+                "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "06_business_hours:fixed:000:3a9ed78829619321",
+              "cosine_similarity": 0.6868402361869812,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 300,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e"
+            },
+            {
+              "chunk_id": "06_business_hours:fixed:002:63203da5aeb66f2c",
+              "cosine_similarity": 0.6460078954696655,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 627,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "s received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+            },
+            {
+              "chunk_id": "06_business_hours:fixed:001:efbb0d33b4eb8416",
+              "cosine_similarity": 0.5972243547439575,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 540,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": " business-day refund processing uses Monday through Friday excluding listed holidays. P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt autom"
+            }
+          ],
+          "id": "Q2",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "06_business_hours"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "1/1 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "06_business_hours"
+            ],
+            "retrieved_parent_documents": [
+              "06_business_hours"
+            ],
+            "true_positives": 1
+          },
+          "query": "What hours is standard support available and what happens on holidays?",
+          "relevant_documents": [
+            "06_business_hours"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[06_business_hours] Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e\n[06_business_hours] s received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution.\n[06_business_hours]  business-day refund processing uses Monday through Friday excluding listed holidays. P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt autom",
+            "citations": [
+              "06_business_hours"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "06_business_hours:fixed:000:3a9ed78829619321",
+                "document_id": "06_business_hours",
+                "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e"
+              },
+              {
+                "chunk_id": "06_business_hours:fixed:002:63203da5aeb66f2c",
+                "document_id": "06_business_hours",
+                "text": "s received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+              },
+              {
+                "chunk_id": "06_business_hours:fixed:001:efbb0d33b4eb8416",
+                "document_id": "06_business_hours",
+                "text": " business-day refund processing uses Monday through Friday excluding listed holidays. P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt autom"
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "12_ticket_retention:fixed:000:3abdf5185121cb8d",
+              "cosine_similarity": 0.8229485750198364,
+              "document_id": "12_ticket_retention",
+              "metadata": {
+                "document_id": "12_ticket_retention",
+                "end": 300,
+                "source": "knowledge_base/12_ticket_retention.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Data-retention policy for tickets"
+              },
+              "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further"
+            },
+            {
+              "chunk_id": "12_ticket_retention:fixed:001:1382f4294a33c865",
+              "cosine_similarity": 0.6926839351654053,
+              "document_id": "12_ticket_retention",
+              "metadata": {
+                "document_id": "12_ticket_retention",
+                "end": 540,
+                "source": "knowledge_base/12_ticket_retention.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Data-retention policy for tickets"
+              },
+              "text": "close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved. Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected reco"
+            },
+            {
+              "chunk_id": "12_ticket_retention:fixed:002:8dd6ff87848d42ae",
+              "cosine_similarity": 0.6821315884590149,
+              "document_id": "12_ticket_retention",
+              "metadata": {
+                "document_id": "12_ticket_retention",
+                "end": 649,
+                "source": "knowledge_base/12_ticket_retention.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "Data-retention policy for tickets"
+              },
+              "text": "orized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released."
+            }
+          ],
+          "id": "Q3",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "12_ticket_retention"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "1/1 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "12_ticket_retention"
+            ],
+            "retrieved_parent_documents": [
+              "12_ticket_retention"
+            ],
+            "true_positives": 1
+          },
+          "query": "How long are closed support tickets retained and when are identifying details deleted?",
+          "relevant_documents": [
+            "12_ticket_retention"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[12_ticket_retention] Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further\n[12_ticket_retention] close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved. Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected reco\n[12_ticket_retention] orized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released.",
+            "citations": [
+              "12_ticket_retention"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "12_ticket_retention:fixed:000:3abdf5185121cb8d",
+                "document_id": "12_ticket_retention",
+                "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further"
+              },
+              {
+                "chunk_id": "12_ticket_retention:fixed:001:1382f4294a33c865",
+                "document_id": "12_ticket_retention",
+                "text": "close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved. Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected reco"
+              },
+              {
+                "chunk_id": "12_ticket_retention:fixed:002:8dd6ff87848d42ae",
+                "document_id": "12_ticket_retention",
+                "text": "orized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "11_outage_communication:fixed:001:2a50f755af392acd",
+              "cosine_similarity": 0.5506948232650757,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 540,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Outage-communication protocol"
+              },
+              "text": "ation and update it every 30 elapsed minutes while disruption continues. Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factua"
+            },
+            {
+              "chunk_id": "11_outage_communication:fixed:000:e594a15651293c24",
+              "cosine_similarity": 0.5040261149406433,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 300,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Outage-communication protocol"
+              },
+              "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruptio"
+            },
+            {
+              "chunk_id": "11_outage_communication:fixed:002:2a8cb59e2a16f2bb",
+              "cosine_similarity": 0.4981815218925476,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 609,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "Outage-communication protocol"
+              },
+              "text": "y is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+            }
+          ],
+          "id": "Q4",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "11_outage_communication"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "1/1 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "11_outage_communication"
+            ],
+            "retrieved_parent_documents": [
+              "11_outage_communication"
+            ],
+            "true_positives": 1
+          },
+          "query": "How often must outage notices be updated?",
+          "relevant_documents": [
+            "11_outage_communication"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[11_outage_communication] ation and update it every 30 elapsed minutes while disruption continues. Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factua\n[11_outage_communication] When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruptio\n[11_outage_communication] y is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days.",
+            "citations": [
+              "11_outage_communication"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "11_outage_communication:fixed:001:2a50f755af392acd",
+                "document_id": "11_outage_communication",
+                "text": "ation and update it every 30 elapsed minutes while disruption continues. Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factua"
+              },
+              {
+                "chunk_id": "11_outage_communication:fixed:000:e594a15651293c24",
+                "document_id": "11_outage_communication",
+                "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruptio"
+              },
+              {
+                "chunk_id": "11_outage_communication:fixed:002:2a8cb59e2a16f2bb",
+                "document_id": "11_outage_communication",
+                "text": "y is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "08_service_credit:fixed:000:73e5b77be6988721",
+              "cosine_similarity": 0.6066420674324036,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 300,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Service-credit policy"
+              },
+              "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se"
+            },
+            {
+              "chunk_id": "08_service_credit:fixed:001:e019600e4052eaa0",
+              "cosine_similarity": 0.6065900921821594,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 540,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Service-credit policy"
+              },
+              "text": " account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr"
+            },
+            {
+              "chunk_id": "08_service_credit:fixed:002:80846bbe499e9ad7",
+              "cosine_similarity": 0.4478877782821655,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 545,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "Service-credit policy"
+              },
+              "text": "the ticket and communicate those terms before issuing the credit."
+            }
+          ],
+          "id": "Q5",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "08_service_credit"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "1/1 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "08_service_credit"
+            ],
+            "retrieved_parent_documents": [
+              "08_service_credit"
+            ],
+            "true_positives": 1
+          },
+          "query": "What is the maximum standard noncash service credit and how long is it valid?",
+          "relevant_documents": [
+            "08_service_credit"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\n[08_service_credit]  account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr\n[08_service_credit] the ticket and communicate those terms before issuing the credit.",
+            "citations": [
+              "08_service_credit"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "08_service_credit:fixed:000:73e5b77be6988721",
+                "document_id": "08_service_credit",
+                "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se"
+              },
+              {
+                "chunk_id": "08_service_credit:fixed:001:e019600e4052eaa0",
+                "document_id": "08_service_credit",
+                "text": " account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr"
+              },
+              {
+                "chunk_id": "08_service_credit:fixed:002:80846bbe499e9ad7",
+                "document_id": "08_service_credit",
+                "text": "the ticket and communicate those terms before issuing the credit."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "01_ticket_priority:fixed:000:f1252f8593080a60",
+              "cosine_similarity": 0.6234437823295593,
+              "document_id": "01_ticket_priority",
+              "metadata": {
+                "document_id": "01_ticket_priority",
+                "end": 300,
+                "source": "knowledge_base/01_ticket_priority.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Ticket-priority classification rules"
+              },
+              "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use. Assign P3 priority to a nonblocking technical i"
+            },
+            {
+              "chunk_id": "01_ticket_priority:fixed:001:467e14d88ab04b30",
+              "cosine_similarity": 0.5169363617897034,
+              "document_id": "01_ticket_priority",
+              "metadata": {
+                "document_id": "01_ticket_priority",
+                "end": 527,
+                "source": "knowledge_base/01_ticket_priority.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Ticket-priority classification rules"
+              },
+              "text": "service use. Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity."
+            },
+            {
+              "chunk_id": "02_severity_sla:fixed:000:b78b055efceb846b",
+              "cosine_similarity": 0.42395150661468506,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 300,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours. For P3 severity, acknowledge within 4 support hours and target resolution "
+            }
+          ],
+          "id": "Q6",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "2/2 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "2/2 = 1.000000",
+            "relevant_parent_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "retrieved_parent_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "true_positives": 2
+          },
+          "query": "How are P1 and P2 priorities classified and what are their acknowledgement targets?",
+          "relevant_documents": [
+            "01_ticket_priority",
+            "02_severity_sla"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[01_ticket_priority] Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use. Assign P3 priority to a nonblocking technical i\n[01_ticket_priority] service use. Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity.\n[02_severity_sla] For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours. For P3 severity, acknowledge within 4 support hours and target resolution ",
+            "citations": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "01_ticket_priority:fixed:000:f1252f8593080a60",
+                "document_id": "01_ticket_priority",
+                "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use. Assign P3 priority to a nonblocking technical i"
+              },
+              {
+                "chunk_id": "01_ticket_priority:fixed:001:467e14d88ab04b30",
+                "document_id": "01_ticket_priority",
+                "text": "service use. Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity."
+              },
+              {
+                "chunk_id": "02_severity_sla:fixed:000:b78b055efceb846b",
+                "document_id": "02_severity_sla",
+                "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours. For P3 severity, acknowledge within 4 support hours and target resolution "
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "06_business_hours:fixed:000:3a9ed78829619321",
+              "cosine_similarity": 0.1225130558013916,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 300,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 0,
+                "strategy": "fixed",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e"
+            },
+            {
+              "chunk_id": "08_service_credit:fixed:001:e019600e4052eaa0",
+              "cosine_similarity": 0.11971521377563477,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 540,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 240,
+                "strategy": "fixed",
+                "title": "Service-credit policy"
+              },
+              "text": " account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr"
+            },
+            {
+              "chunk_id": "02_severity_sla:fixed:002:62fc1a72f6be9210",
+              "cosine_similarity": 0.08837544918060303,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 654,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 480,
+                "strategy": "fixed",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "port-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+            }
+          ],
+          "id": "Q7",
+          "in_scope": false,
+          "metrics": {
+            "matched_documents": [],
+            "precision": 0.0,
+            "precision_arithmetic": "0/3 = 0.000000",
+            "recall": null,
+            "recall_arithmetic": "undefined (no relevant documents)",
+            "relevant_parent_documents": [],
+            "retrieved_parent_documents": [
+              "06_business_hours",
+              "08_service_credit",
+              "02_severity_sla"
+            ],
+            "true_positives": 0
+          },
+          "query": "How can I calculate the orbital period of a planet?",
+          "relevant_documents": [],
+          "response": {
+            "answer": "I don't know based on the available policy documents.",
+            "citations": [],
+            "excerpts": [],
+            "fallback": true
+          }
+        }
+      ],
+      "mean_precision": 1.0,
+      "mean_recall": 1.0
+    },
+    "sentence": {
+      "calibration": {
+        "clusters_separated": true,
+        "gap": 0.610443115234375,
+        "maximum_out_of_scope": 0.07866859436035156,
+        "measurements": [
+          {
+            "id": "C1",
+            "in_scope": true,
+            "query": "How should support handle a verified VIP customer?",
+            "relevant_documents": [
+              "10_vip_handling"
+            ],
+            "top1_chunk_id": "10_vip_handling:sentence:000:705a49f14f5678e3",
+            "top1_cosine_similarity": 0.7459205389022827,
+            "top1_document_id": "10_vip_handling"
+          },
+          {
+            "id": "C2",
+            "in_scope": true,
+            "query": "How is customer feedback collected after a ticket is resolved?",
+            "relevant_documents": [
+              "09_feedback"
+            ],
+            "top1_chunk_id": "09_feedback:sentence:001:468ec8fc3d93f5d4",
+            "top1_cosine_similarity": 0.7335164546966553,
+            "top1_document_id": "09_feedback"
+          },
+          {
+            "id": "C3",
+            "in_scope": true,
+            "query": "What should happen when the same customer repeats a complaint within 30 days?",
+            "relevant_documents": [
+              "07_repeat_complaints"
+            ],
+            "top1_chunk_id": "07_repeat_complaints:sentence:000:c9d3c8b51fed299d",
+            "top1_cosine_similarity": 0.6891117095947266,
+            "top1_document_id": "07_repeat_complaints"
+          },
+          {
+            "id": "C4",
+            "in_scope": false,
+            "query": "Explain photosynthesis in plants.",
+            "relevant_documents": [],
+            "top1_chunk_id": "09_feedback:sentence:001:468ec8fc3d93f5d4",
+            "top1_cosine_similarity": 0.07866859436035156,
+            "top1_document_id": "09_feedback"
+          },
+          {
+            "id": "C5",
+            "in_scope": false,
+            "query": "How do I bake a chocolate cake?",
+            "relevant_documents": [],
+            "top1_chunk_id": "06_business_hours:sentence:000:114c384cf5726487",
+            "top1_cosine_similarity": 0.018677890300750732,
+            "top1_document_id": "06_business_hours"
+          }
+        ],
+        "method": "midpoint between maximum out-of-scope and minimum in-scope calibration similarity; no threshold if clusters overlap",
+        "minimum_in_scope": 0.6891117095947266,
+        "threshold": 0.38389015197753906
+      },
+      "evaluation": [
+        {
+          "hits": [
+            {
+              "chunk_id": "04_refund_compensation:sentence:000:d9ace4c0918f616e",
+              "cosine_similarity": 0.7972549796104431,
+              "document_id": "04_refund_compensation",
+              "metadata": {
+                "document_id": "04_refund_compensation",
+                "end": 295,
+                "source": "knowledge_base/04_refund_compensation.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Refund and compensation policy"
+              },
+              "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval."
+            },
+            {
+              "chunk_id": "07_repeat_complaints:sentence:000:c9d3c8b51fed299d",
+              "cosine_similarity": 0.4892163872718811,
+              "document_id": "07_repeat_complaints",
+              "metadata": {
+                "document_id": "07_repeat_complaints",
+                "end": 272,
+                "source": "knowledge_base/07_repeat_complaints.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Repeat-complaint handling policy"
+              },
+              "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history."
+            },
+            {
+              "chunk_id": "08_service_credit:sentence:000:87342290dbfac260",
+              "cosine_similarity": 0.43416398763656616,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 297,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Service-credit policy"
+              },
+              "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance."
+            }
+          ],
+          "id": "Q1",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "04_refund_compensation"
+            ],
+            "precision": 0.3333333333333333,
+            "precision_arithmetic": "1/3 = 0.333333",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "04_refund_compensation"
+            ],
+            "retrieved_parent_documents": [
+              "04_refund_compensation",
+              "07_repeat_complaints",
+              "08_service_credit"
+            ],
+            "true_positives": 1
+          },
+          "query": "When can a duplicate charge be refunded and how long does processing take?",
+          "relevant_documents": [
+            "04_refund_compensation"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval.\n[07_repeat_complaints] Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance.",
+            "citations": [
+              "04_refund_compensation",
+              "07_repeat_complaints",
+              "08_service_credit"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "04_refund_compensation:sentence:000:d9ace4c0918f616e",
+                "document_id": "04_refund_compensation",
+                "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval."
+              },
+              {
+                "chunk_id": "07_repeat_complaints:sentence:000:c9d3c8b51fed299d",
+                "document_id": "07_repeat_complaints",
+                "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history."
+              },
+              {
+                "chunk_id": "08_service_credit:sentence:000:87342290dbfac260",
+                "document_id": "08_service_credit",
+                "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "06_business_hours:sentence:000:114c384cf5726487",
+              "cosine_similarity": 0.6867587566375732,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 325,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays."
+            },
+            {
+              "chunk_id": "06_business_hours:sentence:001:c1371503f1ddf5c5",
+              "cosine_similarity": 0.6490947008132935,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 627,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 326,
+                "strategy": "sentence",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+            },
+            {
+              "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+              "cosine_similarity": 0.5093377828598022,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 654,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 226,
+                "strategy": "sentence",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+            }
+          ],
+          "id": "Q2",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "06_business_hours"
+            ],
+            "precision": 0.5,
+            "precision_arithmetic": "1/2 = 0.500000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "06_business_hours"
+            ],
+            "retrieved_parent_documents": [
+              "06_business_hours",
+              "02_severity_sla"
+            ],
+            "true_positives": 1
+          },
+          "query": "What hours is standard support available and what happens on holidays?",
+          "relevant_documents": [
+            "06_business_hours"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[06_business_hours] Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays.\n[06_business_hours] P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution.\n[02_severity_sla] For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times.",
+            "citations": [
+              "06_business_hours",
+              "02_severity_sla"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "06_business_hours:sentence:000:114c384cf5726487",
+                "document_id": "06_business_hours",
+                "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays."
+              },
+              {
+                "chunk_id": "06_business_hours:sentence:001:c1371503f1ddf5c5",
+                "document_id": "06_business_hours",
+                "text": "P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+              },
+              {
+                "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+                "document_id": "02_severity_sla",
+                "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "12_ticket_retention:sentence:000:e6c1ea1c4aeadb47",
+              "cosine_similarity": 0.8252912163734436,
+              "document_id": "12_ticket_retention",
+              "metadata": {
+                "document_id": "12_ticket_retention",
+                "end": 363,
+                "source": "knowledge_base/12_ticket_retention.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Data-retention policy for tickets"
+              },
+              "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved."
+            },
+            {
+              "chunk_id": "12_ticket_retention:sentence:001:6b4d893bfc18e8e8",
+              "cosine_similarity": 0.6977337598800659,
+              "document_id": "12_ticket_retention",
+              "metadata": {
+                "document_id": "12_ticket_retention",
+                "end": 649,
+                "source": "knowledge_base/12_ticket_retention.md",
+                "start": 364,
+                "strategy": "sentence",
+                "title": "Data-retention policy for tickets"
+              },
+              "text": "Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released."
+            },
+            {
+              "chunk_id": "11_outage_communication:sentence:001:a1e71105c32d8029",
+              "cosine_similarity": 0.4529463052749634,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 609,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 313,
+                "strategy": "sentence",
+                "title": "Outage-communication protocol"
+              },
+              "text": "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+            }
+          ],
+          "id": "Q3",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "12_ticket_retention"
+            ],
+            "precision": 0.5,
+            "precision_arithmetic": "1/2 = 0.500000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "12_ticket_retention"
+            ],
+            "retrieved_parent_documents": [
+              "12_ticket_retention",
+              "11_outage_communication"
+            ],
+            "true_positives": 1
+          },
+          "query": "How long are closed support tickets retained and when are identifying details deleted?",
+          "relevant_documents": [
+            "12_ticket_retention"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[12_ticket_retention] Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved.\n[12_ticket_retention] Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released.\n[11_outage_communication] Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days.",
+            "citations": [
+              "12_ticket_retention",
+              "11_outage_communication"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "12_ticket_retention:sentence:000:e6c1ea1c4aeadb47",
+                "document_id": "12_ticket_retention",
+                "text": "Retain a support ticket and its attached communication for 180 days after the ticket is closed, then delete identifying details through the scheduled retention process. For a resolved ticket that remains open, the support owner must either close it after confirming resolution or document why further work is required rather than leave it indefinitely unresolved."
+              },
+              {
+                "chunk_id": "12_ticket_retention:sentence:001:6b4d893bfc18e8e8",
+                "document_id": "12_ticket_retention",
+                "text": "Restrict ticket access to staff assigned to support duties, and use masked phone numbers in diagnostic logs. An authorized legal hold pauses deletion only for the affected records, must be documented and reviewed every 30 days, and allows deletion to resume after the hold is released."
+              },
+              {
+                "chunk_id": "11_outage_communication:sentence:001:a1e71105c32d8029",
+                "document_id": "11_outage_communication",
+                "text": "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "11_outage_communication:sentence:001:a1e71105c32d8029",
+              "cosine_similarity": 0.5687018632888794,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 609,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 313,
+                "strategy": "sentence",
+                "title": "Outage-communication protocol"
+              },
+              "text": "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+            },
+            {
+              "chunk_id": "11_outage_communication:sentence:000:2f6146f10782d5d1",
+              "cosine_similarity": 0.5131458044052124,
+              "document_id": "11_outage_communication",
+              "metadata": {
+                "document_id": "11_outage_communication",
+                "end": 312,
+                "source": "knowledge_base/11_outage_communication.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Outage-communication protocol"
+              },
+              "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruption continues."
+            },
+            {
+              "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+              "cosine_similarity": 0.45688676834106445,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 654,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 226,
+                "strategy": "sentence",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+            }
+          ],
+          "id": "Q4",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "11_outage_communication"
+            ],
+            "precision": 0.5,
+            "precision_arithmetic": "1/2 = 0.500000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "11_outage_communication"
+            ],
+            "retrieved_parent_documents": [
+              "11_outage_communication",
+              "02_severity_sla"
+            ],
+            "true_positives": 1
+          },
+          "query": "How often must outage notices be updated?",
+          "relevant_documents": [
+            "11_outage_communication"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[11_outage_communication] Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days.\n[11_outage_communication] When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruption continues.\n[02_severity_sla] For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times.",
+            "citations": [
+              "11_outage_communication",
+              "02_severity_sla"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "11_outage_communication:sentence:001:a1e71105c32d8029",
+                "document_id": "11_outage_communication",
+                "text": "Each notice must distinguish confirmed impact from investigation findings and provide only verified workarounds, with no unconfirmed restoration promise. After recovery is verified, publish a recovery notice and attach a factual incident summary to related support tickets within 2 business days."
+              },
+              {
+                "chunk_id": "11_outage_communication:sentence:000:2f6146f10782d5d1",
+                "document_id": "11_outage_communication",
+                "text": "When monitoring or multiple validated tickets confirm an outage, the duty incident lead opens an incident record and identifies the affected service and regions. Publish an initial in-app notice within 15 elapsed minutes of incident confirmation and update it every 30 elapsed minutes while disruption continues."
+              },
+              {
+                "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+                "document_id": "02_severity_sla",
+                "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "08_service_credit:sentence:000:87342290dbfac260",
+              "cosine_similarity": 0.6068891882896423,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 297,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Service-credit policy"
+              },
+              "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance."
+            },
+            {
+              "chunk_id": "08_service_credit:sentence:001:ba76ac0c2b042949",
+              "cosine_similarity": 0.47787201404571533,
+              "document_id": "08_service_credit",
+              "metadata": {
+                "document_id": "08_service_credit",
+                "end": 545,
+                "source": "knowledge_base/08_service_credit.md",
+                "start": 298,
+                "strategy": "sentence",
+                "title": "Service-credit policy"
+              },
+              "text": "Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the credit."
+            },
+            {
+              "chunk_id": "04_refund_compensation:sentence:001:3848988ea6bf42e0",
+              "cosine_similarity": 0.2749671936035156,
+              "document_id": "04_refund_compensation",
+              "metadata": {
+                "document_id": "04_refund_compensation",
+                "end": 626,
+                "source": "knowledge_base/04_refund_compensation.md",
+                "start": 296,
+                "strategy": "sentence",
+                "title": "Refund and compensation policy"
+              },
+              "text": "A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+            }
+          ],
+          "id": "Q5",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "08_service_credit"
+            ],
+            "precision": 0.5,
+            "precision_arithmetic": "1/2 = 0.500000",
+            "recall": 1.0,
+            "recall_arithmetic": "1/1 = 1.000000",
+            "relevant_parent_documents": [
+              "08_service_credit"
+            ],
+            "retrieved_parent_documents": [
+              "08_service_credit",
+              "04_refund_compensation"
+            ],
+            "true_positives": 1
+          },
+          "query": "What is the maximum standard noncash service credit and how long is it valid?",
+          "relevant_documents": [
+            "08_service_credit"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance.\n[08_service_credit] Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the credit.\n[04_refund_compensation] A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.",
+            "citations": [
+              "08_service_credit",
+              "04_refund_compensation"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "08_service_credit:sentence:000:87342290dbfac260",
+                "document_id": "08_service_credit",
+                "text": "A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance."
+              },
+              {
+                "chunk_id": "08_service_credit:sentence:001:ba76ac0c2b042949",
+                "document_id": "08_service_credit",
+                "text": "Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the credit."
+              },
+              {
+                "chunk_id": "04_refund_compensation:sentence:001:3848988ea6bf42e0",
+                "document_id": "04_refund_compensation",
+                "text": "A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "01_ticket_priority:sentence:000:f59c0fd2b775b400",
+              "cosine_similarity": 0.6178748607635498,
+              "document_id": "01_ticket_priority",
+              "metadata": {
+                "document_id": "01_ticket_priority",
+                "end": 252,
+                "source": "knowledge_base/01_ticket_priority.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Ticket-priority classification rules"
+              },
+              "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use."
+            },
+            {
+              "chunk_id": "01_ticket_priority:sentence:001:4ae8f4dba0c52b2d",
+              "cosine_similarity": 0.5757917761802673,
+              "document_id": "01_ticket_priority",
+              "metadata": {
+                "document_id": "01_ticket_priority",
+                "end": 527,
+                "source": "knowledge_base/01_ticket_priority.md",
+                "start": 253,
+                "strategy": "sentence",
+                "title": "Ticket-priority classification rules"
+              },
+              "text": "Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity."
+            },
+            {
+              "chunk_id": "02_severity_sla:sentence:000:e5ba0f35e59164a0",
+              "cosine_similarity": 0.42330867052078247,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 225,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours."
+            }
+          ],
+          "id": "Q6",
+          "in_scope": true,
+          "metrics": {
+            "matched_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "precision": 1.0,
+            "precision_arithmetic": "2/2 = 1.000000",
+            "recall": 1.0,
+            "recall_arithmetic": "2/2 = 1.000000",
+            "relevant_parent_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "retrieved_parent_documents": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "true_positives": 2
+          },
+          "query": "How are P1 and P2 priorities classified and what are their acknowledgement targets?",
+          "relevant_documents": [
+            "01_ticket_priority",
+            "02_severity_sla"
+          ],
+          "response": {
+            "answer": "Retrieved policy excerpts:\n[01_ticket_priority] Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use.\n[01_ticket_priority] Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity.\n[02_severity_sla] For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours.",
+            "citations": [
+              "01_ticket_priority",
+              "02_severity_sla"
+            ],
+            "excerpts": [
+              {
+                "chunk_id": "01_ticket_priority:sentence:000:f59c0fd2b775b400",
+                "document_id": "01_ticket_priority",
+                "text": "Assign P1 priority when a report describes an immediate safety concern or a widespread inability to use the ride service. Assign P2 priority to a blocked account or an incorrect charge that prevents a rider or driver from continuing normal service use."
+              },
+              {
+                "chunk_id": "01_ticket_priority:sentence:001:4ae8f4dba0c52b2d",
+                "document_id": "01_ticket_priority",
+                "text": "Assign P3 priority to a nonblocking technical issue or product defect, and assign P4 priority to a general inquiry or feedback request. When several conditions apply, record the highest priority and the facts that justify it without treating VIP status as a safety severity."
+              },
+              {
+                "chunk_id": "02_severity_sla:sentence:000:e5ba0f35e59164a0",
+                "document_id": "02_severity_sla",
+                "text": "For P1 severity, acknowledge within 15 elapsed minutes and target resolution or a documented workaround within 4 elapsed hours. For P2 severity, acknowledge within 1 support hour and target resolution within 24 support hours."
+              }
+            ],
+            "fallback": false
+          }
+        },
+        {
+          "hits": [
+            {
+              "chunk_id": "06_business_hours:sentence:000:114c384cf5726487",
+              "cosine_similarity": 0.12519478797912598,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 325,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 0,
+                "strategy": "sentence",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday excluding listed holidays."
+            },
+            {
+              "chunk_id": "06_business_hours:sentence:001:c1371503f1ddf5c5",
+              "cosine_similarity": 0.10913777351379395,
+              "document_id": "06_business_hours",
+              "metadata": {
+                "document_id": "06_business_hours",
+                "end": 627,
+                "source": "knowledge_base/06_business_hours.md",
+                "start": 326,
+                "strategy": "sentence",
+                "title": "Business-hours and holiday-support policy"
+              },
+              "text": "P1 safety and major-outage reports reach the on-call team at all times, including Sundays and holidays, and use elapsed-time SLA clocks. For other requests received outside standard hours, acknowledge receipt automatically and state when staffed support resumes without promising immediate resolution."
+            },
+            {
+              "chunk_id": "02_severity_sla:sentence:001:96663d27ea10e6ee",
+              "cosine_similarity": 0.10411745309829712,
+              "document_id": "02_severity_sla",
+              "metadata": {
+                "document_id": "02_severity_sla",
+                "end": 654,
+                "source": "knowledge_base/02_severity_sla.md",
+                "start": 226,
+                "strategy": "sentence",
+                "title": "SLA-by-severity policy"
+              },
+              "text": "For P3 severity, acknowledge within 4 support hours and target resolution within 72 support hours; for P4 severity, acknowledge within 8 support hours and target resolution within 120 support hours. These SLA targets use the business-hours policy for support-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times."
+            }
+          ],
+          "id": "Q7",
+          "in_scope": false,
+          "metrics": {
+            "matched_documents": [],
+            "precision": 0.0,
+            "precision_arithmetic": "0/2 = 0.000000",
+            "recall": null,
+            "recall_arithmetic": "undefined (no relevant documents)",
+            "relevant_parent_documents": [],
+            "retrieved_parent_documents": [
+              "06_business_hours",
+              "02_severity_sla"
+            ],
+            "true_positives": 0
+          },
+          "query": "How can I calculate the orbital period of a planet?",
+          "relevant_documents": [],
+          "response": {
+            "answer": "I don't know based on the available policy documents.",
+            "citations": [],
+            "excerpts": [],
+            "fallback": true
+          }
+        }
+      ],
+      "mean_precision": 0.5555555555555556,
+      "mean_recall": 1.0
+    }
+  },
+  "top_k_chunks": 3,
+  "versions": {
+    "chromadb": "1.5.9",
+    "huggingface-hub": "1.33.0",
+    "numpy": "2.4.6",
+    "sentence-transformers": "6.1.0",
+    "torch": "2.14.1",
+    "transformers": "5.19.0"
+  }
+}

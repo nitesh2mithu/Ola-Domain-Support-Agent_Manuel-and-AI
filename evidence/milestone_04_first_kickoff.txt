@@ -1,0 +1,578 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 17036.57it/s]
+<stdin>:5: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+<project-root>/support/session.py:67: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+  return self.histories.setdefault(session_id, InMemoryChatMessageHistory())
+{
+  "agents": [
+    {
+      "role": "Retrieval Agent",
+      "tools": [
+        "rag_lookup"
+      ]
+    },
+    {
+      "role": "Lookup Agent",
+      "tools": [
+        "check_support_ticket_status"
+      ]
+    },
+    {
+      "role": "Response Composer",
+      "tools": []
+    }
+  ],
+  "draft": {
+    "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+    "citations": [],
+    "guardrails": [],
+    "outcome": "answered",
+    "ticket": {
+      "days_since_created": 7,
+      "error": null,
+      "escalated": false,
+      "escalation_score": 0.093333,
+      "escalation_threshold": 0.613333,
+      "found": true,
+      "recommend_escalation": false,
+      "record_id": "OLA-0001",
+      "resolution_time_hours": 82,
+      "status": "Open"
+    }
+  },
+  "events": [
+    {
+      "event": "stage_not_requested",
+      "kind": "rag"
+    },
+    {
+      "arguments": {
+        "record_id": "OLA-0001"
+      },
+      "declared_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "record_id": {
+            "title": "Record Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "record_id"
+        ],
+        "type": "object"
+      },
+      "event": "model_requested_tool",
+      "kind": "ticket",
+      "tool": "check_support_ticket_status"
+    },
+    {
+      "arguments": {
+        "record_id": "OLA-0001"
+      },
+      "event": "tool_executed",
+      "kind": "ticket",
+      "result": {
+        "days_since_created": 7,
+        "error": null,
+        "escalated": false,
+        "escalation_score": 0.093333,
+        "escalation_threshold": 0.613333,
+        "found": true,
+        "recommend_escalation": false,
+        "record_id": "OLA-0001",
+        "resolution_time_hours": 82,
+        "status": "Open"
+      },
+      "tool": "check_support_ticket_status"
+    },
+    {
+      "event": "model_consumed_tool_result",
+      "kind": "ticket",
+      "result": {
+        "days_since_created": 7,
+        "error": null,
+        "escalated": false,
+        "escalation_score": 0.093333,
+        "escalation_threshold": 0.613333,
+        "found": true,
+        "recommend_escalation": false,
+        "record_id": "OLA-0001",
+        "resolution_time_hours": 82,
+        "status": "Open"
+      }
+    },
+    {
+      "event": "composer_consumed_context",
+      "task_outputs": [
+        {
+          "data": null,
+          "kind": "rag",
+          "requested": false
+        },
+        {
+          "data": {
+            "days_since_created": 7,
+            "error": null,
+            "escalated": false,
+            "escalation_score": 0.093333,
+            "escalation_threshold": 0.613333,
+            "found": true,
+            "recommend_escalation": false,
+            "record_id": "OLA-0001",
+            "resolution_time_hours": 82,
+            "status": "Open"
+          },
+          "kind": "ticket",
+          "requested": true
+        }
+      ]
+    }
+  ],
+  "framework_pydantic_validated": true,
+  "history_messages_before": 0,
+  "kickoff_executed": true,
+  "masked_query": "What is the status of OLA-0001?",
+  "plan": {
+    "policy_query": null,
+    "record_id": "OLA-0001",
+    "ticket_from_memory": false
+  },
+  "response": {
+    "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+    "citations": [],
+    "guardrails": [],
+    "outcome": "answered",
+    "ticket": {
+      "days_since_created": 7,
+      "error": null,
+      "escalated": false,
+      "escalation_score": 0.093333,
+      "escalation_threshold": 0.613333,
+      "found": true,
+      "recommend_escalation": false,
+      "record_id": "OLA-0001",
+      "resolution_time_hours": 82,
+      "status": "Open"
+    }
+  },
+  "stages": [
+    {
+      "data": null,
+      "kind": "rag",
+      "requested": false
+    },
+    {
+      "data": {
+        "days_since_created": 7,
+        "error": null,
+        "escalated": false,
+        "escalation_score": 0.093333,
+        "escalation_threshold": 0.613333,
+        "found": true,
+        "recommend_escalation": false,
+        "record_id": "OLA-0001",
+        "resolution_time_hours": 82,
+        "status": "Open"
+      },
+      "kind": "ticket",
+      "requested": true
+    }
+  ]
+}
+{
+  "agents": [
+    {
+      "role": "Retrieval Agent",
+      "tools": [
+        "rag_lookup"
+      ]
+    },
+    {
+      "role": "Lookup Agent",
+      "tools": [
+        "check_support_ticket_status"
+      ]
+    },
+    {
+      "role": "Response Composer",
+      "tools": []
+    }
+  ],
+  "draft": {
+    "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+    "citations": [
+      "04_refund_compensation"
+    ],
+    "guardrails": [],
+    "outcome": "answered",
+    "ticket": null
+  },
+  "events": [
+    {
+      "arguments": {
+        "query": "When can a duplicate charge be refunded and how long does processing take?"
+      },
+      "declared_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "event": "model_requested_tool",
+      "kind": "rag",
+      "tool": "rag_lookup"
+    },
+    {
+      "arguments": {
+        "query": "When can a duplicate charge be refunded and how long does processing take?"
+      },
+      "event": "tool_executed",
+      "kind": "rag",
+      "result": {
+        "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+        "citations": [
+          "04_refund_compensation"
+        ],
+        "collection": "ola_fixed_6a3978d64ba2",
+        "excerpts": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "document_id": "04_refund_compensation",
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "document_id": "04_refund_compensation",
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "document_id": "04_refund_compensation",
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "fallback": false,
+        "hits": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "cosine_similarity": 0.7824878096580505,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 300,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 0,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "cosine_similarity": 0.4911179542541504,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 626,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 480,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "cosine_similarity": 0.48661696910858154,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 540,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 240,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "strategy": "fixed",
+        "threshold": 0.390774130821228
+      },
+      "tool": "rag_lookup"
+    },
+    {
+      "event": "model_consumed_tool_result",
+      "kind": "rag",
+      "result": {
+        "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+        "citations": [
+          "04_refund_compensation"
+        ],
+        "collection": "ola_fixed_6a3978d64ba2",
+        "excerpts": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "document_id": "04_refund_compensation",
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "document_id": "04_refund_compensation",
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "document_id": "04_refund_compensation",
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "fallback": false,
+        "hits": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "cosine_similarity": 0.7824878096580505,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 300,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 0,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "cosine_similarity": 0.4911179542541504,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 626,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 480,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "cosine_similarity": 0.48661696910858154,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 540,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 240,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "strategy": "fixed",
+        "threshold": 0.390774130821228
+      }
+    },
+    {
+      "event": "stage_not_requested",
+      "kind": "ticket"
+    },
+    {
+      "event": "composer_consumed_context",
+      "task_outputs": [
+        {
+          "data": {
+            "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+            "citations": [
+              "04_refund_compensation"
+            ],
+            "collection": "ola_fixed_6a3978d64ba2",
+            "excerpts": [
+              {
+                "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+                "document_id": "04_refund_compensation",
+                "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+                "document_id": "04_refund_compensation",
+                "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+                "document_id": "04_refund_compensation",
+                "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+              }
+            ],
+            "fallback": false,
+            "hits": [
+              {
+                "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+                "cosine_similarity": 0.7824878096580505,
+                "document_id": "04_refund_compensation",
+                "metadata": {
+                  "document_id": "04_refund_compensation",
+                  "end": 300,
+                  "source": "knowledge_base/04_refund_compensation.md",
+                  "start": 0,
+                  "strategy": "fixed",
+                  "title": "Refund and compensation policy"
+                },
+                "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+                "cosine_similarity": 0.4911179542541504,
+                "document_id": "04_refund_compensation",
+                "metadata": {
+                  "document_id": "04_refund_compensation",
+                  "end": 626,
+                  "source": "knowledge_base/04_refund_compensation.md",
+                  "start": 480,
+                  "strategy": "fixed",
+                  "title": "Refund and compensation policy"
+                },
+                "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+              },
+              {
+                "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+                "cosine_similarity": 0.48661696910858154,
+                "document_id": "04_refund_compensation",
+                "metadata": {
+                  "document_id": "04_refund_compensation",
+                  "end": 540,
+                  "source": "knowledge_base/04_refund_compensation.md",
+                  "start": 240,
+                  "strategy": "fixed",
+                  "title": "Refund and compensation policy"
+                },
+                "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+              }
+            ],
+            "strategy": "fixed",
+            "threshold": 0.390774130821228
+          },
+          "kind": "rag",
+          "requested": true
+        },
+        {
+          "data": null,
+          "kind": "ticket",
+          "requested": false
+        }
+      ]
+    }
+  ],
+  "framework_pydantic_validated": true,
+  "history_messages_before": 2,
+  "kickoff_executed": true,
+  "masked_query": "When can a duplicate charge be refunded and how long does processing take?",
+  "plan": {
+    "policy_query": "When can a duplicate charge be refunded and how long does processing take?",
+    "record_id": null,
+    "ticket_from_memory": false
+  },
+  "response": {
+    "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+    "citations": [
+      "04_refund_compensation"
+    ],
+    "guardrails": [],
+    "outcome": "answered",
+    "ticket": null
+  },
+  "stages": [
+    {
+      "data": {
+        "answer": "Retrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[04_refund_compensation] processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe",
+        "citations": [
+          "04_refund_compensation"
+        ],
+        "collection": "ola_fixed_6a3978d64ba2",
+        "excerpts": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "document_id": "04_refund_compensation",
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "document_id": "04_refund_compensation",
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "document_id": "04_refund_compensation",
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "fallback": false,
+        "hits": [
+          {
+            "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+            "cosine_similarity": 0.7824878096580505,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 300,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 0,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+            "cosine_similarity": 0.4911179542541504,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 626,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 480,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+          },
+          {
+            "chunk_id": "04_refund_compensation:fixed:001:92e90cec52f577db",
+            "cosine_similarity": 0.48661696910858154,
+            "document_id": "04_refund_compensation",
+            "metadata": {
+              "document_id": "04_refund_compensation",
+              "end": 540,
+              "source": "knowledge_base/04_refund_compensation.md",
+              "start": 240,
+              "strategy": "fixed",
+              "title": "Refund and compensation policy"
+            },
+            "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+          }
+        ],
+        "strategy": "fixed",
+        "threshold": 0.390774130821228
+      },
+      "kind": "rag",
+      "requested": true
+    },
+    {
+      "data": null,
+      "kind": "ticket",
+      "requested": false
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "p1 priority",
+          "immediate safety concern"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "p2 priority",
+          "blocked account"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "p3 priority",
+          "nonblocking technical"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "p4 priority",
+          "general inquiry"
+        ],
+        "id": "F4"
+      },
+      {
+        "anchors": [
+          "highest priority",
+          "vip status"
+        ],
+        "id": "F5"
+      }
+    ],
+    "id": "E01",
+    "kind": "policy",
+    "query": "Explain ticket-priority rules for P1, P2, P3 and P4 and the role of VIP status.",
+    "relevant_documents": [
+      "01_ticket_priority"
+    ],
+    "topic": "01_ticket_priority"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "p1 severity",
+          "15 elapsed minutes",
+          "4 elapsed hours"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "p2 severity",
+          "1 support hour",
+          "24 support hours"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "p3 severity",
+          "4 support hours",
+          "72 support hours"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "p4 severity",
+          "8 support hours",
+          "120 support hours"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E02",
+    "kind": "policy",
+    "query": "Explain the acknowledgement and resolution SLA targets for P1, P2, P3 and P4 severity.",
+    "relevant_documents": [
+      "02_severity_sla"
+    ],
+    "topic": "02_severity_sla"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "billing specialist",
+          "technical specialist",
+          "account-security specialist"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "p1 safety report",
+          "immediately",
+          "duty incident lead"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "p2 ticket",
+          "acknowledgement deadline"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "original owner",
+          "acceptance is recorded"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E03",
+    "kind": "policy",
+    "query": "Explain the escalation matrix: specialist routing, P1 escalation, missed targets and handoff ownership.",
+    "relevant_documents": [
+      "03_escalation_matrix"
+    ],
+    "topic": "03_escalation_matrix"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "duplicate charge",
+          "confirmed overcharge"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "5 to 7 business days",
+          "after approval"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "inr 200",
+          "operations manager"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "do not promise a refund",
+          "before approval"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E04",
+    "kind": "policy",
+    "query": "Explain refund eligibility, processing time, compensation limits and approval restrictions.",
+    "relevant_documents": [
+      "04_refund_compensation"
+    ],
+    "topic": "04_refund_compensation"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "in-app support",
+          "email"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "callback",
+          "consents"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "account-verification process"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "never request an otp",
+          "account password"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E05",
+    "kind": "policy",
+    "query": "Explain customer communication channels, callback consent, verification and prohibited credential requests.",
+    "relevant_documents": [
+      "05_communication_channels"
+    ],
+    "topic": "05_communication_channels"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "09:00 to 18:00",
+          "monday through saturday"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "clocks pause",
+          "resume"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "p1 safety",
+          "at all times",
+          "sundays and holidays"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "outside standard hours",
+          "without promising immediate resolution"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E06",
+    "kind": "policy",
+    "query": "Explain standard business hours, holiday support, SLA clock pauses and P1 on-call coverage.",
+    "relevant_documents": [
+      "06_business_hours"
+    ],
+    "topic": "06_business_hours"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "within 30 days"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "link the new report",
+          "reopen"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "second repeat",
+          "support supervisor"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "avoid asking for evidence already present"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E07",
+    "kind": "policy",
+    "query": "Explain repeat-complaint handling: time window, linked tickets, supervisor review and customer updates.",
+    "relevant_documents": [
+      "07_repeat_complaints"
+    ],
+    "topic": "07_repeat_complaints"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "inr 150",
+          "cash refund"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "validity of 30 days"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "cannot be transferred",
+          "exchanged for cash"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "record the reason",
+          "approval",
+          "expiry"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E08",
+    "kind": "policy",
+    "query": "Explain service-credit limits, validity, cash restrictions and approval records.",
+    "relevant_documents": [
+      "08_service_credit"
+    ],
+    "topic": "08_service_credit"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "optional in-app feedback survey",
+          "1 to 5"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "at most one reminder",
+          "48 hours"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "rating of 1 or 2",
+          "supervisor review"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "aggregated themes",
+          "without identifying individual customers"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E09",
+    "kind": "policy",
+    "query": "Explain feedback collection, survey scale, reminder limit and low-rating follow-up.",
+    "relevant_documents": [
+      "09_feedback"
+    ],
+    "topic": "09_feedback"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "verified account flag"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "named support owner",
+          "every 4 support hours"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "does not change safety priority",
+          "refund eligibility"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "normal sla deadline",
+          "support supervisor"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E10",
+    "kind": "policy",
+    "query": "Explain VIP eligibility, owner updates, policy limits and missed-SLA handling.",
+    "relevant_documents": [
+      "10_vip_handling"
+    ],
+    "topic": "10_vip_handling"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "validated tickets",
+          "duty incident lead"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "15 elapsed minutes",
+          "30 elapsed minutes"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "no unconfirmed restoration promise"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "within 2 business days",
+          "recovery notice"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E11",
+    "kind": "policy",
+    "query": "Explain outage communications: confirmation, initial notice, updates and recovery summary.",
+    "relevant_documents": [
+      "11_outage_communication"
+    ],
+    "topic": "11_outage_communication"
+  },
+  {
+    "expected_facts": [
+      {
+        "anchors": [
+          "180 days",
+          "after the ticket is closed"
+        ],
+        "id": "F1"
+      },
+      {
+        "anchors": [
+          "close it after confirming resolution"
+        ],
+        "id": "F2"
+      },
+      {
+        "anchors": [
+          "restrict ticket access",
+          "masked phone numbers"
+        ],
+        "id": "F3"
+      },
+      {
+        "anchors": [
+          "legal hold",
+          "every 30 days"
+        ],
+        "id": "F4"
+      }
+    ],
+    "id": "E12",
+    "kind": "policy",
+    "query": "Explain ticket retention, closure, restricted access and legal holds.",
+    "relevant_documents": [
+      "12_ticket_retention"
+    ],
+    "topic": "12_ticket_retention"
+  },
+  {
+    "expected_facts": [],
+    "id": "E13",
+    "kind": "out_of_scope",
+    "query": "How can I calculate the orbital period of a planet?",
+    "relevant_documents": [],
+    "topic": null
+  },
+  {
+    "expected_facts": [],
+    "id": "E14",
+    "kind": "out_of_scope",
+    "query": "Explain photosynthesis in plants.",
+    "relevant_documents": [],
+    "topic": null
+  },
+  {
+    "expected_facts": [],
+    "id": "E15",
+    "kind": "unknown_ticket",
+    "query": "Check OLA-9999 status.",
+    "relevant_documents": [],
+    "topic": null
+  }
+]

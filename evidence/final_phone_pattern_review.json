@@ -1,0 +1,116 @@
+{
+  "pattern_matches": 22,
+  "findings": [
+    {
+      "path": "evidence/final_dataset.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/final_dataset_repeat.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/final_input_manifest.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 16
+    },
+    {
+      "path": "evidence/final_staged_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 168
+    },
+    {
+      "path": "evidence/final_staged_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 923
+    },
+    {
+      "path": "evidence/final_staged_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 1038
+    },
+    {
+      "path": "evidence/final_submission_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 168
+    },
+    {
+      "path": "evidence/final_submission_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 943
+    },
+    {
+      "path": "evidence/final_submission_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 1058
+    },
+    {
+      "path": "evidence/final_submission_inspection.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 1258
+    },
+    {
+      "path": "evidence/final_submission_inspection_failed_01.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 168
+    },
+    {
+      "path": "evidence/final_submission_inspection_failed_01.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 893
+    },
+    {
+      "path": "evidence/final_submission_inspection_failed_01.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 1008
+    },
+    {
+      "path": "evidence/milestone_02_acceptance.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_02_regeneration.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_03_prerequisite.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_04_prerequisite_dataset.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_05_dataset_regression.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_05_input_manifest.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 12
+    },
+    {
+      "path": "evidence/milestone_06_dataset.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    },
+    {
+      "path": "evidence/milestone_06_input_manifest.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 15
+    },
+    {
+      "path": "evidence/milestone_06_prerequisite_dataset.json",
+      "rule": "hexadecimal_digest_or_uuid",
+      "line": 777
+    }
+  ],
+  "matched_values_saved": false
+}

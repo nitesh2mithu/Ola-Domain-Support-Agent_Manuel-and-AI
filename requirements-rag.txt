@@ -1,0 +1,3 @@
+# Verified Milestone 3 direct packages; full environment snapshot: requirements-rag.lock.
+sentence-transformers==6.1.0
+chromadb==1.5.9

@@ -1,0 +1,206 @@
+VERSIONS {"autogen-agentchat": "0.7.5", "autogen-core": "0.7.5", "crewai": "1.15.27", "crewai-core": "1.15.27", "pydantic": "2.12.5"}
+PYTHON 3.11.17
+test_01_audit_blocks_network (__main__.MilestoneOneTests.test_01_audit_blocks_network) ... ok
+test_02_isolated_python311_and_controls (__main__.MilestoneOneTests.test_02_isolated_python311_and_controls) ... ok
+test_03_real_crew_tool_and_pydantic (__main__.MilestoneOneTests.test_03_real_crew_tool_and_pydantic) ... ERROR
+test_04_autogen_approves_crew_draft (__main__.MilestoneOneTests.test_04_autogen_approves_crew_draft) ... ERROR
+test_05_autogen_revises_injected_claim (__main__.MilestoneOneTests.test_05_autogen_revises_injected_claim) ... ERROR
+test_06_no_framework_network_or_child_process_attempts (__main__.MilestoneOneTests.test_06_no_framework_network_or_child_process_attempts) ... FAIL
+
+======================================================================
+ERROR: test_03_real_crew_tool_and_pydantic (__main__.MilestoneOneTests.test_03_real_crew_tool_and_pydantic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '<user-home>/Library/Application Support/crewai/credentials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project-root>/smoke_tests/run_offline.py", line 36, in test_03_real_crew_tool_and_pydantic
+    from smoke_tests.crew_smoke import run_crew_smoke
+  File "<project-root>/smoke_tests/crew_smoke.py", line 6, in <module>
+    from crewai import Agent, Crew, Process, Task
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/__init__.py", line 8, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/__init__.py", line 1, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/core.py", line 37, in <module>
+    from crewai.agent.utils import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/utils.py", line 18, in <module>
+    from crewai.hooks.dispatch import HookAborted
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/__init__.py", line 21, in <module>
+    from crewai.hooks.llm_hooks import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/llm_hooks.py", line 10, in <module>
+    from crewai.events.event_listener import event_listener
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 1077, in <module>
+    event_listener = EventListener()
+                     ^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 174, in __init__
+    trace_listener = TraceCollectionListener()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_listener.py", line 183, in __init__
+    self.batch_manager = batch_manager or TraceBatchManager()
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_batch_manager.py", line 85, in __init__
+    api_key=get_auth_token(),
+            ^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/auth/token.py", line 14, in get_auth_token
+    access_token = TokenManager().get_token()
+                   ^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 29, in __init__
+    self.key = self._get_or_create_key()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 36, in _get_or_create_key
+    key = self._read_secure_file(key_filename)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 146, in _read_secure_file
+    storage_path = self._get_secure_storage_path()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 97, in _get_secure_storage_path
+    storage_path.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1120, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 1] Operation not permitted: '<user-home>/Library/Application Support/crewai'
+
+======================================================================
+ERROR: test_04_autogen_approves_crew_draft (__main__.MilestoneOneTests.test_04_autogen_approves_crew_draft)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '<user-home>/Library/Application Support/crewai/credentials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project-root>/smoke_tests/run_offline.py", line 42, in test_04_autogen_approves_crew_draft
+    from smoke_tests.crew_smoke import run_crew_smoke
+  File "<project-root>/smoke_tests/crew_smoke.py", line 6, in <module>
+    from crewai import Agent, Crew, Process, Task
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/__init__.py", line 8, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/__init__.py", line 1, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/core.py", line 55, in <module>
+    from crewai.agents.crew_agent_executor import CrewAgentExecutor
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 43, in <module>
+    from crewai.hooks.llm_hooks import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/__init__.py", line 21, in <module>
+    from crewai.hooks.llm_hooks import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/llm_hooks.py", line 10, in <module>
+    from crewai.events.event_listener import event_listener
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 1077, in <module>
+    event_listener = EventListener()
+                     ^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 174, in __init__
+    trace_listener = TraceCollectionListener()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_listener.py", line 183, in __init__
+    self.batch_manager = batch_manager or TraceBatchManager()
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_batch_manager.py", line 85, in __init__
+    api_key=get_auth_token(),
+            ^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/auth/token.py", line 14, in get_auth_token
+    access_token = TokenManager().get_token()
+                   ^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 29, in __init__
+    self.key = self._get_or_create_key()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 36, in _get_or_create_key
+    key = self._read_secure_file(key_filename)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 146, in _read_secure_file
+    storage_path = self._get_secure_storage_path()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 97, in _get_secure_storage_path
+    storage_path.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1120, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 1] Operation not permitted: '<user-home>/Library/Application Support/crewai'
+
+======================================================================
+ERROR: test_05_autogen_revises_injected_claim (__main__.MilestoneOneTests.test_05_autogen_revises_injected_claim)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '<user-home>/Library/Application Support/crewai/credentials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project-root>/smoke_tests/run_offline.py", line 51, in test_05_autogen_revises_injected_claim
+    from smoke_tests.crew_smoke import run_crew_smoke
+  File "<project-root>/smoke_tests/crew_smoke.py", line 6, in <module>
+    from crewai import Agent, Crew, Process, Task
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/__init__.py", line 8, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/__init__.py", line 1, in <module>
+    from crewai.agent.core import Agent
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agent/core.py", line 55, in <module>
+    from crewai.agents.crew_agent_executor import CrewAgentExecutor
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 43, in <module>
+    from crewai.hooks.llm_hooks import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/__init__.py", line 21, in <module>
+    from crewai.hooks.llm_hooks import (
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/hooks/llm_hooks.py", line 10, in <module>
+    from crewai.events.event_listener import event_listener
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 1077, in <module>
+    event_listener = EventListener()
+                     ^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/event_listener.py", line 174, in __init__
+    trace_listener = TraceCollectionListener()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_listener.py", line 183, in __init__
+    self.batch_manager = batch_manager or TraceBatchManager()
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai/events/listeners/tracing/trace_batch_manager.py", line 85, in __init__
+    api_key=get_auth_token(),
+            ^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/auth/token.py", line 14, in get_auth_token
+    access_token = TokenManager().get_token()
+                   ^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 29, in __init__
+    self.key = self._get_or_create_key()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 36, in _get_or_create_key
+    key = self._read_secure_file(key_filename)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 146, in _read_secure_file
+    storage_path = self._get_secure_storage_path()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project-root>/.venv311/lib/python3.11/site-packages/crewai_core/token_manager.py", line 97, in _get_secure_storage_path
+    storage_path.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1120, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "<project-root>/.python/cpython-3.11.17-macos-aarch64-none/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 1] Operation not permitted: '<user-home>/Library/Application Support/crewai'
+
+======================================================================
+FAIL: test_06_no_framework_network_or_child_process_attempts (__main__.MilestoneOneTests.test_06_no_framework_network_or_child_process_attempts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project-root>/smoke_tests/run_offline.py", line 63, in test_06_no_framework_network_or_child_process_attempts
+    self.assertEqual(NETWORK_ATTEMPTS, [])
+AssertionError: Lists differ: ['socket.__new__'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'socket.__new__'
+
+- ['socket.__new__']
++ []
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.465s
+
+FAILED (failures=1, errors=3)
+OFFLINE_AUDIT {"framework_network_attempts": ["socket.__new__"], "child_process_attempts": []}

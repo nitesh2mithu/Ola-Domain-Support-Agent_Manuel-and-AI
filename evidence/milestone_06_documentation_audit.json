@@ -1,0 +1,92 @@
+{
+  "acceptance": {
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "tests_run": 6
+  },
+  "all_task_statuses": {
+    "1": "PASSED",
+    "2": "PASSED",
+    "3": "PASSED",
+    "4": "PASSED",
+    "5": "PASSED",
+    "6": "PASSED",
+    "7": "PASSED",
+    "8": "PASSED",
+    "9": "PASSED",
+    "10": "PASSED",
+    "11": "PASSED",
+    "12": "PASSED",
+    "13": "PASSED",
+    "14": "PASSED",
+    "15": "PASSED",
+    "16": "PASSED"
+  },
+  "approval_and_revision_through_application_and_http": true,
+  "averages": {
+    "Accuracy": 1.0,
+    "Completeness": 1.0,
+    "Grounding": 1.0,
+    "Safety": 1.0
+  },
+  "averages_changed": false,
+  "boundary_rejections": true,
+  "cache": {
+    "baseline": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "config_miss": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "evidence_change": "fail closed; synthetic loader fixture, no policy files edited",
+    "hit": {
+      "crew_model_calls": 3,
+      "rag_tools": 0,
+      "review_calls": 2,
+      "tool_calls": 0
+    },
+    "invalidation": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "miss": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "normalized_hit": {
+      "crew_model_calls": 3,
+      "rag_tools": 0,
+      "review_calls": 2,
+      "tool_calls": 0
+    }
+  },
+  "combined_token_cost_caps_verified": true,
+  "crew_regression": 12,
+  "dataset_policy_regression": 8,
+  "dependency_pins_unchanged": 163,
+  "evaluation_reports_identical": true,
+  "evidence_links_checked": 122,
+  "external_runtime_attempts": [],
+  "final_submission_readiness_claimed": false,
+  "focused_api_judge_regression": 11,
+  "framework_regression": 6,
+  "frozen_evaluation_inputs_unchanged": true,
+  "protected_inputs_unchanged": true,
+  "public_repository_created": false,
+  "rag_regression": 8,
+  "real_localhost_requests_and_logs": 29,
+  "result": "PASSED",
+  "scope": "Milestone6 Tasks14\u201316 and relevant regression; not a complete final submission audit",
+  "timestamp": "2026-10-11T00:16:09.594880+05:30"
+}

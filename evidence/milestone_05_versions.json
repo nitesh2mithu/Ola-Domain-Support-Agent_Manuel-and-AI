@@ -1,0 +1,19 @@
+{
+  "added": {
+    "fastapi": "0.143.0"
+  },
+  "packages": 163,
+  "previous_versions_unchanged": true,
+  "versions": {
+    "chromadb": "1.5.9",
+    "crewai": "1.15.27",
+    "fastapi": "0.143.0",
+    "httpx": "0.28.1",
+    "langchain-core": "1.6.9",
+    "pydantic": "2.12.5",
+    "sentence-transformers": "6.1.0",
+    "starlette": "1.7.0",
+    "uvicorn": "0.54.0",
+    "websockets": "17.2"
+  }
+}

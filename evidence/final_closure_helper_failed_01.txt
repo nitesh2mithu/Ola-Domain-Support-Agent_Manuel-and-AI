@@ -1,0 +1,2 @@
+SyntaxError: cannot use assignment expressions with expression
+Temporary final documentation helper line64: redundant loop contained invalid assignment-expression syntax. Parsing failed before any documentation updates executed.

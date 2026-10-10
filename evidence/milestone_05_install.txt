@@ -1,0 +1,5 @@
+Using Python 3.11.17 environment at: .venv311
+Resolved 11 packages in 823ms
+Prepared 1 package in 226ms
+Installed 1 package in 6ms
+ + fastapi==0.143.0

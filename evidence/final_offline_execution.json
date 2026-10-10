@@ -1,0 +1,108 @@
+{
+  "finished": "2026-10-11T00:33:34.695172+05:30",
+  "jobs": [
+    {
+      "command": ".venv311/bin/python -m tests.milestone_02_acceptance --report evidence/final_dataset.json",
+      "duration_seconds": 0.076,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "dataset",
+      "output": "evidence/final_dataset.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_02_acceptance --report evidence/final_dataset_repeat.json",
+      "duration_seconds": 0.072,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "dataset_repeat",
+      "output": "evidence/final_dataset_repeat.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_03_acceptance",
+      "duration_seconds": 14.262,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "rag",
+      "output": "evidence/final_rag.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_04_acceptance --report evidence/final_crew.json",
+      "duration_seconds": 9.549,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "crew",
+      "output": "evidence/final_crew.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_04_acceptance --report evidence/final_crew_repeat.json",
+      "duration_seconds": 9.297,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "crew_repeat",
+      "output": "evidence/final_crew_repeat.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_05_focused",
+      "duration_seconds": 8.68,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "focused",
+      "output": "evidence/final_focused.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.milestone_06_acceptance",
+      "duration_seconds": 11.44,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "acceptance",
+      "output": "evidence/final_acceptance.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m smoke_tests.run_offline",
+      "duration_seconds": 2.482,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "framework",
+      "output": "evidence/final_framework.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m scripts.evaluate_support --report evidence/final_evaluation.json",
+      "duration_seconds": 8.752,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "evaluation",
+      "output": "evidence/final_evaluation.txt"
+    },
+    {
+      "command": ".venv311/bin/python -m scripts.evaluate_support --report evidence/final_evaluation_repeat.json",
+      "duration_seconds": 8.815,
+      "environment": {
+        "CAPSTONE_EVIDENCE_PREFIX": "final"
+      },
+      "exit_code": 0,
+      "name": "evaluation_repeat",
+      "output": "evidence/final_evaluation_repeat.txt"
+    }
+  ],
+  "passed": true,
+  "phase": "offline",
+  "started": "2026-10-11T00:32:21.262673+05:30"
+}

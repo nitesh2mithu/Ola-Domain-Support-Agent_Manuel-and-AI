@@ -1,0 +1,39 @@
+Milestone 1 setup evidence — 2026-10-10, Asia/Kolkata
+Sanitized excerpts captured from executed commands; not a smoke-test transcript.
+
+Environment inspection:
+$ python3 --version
+Python 3.14.6
+$ /usr/bin/python3 --version
+Python 3.9.6
+command -v python3.11 and command -v uv returned no path.
+
+Bootstrap creation:
+$ python3 -m venv .bootstrap
+Succeeded (subsequent .bootstrap/bin/python executed).
+
+Failed setup download:
+$ .bootstrap/bin/python -m pip install --target .bootstrap/packages uv
+WARNING: default pip cache is not writable; cache disabled.
+Repeated NameResolutionError resolving pypi.org:
+[Errno 8] nodename nor servname provided, or not known
+ERROR: Could not find a version that satisfies the requirement uv (from versions: none)
+ERROR: No matching distribution found for uv
+Process exit code: 1
+
+Proposed escalated retry:
+$ .bootstrap/bin/python -m pip install --cache-dir .cache/pip --target .bootstrap/packages uv
+Tool result: CreateProcess { message: "Rejected(\"rejected by user\")" }
+Command not executed; no download succeeded.
+
+Final environment inspection:
+$ date '+%Y-%m-%d %H:%M:%S %Z'
+2026-10-10 21:27:38 IST
+$ .bootstrap/bin/python --version
+Python 3.14.6
+$ .bootstrap/bin/python -m pip list --format=json
+[{"name": "pip", "version": "26.1.2"}]
+
+CrewAI/AutoGen smoke tests: NOT EXECUTED.
+Offline framework compliance: NOT VERIFIED.
+No API keys or secrets recorded.

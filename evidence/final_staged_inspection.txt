@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-11T00:41:07.366690+05:30",
+  "scope": "staged",
+  "result": "PASSED",
+  "files_inspected": 250,
+  "total_text_bytes": 9964540,
+  "findings": [],
+  "checks": [
+    "credential signatures and high-entropy assignment literals",
+    "credential URLs",
+    "personal absolute paths",
+    "raw fabricated phone test sequence",
+    "binary/unknown formats",
+    "runtime/secret directories",
+    "noncurated live logs"
+  ],
+  "limitations": "Static patterns are not exhaustive secret detection. Full phone regex matches on numeric hashes/metrics are manually distinguished from request PII; fabricated phone absence and mask behavior verified by runtime tests."
+}

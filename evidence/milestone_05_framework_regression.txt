@@ -1,0 +1,26 @@
+VERSIONS {"autogen-agentchat": "0.7.5", "autogen-core": "0.7.5", "crewai": "1.15.27", "crewai-core": "1.15.27", "pydantic": "2.12.5"}
+PYTHON 3.11.17
+test_01_audit_blocks_network (__main__.MilestoneOneTests.test_01_audit_blocks_network) ... ok
+test_02_isolated_python311_and_controls (__main__.MilestoneOneTests.test_02_isolated_python311_and_controls) ... ok
+test_03_real_crew_tool_and_pydantic (__main__.MilestoneOneTests.test_03_real_crew_tool_and_pydantic) ... ok
+test_04_autogen_approves_crew_draft (__main__.MilestoneOneTests.test_04_autogen_approves_crew_draft) ... ok
+test_05_autogen_revises_injected_claim (__main__.MilestoneOneTests.test_05_autogen_revises_injected_claim) ... ok
+test_06_no_framework_network_or_child_process_attempts (__main__.MilestoneOneTests.test_06_no_framework_network_or_child_process_attempts) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.343s
+
+OK
+NEGATIVE_CONTROLS DNS/connect/sendto/child-process blocked before execution
+TOOL_INVOKED name=rag_lookup arguments={"query": "milestone-one"}
+CREW_SMOKE {"model_calls": 2, "response": {"answer": "Tool confirmed: milestone-one", "tool_used": true}, "tool_invocations": ["milestone-one"], "tool_messages_seen": 1}
+TOOL_INVOKED name=rag_lookup arguments={"query": "milestone-one"}
+CREW_SMOKE {"model_calls": 2, "response": {"answer": "Tool confirmed: milestone-one", "tool_used": true}, "tool_invocations": ["milestone-one"], "tool_messages_seen": 1}
+TOOL_INVOKED name=rag_lookup arguments={"query": "milestone-one"}
+CREW_SMOKE {"model_calls": 2, "response": {"answer": "Tool confirmed: milestone-one", "tool_used": true}, "tool_invocations": ["milestone-one"], "tool_messages_seen": 1}
+AUTOGEN_SMOKE {"model_calls": [1, 1], "speakers": ["Policy_Compliance_Reviewer", "Final_Editor"], "verdict": {"approved": true, "final_answer": "Tool confirmed: milestone-one", "reason": "Draft matches supplied evidence."}}
+TOOL_INVOKED name=rag_lookup arguments={"query": "milestone-one"}
+CREW_SMOKE {"model_calls": 2, "response": {"answer": "Tool confirmed: milestone-one", "tool_used": true}, "tool_invocations": ["milestone-one"], "tool_messages_seen": 1}
+AUTOGEN_SMOKE {"model_calls": [1, 1], "speakers": ["Policy_Compliance_Reviewer", "Final_Editor"], "verdict": {"approved": false, "final_answer": "Tool confirmed: milestone-one", "reason": "Removed claim absent from supplied evidence."}}
+AUTOGEN_SMOKE {"model_calls": [1, 1], "speakers": ["Policy_Compliance_Reviewer", "Final_Editor"], "verdict": {"approved": false, "final_answer": "Tool confirmed: milestone-one", "reason": "Removed claim absent from supplied evidence."}}
+OFFLINE_AUDIT {"framework_network_attempts": [], "child_process_attempts": [], "socket_constructions_without_network": ["connection.py:_has_ipv6"]}

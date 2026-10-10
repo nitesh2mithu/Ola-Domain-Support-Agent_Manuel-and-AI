@@ -1,0 +1,3 @@
+PASS: full reports including all actual tool calls, model consumption, drafts, responses, transcripts, scores and offline evidence match exactly across two processes
+PASS: 12/12 checks in each; no network or child-process attempts
+Case count: 18

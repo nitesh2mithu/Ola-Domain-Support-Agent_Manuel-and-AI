@@ -1,0 +1,35 @@
+test_01_fields_types_ids_and_ranges (__main__.MilestoneTwoTests.test_01_fields_types_ids_and_ranges) ... ok
+test_02_distribution_acceptance (__main__.MilestoneTwoTests.test_02_distribution_acceptance) ... ok
+test_03_regeneration_and_global_rng_isolation (__main__.MilestoneTwoTests.test_03_regeneration_and_global_rng_isolation) ... ok
+test_04_invalid_fields_and_ranges_rejected (__main__.MilestoneTwoTests.test_04_invalid_fields_and_ranges_rejected) ... ok
+test_05_bad_distributions_rejected (__main__.MilestoneTwoTests.test_05_bad_distributions_rejected) ... ok
+test_06_policy_topics_sentences_and_content (__main__.MilestoneTwoTests.test_06_policy_topics_sentences_and_content) ... ok
+test_07_documented_design_and_preserved_statement (__main__.MilestoneTwoTests.test_07_documented_design_and_preserved_statement) ... ok
+test_08_no_network_or_child_process_attempts (__main__.MilestoneTwoTests.test_08_no_network_or_child_process_attempts) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK
+REPORT evidence/milestone_05_dataset_regression.json
+{
+  "category_counts": {
+    "Account Access": 8,
+    "Billing": 20,
+    "General Inquiry": 13,
+    "Product Defect": 9,
+    "Technical Issue": 10
+  },
+  "escalated_percentage": 23.333333333333332,
+  "record_count": 60,
+  "result": "PASSED",
+  "sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "status_counts": {
+    "Closed": 11,
+    "Escalated": 14,
+    "In Progress": 13,
+    "Open": 12,
+    "Resolved": 10
+  },
+  "tests_run": 8
+}

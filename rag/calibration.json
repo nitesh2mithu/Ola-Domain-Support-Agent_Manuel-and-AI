@@ -1,0 +1,11 @@
+{
+  "index_fingerprint": "6a3978d64ba278e0e3f61ec2963f83ed30cb9f0cde2b6637c6c54a6cd10efdd3",
+  "labels_sha256": "b1740a9fc39295b218ac387bd2b39138f8f158080ab39e39049d01a59845c3b7",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "recommended_strategy": "fixed",
+  "thresholds": {
+    "fixed": 0.390774130821228,
+    "sentence": 0.38389015197753906
+  },
+  "top_k_chunks": 3
+}

@@ -1,0 +1,32 @@
+{
+  "all_required_support_source_present": true,
+  "branch": "main",
+  "candidate_file_count": 265,
+  "commit": "one verified unpublished local initial commit with complete source and closure evidence",
+  "commit_count": 1,
+  "commit_identity": "Capstone Developer <capstone@users.noreply.github.com>",
+  "committed_bytes_match_inspected_files": true,
+  "final_state_verified": true,
+  "git_initialized": true,
+  "global_git_config_changed": false,
+  "ignored_paths_checked": {
+    ".aws/credentials": true,
+    ".cache/uv/file": true,
+    ".env.local": true,
+    ".models/all-MiniLM-L6-v2/model.safetensors": true,
+    ".runtime/api/requests.jsonl": true,
+    ".runtime/crewai/credentials/encryption_key": true,
+    ".venv311/bin/python": true,
+    "dataset.py": false,
+    "evidence/final_logs_localhost.jsonl": false,
+    "evidence/milestone_03_model_manifest.json": false,
+    "tests/__pycache__/x.pyc": true
+  },
+  "one_commit_and_clean_tree_verified_after_packaging_fix": true,
+  "publication_performed": false,
+  "remotes": [],
+  "source_package_completeness_verified": true,
+  "timestamp": "2026-10-11T00:40:45.029364+05:30",
+  "tracked_intended_text_files": 265,
+  "working_tree": "clean at post-amend verification"
+}

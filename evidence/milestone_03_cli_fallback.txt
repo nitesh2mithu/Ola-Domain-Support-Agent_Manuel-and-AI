@@ -1,0 +1,62 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 24794.15it/s]
+{
+  "query": "How can I calculate the orbital period of a planet?",
+  "strategy": "fixed",
+  "threshold": 0.390774130821228,
+  "retrieved": [
+    {
+      "chunk_id": "06_business_hours:fixed:000:3a9ed78829619321",
+      "document_id": "06_business_hours",
+      "text": "Standard support hours are 09:00 to 18:00 Asia/Kolkata from Monday through Saturday, excluding holidays listed in the team's published support calendar. Support-hour SLA clocks pause outside those hours and resume at the next opening, while business-day refund processing uses Monday through Friday e",
+      "metadata": {
+        "start": 0,
+        "strategy": "fixed",
+        "title": "Business-hours and holiday-support policy",
+        "document_id": "06_business_hours",
+        "end": 300,
+        "source": "knowledge_base/06_business_hours.md"
+      },
+      "cosine_similarity": 0.1225130558013916
+    },
+    {
+      "chunk_id": "08_service_credit:fixed:001:e019600e4052eaa0",
+      "document_id": "08_service_credit",
+      "text": " account balance, with validity of 30 days from issuance. Service credits cannot be transferred or exchanged for cash, and a credit above INR 150 requires the operations manager's approval. Record the reason, approval, amount and expiry in the ticket and communicate those terms before issuing the cr",
+      "metadata": {
+        "start": 240,
+        "title": "Service-credit policy",
+        "end": 540,
+        "strategy": "fixed",
+        "source": "knowledge_base/08_service_credit.md",
+        "document_id": "08_service_credit"
+      },
+      "cosine_similarity": 0.11971521377563477
+    },
+    {
+      "chunk_id": "02_severity_sla:fixed:002:62fc1a72f6be9210",
+      "document_id": "02_severity_sla",
+      "text": "port-hour calculations and require an update before a deadline is missed, while external dependencies must be documented rather than presented as guaranteed completion times.",
+      "metadata": {
+        "document_id": "02_severity_sla",
+        "source": "knowledge_base/02_severity_sla.md",
+        "start": 480,
+        "end": 654,
+        "title": "SLA-by-severity policy",
+        "strategy": "fixed"
+      },
+      "cosine_similarity": 0.08837544918060303
+    }
+  ],
+  "response": {
+    "answer": "I don't know based on the available policy documents.",
+    "fallback": true,
+    "citations": [],
+    "excerpts": []
+  },
+  "offline": {
+    "network_attempts": [],
+    "child_process_attempts": []
+  }
+}

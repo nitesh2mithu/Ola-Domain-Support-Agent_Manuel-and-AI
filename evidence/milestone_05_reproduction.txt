@@ -1,0 +1,5 @@
+PASS: full 15-query executions/prompts/contexts/verdicts and arithmetic match across fresh processes
+PASS: official statement, dataset, all policies, Part 2 code and calibrated RAG configuration preserved byte-for-byte
+PASS: preregistered queries, expectations, rubric and judge prompt unchanged
+PASS: 163 exact dependency pins; only FastAPI added, all previous versions unchanged
+PASS: raw fabricated phone absent from all saved milestone evidence and logs, including failed attempts

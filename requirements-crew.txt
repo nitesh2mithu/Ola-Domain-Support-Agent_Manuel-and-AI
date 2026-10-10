@@ -1,0 +1,2 @@
+-r requirements-rag.txt
+langchain-core==1.6.9

@@ -1,0 +1,19 @@
+Setup download summary — 2026-10-10 Asia/Kolkata
+This is setup evidence, NOT an offline runtime transcript.
+
+1. .venv/bin/python -m pip install --cache-dir .cache/pip --target .bootstrap/packages uv
+   Success, exit 0: uv 0.13.0 installed; downloaded wheel 14.8 MB.
+2. .bootstrap/packages/bin/uv python install 3.11 --install-dir .python --cache-dir .cache/uv --no-bin
+   Success, exit 0: CPython 3.11.17, macOS aarch64; 25.7 MiB downloaded.
+3. .bootstrap/packages/bin/uv venv .venv311 --python .python/cpython-3.11.17-macos-aarch64-none/bin/python3.11 --cache-dir .cache/uv
+   Success, exit 0: isolated .venv311 created.
+4. .bootstrap/packages/bin/uv pip install --python .venv311/bin/python --cache-dir .cache/uv crewai autogen-agentchat pydantic
+   Success, exit 0: resolved and installed 139 packages.
+   Resolved in 4.25s; prepared in 1m 01s; installed in 292ms.
+   Main versions: crewai/crewai-core/crewai-cli 1.15.27,
+   autogen-agentchat/autogen-core 0.7.5, pydantic 2.12.5.
+   Informational resolver warnings normalized old invalid metadata version constraints.
+   Exact complete installed package set is preserved in requirements-smoke.lock.
+   No embedding model weights downloaded; no credentials supplied.
+
+Earlier sandbox download failure and denied retry preserved in milestone_01_setup.txt.

@@ -1,0 +1,11 @@
+{
+  "evaluation_executed": false,
+  "query_count": 15,
+  "required_topics": 12,
+  "sha256": {
+    "evaluation/judge_prompt.txt": "e1cc568023b2a75724b52bc0c60bf3d8abc1d2bd2c5376e43a739fbf6a0c28f5",
+    "evaluation/judge_rubric.md": "b059676572c0d688678ddc596eacb1333b5bd6a9df4aae5e796be21454c3fc2e",
+    "evaluation/support_queries.json": "0eb89051608a525fc697bd05bcb8f535be39fa1ee52169c534f647c6fae4bcbc"
+  },
+  "timestamp": "2026-10-10T23:17:49.907129+05:30"
+}

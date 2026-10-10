@@ -1,0 +1,1 @@
+"""Executable capstone acceptance checks."""
