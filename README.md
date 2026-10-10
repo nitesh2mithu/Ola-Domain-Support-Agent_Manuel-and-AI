@@ -1,12 +1,12 @@
 # Completed Ola (Business Operations / Customer Support) track — Ola Domain Support Agent
 
 Certification Program in Agentic Systems and Design — iHUB DivyaSampark, IIT Roorkee.
-Submission deadline: **8 November 2026**. Milestones 1–6 implement framework smoke tests, dataset/policies, Part 1 local RAG, Part 2 crew/tools/memory/guardrails, Part 3 localhost FastAPI/logging/evaluation, and Part 4 review/governance/cache. All16 implementation tasks passed the complete final acceptance audit. Local submission preparation passed; public repository publication/submission remains pending.
+Submission deadline: **8 November 2026**. Milestones 1–6 implement framework smoke tests, dataset/policies, Part 1 local RAG, Part 2 crew/tools/memory/guardrails, Part 3 localhost FastAPI/logging/evaluation, and Part 4 review/governance/cache. All16 implementation tasks passed the complete final acceptance audit. Local submission preparation and public publication passed: [GitHub repository](https://github.com/nitesh2mithu/ola-domain-support-agent). Course-portal submission remains the user's next action.
 
 
 ## Start here — clean checkout setup and final verification
 
-The completed-track declaration follows the executed all16-task audit in [FINAL_ACCEPTANCE_REPORT.md](FINAL_ACCEPTANCE_REPORT.md). Part marks are30/30/20/20; the brief gives no per-task marks, and this project does not claim an awarded score. The required public GitHub link is still pending user-approved publication; local readiness is not a claim that submission has already occurred.
+The completed-track declaration follows the executed all16-task audit in [FINAL_ACCEPTANCE_REPORT.md](FINAL_ACCEPTANCE_REPORT.md). Part marks are30/30/20/20; the brief gives no per-task marks, and this project does not claim an awarded score. The required single public repository is [ola-domain-support-agent](https://github.com/nitesh2mithu/ola-domain-support-agent); GitHub visibility/tree/README checks passed. The published implementation commit is `66251f65dc703b38d67f6f0cc1e6006b50ca7845`; subsequent publication-record commits preserve it. Course-portal submission has not been performed.
 
 Use Python **3.11** (verified3.11.17), from the project root. The repository contains code/text/evidence only. Virtual environments, downloaded Python, package caches, model weights, index databases, credentials, live logs and editor/session files are excluded.
 
@@ -68,7 +68,7 @@ Architecture: masked input → session planning → real sequential CrewAI Retri
 
 ## Current scope
 
-`dataset.py` supplies 60 fabricated tickets; `knowledge_base/` contains 12 original policies; `rag/` provides two evaluated local Chroma indexes. `support/` implements real Retrieval, Lookup and Response Composer agents via CrewAI `.kickoff()`, using the recommended fixed collection, schema-driven deterministic BaseLLM tool calling, read-only ticket triage, LangChain session history, strict Pydantic responses and input/output guardrails. The earlier one-agent CrewAI echo and two-agent AutoGen smoke tests remain independent regression checks; `api/` wraps the fixed crew with HTTP/WebSocket interfaces and masked JSONL logging; `evaluation/` and `scripts/evaluate_support.py` evaluate exactly 15 queries with an explicit deterministic judge prompt. Part 4 integrates full two-agent AutoGen review, governance and policy-only grounded-generation caching; publication awaits separate approval.
+`dataset.py` supplies 60 fabricated tickets; `knowledge_base/` contains 12 original policies; `rag/` provides two evaluated local Chroma indexes. `support/` implements real Retrieval, Lookup and Response Composer agents via CrewAI `.kickoff()`, using the recommended fixed collection, schema-driven deterministic BaseLLM tool calling, read-only ticket triage, LangChain session history, strict Pydantic responses and input/output guardrails. The earlier one-agent CrewAI echo and two-agent AutoGen smoke tests remain independent regression checks; `api/` wraps the fixed crew with HTTP/WebSocket interfaces and masked JSONL logging; `evaluation/` and `scripts/evaluate_support.py` evaluate exactly 15 queries with an explicit deterministic judge prompt. Part 4 integrates full two-agent AutoGen review, governance and policy-only grounded-generation caching; public repository publication is verified.
 
 ## Dataset design — Task 1
 
@@ -535,3 +535,9 @@ The frozen 15-query evaluation still reports **Accuracy, Grounding, Completeness
 ## Final local readiness
 
 [FINAL_ACCEPTANCE_REPORT.md](FINAL_ACCEPTANCE_REPORT.md) maps all16 tasks to actual commands/tests/evidence. [Final task audit](evidence/final_acceptance_audit.json), [submission inspection](evidence/final_submission_inspection.json), [documentation audit](evidence/final_documentation_audit.json) and [local Git preparation](evidence/final_git_preparation.json) record actual outcomes. One local initial commit on `main` contains the complete code/text/evidence allowlist; no remote or push. Required public repository/link remains pending separate approval.
+
+## Publication verification
+
+Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
+
+[Remote verification evidence](evidence/publication_github_verification.json). Historical milestone pending-approval statements below/above describe earlier stages. Exact public files exclude all virtual environments, model weights, generated indexes, credentials, keys, live logs, caches and personal paths. Static scan is bounded; MOCK evaluation and Python offline-audit limitations remain as documented.

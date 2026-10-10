@@ -1,5 +1,18 @@
 # CHATGPT REVIEW HANDOFF
 
+Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
+
+- Current milestone: public repository publication PASSED; the publication-record commit preserves the verified submission commit.
+- Fresh checks: all16 independent acceptance criteria, protected hashes, repeat equality and arithmetic PASSED. Exact initial history/files inspected; secret/PII/path/binary scan empty. No framework suites rerun; historical audit51 distinct checks/71 executions remains verified.
+- Files changed: README, FINAL_ACCEPTANCE_REPORT, allfour trackers and evidence/publication_preflight.json/publication_github_verification.json. Application, policies, labels, calibration and dependencies unchanged.
+- Evidence: `evidence/publication_github_verification.json`; initial auth failure retained in `evidence/publication_preflight.json`.
+- Open errors/blockers: none; all15 errors resolved. Review questions: none required for publication.
+- Next action: user submits the single repository link through the course portal by8November2026. No service deployment performed.
+
+## Historical prepublication handoffs
+
+Earlier local-audit handoff below is historical; its publication-approval statements are superseded by this update.
+
 - Last updated: 2026-10-11 00:45:17 IST (Asia/Calcutta).
 - Current milestone: **Final acceptance audit and local submission preparation PASSED; publication pending approval**.
 - Completed since previous review: all16 original task criteria freshly audited;51 distinct automated checks/71 executions passed,real localhost29 requests/29 correlated masked logs,15-query full repeat identical,independent RAG/Decimal averages checked. Both initially empty collections rebuilt offline33/24. No scoring/labels/application behavior changes; frozen inputs/model/pins preserved.
@@ -19,13 +32,13 @@
 |---|---|
 | Final all16-task acceptance | PASSED; fresh executed checks and independent evidence |
 | Local submission preparation | PASSED; README/report/setup/model/index/exclusions/source-completeness/commit verified |
-| In progress | None; local preparation completed |
-| Pending | Separate approval to create publicGitHub repository andpush; then submit one repository link |
-| Blockers/unresolved errors | None;14 errors resolved |
+| In progress | None; application and public repository publication complete |
+| Pending | User submits single published repository link through course portal |
+| Blockers/unresolved errors | None; all15 errors resolved |
 | Working Python |3.11.17 `.venv311` |
 | Installed versions |163 exact unchanged pins in requirements-api.lock/evidence/final_versions.json; CrewAI/core1.15.27,AutoGenagentchat/core0.7.5,Pydantic2.12.5,LangChainCore1.6.9,FastAPI0.143.0,Starlette1.7.0,Uvicorn0.54.0,ST6.1.0,Torch2.14.1,Transformers5.19.0,Chroma1.5.9 |
 | Last successful checks | Final acceptance/static scan/Git package completeness and clean status; closure document/staged/committed-byte scans PASSED |
-| Next recommended task | Review FINAL_ACCEPTANCE_REPORT.md and authorize concrete publication step |
+| Next recommended task | Submit published repository link by8November2026 |
 
 ## Historical milestone snapshots
 

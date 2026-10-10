@@ -230,3 +230,22 @@ Status: RESOLVED
 Final local preparation — 2026-10-11 00:45:17 IST (Asia/Calcutta): all14 errors verified RESOLVED. Required-package completeness tracked and clean Git verified after amendment; source/static/staged inspections passed. ERROR-013 failed gate attempt retained. No remaining runtime/dependency/acceptance blockers; final closure amendment/check next.
 
 Final handoff — 2026-10-11 00:47:08 IST (Asia/Calcutta): Final postamend verification PASSED:all14 errors resolved,complete source/evidence tracked and clean local Git. No remaining failures/blockers; historical unsuccessful attempts preserved.
+
+## ERROR-015
+Date: 2026-10-11 00:53:49 IST (UTC+05:30)
+Milestone: Public repository publication
+Component: GitHub authentication
+Command: `gh api user --jq .login`
+Error message: GitHub HTTP401 Bad credentials (exit1).
+Relevant traceback: none; remote authentication rejection. No credentials were printed.
+Root cause: current CLI authentication is not accepted by GitHub; token validity/configuration source still to be checked.
+Fix attempted: none yet; inspect available authenticated connections and CLI authentication configuration without exposing secrets.
+Verification command: `gh api user --jq .login`.
+Verification result: pending; no repository created, remote added or push performed.
+Status: RESOLVED
+
+ERROR-015 follow-up — 2026-10-11T00:54:48.732158+05:30: `gh auth status` exit1 confirms active nitesh2mithu keyring token invalid. GitHub connector get_user_login succeeded (same account); list_repositories returned empty, but available connector tools cannot create a repository or perform Git push. This is not proof repository name is available. No credential values exposed. Requested browser-based CLI reauthentication; error remains OPEN until identity call succeeds.
+
+ERROR-015 verification — 2026-10-11T00:59:02.637919+05:30: user completed browser CLI login; `gh api user --jq .login` exit0 returned nitesh2mithu. Authentication fix verified; RESOLVED. Intended repository query returned not found; initial remotes empty. No secrets exposed.
+
+Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.

@@ -1,6 +1,6 @@
 # Final Acceptance Report — Ola Domain Support Agent
 
-**Verdict: all 16 official implementation tasks verified; local submission preparation passed; ready for user-approved publication.** Public repository creation, push and submission are pending explicit approval. This report does not claim a grade or production readiness.
+**Verdict: all 16 official implementation tasks verified; local submission preparation passed; ready for user-approved publication.** Public repository creation and push are complete and verified. Portal submission remains pending user action; no deployment performed. This report does not claim a grade or production readiness.
 
 Source: unchanged `Problem_Statement.md`. Deadline: **8 November 2026**. Part allocations:30/30/20/20 marks (100 total); no individual task marks are specified. Final execution:11 October2026, IST (Asia/Calcutta, UTC+05:30). Use the exact timestamped commands/results in [execution ledger](evidence/final_offline_execution.json) and [localhost ledger](evidence/final_localhost_execution.json).
 
@@ -66,3 +66,13 @@ README contains completed-track declaration, exact setup/model identity, offline
 ## Local Git preparation
 
 Local `main` initialized only after task/content/document audits passed. One unpublished initial commit uses generic project identity and includes all required source packages plus sanitized evidence; no global Git configuration changed and no remote exists. A postcommit check discovered omitted `support/` in the staging allowlist; ERROR-013 was recorded, source-completeness checks added, all intended files rescanned/tracked and the initial commit amended. Its failed intermediate knowledge-base gate was preserved. Final closure is included in that same initial commit; all265 intended files are tracked, committed bytes match inspected files, branch main has one commit, working tree is clean and there are no remotes. See [Git preparation evidence](evidence/final_git_preparation.json). All14 errors are resolved.
+
+## Authorized publication preflight
+
+2026-10-11T00:54:48.732158+05:30: independent all16-task and prepublication documentation gates freshly passed;265 intended committed files reviewed, one clean initial submission commit66251f65dc703b38d67f6f0cc1e6006b50ca7845, no remotes and no scan findings. CLI identity/auth status failed HTTP401/invalid keyring token; connector identity works but cannot create/push repositories. Publication remains blocked awaiting browser-based CLI login. No public repository/link or final remote commit is claimed. [Sanitized preflight evidence](evidence/publication_preflight.json). Historical pending-approval statements above describe the previous session.
+
+## Final publication verdict — PASSED
+
+Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
+
+[GitHub verification evidence](evidence/publication_github_verification.json). Earlier local/preflight statements are historical. All16 implementation acceptance criteria and public repository packaging/visibility requirements are met; no awarded marks or production-readiness claim.
