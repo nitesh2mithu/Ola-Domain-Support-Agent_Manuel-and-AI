@@ -189,7 +189,7 @@ class JudgeTests(unittest.TestCase):
 
     def test_10_freeze_and_offline(self):
         import hashlib
-        freeze=json.loads((ROOT/'evidence/milestone_05_evaluation_freeze.json').read_text())
+        freeze=json.loads((ROOT/'evidence/archive/v1/milestone_05_evaluation_freeze.json').read_text())
         for file,digest in freeze['sha256'].items():self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest)
         self.assertEqual(NETWORK_ATTEMPTS,[]);self.assertEqual(FORBIDDEN_PROCESS_ATTEMPTS,[])
 

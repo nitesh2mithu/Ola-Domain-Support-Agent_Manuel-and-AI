@@ -6,7 +6,7 @@ Submission deadline: **8 November 2026**. Milestones 1–6 implement framework s
 
 ## Start here — clean checkout setup and final verification
 
-The completed-track declaration follows the executed all16-task audit in [FINAL_ACCEPTANCE_REPORT.md](FINAL_ACCEPTANCE_REPORT.md). Part marks are30/30/20/20; the brief gives no per-task marks, and this project does not claim an awarded score. The required single public repository is [ola-domain-support-agent](https://github.com/nitesh2mithu/ola-domain-support-agent); GitHub visibility/tree/README checks passed. The published implementation commit is `66251f65dc703b38d67f6f0cc1e6006b50ca7845`; subsequent publication-record commits preserve it. Course-portal submission has not been performed.
+The completed-track declaration follows the executed all16-task audit in [FINAL_ACCEPTANCE_REPORT.md](docs/archive/v1_FINAL_ACCEPTANCE_REPORT.md). Part marks are30/30/20/20; the brief gives no per-task marks, and this project does not claim an awarded score. The required single public repository is [ola-domain-support-agent](https://github.com/nitesh2mithu/ola-domain-support-agent); GitHub visibility/tree/README checks passed. The published implementation commit is `66251f65dc703b38d67f6f0cc1e6006b50ca7845`; subsequent publication-record commits preserve it. Course-portal submission has not been performed.
 
 Use Python **3.11** (verified3.11.17), from the project root. The repository contains code/text/evidence only. Virtual environments, downloaded Python, package caches, model weights, index databases, credentials, live logs and editor/session files are excluded.
 
@@ -168,10 +168,10 @@ Start with `PROJECT_STATUS.md` and its CHATGPT REVIEW HANDOFF. Follow `DEVELOPME
 
 **Milestone 2 PASSED:** Tasks 1 and 2 were verified with 8/8 acceptance tests in each of two separate Python processes; complete reports match exactly. Dataset canonical SHA-256: `359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111`.
 
-- Test transcript: [acceptance](evidence/milestone_02_acceptance.txt).
-- Complete record/type/range/topic/sentence evidence: [acceptance JSON](evidence/milestone_02_acceptance.json).
-- Independent rerun: [regeneration transcript](evidence/milestone_02_regeneration.txt), [regeneration JSON](evidence/milestone_02_regeneration.json).
-- Cross-process comparison: [comparison](evidence/milestone_02_regeneration_comparison.txt).
+- Test transcript: [acceptance](evidence/archive/v1/milestone_02_acceptance.txt).
+- Complete record/type/range/topic/sentence evidence: [acceptance JSON](evidence/archive/v1/milestone_02_acceptance.json).
+- Independent rerun: [regeneration transcript](evidence/archive/v1/milestone_02_regeneration.txt), [regeneration JSON](evidence/archive/v1/milestone_02_regeneration.json).
+- Cross-process comparison: [comparison](evidence/archive/v1/milestone_02_regeneration_comparison.txt).
 
 Reproduce the saved evidence:
 
@@ -187,7 +187,7 @@ Official Tasks 1–13 are now PASSED after Milestone 5 verification. Tasks 14–
 
 ## Part 1 local RAG — Tasks 3–5
 
-Prerequisites were rechecked before implementation: Tasks 1/2 passed all 8 acceptance tests again, with evidence in [prerequisite transcript](evidence/milestone_03_prerequisite.txt).
+Prerequisites were rechecked before implementation: Tasks 1/2 passed all 8 acceptance tests again, with evidence in [prerequisite transcript](evidence/archive/v1/milestone_03_prerequisite.txt).
 
 ### Setup downloads and identity
 
@@ -202,7 +202,7 @@ Online setup only:
 .venv311/bin/python -m scripts.download_embedding_model
 ```
 
-Package caches, downloaded model and Chroma runtime storage stay inside the project and are gitignored. Model setup reuses the manifest's revision; runtime never calls the download script. See [package setup](evidence/milestone_03_install.txt), [model setup](evidence/milestone_03_model_setup.txt), [model identity/checksums](evidence/milestone_03_model_manifest.json) and [dependency compatibility](evidence/milestone_03_dependency_check.txt).
+Package caches, downloaded model and Chroma runtime storage stay inside the project and are gitignored. Model setup reuses the manifest's revision; runtime never calls the download script. See [package setup](evidence/archive/v1/milestone_03_install.txt), [model setup](evidence/archive/v1/milestone_03_model_setup.txt), [model identity/checksums](evidence/archive/v1/milestone_03_model_manifest.json) and [dependency compatibility](evidence/archive/v1/milestone_03_dependency_check.txt).
 
 ### Chunking and actual indexing
 
@@ -234,7 +234,7 @@ If future calibration clusters overlap, the code records the measurements, leave
 
 `grounded_answer` is deterministic extractive MOCK_LLM generation: it quotes only actual retrieved body slices with parent citations. It neither uses relevance labels to compose answers nor invents policy facts. Fixed-size excerpts may begin/end mid-sentence; the output labels them as excerpts and retains the retrieved text for inspection.
 
-The six in-scope queries cover refunds, business hours, retention, outages, service credits, and the combined priority/SLA question. Both indexes answer all six without fallback and retrieve a relevant top-1 parent; the seventh unrelated query falls back. [Full readable report](evidence/milestone_03_rag.md) includes exact queries, all retrieved chunk/parent IDs, cosine values, verbatim answers and per-query arithmetic; [JSON evidence](evidence/milestone_03_rag.json) includes the complete chunk manifest and measurements.
+The six in-scope queries cover refunds, business hours, retention, outages, service credits, and the combined priority/SLA question. Both indexes answer all six without fallback and retrieve a relevant top-1 parent; the seventh unrelated query falls back. [Full readable report](evidence/archive/v1/milestone_03_rag.md) includes exact queries, all retrieved chunk/parent IDs, cosine values, verbatim answers and per-query arithmetic; [JSON evidence](evidence/archive/v1/milestone_03_rag.json) includes the complete chunk manifest and measurements.
 
 Relevance is assigned to documents containing facts needed for the question, rather than every cross-referenced policy. Map retrieved chunks to parent IDs and deduplicate before computing precision = matched parents / retrieved parents and recall = matched parents / relevant parents. Macro averages below cover exactly Q1–Q6; fallback Q7 has no relevant documents, so its recall is undefined and it is excluded from those averages.
 
@@ -263,7 +263,7 @@ The acceptance command explicitly builds/upserts both indexes, calibrates, evalu
 
 Before library imports, runtime disables Hugging Face/Chroma/CrewAI telemetry and sets offline flags; API-key environment variables are removed without printing secrets. A process audit denies DNS, internet connect/sendto and child processes; actual imports/embeddings/upserts/retrieval/answers record zero prohibited attempts, and a deliberate DNS negative control proves blocking. Runtime verifies model filenames and checksums remain unchanged; no runtime model or package downloads occur. This verifies the exercised Python path and does not describe the audit as an OS-wide native-code firewall.
 
-Milestone 3 evidence: [acceptance transcript](evidence/milestone_03_acceptance.txt), [initial build report](evidence/milestone_03_rag_initial.json), [full report](evidence/milestone_03_rag.json), [framework regression](evidence/milestone_03_framework_regression.txt), [in-scope CLI](evidence/milestone_03_cli_in_scope.txt), [fallback CLI](evidence/milestone_03_cli_fallback.txt). Tasks 3–5 are marked PASSED only after successful executed checks; Milestone 3 was limited to Part 1; Part 2 is documented next. Part 3 API/logging/evaluation follows below; governance/cache remain unimplemented.
+Milestone 3 evidence: [acceptance transcript](evidence/archive/v1/milestone_03_acceptance.txt), [initial build report](evidence/archive/v1/milestone_03_rag_initial.json), [full report](evidence/archive/v1/milestone_03_rag.json), [framework regression](evidence/archive/v1/milestone_03_framework_regression.txt), [in-scope CLI](evidence/archive/v1/milestone_03_cli_in_scope.txt), [fallback CLI](evidence/archive/v1/milestone_03_cli_fallback.txt). Tasks 3–5 are marked PASSED only after successful executed checks; Milestone 3 was limited to Part 1; Part 2 is documented next. Part 3 API/logging/evaluation follows below; governance/cache remain unimplemented.
 
 Official references consulted: [CrewAI custom LLM](https://docs.crewai.com/en/learn/custom-llm), [AutoGen model client](https://microsoft.github.io/autogen/stable/reference/python/autogen_core.models.html), [AutoGen teams](https://microsoft.github.io/autogen/stable/reference/python/autogen_agentchat.teams.html).
 
@@ -273,7 +273,7 @@ Official references consulted: [CrewAI custom LLM](https://docs.crewai.com/en/le
 
 ### Setup additions, separate from offline runtime
 
-Only LangChain Core was requested; the resolver installed **langchain-core 1.6.9** and eight transitive packages without changing any of the previous 153 package versions. The exact 162-package environment is in `requirements-crew.lock`; delta and compatibility are in [dependency changes](evidence/milestone_04_dependency_changes.json) and [dependency check](evidence/milestone_04_dependency_check.txt). No embedding model download was necessary.
+Only LangChain Core was requested; the resolver installed **langchain-core 1.6.9** and eight transitive packages without changing any of the previous 153 package versions. The exact 162-package environment is in `requirements-crew.lock`; delta and compatibility are in [dependency changes](evidence/archive/v1/milestone_04_dependency_changes.json) and [dependency check](evidence/archive/v1/milestone_04_dependency_check.txt). No embedding model download was necessary.
 
 Executed online setup:
 
@@ -281,7 +281,7 @@ Executed online setup:
 .bootstrap/packages/bin/uv pip install --python .venv311/bin/python --cache-dir .cache/uv langchain-core
 ```
 
-For a reproducible compatible environment use the same uv command with `-r requirements-crew.lock`. All package caches and installations stay inside the project. [Actual setup output](evidence/milestone_04_install.txt) is separate from runtime evidence. LangChain's `RunnableWithMessageHistory` and, in this installed version, `InMemoryChatMessageHistory` emit deprecation warnings; they function correctly in pinned 1.6.9. Warnings are retained, as the brief permits; migration would be needed before a future 2.0 upgrade. The prior CrewAI credential-directory shim is still required for the pinned macOS installation.
+For a reproducible compatible environment use the same uv command with `-r requirements-crew.lock`. All package caches and installations stay inside the project. [Actual setup output](evidence/archive/v1/milestone_04_install.txt) is separate from runtime evidence. LangChain's `RunnableWithMessageHistory` and, in this installed version, `InMemoryChatMessageHistory` emit deprecation warnings; they function correctly in pinned 1.6.9. Warnings are retained, as the brief permits; migration would be needed before a future 2.0 upgrade. The prior CrewAI credential-directory shim is still required for the pinned macOS installation.
 
 ### Ticket tool and escalation formula — Task 6
 
@@ -298,7 +298,7 @@ recommend_escalation = escalation_score > 0.613333
 
 The implementation uses the algebraically equivalent `round(0.6*int(escalated) + 0.4*(days_since_created/30), 6)` to avoid unnecessary floating-point subtraction. Scores range from 0 to 1; an existing escalation carries the larger weight, while older tickets have greater review urgency. Resolution hours retain their dataset meaning (planned total or completed duration), rather than becoming a remaining-time promise.
 
-The threshold is computed from this dataset's **nearest-rank 80th-percentile score**, rank `ceil(0.8*60)=48`, score **0.613333**. Exactly **12/60=20%** exceed it; one ticket equals it and is not recommended because the rule is strictly above. All 12 selected tickets already have Escalated status; non-escalated tickets score at most 0.4, so this conservative rule prioritizes escalation review rather than newly escalating ordinary tickets. It is a documented capstone triage heuristic, not a learned prediction, SLA-breach calculation or record-changing action. [Actual distribution and all 60 lookup results](evidence/milestone_04_acceptance.json) include independent formula/percentile verification.
+The threshold is computed from this dataset's **nearest-rank 80th-percentile score**, rank `ceil(0.8*60)=48`, score **0.613333**. Exactly **12/60=20%** exceed it; one ticket equals it and is not recommended because the rule is strictly above. All 12 selected tickets already have Escalated status; non-escalated tickets score at most 0.4, so this conservative rule prioritizes escalation review rather than newly escalating ordinary tickets. It is a documented capstone triage heuristic, not a learned prediction, SLA-breach calculation or record-changing action. [Actual distribution and all 60 lookup results](evidence/archive/v1/milestone_04_acceptance.json) include independent formula/percentile verification.
 
 ### Real framework flow and responsive MOCK_LLM — Task 7
 
@@ -342,11 +342,11 @@ Use `.venv311`. Runtime sets CrewAI/OTEL/Chroma/Hugging Face telemetry/offline f
 
 Reviewer evidence:
 
-- [Readable report: tools, retrieved IDs, validated answers, conversations and guardrails](evidence/milestone_04_report.md).
-- [Complete actual JSON evidence](evidence/milestone_04_acceptance.json), [initial full report](evidence/milestone_04_initial.json), [fresh-process equality](evidence/milestone_04_reproduction.txt).
-- [Initial 12-test transcript](evidence/milestone_04_attempt_01.txt), [fresh 12-test transcript](evidence/milestone_04_acceptance.txt), [prior 6-test regression](evidence/milestone_04_framework_regression.txt).
-- [CLI multi-turn output](evidence/milestone_04_cli_memory.txt), [executed CLI verification](evidence/milestone_04_cli_verification.txt).
-- [Dataset prerequisite](evidence/milestone_04_prerequisite_dataset.txt), [RAG prerequisite](evidence/milestone_04_prerequisite_rag.txt), [full preceding RAG recheck](evidence/milestone_04_prerequisite_rag.json).
+- [Readable report: tools, retrieved IDs, validated answers, conversations and guardrails](evidence/archive/v1/milestone_04_report.md).
+- [Complete actual JSON evidence](evidence/archive/v1/milestone_04_acceptance.json), [initial full report](evidence/archive/v1/milestone_04_initial.json), [fresh-process equality](evidence/archive/v1/milestone_04_reproduction.txt).
+- [Initial 12-test transcript](evidence/archive/v1/milestone_04_attempt_01.txt), [fresh 12-test transcript](evidence/archive/v1/milestone_04_acceptance.txt), [prior 6-test regression](evidence/archive/v1/milestone_04_framework_regression.txt).
+- [CLI multi-turn output](evidence/archive/v1/milestone_04_cli_memory.txt), [executed CLI verification](evidence/archive/v1/milestone_04_cli_verification.txt).
+- [Dataset prerequisite](evidence/archive/v1/milestone_04_prerequisite_dataset.txt), [RAG prerequisite](evidence/archive/v1/milestone_04_prerequisite_rag.txt), [full preceding RAG recheck](evidence/archive/v1/milestone_04_prerequisite_rag.json).
 
 No new unresolved errors. Missing LangChain dependency ERROR-004 was recorded before installation and resolved after actual imports and compatibility checks; expected deprecation warnings remain documented. Milestone 4 stopped at this scope; subsequently approved Part 3 follows below. The separately approved Milestone 6 integration is documented below.
 
@@ -354,7 +354,7 @@ Official references: [CrewAI BaseLLM extension](https://docs.crewai.com/en/learn
 
 ## Part 3 localhost API, logging and judge evaluation — Tasks 11–13
 
-**Milestone 5 PASSED:** the fixed Part 2 prerequisite suite passed 12/12 before implementation. Final focused API/privacy/concurrency/judge suite passed **11/11**; actual Uvicorn HTTP/WebSocket checks passed with **29 logical requests and exactly 29 unique JSONL entries**. Full 15-query evaluation matched across two processes; existing dataset/policy 8/8, RAG 8/8, crew 12/12 and prior framework 6/6 regressions all passed. Original statement, dataset, 12 policies, Part 2 source and calibrated RAG code/configuration are byte-identical to [captured input hashes](evidence/milestone_05_input_manifest.json).
+**Milestone 5 PASSED:** the fixed Part 2 prerequisite suite passed 12/12 before implementation. Final focused API/privacy/concurrency/judge suite passed **11/11**; actual Uvicorn HTTP/WebSocket checks passed with **29 logical requests and exactly 29 unique JSONL entries**. Full 15-query evaluation matched across two processes; existing dataset/policy 8/8, RAG 8/8, crew 12/12 and prior framework 6/6 regressions all passed. Original statement, dataset, 12 policies, Part 2 source and calibrated RAG code/configuration are byte-identical to [captured input hashes](evidence/archive/v1/milestone_05_input_manifest.json).
 
 ### Free setup, exact versions and runtime boundary
 
@@ -367,7 +367,7 @@ Executed setup (network required):
 .bootstrap/packages/bin/uv pip check --python .venv311/bin/python --cache-dir .cache/uv
 ```
 
-For reproducing setup use `-r requirements-api.lock` instead of `fastapi`. See [actual installation](evidence/milestone_05_install.txt), [compatibility](evidence/milestone_05_dependency_check.txt), [exact version/delta evidence](evidence/milestone_05_versions.json). All storage/cache is project-local; setup is separate from runtime.
+For reproducing setup use `-r requirements-api.lock` instead of `fastapi`. See [actual installation](evidence/archive/v1/milestone_05_install.txt), [compatibility](evidence/archive/v1/milestone_05_dependency_check.txt), [exact version/delta evidence](evidence/archive/v1/milestone_05_versions.json). All storage/cache is project-local; setup is separate from runtime.
 
 Supported server command, one worker:
 
@@ -403,11 +403,11 @@ The boundary parses JSON first, decoding Unicode escapes, then recursively appli
 
 Before-crew validation and injection rejection are logged once with `crew_executed=false`. Successful returns record the actual kickoff boolean. Internal failures use `crew_executed=null` when completion cannot be established; they never falsely assert that no crew ran. Backend RuntimeError/ValueError get generic internal errors; only request-schema/JSON errors count as validation failures. Unexpected exception text and traceback are never interpolated into logs or replies.
 
-[Real JSONL examples](evidence/milestone_05_logs_localhost.jsonl), [focused validation/error JSONL](evidence/milestone_05_logs_focused.jsonl) and [real transcripts/count/privacy evidence](evidence/milestone_05_localhost.json) verify every received trace against exactly one log row. Fabricated raw phones are absent from all saved milestone evidence and application test logs, including initial failures; unsafe fixtures are constructed only in memory and sanitized before saving.
+[Real JSONL examples](evidence/archive/v1/milestone_05_logs_localhost.jsonl), [focused validation/error JSONL](evidence/archive/v1/milestone_05_logs_focused.jsonl) and [real transcripts/count/privacy evidence](evidence/archive/v1/milestone_05_localhost.json) verify every received trace against exactly one log row. Fabricated raw phones are absent from all saved milestone evidence and application test logs, including initial failures; unsafe fixtures are constructed only in memory and sanitized before saving.
 
 ### Frozen 15-query judge evaluation — Task 13
 
-Before any new evaluation retrieval, `evaluation/support_queries.json`, `evaluation/judge_prompt.txt` and `evaluation/judge_rubric.md` were frozen with [timestamped SHA-256 evidence](evidence/milestone_05_evaluation_freeze.json). Exactly 15 cases cover all 12 required KB topics, two unrelated questions and one unknown-ticket edge case. Expected parent-document labels and fact-anchor groups were authored from the original policy content before results; no post-result label, query, rubric, threshold or crew tuning occurred.
+Before any new evaluation retrieval, `evaluation/support_queries.json`, `evaluation/judge_prompt.txt` and `evaluation/judge_rubric.md` were frozen with [timestamped SHA-256 evidence](evidence/archive/v1/milestone_05_evaluation_freeze.json). Exactly 15 cases cover all 12 required KB topics, two unrelated questions and one unknown-ticket edge case. Expected parent-document labels and fact-anchor groups were authored from the original policy content before results; no post-result label, query, rubric, threshold or crew tuning occurred.
 
 `DeterministicJudge.call()` implements MOCK_LLM judge behavior. Each explicit system message contains the actual judge prompt and rubric; the user packet contains the query, preregistered expected evidence, actual crew response and actual executed tool results. It returns validated `JudgeVerdict` JSON with four [0,1] scores, covered facts, per-claim support, reasons and arithmetic. It does not score from query IDs or return a canned score dictionary.
 
@@ -432,9 +432,9 @@ The rubric is deliberately transparent: Accuracy rewards covered expected facts 
 | E15 | Unknown OLA ticket | 1 | 1 | 1 | 1 |
 | Mean, all 15 included | Each metric: **15.0 /15 =1.0** | **1.0** | **1.0** | **1.0** |
 
-The complete reports reproduce exactly across fresh processes: [actual evaluation JSON](evidence/milestone_05_evaluation.json), [per-query readable answers/evidence/arithmetic](evidence/milestone_05_evaluation.md), [independent repeat](evidence/milestone_05_evaluation_repeat.json), [full comparison](evidence/milestone_05_reproduction.txt). Every result includes its full judge messages, actual retrieved chunk/parent IDs and similarities, crew events, structured answer and score calculations.
+The complete reports reproduce exactly across fresh processes: [actual evaluation JSON](evidence/archive/v1/milestone_05_evaluation.json), [per-query readable answers/evidence/arithmetic](evidence/archive/v1/milestone_05_evaluation.md), [independent repeat](evidence/archive/v1/milestone_05_evaluation_repeat.json), [full comparison](evidence/archive/v1/milestone_05_reproduction.txt). Every result includes its full judge messages, actual retrieved chunk/parent IDs and similarities, crew events, structured answer and score calculations.
 
-Negative judge fixtures verify that changed numbers lower Accuracy/Grounding, unsupported additions lower Grounding/Accuracy, removed content lowers Completeness while remaining text stays grounded, and an unsafe credential request/raw temporary phone makes Safety=0. Wrong-parent citations are also penalized. [Focused fixture evidence](evidence/milestone_05_focused.json) and [API/fixture report](evidence/milestone_05_api_report.md) show actual scores.
+Negative judge fixtures verify that changed numbers lower Accuracy/Grounding, unsupported additions lower Grounding/Accuracy, removed content lowers Completeness while remaining text stays grounded, and an unsafe credential request/raw temporary phone makes Safety=0. Wrong-parent citations are also penalized. [Focused fixture evidence](evidence/archive/v1/milestone_05_focused.json) and [API/fixture report](evidence/archive/v1/milestone_05_api_report.md) show actual scores.
 
 **Observed limits:** perfect scores reflect this small known corpus, exact excerpts and the declared lexical checks. Fixed-size fragments and duplicated overlapping passages remain visible; the rubric does not measure fluency, general semantics, multilingual support or adversarial/near-domain robustness. No weak query was excluded or scoring rule changed after inspection. This paragraph describes historical Milestone5; full AutoGen review was integrated in Milestone6 and reverified in the final audit.
 
@@ -454,13 +454,13 @@ Negative judge fixtures verify that changed numbers lower Accuracy/Grounding, un
 
 The real localhost test creates an ephemeral 127.0.0.1 listener, exercises actual HTTP/WebSocket traffic and shuts it down; default sandbox listener binding was denied, so authorized execution permission was needed while its internal audit still denied external access. Focused tests use the stricter offline audit and ASGI TestClient. All package/model downloads are setup only.
 
-Start review with [PROJECT_STATUS](PROJECT_STATUS.md), [API/transcripts/logging/fixtures report](evidence/milestone_05_api_report.md), [evaluation report](evidence/milestone_05_evaluation.md), [focused test output](evidence/milestone_05_focused_final.txt), [real localhost output](evidence/milestone_05_localhost_acceptance.txt) and raw JSON/JSONL evidence. Regression transcripts are `evidence/milestone_05_dataset_regression.txt`, `milestone_05_rag_regression.txt`, `milestone_05_crew_regression.txt`, `milestone_05_framework_regression.txt`.
+Start review with [PROJECT_STATUS](docs/PROJECT_STATUS.md), [API/transcripts/logging/fixtures report](evidence/archive/v1/milestone_05_api_report.md), [evaluation report](evidence/archive/v1/milestone_05_evaluation.md), [focused test output](evidence/archive/v1/milestone_05_focused_final.txt), [real localhost output](evidence/archive/v1/milestone_05_localhost_acceptance.txt) and raw JSON/JSONL evidence. Regression transcripts are `evidence/milestone_05_dataset_regression.txt`, `milestone_05_rag_regression.txt`, `milestone_05_crew_regression.txt`, `milestone_05_framework_regression.txt`.
 
 Three initial failures are preserved: ERROR-005 numeric sanitization, ERROR-006 sandbox loopback binding, ERROR-007 trace redaction. Each was recorded before its fix and resolved only after verification. No unresolved errors/blockers. At the historical Milestone5 closure, review/governance/cache were pending. Milestone6 implemented them; the final audit reverified all16 tasks. Public hosting and repository publication remain pending.
 
 Official implementation references: [FastAPI WebSockets and disconnect handling](https://fastapi.tiangolo.com/advanced/websockets/), [FastAPI safe error handlers](https://fastapi.tiangolo.com/tutorial/handling-errors/).
 
-Final Milestone5 documentation/evidence audit: [executed audit](evidence/milestone_05_documentation_audit.json) PASSED; historical command `.venv311/bin/python -m scripts.verify_milestone_05` checks the old fixed-source snapshot and is not the current final verifier.
+Final Milestone5 documentation/evidence audit: [executed audit](evidence/archive/v1/milestone_05_documentation_audit.json) PASSED; historical command `.venv311/bin/python -m scripts.verify_milestone_05` checks the old fixed-source snapshot and is not the current final verifier.
 
 ## Part 4 integrated review, governance and cache — Tasks 14–16
 
@@ -470,7 +470,7 @@ Milestone 6 uses the existing `.venv311` and all 163 pinned packages; **no depen
 
 `support/review.py` constructs two real AutoGen `AssistantAgent`s and `RoundRobinGroupChat(max_turns=2, custom_message_types=[StructuredMessage[VerdictModel]])`. The Final Editor uses `output_content_type=VerdictModel`, with strict `approved: bool`, `final_answer: str`, and `reason: str`. The initiating task contains the validated actual CrewAI Composer draft, its actual stage outputs, and **original trusted tool context**, including complete retrieved chunks/parent IDs/cosines or literal ticket results. Distinct local model clients compare the draft with evidence-only rendering, rather than returning answers selected by query ID.
 
-Both agents speak once. The final verdict validates, its answer is placed in an evidence-derived `SupportResponse`, and the existing complete-answer/structured-fact output guard validates it against trusted context. Unsupported review output is refused. Review remains active on cache hits. A test-only constructor `draft_transform` fault-injects an immediate INR 999999 guarantee after actual Composer execution; the two-agent team revises it to the original supported answer. This hook is not exposed in user HTTP/WebSocket schemas. Both direct application and HTTP revision executions are saved in [integrated acceptance](evidence/milestone_06_acceptance.json).
+Both agents speak once. The final verdict validates, its answer is placed in an evidence-derived `SupportResponse`, and the existing complete-answer/structured-fact output guard validates it against trusted context. Unsupported review output is refused. Review remains active on cache hits. A test-only constructor `draft_transform` fault-injects an immediate INR 999999 guarantee after actual Composer execution; the two-agent team revises it to the original supported answer. This hook is not exposed in user HTTP/WebSocket schemas. Both direct application and HTTP revision executions are saved in [integrated acceptance](evidence/archive/v1/milestone_06_acceptance.json).
 
 This deterministic MOCK review checks exact evidence rendering, not general paraphrase entailment. It can reject a valid paraphrase and cannot establish general semantic robustness. No external judge/model services or API keys are used.
 
@@ -530,11 +530,11 @@ Localhost tests require a permitted local listener in this sandbox and keep the 
 
 The frozen 15-query evaluation still reports **Accuracy, Grounding, Completeness and Safety averages 1.0**; all 15 remain in each denominator and labels/prompt/rubric were not changed. These lexical/extractive metrics do not establish general answer quality. Final Milestone 6 audit and reviewer evidence are recorded in the tracking documents. The complete final acceptance audit is now authorized and passed; no public repository or external deployment has been created. Publication and submission require separate approval.
 
-**Milestone6 PASSED and stopped:** [readable integrated evidence](evidence/milestone_06_report.md), [final evidence/document audit](evidence/milestone_06_documentation_audit.json). All16 implementation tasks have executed evidence; the complete final audit is recorded below, while repository publication remains separately authorized work.
+**Milestone6 PASSED and stopped:** [readable integrated evidence](evidence/archive/v1/milestone_06_report.md), [final evidence/document audit](evidence/archive/v1/milestone_06_documentation_audit.json). All16 implementation tasks have executed evidence; the complete final audit is recorded below, while repository publication remains separately authorized work.
 
 ## Final local readiness
 
-[FINAL_ACCEPTANCE_REPORT.md](FINAL_ACCEPTANCE_REPORT.md) maps all16 tasks to actual commands/tests/evidence. [Final task audit](evidence/final_acceptance_audit.json), [submission inspection](evidence/final_submission_inspection.json), [documentation audit](evidence/final_documentation_audit.json) and [local Git preparation](evidence/final_git_preparation.json) record actual outcomes. One local initial commit on `main` contains the complete code/text/evidence allowlist; no remote or push. Required public repository/link remains pending separate approval.
+[FINAL_ACCEPTANCE_REPORT.md](docs/archive/v1_FINAL_ACCEPTANCE_REPORT.md) maps all16 tasks to actual commands/tests/evidence. [Final task audit](evidence/archive/v1/final_acceptance_audit.json), [submission inspection](evidence/archive/v1/final_submission_inspection.json), [documentation audit](evidence/archive/v1/final_documentation_audit.json) and [local Git preparation](evidence/archive/v1/final_git_preparation.json) record actual outcomes. One local initial commit on `main` contains the complete code/text/evidence allowlist; no remote or push. Required public repository/link remains pending separate approval.
 
 ## Publication verification
 

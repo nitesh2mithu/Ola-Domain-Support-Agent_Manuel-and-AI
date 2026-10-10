@@ -38,3 +38,6 @@ dist/
 # Preserve curated sanitized acceptance transcripts under evidence/.
 *.jsonl
 !evidence/*.jsonl
+
+# Retain curated archived text evidence.
+!evidence/**/*.jsonl

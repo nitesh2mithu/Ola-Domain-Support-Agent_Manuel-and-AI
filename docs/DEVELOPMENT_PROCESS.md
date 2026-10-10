@@ -611,3 +611,20 @@ User completed gh browser sign-in; fresh `gh api user --jq .login` succeeded for
 - Next: scan updated publicfiles/documentlinks, stage explicit authorized text changes, commit normally with generic identity, push withoutforce and verify finalpublicdefaultbranchhead/tree/README.
 
 - Publication-document precommit checks executed: independent final acceptance and documentation/link/source/ignore gate PASSED (read-only historical report preservation); intended267-file credential/PII/path/binary scan PASSED with empty findings. Normal documentation commit/push follows; final remote-head/tree/readme verification performed immediately after push. Publication evidence records the implementation commit to avoid self-referential documentation commit hashes.
+
+## Session 011 — 2026-10-11T01:48:15.123882+05:30
+### Objective
+Preserve v1 and improve only local polish-v2.
+### Files Created / Modified
+Exact git moves, baseline results, repositories/hashes/tag and layout-only manifest changes: ../evidence/v2_layout_changes.json. New docs/FINAL_ACCEPTANCE_REPORT is explicitly pending; historical v1 report retained.
+### Commands Executed
+Full bundle create/verify; gh rename/edit/create; annotated tag and pushes of main/tag only; local clone/remap/branch; fresh venv/pinned dependencies/model download/offline rebuild; full baseline offline and localhost runner plus independent verifier all exit0. git mv organization, Markdown relative-link rewrite and source readers updated. No polish-v2 push.
+### Decisions and Rationale
+Archived evidence belongs to unchanged v1; current model manifest copied as text identity only, no old weights/runtime copied. Runtime schema/behavior unchanged in this step.
+### Test Results
+Baseline71 check executions and twice15 evaluation PASSED; reallocalhost29 logs PASSED; independent baseline verifier PASSED. Layout verification pending.
+### Next Step
+Verify layout links/model reader/dataset requirements; then record result and make a local documentation-layout commit.
+
+### Layout verification — 2026-10-11T01:49:17.318304+05:30
+-208 Markdown relative links verified,0 missing; existing dataset/policy suite8/8 passed; moved-model-reader offline rebuild33/24 succeeded, exit0. Full intended source/text scan273 files with empty findings. Sanitized dataset/index transcripts at ../evidence/v2_layout_dataset.txt and v2_layout_indexes.txt. No runtime behavior change. Exact187 git moves listed in v2_layout_changes.json; local-only layout commit follows.

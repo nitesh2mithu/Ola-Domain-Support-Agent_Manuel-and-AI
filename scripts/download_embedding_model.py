@@ -16,7 +16,7 @@ from huggingface_hub import HfApi, snapshot_download
 
 
 def main() -> None:
-    manifest_path = ROOT / "evidence" / "milestone_03_model_manifest.json"
+    manifest_path = ROOT / "evidence" / "model_manifest.json"
     # Re-running setup preserves the original revision, rather than following main.
     revision = json.loads(manifest_path.read_text())["revision"] if manifest_path.exists() else HfApi(token=False).model_info(MODEL_ID).sha
     snapshot_download(repo_id=MODEL_ID, revision=revision, local_dir=MODEL_DIR,

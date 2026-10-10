@@ -1,4 +1,4 @@
-# CHATGPT REVIEW HANDOFF
+# REVIEW NOTES
 
 Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
 
@@ -114,3 +114,9 @@ All Milestone 2 criteria met. Cross-process dataset fingerprint: `359ce560dcc700
 One urllib3 loopback socket construction (`connection.py:_has_ipv6`) recorded separately, not outbound traffic. No model downloads during runtime. No claim that future full-application offline acceptance is complete.
 
 Statuses: NOT STARTED, IN PROGRESS, PASSED, FAILED, BLOCKED. PASSED requires executed acceptance verification. Milestone smoke success does not imply an official task is fully complete.
+
+## Current v2 work
+
+Local polish-v2 only. Preservation/new setup and untouched baseline verification PASSED. Layout changes IN PROGRESS; no v2 behavior/acceptance claim. ../evidence/v2_layout_changes.json records exact moves. No new errors encountered.
+
+Layout verification 2026-10-11T01:49:17.318304+05:30: PASSED208links,8dataset/policychecks,offline33/24rebuild,empty public-content scan. Escalation/evaluation improvements NOT STARTED; finalv2acceptance NOT STARTED. Localpolish-v2 only.

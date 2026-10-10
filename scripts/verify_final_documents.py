@@ -19,26 +19,26 @@ def main():
     clean=load('evidence/final_clean_index.json')
     assert clean['upserts']['fixed']['after']==33 and clean['upserts']['sentence']['after']==24
     assert clean['calibration_preserved'] and not clean['offline']['network_attempts']
-    docs=['README.md','PROJECT_STATUS.md','DEVELOPMENT_PROCESS.md','ERROR_LOG.md','REQUIREMENTS_TRACKER.md','FINAL_ACCEPTANCE_REPORT.md']
+    docs=['README.md','docs/PROJECT_STATUS.md','docs/DEVELOPMENT_PROCESS.md','docs/ERROR_LOG.md','docs/REQUIREMENTS_TRACKER.md','docs/FINAL_ACCEPTANCE_REPORT.md']
     links=0
     for name in docs:
         text=(ROOT/name).read_text();assert text.strip()
         for target in re.findall(r'\]\(([^)]+)\)',text):
             if not target.startswith(('http:','https:','#')):
-                assert (ROOT/target.split('#')[0]).is_file(),(name,target);links+=1
+                assert ((ROOT/name).parent/target.split('#')[0]).is_file(),(name,target);links+=1
     readme=(ROOT/'README.md').read_text()
     assert readme.startswith('# Completed Ola (Business Operations / Customer Support) track')
     for token in ['requirements-api.lock','scripts.download_embedding_model','scripts.rebuild_indexes','scripts.serve_api',
                   'scripts.run_final_verification','scripts.evaluate_support','1110a243fdf4706b3f48f1d95db1a4f5529b4d41']:
         assert token in readme,token
-    statuses={int(line.split('|')[1]):line.split('|')[-2].strip() for line in (ROOT/'REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',line)}
+    statuses={int(line.split('|')[1]):line.split('|')[-2].strip() for line in (ROOT/'docs/REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',line)}
     assert len(statuses)==16 and all(v=='PASSED' for v in statuses.values())
-    assert 'Status: OPEN' not in (ROOT/'ERROR_LOG.md').read_text()
-    assert (ROOT/'PROJECT_STATUS.md').read_text().startswith('# CHATGPT REVIEW HANDOFF')
+    assert 'Status: OPEN' not in (ROOT/'docs/ERROR_LOG.md').read_text()
+    assert (ROOT/'docs/PROJECT_STATUS.md').read_text().startswith('# REVIEW NOTES')
     ignored=(ROOT/'.gitignore').read_text().splitlines()
     for token in ['.venv/','.venv311/','.bootstrap/','.python/','.cache/','.runtime/','.models/','__pycache__/','.env','.env.*','.aws/','.codex/','.agents/','.vscode/','!evidence/*.jsonl']:
         assert token in ignored,token
-    report=(ROOT/'FINAL_ACCEPTANCE_REPORT.md').read_text()
+    report=(ROOT/'docs/FINAL_ACCEPTANCE_REPORT.md').read_text()
     rows=[line for line in report.splitlines() if re.match(r'^\|\d+ /',line)]
     assert len(rows)==16 and all(line.endswith('|PASSED|') for line in rows)
     result={'timestamp':datetime.now(ZoneInfo('Asia/Calcutta')).isoformat(),'result':'PASSED','documents_checked':docs,

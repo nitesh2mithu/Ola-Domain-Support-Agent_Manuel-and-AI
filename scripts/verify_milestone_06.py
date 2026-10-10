@@ -10,11 +10,11 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     load=lambda p:json.loads((ROOT/p).read_text())
-    for file,digest in load('evidence/milestone_06_input_manifest.json').items():
+    for file,digest in load('evidence/archive/v1/milestone_06_input_manifest.json').items():
         assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
-    for file,digest in load('evidence/milestone_05_evaluation_freeze.json')['sha256'].items():
+    for file,digest in load('evidence/archive/v1/milestone_05_evaluation_freeze.json')['sha256'].items():
         assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
-    a=load('evidence/milestone_06_acceptance.json');assert a['acceptance']['passed']
+    a=load('evidence/archive/v1/milestone_06_acceptance.json');assert a['acceptance']['passed']
     assert a['cases']['approval']['review']['verdict']['approved']
     revision=a['cases']['revision'];assert not revision['review']['verdict']['approved']
     assert revision['review_draft']['answer']!=revision['response']['answer']==revision['draft']['answer']
@@ -30,19 +30,19 @@ def main():
     assert a['cases']['session_b']['response']['ticket']['record_id']=='OLA-0004'
     assert a['cases']['fresh_isolation']['response']['ticket'] is None
     assert 'stale_evidence' in a['cases']['stale_evidence']['response']['guardrails']
-    e=load('evidence/milestone_06_evaluation.json');assert e==load('evidence/milestone_06_evaluation_repeat.json')
+    e=load('evidence/archive/v1/milestone_06_evaluation.json');assert e==load('evidence/archive/v1/milestone_06_evaluation_repeat.json')
     assert e['query_count']==15 and len(e['results'])==15
     for r in e['results']:assert r['execution']['review']['model_calls']==[1,1]
     for m in e['averages']:
         assert e['metric_sums'][m]==sum(r['verdict'][m] for r in e['results'])
         assert e['averages'][m]==e['metric_sums'][m]/15
-    assert e['averages']==load('evidence/milestone_05_evaluation.json')['averages']
-    f=load('evidence/milestone_06_focused.json');assert f['acceptance']['passed']
+    assert e['averages']==load('evidence/archive/v1/milestone_05_evaluation.json')['averages']
+    f=load('evidence/archive/v1/milestone_06_focused.json');assert f['acceptance']['passed']
     fixtures=f['judge_fixtures']
     for bad,good,metric in [('incorrect_number','correct','Accuracy'),('unsupported','supported','Grounding'),('incomplete','complete','Completeness'),('unsafe','safe','Safety')]:
         assert fixtures[bad]['verdict'][metric]<fixtures[good]['verdict'][metric]
-    live=load('evidence/milestone_06_localhost.json');assert live['passed']
-    rows=[json.loads(l) for l in (ROOT/'evidence/milestone_06_logs_localhost.jsonl').read_text().splitlines()]
+    live=load('evidence/archive/v1/milestone_06_localhost.json');assert live['passed']
+    rows=[json.loads(l) for l in (ROOT/'evidence/archive/v1/milestone_06_logs_localhost.jsonl').read_text().splitlines()]
     assert len(rows)==len(live['http'])+len(live['websocket'])==29
     assert len({r['trace_id'] for r in rows})==29
     assert live['disconnect']['during_request'] and live['disconnect']['removed_session'] and live['disconnect']['other_client_continued']
@@ -50,23 +50,23 @@ def main():
     assert set(live['offline']['negative_controls_blocked'])=={'external_dns','external_ip','other_loopback_port','child_process','udp'}
     assert not a['checks']['offline']['network_attempts'] and not e['offline']['network_attempts']
     for name in ['crew','focused']:
-        assert load('evidence/milestone_06_'+name+'.json')['acceptance']['passed']
+        assert load('evidence/archive/v1/milestone_06_'+name+'.json')['acceptance']['passed']
     # Confirm all final executed suites, rather than inferring a pass from code.
     for name,count in [('dataset',8),('prerequisite_rag',8),('crew',12),('focused',11),('framework',6),('acceptance',6)]:
-        text=(ROOT/f'evidence/milestone_06_{name}.txt').read_text()
+        text=(ROOT/f'evidence/archive/v1/milestone_06_{name}.txt').read_text()
         assert f'Ran {count} tests' in text and '\nOK\n' in text,(name,count)
     links=0
-    docs=['README.md','PROJECT_STATUS.md','DEVELOPMENT_PROCESS.md','ERROR_LOG.md','REQUIREMENTS_TRACKER.md']
+    docs=['README.md','docs/PROJECT_STATUS.md','docs/DEVELOPMENT_PROCESS.md','docs/ERROR_LOG.md','docs/REQUIREMENTS_TRACKER.md']
     for file in docs:
         text=(ROOT/file).read_text();assert text.strip()
         for target in re.findall(r'\]\(([^)]+)\)',text):
             if not target.startswith(('http:','https:','#')):
-                assert (ROOT/target.split('#')[0]).is_file(),(file,target)
+                assert ((ROOT/file).parent/target.split('#')[0]).is_file(),(file,target)
                 links+=1
-    statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
+    statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'docs/REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
     assert len(statuses)==16 and all(s=='PASSED' for s in statuses.values())
-    assert 'Status: OPEN' not in (ROOT/'ERROR_LOG.md').read_text()
-    assert (ROOT/'PROJECT_STATUS.md').read_text().startswith('# CHATGPT REVIEW HANDOFF')
+    assert 'Status: OPEN' not in (ROOT/'docs/ERROR_LOG.md').read_text()
+    assert (ROOT/'docs/PROJECT_STATUS.md').read_text().startswith('# REVIEW NOTES')
     for path in list((ROOT/'evidence').glob('milestone_06_*'))+list((ROOT/'.runtime/api-tests').glob('*.jsonl')):
         if path.suffix in {'.json','.jsonl','.md','.txt'}:assert '98765'+'43210' not in path.read_text(),path.name
     assert not (ROOT/'.git').exists()
@@ -82,7 +82,7 @@ def main():
         'evaluation_reports_identical':True,'averages':e['averages'],'averages_changed':False,
         'evidence_links_checked':links,'dependency_pins_unchanged':len(pins),'external_runtime_attempts':[],
         'public_repository_created':False,'final_submission_readiness_claimed':False}
-    (ROOT/'evidence/milestone_06_documentation_audit.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
+    (ROOT/'evidence/archive/v1/milestone_06_documentation_audit.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
     print(json.dumps(result,sort_keys=True,indent=2))
 
 if __name__=='__main__':main()

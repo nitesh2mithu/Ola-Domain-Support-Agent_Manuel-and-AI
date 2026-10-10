@@ -8,9 +8,9 @@ import subprocess
 from datetime import datetime
 from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
-ROOT_FILES={'.gitignore','Problem_Statement.md','README.md','DEVELOPMENT_PROCESS.md','PROJECT_STATUS.md',
-            'ERROR_LOG.md','REQUIREMENTS_TRACKER.md','FINAL_ACCEPTANCE_REPORT.md','dataset.py'}
-DIRECTORIES={'support','api','evaluation','knowledge_base','rag','scripts','smoke_tests','tests','evidence'}
+ROOT_FILES={'.gitignore','Problem_Statement.md','README.md','docs/DEVELOPMENT_PROCESS.md','docs/PROJECT_STATUS.md',
+            'docs/ERROR_LOG.md','docs/REQUIREMENTS_TRACKER.md','docs/FINAL_ACCEPTANCE_REPORT.md','dataset.py'}
+DIRECTORIES={'docs','support','api','evaluation','knowledge_base','rag','scripts','smoke_tests','tests','evidence'}
 FORBIDDEN_PARTS={'.git','.venv','.venv311','.bootstrap','.python','.cache','.runtime','.models',
                  '__pycache__','.aws','.codex','.agents','.vscode'}
 
@@ -56,7 +56,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--staged',action='store_true');parser.add_argument('--list',action='store_true');parser.add_argument('--no-write',action='store_true');args=parser.parse_args()
     paths=candidates()
     for folder in DIRECTORIES:
-        if folder not in {"evidence","knowledge_base"}:
+        if folder not in {"docs","evidence","knowledge_base"}:
             required=set((ROOT/folder).glob("*.py"))
             assert required and required.issubset(set(paths)),"Missing source package: "+folder
     if args.staged:

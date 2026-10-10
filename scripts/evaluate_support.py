@@ -12,7 +12,7 @@ from evaluation.judge import DeterministicJudge,JudgeVerdict,judge_messages
 
 
 def verify_freeze():
-    manifest=json.loads((ROOT/'evidence/milestone_05_evaluation_freeze.json').read_text())
+    manifest=json.loads((ROOT/'evidence/archive/v1/milestone_05_evaluation_freeze.json').read_text())
     for file,digest in manifest['sha256'].items():
         if hashlib.sha256((ROOT/file).read_bytes()).hexdigest()!=digest:
             raise ValueError('Preregistered evaluation inputs changed: '+file)

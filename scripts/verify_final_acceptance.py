@@ -12,7 +12,7 @@ def main():
     load=lambda name:json.loads((ROOT/'evidence'/name).read_text())
     for file,digest in load('final_input_manifest.json').items():
         assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
-    for file,digest in load('milestone_05_evaluation_freeze.json')['sha256'].items():
+    for file,digest in load('archive/v1/milestone_05_evaluation_freeze.json')['sha256'].items():
         assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
     executions=[load('final_offline_execution.json'),load('final_localhost_execution.json')]
     assert all(r['passed'] and all(j['exit_code']==0 for j in r['jobs']) for r in executions)
@@ -54,7 +54,7 @@ def main():
         total=sum(values);average=total/Decimal(15)
         assert total==Decimal(str(e['metric_sums'][metric])) and abs(average-Decimal(str(e['averages'][metric])))<Decimal('1e-12')
         averages[metric]={'sum':str(total),'denominator':15,'average':str(average)}
-    assert e['averages']==load('milestone_06_evaluation.json')['averages']
+    assert e['averages']==load('archive/v1/milestone_06_evaluation.json')['averages']
     crew=load('final_crew.json');assert crew['acceptance']['passed']
     for key,kind in [('ticket','ticket'),('policy','rag')]:
         c=crew['cases'][key];assert c['kickoff_executed'] and c['framework_pydantic_validated']

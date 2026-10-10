@@ -249,3 +249,7 @@ ERROR-015 follow-up — 2026-10-11T00:54:48.732158+05:30: `gh auth status` exit1
 ERROR-015 verification — 2026-10-11T00:59:02.637919+05:30: user completed browser CLI login; `gh api user --jq .login` exit0 returned nitesh2mithu. Authentication fix verified; RESOLVED. Intended repository query returned not found; initial remotes empty. No secrets exposed.
 
 Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
+
+Version 2 preservation/setup/baseline: no errors. User requires stop on any failed check; no fix will be attempted automatically.
+
+Layout verification: no failed checks/commands; no new open errors.
