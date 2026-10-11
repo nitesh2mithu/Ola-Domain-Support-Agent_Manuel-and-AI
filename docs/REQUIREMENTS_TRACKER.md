@@ -139,3 +139,5 @@ Final closure 2026-10-11T13:40:17.061417+05:30: all16 official implementation cr
 Editorial session 2026-10-11T14:04:09.195822+05:30: README attribution placeholder replaced with exact user-provided factual statement. No requirement implementation, frozen labels, scoring or measurements changed; all16 statuses retained from executed acceptance evidence. Documentation/link checks pending.
 
 Editorial verification 2026-10-11T14:05:23.891625+05:30: documentation gate, actual link/output tests2/2 and complete link/v1 review PASSED. Existing application/runtime acceptance evidence byte-identical; all16 statuses still apply. No runtime suites rerun. [Editorial record](../evidence/v2_editorial_cleanup.json).
+
+Version2 publication approved 2026-10-11T23:36:31.307775+05:30: all16 verified criteria and measured15+5 results unchanged. Editorial/current source preservation checked, remote main baseline confirmed, workflows0; PR publication verification pending. [Publication preflight](../evidence/v2_publication_preflight.json).

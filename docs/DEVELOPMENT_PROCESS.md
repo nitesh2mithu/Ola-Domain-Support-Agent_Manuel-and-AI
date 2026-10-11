@@ -720,3 +720,23 @@ Run normal documentation checks, actual moved-link/write tests, complete link/hi
 Executed scripts.verify_final_documents exit0; tests.v2_documentation2/2 PASSED; scripts.verify_v2_review --no-write exit0 with279valid links and v1 preservation. README177lines, sole change is exact requested replacement; LEARNINGS unchanged215words. Byte comparisons against previous HEAD verify54other Python files and259prior evidence files unchanged (documentation audit excluded because freshly rerun). Existing runtime acceptance applies; application suites not rerun or claimed newly passed. Full reproducible commands/outputs saved in [editorial evidence](../evidence/v2_editorial_cleanup.json). No new errors, dependencies or behavior/scoring changes. Reviewed exact diff; final content/staged checks and separate cleanup commit next. Publication approval remains pending.
 
 Final editorial gates 2026-10-11T14:06:24.181797+05:30: normal documentation gate rerun exit0 after tracker/report updates; full intended354-file inspection PASSED with no findings; git diff --check exit0. Exact README diff remains one line replacement, LEARNINGS unchanged. Only editorial/docs-validation/tracking/evidence files staged for the separate local commit; final clean-tree/v1 checks follow. No runtime acceptance rerun or publication action.
+
+## Session 015 — 2026-10-11T23:36:31.307775+05:30 (Asia/Kolkata)
+### Objective
+Publish verified v2 only to the approved repository via PR, history-preserving merge and annotated v2.0.0; preserve separate v1 and no deployment/portal submission.
+### Environment
+Existing .venv311 and GitHub account nitesh2mithu; no packages/models downloaded, application unchanged.
+### Commands Executed
+Git status/branch/origin/HEAD/main/tag inspection; scripts.verify_v2_review --no-write exit0; git fetch origin --prune exit0; gh repo view/remote ref/workflows/PR list queries exit0. Origin matches approved URL; fetched main remains64e19e9, no unexpected changes, no existing PR/tagv2, public/defaultmain. Initial restricted-network gh auth status exit1 reported invalid; network-permitted diagnostic exit0 verified existing keyring credentials without changes. Failure/diagnosis recorded here; no secrets persisted.
+### Files Created / Modified
+`evidence/v2_publication_preflight.json`; current trackers. PR body stored only in excluded runtime directory.
+### Test Results
+Editorial cleanup verified: no placeholders in README/LEARNINGS, detailed disclosure retained. Complete snapshot/content/link/pin/archive/v1 review PASSED; latest all16 runtime acceptance remains applicable because54other Python files are byte-identical to the runtime-audit baseline. Prior56distinct/76execution checks and29real localhost requests recorded; no new application suites claimed. GitHub workflows0; PR check state must still be inspected before merge.
+### Errors and Fixes
+No open runtime/publication errors; restricted-network auth diagnostic resolved through authorized network recheck, no credential fix needed.
+### Decisions and Rationale
+User explicitly approved push/PR/merge/tag for this repository only. Retain all local commits using merge commit, never force. Unexpected remote changes would stop publication without overwriting.
+### Remaining Issues
+PR push/create/check/merge and remote README/tree verification, tag and publication-record commit pending.
+### Next Step
+Scan exact documentation preflight commit; push polish-v2, create PR and inspect actual remote checks before merging.

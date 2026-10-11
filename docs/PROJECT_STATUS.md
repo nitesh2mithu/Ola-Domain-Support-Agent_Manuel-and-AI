@@ -2,9 +2,9 @@
 
 ## Current Version 2 state
 
-- Last updated: 2026-10-11T14:04:09.195822+05:30 (Asia/Kolkata).
-- Verdict: **READY FOR REVIEW**. All 16 official implementation criteria are verified on current v2; no unresolved errors or technical blockers.
-- Branch: local `polish-v2`. Original v1 checkout, `main`, `origin/main` and annotated `v1.0.0` remain at the preserved baseline. No push, merge, deployment or submission.
+- Last updated: 2026-10-11T23:37:10.188820+05:30 (Asia/Kolkata).
+- Verdict: **PUBLICATION IN PROGRESS**; user approved Version2 publication. All 16 official implementation criteria are verified on current v2; no unresolved errors or technical blockers.
+- Branch: `polish-v2`; fetched main remains at the expected v1 baseline. Origin is the approved Version2 repository; v1 checkout/repository/tag preserved. No deployment or portal submission.
 - Completed: lookup correction, independently seeded reopening, verified score/threshold/ties, documentation/archive moves, original 15 plus five frozen extra evaluation cases, concise README, evidence-based learnings and honest AI attribution.
 - Latest runtime acceptance (previous session): 56 distinct runtime checks / 76 executions passed, plus two documentation behavior checks. Actual localhost18HTTP+11WebSocket messages produced29correlated masked log rows; disconnect survival and concurrent isolation passed.
 - Determinism/offline: dataset, uncached crew and both evaluation sets repeat identically across processes. No external runtime attempts; narrow localhost access only during API tests. Empty offline indexes rebuilt0→33fixed/0→24sentence without recalibration or downloads.
@@ -16,7 +16,7 @@
 - Evidence: [task-by-task report](FINAL_ACCEPTANCE_REPORT.md), [independent acceptance](../evidence/final_acceptance_audit.json), [offline ledger](../evidence/final_offline_execution.json), [localhost ledger](../evidence/final_localhost_execution.json), [review/history/score checks](../evidence/v2_final_review.json), [documentation gate](../evidence/final_documentation_audit.json), [intended content scan](../evidence/final_submission_inspection.json), [script behavior checks](../evidence/v2_stage_paths_verified.txt).
 - Limitations: lexical MOCK judge/review, bounded pattern masking and static scanning, Python audit hooks rather than an OS/native firewall, process-local sessions/cache. Measured near-domain/multi-topic weaknesses retained.
 - Editorial cleanup: replaced the README placeholder with the user-provided factual AI-assistance statement; detailed disclosure and all findings retained. Documentation/link checks PASSED this session; application and other Python sources unchanged except the documentation gate. Prior runtime acceptance evidence remains byte-identical and applicable.
-- Next: user reviews the local diff and approves publication. Exact publication candidate is the final local HEAD returned after the evidence-record commit; inspect with `git rev-parse HEAD`. Publication requires separate approval.
+- Next: push verified polish-v2 and create PR; inspect checks, merge retaining history, verify main/tag and record publication. No GitHub Actions workflows configured; use actual recorded local acceptance, with PR check inspection still pending.
 
 ## Historical states — superseded
 

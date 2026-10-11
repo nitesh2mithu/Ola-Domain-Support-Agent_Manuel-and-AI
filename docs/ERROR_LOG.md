@@ -348,3 +348,5 @@ Final review 2026-10-11T13:40:17.061417+05:30: no OPEN errors. Fresh all16/runti
 Editorial session 2026-10-11T14:04:09.195822+05:30: no new execution errors. Replaced user-confirmed attribution wording; anticipated documentation assertion updated. Existing errors remain resolved; verification pending.
 
 Editorial verification 2026-10-11T14:05:23.891625+05:30: all requested documentation/link checks passed; no new failures or unresolved errors. Evidence: ../evidence/v2_editorial_cleanup.json.
+
+Publication preflight 2026-10-11T23:36:31.307775+05:30: restricted-network auth-status command returned exit1; authorized network diagnostic verified same existing credentials exit0, no change required. Recorded failed attempt/diagnosis in Session015 and preflight evidence. No open runtime errors or publication blockers; remote main matches expected baseline.
