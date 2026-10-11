@@ -660,3 +660,26 @@ Final normaldocumentation/content verification 2026-10-11T09:15:07.192035+05:30:
 
 ### Local review closure — 2026-10-11T09:16:54.219364+05:30
 Dependencycompatibility `python -m pip check` exit0 No brokenrequirements; exact163pins independently matched importlib.metadata and pinnedmodelidentity recordedcurrentfinal_versions.json; no setupdownloads thissession. Stronger independentDecimal score verification of60actuallookupresults and nearest-rank/ties/recommendations PASSED, evidence/v2_decimal_score_verification.json. Documentationcommit4f0fdfa follows earlier layoutbc11f3d/escalationbd00a6b/evaluationf5a6def. Finalaudit/currentevidence commit next. No runtimecode changes after successfulfullsuite. Normaldocument/source/staticscan repeatedafterclosure; finalstatus/HEAD/tag/tree/diff verifiedread-onlyaftercommit.
+
+## Session 013 — 2026-10-11T13:31:13.506645+05:30 (Asia/Kolkata)
+### Objective
+Final local review of polish-v2 against preserved v1; no push, merge, deployment or submission.
+### Environment
+Existing .venv311 Python 3.11.17; no package or model downloads.
+### Files Created
+`scripts/verify_v2_review.py` adds reproducible reachable-history inspection, archive byte/prose preservation, relative-link and exact-pin checks. Failure transcript: `evidence/v2_review_history_failed_01.txt`.
+### Commands Executed
+`.venv311/bin/python -m scripts.run_final_verification` and `--phase localhost`: both exit 0, 13 offline jobs and one real localhost job. `.venv311/bin/python -m scripts.verify_v2_review`: exit 1; ERROR-019 recorded before any fix.
+### Test Results
+56 distinct checks / 76 executions passed; original 15 and extra 5 evaluated twice. Localhost phase passed; independent acceptance and final packaging gates still pending in this session.
+### Errors and Fixes
+ERROR-019: canonicalized extracted paths compared with a noncanonical temporary directory. Resolve both sides while retaining containment checks; fix not attempted yet.
+### Decisions and Rationale
+Reviewed test diffs: original assertions retained, intended score expectations updated, archive readers adjusted, stronger original-field/hash and reopening negatives added. Original labels/prompt/rubric unchanged. v1 checkout is clean at its original head/tag.
+### Remaining Issues
+History review failure and final independent gates pending; personal contributions still require user confirmation.
+### Next Step
+Correct only temporary-path normalization, rerun the complete history review, then independent acceptance, clean-index rebuild and documentation/content gates.
+
+### History-review correction — 2026-10-11T13:32:38.816061+05:30
+Changed temporary root to Path(directory).resolve(), matching resolved extracted paths; containment and file-type assertions retained. Complete rerun exit 0: seven reachable Git snapshots with zero findings, 182 archived v1 records byte-identical and one Markdown record changed only link targets, 266 links, 163 exact pins. ERROR-019 RESOLVED only after this verification. Added --no-write for checking the final committed snapshot without changing evidence. Independent scripts.verify_final_acceptance exit 0: all16 current criteria, full deterministic repeats, RAG arithmetic, 15+5 averages, actual29 logs, review/permissions/budgets/cache and no external attempts. Empty index rebuild exit 0 (33fixed/24sentence); content/documentation closure still pending. Separate verification-helper fix commit follows.

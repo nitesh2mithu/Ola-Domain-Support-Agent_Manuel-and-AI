@@ -310,3 +310,18 @@ ERROR-018 fix verification 2026-10-11T09:14:15.359332+05:30: file-or-directory v
 Final normaldocumentation/content verification 2026-10-11T09:15:07.192035+05:30: exit0 bothgates,262independentlinks/file-directorycontainment passed; active8docs/model-download/emptyindexrecipes/16currenttaskrows/sourcecompleteness/ignorerules verified;177lineREADME/215wordlearnings; artifactscan empty. ERROR-018RESOLVED verified; noopenerrors/blockers. Fullruntime56distinct/76executions and29realrequests alreadypassed; no runtimecode changes after thosechecks. Localdocumentation and finalaudit commits next; no improvements pushed.
 
 Localreviewclosure 2026-10-11T09:16:54.219364+05:30: currentruntime/all16/76checks and29HTTPWSlogs PASSED; exact163dependencycompatibility and60exactDecimalscores PASSED. Documentation/links/staticcontent gates passed. No unresolvederrors; localimprovements complete for userreview, not pushed/merged/published/deployed/submitted. Finalcommit/diff/cleanbranch verification follows; record its returnedhash in finalresponse to avoid self-referential commitrecords.
+
+## ERROR-019
+Date: 2026-10-11T13:31:13.506645+05:30
+Milestone: Final local v2 review
+Component: scripts.verify_v2_review temporary Git snapshot containment
+Command: `.venv311/bin/python -m scripts.verify_v2_review`
+Error message: AssertionError on resolved extracted-file containment.
+Relevant traceback: [sanitized failure](../evidence/v2_review_history_failed_01.txt).
+Root cause: macOS temporary directory uses /var symlink; extracted file was resolved to /private/var but its comparison root was not resolved.
+Fix attempted: NONE yet; normalize the temporary root before checking containment.
+Verification command: same complete history/archive/link/pin review.
+Verification result: complete rerun exit 0; all seven reachable snapshots scanned with no findings, 182 archived records byte-identical and one Markdown record has link-only changes, 266 links and all 163 pins verified.
+Status: RESOLVED
+
+ERROR-019 verified 2026-10-11T13:32:38.816061+05:30: resolved the temporary root before path comparison; full history/archive/link/pin scan passed. Original failure retained, containment assertion unchanged. Fresh runtime suite and independent all16 acceptance also passed; no application, label or scoring changes in this session.

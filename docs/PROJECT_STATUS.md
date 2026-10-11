@@ -2,18 +2,16 @@
 
 ## Current Version 2 state
 
-- Last updated: 2026-10-11T09:12:57.510673+05:30
-- Branch: local `polish-v2`; no improvement pushes or merge. Both main/tag baselines and originalcheckout preserved.
-- Current milestone: all16 original requirements and requested localimprovements verified in current runtime; documentation/content gates PASSED. Local v2 work complete for user review; commits and external diff verified at closure.
-- Overallprogress: implementation/evaluation/readability complete. Extra5 knownquality weaknesses remain honestly reported.
-- Completed: lookupcorrection; originalfield-preserving independentreopen stream; actualscore/p80/ties/recommendationverification;187doc/evidence moves;5extra labels/rules frozenbeforeexecution;177lineREADME;215wordlearnings; honestAI note; complete currentoffline/localhost/independent audit.
-- Tests:56distinct checks/76executions allpassed;29real HTTP/WSrequestlogs; original15and extra5fresh-processreports identical; dataset/uncachedcrew repeats identical; emptyindexes rebuilt33/24 offline. No externalruntime attempts.
-- Evaluation original15:Accuracy/Grounding/Completeness/Safety1.0/1.0/1.0/1.0. Extra5:0.8/1.0/0.7/1.0. X01scope-refusal failure andX04halfcoverage disclosed; originalrubric/labels/prompt unchanged.
-- Escalation:seed42original7fields identical;reopenseed43;newhash4bc5e6702e2bc760832157a0cece8f93cf0cf93224e6c09a94f40e98520407cf. Threshold0.55,p80rank48,oneexcludedtie;12recommendations,2nonescalated(v1:0). All60actualscores independentlychecked.
-- Environment: Python3.11.17 `.venv311`,163pins unchanged in requirements-api.lock. CrewAI/core1.15.27,AutoGen0.7.5,Pydantic2.12.5,LangChaincore1.6.9,FastAPI0.143.0,ST6.1.0,Chroma1.5.9. PinnedMiniLM revision1110a243fdf4706b3f48f1d95db1a4f5529b4d41.
-- Errors/blockers:none. ERROR-016/017resolved after dataset8/8 andcrew12/12;allfailure evidence retained. Currentknownlimitations are not hidden blockers.
-- Evidence: `../evidence/final_acceptance_audit.json`, final_offline_execution.json, final_localhost_execution.json, final_rag.md, final_crew.json, final_evaluation.md, v2_extra_evaluation.md, v2_judge_fixtures.json, v2_escalation_change.json. Report:`FINAL_ACCEPTANCE_REPORT.md`; changes:`CHANGELOG_V2.md`.
-- Lastsuccess: current all16 acceptance, emptyofflineindex rebuild, normal documentation/source/content gates and262link checks. Next: userreviews localdiff and [CONFIRM: my own contributions]. No automaticpublication/deployment/submission.
+- Last updated: 2026-10-11T13:32:38.816061+05:30 (Asia/Kolkata).
+- Branch: local `polish-v2`; original v1 checkout, main and tag preserved. No push or merge.
+- Current milestone: final user-requested local review IN PROGRESS; fresh runtime and independent all16 acceptance PASSED, final documentation/content/staging gates pending.
+- Tests: 56 distinct checks / 76 executions passed; 29 real HTTP/WebSocket requests with correlated masked logs. Dataset, uncached crew and both evaluation sets repeat identically. No external runtime attempts.
+- Escalation: original seven fields and seed42 preserved; independent reopening seed43; threshold0.55 with one excluded tie, 12 recommendations including two non-escalated (v1 zero). All60 lookup scores verified.
+- Evaluation: original15 Accuracy/Grounding/Completeness/Safety1.0/1.0/1.0/1.0; extra5 0.8/1.0/0.7/1.0. X01 fails preregistered refusal; X04 covers two of four expected facts. Original labels and scoring unchanged.
+- Review: 177-line README; 215-word learnings; history scan of seven reachable snapshots has no findings. Archive integrity and266links verified. Exact163pins compatible with Python3.11.17; pinned model unchanged.
+- Errors/blockers: no OPEN errors. ERROR-016/017/018 fixes retained and reverified; new ERROR-019 review-helper path-normalization failure recorded, fixed and verified. Final packaging checks pending, no readiness claim yet.
+- Evidence: [fresh acceptance](../evidence/final_acceptance_audit.json), [history/archive review](../evidence/v2_final_review.json), [offline ledger](../evidence/final_offline_execution.json), [localhost ledger](../evidence/final_localhost_execution.json).
+- Next: finish documentation/content gates, inspect staged/committed bytes, record exact local publication candidate for user review. Personal contributions in README still need user confirmation.
 
 ## Historical states — superseded
 
