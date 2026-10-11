@@ -1,0 +1,10 @@
+test_01_frozen_inputs_and_required_groups (__main__.EvaluationChecks.test_01_frozen_inputs_and_required_groups) ... ok
+test_02_original_rules_partial_coverage_and_unsupported_inference (__main__.EvaluationChecks.test_02_original_rules_partial_coverage_and_unsupported_inference) ... ok
+test_03_near_domain_refusal_and_related_excerpts (__main__.EvaluationChecks.test_03_near_domain_refusal_and_related_excerpts) ... ok
+test_04_guard_evidence_and_unsafe_refusal (__main__.EvaluationChecks.test_04_guard_evidence_and_unsafe_refusal) ... ok
+test_05_separate_averages_actual_execution_and_offline (__main__.EvaluationChecks.test_05_separate_averages_actual_execution_and_offline) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.106s
+
+OK

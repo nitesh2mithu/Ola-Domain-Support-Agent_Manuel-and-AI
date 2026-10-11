@@ -611,3 +611,132 @@ User completed gh browser sign-in; fresh `gh api user --jq .login` succeeded for
 - Next: scan updated publicfiles/documentlinks, stage explicit authorized text changes, commit normally with generic identity, push withoutforce and verify finalpublicdefaultbranchhead/tree/README.
 
 - Publication-document precommit checks executed: independent final acceptance and documentation/link/source/ignore gate PASSED (read-only historical report preservation); intended267-file credential/PII/path/binary scan PASSED with empty findings. Normal documentation commit/push follows; final remote-head/tree/readme verification performed immediately after push. Publication evidence records the implementation commit to avoid self-referential documentation commit hashes.
+
+## Session 011 — 2026-10-11T01:48:15.123882+05:30
+### Objective
+Preserve v1 and improve only local polish-v2.
+### Files Created / Modified
+Exact git moves, baseline results, repositories/hashes/tag and layout-only manifest changes: ../evidence/v2_layout_changes.json. New docs/FINAL_ACCEPTANCE_REPORT is explicitly pending; historical v1 report retained.
+### Commands Executed
+Full bundle create/verify; gh rename/edit/create; annotated tag and pushes of main/tag only; local clone/remap/branch; fresh venv/pinned dependencies/model download/offline rebuild; full baseline offline and localhost runner plus independent verifier all exit0. git mv organization, Markdown relative-link rewrite and source readers updated. No polish-v2 push.
+### Decisions and Rationale
+Archived evidence belongs to unchanged v1; current model manifest copied as text identity only, no old weights/runtime copied. Runtime schema/behavior unchanged in this step.
+### Test Results
+Baseline71 check executions and twice15 evaluation PASSED; reallocalhost29 logs PASSED; independent baseline verifier PASSED. Layout verification pending.
+### Next Step
+Verify layout links/model reader/dataset requirements; then record result and make a local documentation-layout commit.
+
+### Layout verification — 2026-10-11T01:49:17.318304+05:30
+-208 Markdown relative links verified,0 missing; existing dataset/policy suite8/8 passed; moved-model-reader offline rebuild33/24 succeeded, exit0. Full intended source/text scan273 files with empty findings. Sanitized dataset/index transcripts at ../evidence/v2_layout_dataset.txt and v2_layout_indexes.txt. No runtime behavior change. Exact187 git moves listed in v2_layout_changes.json; local-only layout commit follows.
+
+V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.
+
+### V2 Step3 verification failure — 2026-10-11T01:52:23.476237+05:30
+- Existing dataset/policy suite8/8 passed. Original7fields identical to v1 for all60records; independent reopen seed43,0–3 integers; escalation14/60=23.33%. Score threshold0.55 vs v1 0.613333;12 recommended including2 non-escalated vs v1 zero. All examples/hash/formula/tie rules in v2_escalation_change.json.
+- Existing crew12-test module failed before running tests: NameError undefined t in support/tickets.py record lookup. ERROR-016 recorded, complete sanitized transcript saved; no test weakened and no fix attempted. Strict userstop rule: no Step4–7 or finalv2readiness claim.
+- One local improvement commit bc11f3d (layout) exists; Step3 implementation/documentation/evidence remains uncommitted for review. Originalcheckout and both publicmain baselines unchanged,polish-v2 unpushed. Save full review diff againstv1 outside repositories; no additional code changes.
+
+## Session 012 — escalation correction and remaining v2 work
+User approved correcting ERROR-016 and routine in-scope debugging/resumption. Inspected retained Git changes, current status/changelog/error history and full failed evidence. Corrected lookup reopen_count caller from undefined t to actual ticket. Distribution comprehension correctly uses its local t. Prior work/failure evidence retained; original checkout/tag/remote baselines untouched. Dataset/crew verification follows; error remains OPEN until executed success.
+
+### Correction verification — 2026-10-11T09:01:47.249018+05:30
+Dataset8/8 passed; actual crew11 tests passed including scores/tool invocations/schema/memory/guards. Test12 failed on missed historical dataset reader path (ERROR-017 recorded before fix). Original ERROR-016 no longer occurs, but resolve only after complete suite passes. Preserve failed output; update archive reader and explicit original-field/hash assertions rather than weakening integrity checks.
+
+Escalation verified 2026-10-11T09:02:58.598328+05:30: seed42/alloriginalfields/distributions preserved; independent seed43 reopening stream. Score rounded6decimal, nearest-rank48of60 threshold0.55, strictgreater excludes1ties;12recommended including2non-escalated. All60actualticket scores independently checked, dataset8/8 and crew12/12 PASSED. Errors016/017 RESOLVED after execution. Evidence: [change record](../evidence/v2_escalation_change.json), [crew output](../evidence/v2_escalation_crew.txt). No network/dependencies/application changes beyond intended score/schema. Local-only separate commit follows.
+
+V2 evaluation extension defined/frozen before any extra query execution: ../evidence/v2_extra_freeze.json, fivecases(2near,2multi,1injection/PII), full expectedparent/fact/refusal rules. Original15cases/prompt/rubric byteidentical; added refusal-kind rules only, no original scoring changes or crew tuning. Execution/fixture verification pending; no scores claimed. No new errors yet.
+
+Evaluation step 2026-10-11T09:06:53.194920+05:30: original15meanAccuracy/Grounding/Completeness/Safety1.0, additional5mean0.8/1.0/0.7/1.0. X01near-domain semantic scope failure, X04multi-topic halfcoverage disclosed. Extra labels/parent/fact/refusal rules frozen before retrieval. Originalrubric/labels/prompt unchanged; generic extensionnewkinds only. No tuning. Existing correctness/safety rules retained and5new fixture/arithmetic/offline checks PASSED; sanitized transcripts/evidence top level. No new errors. Finalfullregression pending.
+
+Documentation/readability step: README177lines in requested13-section order with measured original15/extra5 scores, required design/calibration/P-R/score/setup/telemetry/offline statements, no administrative wording; LEARNINGS215words, recorded findings only, no personal experience claims. AI note explicitly lists AI-assisted work and student-contribution confirmation placeholder. Final runner now includes extra5twice and5judge checks; verifier independently checks currentv2 score/reopen/15+5arithmetic/freeze/repeats, while preserving all original16 checks. Final execution pending; no pass yet.
+
+Currentv2 finalruntime verification 2026-10-11T09:12:57.510673+05:30:56distinct checks76executions allPASSED; actual29HTTP/WSrequestlogs/disconnect/isolation/masking; original15evaluationrepeatall1.0 andextra5repeat0.8/1.0/0.7/1.0; independent arithmetic/hash/reopen/score/calibration/all16criteria PASSED; emptyoffline33/24indexrebuild PASSED. No new errors/fixes ornetworkdownloads. Documentation/contentclosinggates next.
+
+Documentationgate 2026-10-11T09:13:30.535504+05:30 failed on validdirectorylink knowledge_base/: recordedERROR-018 beforefix. Allruntimechecks/338filecontent scan passed; no application failure. Linkvalidation will explicitly support existing contained directories without dropping missing/path checks.
+
+Documentationfix 2026-10-11T09:14:15.359332+05:30: ERROR-018 existingfolderlink handling verified across262links with existence andrepo-containment checks; no assertions weakened. Resolvedafterindependentverification. Normalfullgate rerun next; runtime76checks/all16audit unaffected. README177/learning215confirmed.
+
+Final normaldocumentation/content verification 2026-10-11T09:15:07.192035+05:30: exit0 bothgates,262independentlinks/file-directorycontainment passed; active8docs/model-download/emptyindexrecipes/16currenttaskrows/sourcecompleteness/ignorerules verified;177lineREADME/215wordlearnings; artifactscan empty. ERROR-018RESOLVED verified; noopenerrors/blockers. Fullruntime56distinct/76executions and29realrequests alreadypassed; no runtimecode changes after thosechecks. Localdocumentation and finalaudit commits next; no improvements pushed.
+
+### Local review closure — 2026-10-11T09:16:54.219364+05:30
+Dependencycompatibility `python -m pip check` exit0 No brokenrequirements; exact163pins independently matched importlib.metadata and pinnedmodelidentity recordedcurrentfinal_versions.json; no setupdownloads thissession. Stronger independentDecimal score verification of60actuallookupresults and nearest-rank/ties/recommendations PASSED, evidence/v2_decimal_score_verification.json. Documentationcommit4f0fdfa follows earlier layoutbc11f3d/escalationbd00a6b/evaluationf5a6def. Finalaudit/currentevidence commit next. No runtimecode changes after successfulfullsuite. Normaldocument/source/staticscan repeatedafterclosure; finalstatus/HEAD/tag/tree/diff verifiedread-onlyaftercommit.
+
+## Session 013 — 2026-10-11T13:31:13.506645+05:30 (Asia/Kolkata)
+### Objective
+Final local review of polish-v2 against preserved v1; no push, merge, deployment or submission.
+### Environment
+Existing .venv311 Python 3.11.17; no package or model downloads.
+### Files Created
+`scripts/verify_v2_review.py` adds reproducible reachable-history inspection, archive byte/prose preservation, relative-link and exact-pin checks. Failure transcript: `evidence/v2_review_history_failed_01.txt`.
+### Commands Executed
+`.venv311/bin/python -m scripts.run_final_verification` and `--phase localhost`: both exit 0, 13 offline jobs and one real localhost job. `.venv311/bin/python -m scripts.verify_v2_review`: exit 1; ERROR-019 recorded before any fix.
+### Test Results
+56 distinct checks / 76 executions passed; original 15 and extra 5 evaluated twice. Localhost phase passed; independent acceptance and final packaging gates still pending in this session.
+### Errors and Fixes
+ERROR-019: canonicalized extracted paths compared with a noncanonical temporary directory. Resolve both sides while retaining containment checks; fix not attempted yet.
+### Decisions and Rationale
+Reviewed test diffs: original assertions retained, intended score expectations updated, archive readers adjusted, stronger original-field/hash and reopening negatives added. Original labels/prompt/rubric unchanged. v1 checkout is clean at its original head/tag.
+### Remaining Issues
+History review failure and final independent gates pending; personal contributions still require user confirmation.
+### Next Step
+Correct only temporary-path normalization, rerun the complete history review, then independent acceptance, clean-index rebuild and documentation/content gates.
+
+### History-review correction — 2026-10-11T13:32:38.816061+05:30
+Changed temporary root to Path(directory).resolve(), matching resolved extracted paths; containment and file-type assertions retained. Complete rerun exit 0: seven reachable Git snapshots with zero findings, 182 archived v1 records byte-identical and one Markdown record changed only link targets, 266 links, 163 exact pins. ERROR-019 RESOLVED only after this verification. Added --no-write for checking the final committed snapshot without changing evidence. Independent scripts.verify_final_acceptance exit 0: all16 current criteria, full deterministic repeats, RAG arithmetic, 15+5 averages, actual29 logs, review/permissions/budgets/cache and no external attempts. Empty index rebuild exit 0 (33fixed/24sentence); content/documentation closure still pending. Separate verification-helper fix commit follows.
+
+### Historical-script review failure — 2026-10-11T13:35:49.790539+05:30
+Inspected all source diffs. Found stage05 wrong link-base variable, both historical link gates rejecting directory targets, and outputs targeting preserved archive files. Added two focused checks executing actual AST link/write statements; initial execution failed (3subtest failures,1error). ERROR-020 recorded before any fix. Real archives untouched: write tests use temporary sentinel files. Stage05 fixture extraction missed docs assignment and needs correction too. Existing stage-specific assertions are deliberately not run on current v2 inputs; these utilities cannot certify v2.
+
+### Historical-script correction verified — 2026-10-11T13:36:52.833098+05:30
+Changed scripts/verify_milestone_05.py wrong file variable to filename; both stage scripts now resolve and contain file/directory targets. Output goes to ignored .runtime/historical-audits, preserving archived reports. Stage-specific assertions unchanged; explicitly documented historical-only context. Focused actual AST behavior tests2/2 PASSED and complete archive review PASSED; ERROR-020 resolved after verification. Test fixture correction also recorded in failed attempt02. No app/runtime/label/scoring changes. Separate local fix commit next.
+
+### Final packaging preparation — 2026-10-11T13:38:06.527038+05:30
+Fresh final audit:56 distinct runtime checks/76 executions,29 real HTTP/WebSocket requests and repeated original15/extra5 evaluation reports all verified by independent scripts.verify_final_acceptance. Updated current report/changelog/tracker; sanitized final audit and clean-index output retained. Clean offline indexes began0/0 and ended33/24; model/calibration unchanged. Exact163pins verified and pip check exit0 (nonfatal read-only cache warning only). Independent Decimal checks reproduce both score distributions and all60 actual results. No package/model downloads. Local correction commits9711d22 and a4b3427 retain failure/recovery evidence. Current documentation/content/staged-byte gates next; no publication actions.
+
+### Final review gates — 2026-10-11T13:40:17.061417+05:30
+Commands: scripts.verify_final_acceptance, scripts.inspect_submission, scripts.verify_final_documents and scripts.verify_v2_review all exit0. Current review scans9reachable snapshots with no findings and275relative links;182archived records byte-identical/one Markdown link-only change. README177lines/LEARNINGS215words. Python inline Git metadata scan used `git log --format=%H%n%an <%ae>%n%cn <%ce>%n%B` with the same inspection rules in a temporary text file; no findings. `git check-ignore -q` verified venv/model/runtime/cache/env/key/pem/db/log exclusions and source/curated-JSONL retention. No new errors or dependencies. All4trackingdocs/report/changelog updated accurately. READY FOR REVIEW; final staged/committed-byte check and audit-record commit next. No app/labels/scoring changes this session. No push/merge/deploy/submit. Remaining user decision: confirm personal-contribution note and review exact final publication candidate.
+
+## Session 014 — 2026-10-11T14:04:09.195822+05:30 (Asia/Kolkata)
+### Objective
+Final editorial cleanup only; no push, merge, deployment or submission.
+### Environment
+Existing .venv311; no downloads or dependency changes.
+### Files Modified
+README.md: replaced the sole contribution placeholder with the exact user-provided statement; detailed AI disclosure preserved. scripts/verify_final_documents.py: require that factual statement and reject placeholders in README/LEARNINGS. Current status/report updated to remove the superseded confirmation request. All four trackers maintained.
+### Implementation Details
+Inspected README and LEARNINGS for CONFIRM/TODO/TBD/FIXME/INSERT and first-person terms. Only the contribution placeholder needed editing; LEARNINGS unchanged. The fallback quote and requested What I learned heading are retained. No technical findings, measured weaknesses, application code, labels or scoring changes.
+### Commands Executed
+Git status/branch/HEAD/tag inspection and targeted rg scans. Documentation/link checks follow; no fresh application test pass claimed yet.
+### Test Results
+Pending editorial gates. Latest runtime acceptance remains the preceding 56distinct/76execution suite with29localhost requests and all16 independent task criteria.
+### Errors and Fixes
+No new errors; anticipated placeholder assertion updated before running the documentation gate.
+### Remaining Issues
+Documentation/link verification and separate local editorial commit pending.
+### Next Step
+Run normal documentation checks, actual moved-link/write tests, complete link/history review and intended/staged content scan; inspect exact diff and commit locally.
+
+### Editorial verification — 2026-10-11T14:05:23.891625+05:30
+Executed scripts.verify_final_documents exit0; tests.v2_documentation2/2 PASSED; scripts.verify_v2_review --no-write exit0 with279valid links and v1 preservation. README177lines, sole change is exact requested replacement; LEARNINGS unchanged215words. Byte comparisons against previous HEAD verify54other Python files and259prior evidence files unchanged (documentation audit excluded because freshly rerun). Existing runtime acceptance applies; application suites not rerun or claimed newly passed. Full reproducible commands/outputs saved in [editorial evidence](../evidence/v2_editorial_cleanup.json). No new errors, dependencies or behavior/scoring changes. Reviewed exact diff; final content/staged checks and separate cleanup commit next. Publication approval remains pending.
+
+Final editorial gates 2026-10-11T14:06:24.181797+05:30: normal documentation gate rerun exit0 after tracker/report updates; full intended354-file inspection PASSED with no findings; git diff --check exit0. Exact README diff remains one line replacement, LEARNINGS unchanged. Only editorial/docs-validation/tracking/evidence files staged for the separate local commit; final clean-tree/v1 checks follow. No runtime acceptance rerun or publication action.
+
+## Session 015 — 2026-10-11T23:36:31.307775+05:30 (Asia/Kolkata)
+### Objective
+Publish verified v2 only to the approved repository via PR, history-preserving merge and annotated v2.0.0; preserve separate v1 and no deployment/portal submission.
+### Environment
+Existing .venv311 and GitHub account nitesh2mithu; no packages/models downloaded, application unchanged.
+### Commands Executed
+Git status/branch/origin/HEAD/main/tag inspection; scripts.verify_v2_review --no-write exit0; git fetch origin --prune exit0; gh repo view/remote ref/workflows/PR list queries exit0. Origin matches approved URL; fetched main remains64e19e9, no unexpected changes, no existing PR/tagv2, public/defaultmain. Initial restricted-network gh auth status exit1 reported invalid; network-permitted diagnostic exit0 verified existing keyring credentials without changes. Failure/diagnosis recorded here; no secrets persisted.
+### Files Created / Modified
+`evidence/v2_publication_preflight.json`; current trackers. PR body stored only in excluded runtime directory.
+### Test Results
+Editorial cleanup verified: no placeholders in README/LEARNINGS, detailed disclosure retained. Complete snapshot/content/link/pin/archive/v1 review PASSED; latest all16 runtime acceptance remains applicable because54other Python files are byte-identical to the runtime-audit baseline. Prior56distinct/76execution checks and29real localhost requests recorded; no new application suites claimed. GitHub workflows0; PR check state must still be inspected before merge.
+### Errors and Fixes
+No open runtime/publication errors; restricted-network auth diagnostic resolved through authorized network recheck, no credential fix needed.
+### Decisions and Rationale
+User explicitly approved push/PR/merge/tag for this repository only. Retain all local commits using merge commit, never force. Unexpected remote changes would stop publication without overwriting.
+### Remaining Issues
+PR push/create/check/merge and remote README/tree verification, tag and publication-record commit pending.
+### Next Step
+Scan exact documentation preflight commit; push polish-v2, create PR and inspect actual remote checks before merging.

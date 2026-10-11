@@ -1,5 +1,5 @@
 {
-  "base_url": "http://127.0.0.1:49505",
+  "base_url": "http://127.0.0.1:58148",
   "checks": [
     "real HTTP ask/reset, memory/isolation, structured responses",
     "masked success, validation, malformed JSON and precrew injection",
@@ -14,7 +14,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -22,23 +22,24 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-1",
-        "trace_id": "bbjblfheamhiefookibgfcakljhlkgfj"
+        "trace_id": "iljoaoficgleeelfjjpgmhdaojjgfiei"
       },
       {
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -46,17 +47,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-1",
-        "trace_id": "ibjdhpkocjceeaocjgkenbnpdmokhjmg"
+        "trace_id": "ccokbgpojempeomdkdfkbpipijjeheif"
       }
     ],
     [
@@ -64,7 +66,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -72,23 +74,24 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-2",
-        "trace_id": "fmioinogcdblehkgkkhmhlifodmfpiei"
+        "trace_id": "phpmnlpineheeadgkedojoegdechnohe"
       },
       {
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -96,17 +99,18 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-2",
-        "trace_id": "cghbkdpcbcbmenmckdakodnmjcbfagbp"
+        "trace_id": "nmjbjhfkjoeoegedlmlldgeabbihimpf"
       }
     ],
     [
@@ -114,7 +118,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -122,23 +126,24 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-3",
-        "trace_id": "cdijdhnknnenelggibjmoebkegjfoglk"
+        "trace_id": "kdbabjgkhhkmegfejonfpjlajplccdgk"
       },
       {
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -146,17 +151,18 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-3",
-        "trace_id": "ingcafjidhhmemjgipiaipajmapkiggg"
+        "trace_id": "nhnnlojifkdeelbakiaadocabjnnhfbk"
       }
     ]
   ],
@@ -165,7 +171,7 @@
     "during_request": true,
     "other_client_continued": true,
     "removed_session": true,
-    "survivor_session": "ws-mglejlfhpadbenpfjhlegkkpaplaemdb"
+    "survivor_session": "ws-bhjmojfgfoebeojpigdmomlkkmeklcfl"
   },
   "http": [
     {
@@ -178,7 +184,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -186,17 +192,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-a",
-        "trace_id": "dcdggheehmbaeekdkmcabjhcgfcelihk"
+        "trace_id": "clcleodefbbiekgaligmmmkbfhcgfdnc"
       },
       "status": 200
     },
@@ -210,7 +217,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -218,17 +225,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-a",
-        "trace_id": "nkdibjfnphpceahhiakfggodlfcnabbd"
+        "trace_id": "fgcphcapjgadekbajedhpgiohjmhbeig"
       },
       "status": 200
     },
@@ -249,7 +257,7 @@
           "ticket": null
         },
         "session_id": "live-b",
-        "trace_id": "hncajfhfeelmebpkjakcpgigpcigilgh"
+        "trace_id": "bdbdjaigclfpeohdlopdikgkoekjgema"
       },
       "status": 200
     },
@@ -261,7 +269,7 @@
       "response": {
         "reset": true,
         "session_id": "live-a",
-        "trace_id": "cgbjlcopdidmedphjlolkheinoegafin"
+        "trace_id": "pgebfijmacgheolmifnbincmheajcicp"
       },
       "status": 200
     },
@@ -282,7 +290,7 @@
           "ticket": null
         },
         "session_id": "live-a",
-        "trace_id": "bghdkijhdagledpokndmcmdohmkaemjf"
+        "trace_id": "dmalnnfllneneibdjokgeljpbnncknng"
       },
       "status": 200
     },
@@ -296,7 +304,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [
             "phone_masked"
@@ -306,17 +314,18 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
         },
         "session_id": "live-mask",
-        "trace_id": "nbejmadjmgmdepncjefakeljnkpldfod"
+        "trace_id": "chagadheiolpeelojmagcfgcbmhkfpof"
       },
       "status": 200
     },
@@ -328,7 +337,7 @@
       "path": "/ask",
       "response": {
         "error": "validation_error",
-        "trace_id": "kceihdkakjglekfkkmnifogiefhabmdk"
+        "trace_id": "digljikiicbnefmljfngkhlbmkhdcapi"
       },
       "status": 422
     },
@@ -341,7 +350,7 @@
       "path": "/ask",
       "response": {
         "error": "validation_error",
-        "trace_id": "bcmdkeefclikeoccldafboldpbojhiec"
+        "trace_id": "oakgnbjmalabepccknpijfcfpalgiccl"
       },
       "status": 422
     },
@@ -350,7 +359,7 @@
       "path": "/ask",
       "response": {
         "error": "validation_error",
-        "trace_id": "chnfmocjmpgnephjkphmgckafiliopkh"
+        "trace_id": "cgbaflfcmfgleckakcjbbgdcdbfdiedp"
       },
       "status": 422
     },
@@ -373,7 +382,7 @@
           "ticket": null
         },
         "session_id": "live-inject",
-        "trace_id": "hiepelkibgnhepbelocfkofjkgbgadal"
+        "trace_id": "nghheegkjikoejehkngdhejfdcclbgkb"
       },
       "status": 200
     },
@@ -396,7 +405,7 @@
           "ticket": null
         },
         "session_id": "live-policy",
-        "trace_id": "benajiookkhpejjbiimpgcdnibnofila"
+        "trace_id": "ifggjedhjjpaepphjlcmijfiionmomij"
       },
       "status": 200
     },
@@ -423,12 +432,13 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           }
         },
         "session_id": "live-unknown",
-        "trace_id": "coidoffifdjoeecokdoeknfnnnflfhdo"
+        "trace_id": "cdmkhljkidahephpjbfmfhjcpapoopbd"
       },
       "status": 200
     },
@@ -442,7 +452,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -450,17 +460,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-1",
-        "trace_id": "bbjblfheamhiefookibgfcakljhlkgfj"
+        "trace_id": "iljoaoficgleeelfjjpgmhdaojjgfiei"
       },
       "status": 200
     },
@@ -474,7 +485,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -482,17 +493,18 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-2",
-        "trace_id": "fmioinogcdblehkgkkhmhlifodmfpiei"
+        "trace_id": "phpmnlpineheeadgkedojoegdechnohe"
       },
       "status": 200
     },
@@ -506,7 +518,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -514,17 +526,18 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-3",
-        "trace_id": "cdijdhnknnenelggibjmoebkegjfoglk"
+        "trace_id": "kdbabjgkhhkmegfejonfpjlajplccdgk"
       },
       "status": 200
     },
@@ -538,7 +551,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -546,17 +559,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-1",
-        "trace_id": "ibjdhpkocjceeaocjgkenbnpdmokhjmg"
+        "trace_id": "ccokbgpojempeomdkdfkbpipijjeheif"
       },
       "status": 200
     },
@@ -570,7 +584,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -578,17 +592,18 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-2",
-        "trace_id": "cghbkdpcbcbmenmckdakodnmjcbfagbp"
+        "trace_id": "nmjbjhfkjoeoegedlmlldgeabbihimpf"
       },
       "status": 200
     },
@@ -602,7 +617,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -610,17 +625,18 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
         "session_id": "live-concurrent-3",
-        "trace_id": "ingcafjidhhmemjgipiaipajmapkiggg"
+        "trace_id": "nhnnlojifkdeelbakiaadocabjnnhfbk"
       },
       "status": 200
     }
@@ -635,7 +651,7 @@
   "offline": {
     "allowed_host": "127.0.0.1",
     "allowed_localhost_events": 5,
-    "allowed_port": 49505,
+    "allowed_port": 58148,
     "api_keys_required": false,
     "model_checksums_unchanged": true,
     "negative_controls_blocked": [
@@ -659,7 +675,7 @@
         "crew_executed": true,
         "history_messages_before": 0,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -667,17 +683,18 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
-        "session_id": "ws-piacmbldpapmedfdknfdiihekmhogpjh",
-        "trace_id": "hdomklalifdhejcbkhfjjcbeolhhifkl"
+        "session_id": "ws-glfcadhmnlmeejkcldjkpgifepmebcej",
+        "trace_id": "kfgkmcahknhoekidjjlkmcaenifigbba"
       }
     },
     {
@@ -695,8 +712,8 @@
           "outcome": "clarification",
           "ticket": null
         },
-        "session_id": "ws-mglejlfhpadbenpfjhlegkkpaplaemdb",
-        "trace_id": "mamnlkcbhkfaeedoignlcliocchnkldg"
+        "session_id": "ws-bhjmojfgfoebeojpigdmomlkkmeklcfl",
+        "trace_id": "hmpdplmbpkihecmckokfljiehkbedbfl"
       }
     },
     {
@@ -708,7 +725,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -716,17 +733,18 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
         },
-        "session_id": "ws-piacmbldpapmedfdknfdiihekmhogpjh",
-        "trace_id": "ipdlalpmgkkheogkjoipjhaofkpmfpba"
+        "session_id": "ws-glfcadhmnlmeejkcldjkpgifepmebcej",
+        "trace_id": "cckekmdfmloleigdkdfmdbhpkokbjalg"
       }
     },
     {
@@ -736,7 +754,7 @@
       },
       "response": {
         "error": "validation_error",
-        "trace_id": "ihfnmkbdkblleljajndockicefcloanc"
+        "trace_id": "pidmfleladmfeebpidjfkpffniojhmpj"
       }
     },
     {
@@ -744,7 +762,7 @@
       "masked_input": "[malformed WebSocket fixture]",
       "response": {
         "error": "validation_error",
-        "trace_id": "bomhomigiloaeamkjipklkilikcjpkjk"
+        "trace_id": "bmkpiafinipbeagclkodfigjihbnnelo"
       }
     },
     {
@@ -756,7 +774,7 @@
         "crew_executed": true,
         "history_messages_before": 2,
         "response": {
-          "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [
             "phone_masked"
@@ -766,17 +784,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.37,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0004",
+            "reopen_count": 3,
             "resolution_time_hours": 57,
             "status": "Open"
           }
         },
-        "session_id": "ws-mglejlfhpadbenpfjhlegkkpaplaemdb",
-        "trace_id": "alahlbinkbleenjokkgebagkiolphdel"
+        "session_id": "ws-bhjmojfgfoebeojpigdmomlkkmeklcfl",
+        "trace_id": "jmlfieepdljiedgakgaboiadpdkphjij"
       }
     },
     {
@@ -796,8 +815,8 @@
           "outcome": "refused",
           "ticket": null
         },
-        "session_id": "ws-mglejlfhpadbenpfjhlegkkpaplaemdb",
-        "trace_id": "enlmpgnccggkeimljnmallaeoennkbmn"
+        "session_id": "ws-bhjmojfgfoebeojpigdmomlkkmeklcfl",
+        "trace_id": "kodiaelaeeimepbfibpfmhidkgnnefeo"
       }
     },
     {
@@ -807,7 +826,7 @@
       },
       "response": {
         "error": "internal_error",
-        "trace_id": "acmmhgenmbicenkfjjbedgmmblefkopl"
+        "trace_id": "abjogibencmkeeknicihknnngfedhddg"
       }
     },
     {
@@ -817,7 +836,7 @@
       },
       "response": {
         "error": "internal_error",
-        "trace_id": "gcdcbfhiaoemeopblkbgbadindlolcjo"
+        "trace_id": "iiegcakddpenecmpkhhhpnndbgfghgjm"
       }
     },
     {
@@ -837,7 +856,7 @@
         "crew_executed": true,
         "history_messages_before": 4,
         "response": {
-          "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
           "citations": [],
           "guardrails": [],
           "outcome": "answered",
@@ -845,17 +864,18 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.37,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0004",
+            "reopen_count": 3,
             "resolution_time_hours": 57,
             "status": "Open"
           }
         },
-        "session_id": "ws-mglejlfhpadbenpfjhlegkkpaplaemdb",
-        "trace_id": "knjajahpafdiecdpjepkemlcbgpbbekg"
+        "session_id": "ws-bhjmojfgfoebeojpigdmomlkkmeklcfl",
+        "trace_id": "gpplngpdgadeehlcicljoigfmkkiphfj"
       }
     }
   ]

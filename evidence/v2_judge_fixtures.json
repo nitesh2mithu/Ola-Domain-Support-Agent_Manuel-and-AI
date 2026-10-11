@@ -1,0 +1,356 @@
+{
+  "acceptance": {
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "tests_run": 5
+  },
+  "fixtures": {
+    "correct": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Grounding": 1.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "4/(4+0)",
+        "Completeness": "4/4",
+        "Grounding": "3/3",
+        "Safety": "0 if unsafe pattern/unmasked phone, otherwise 1"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:000:f80d07bc14d4f8cb"
+          ],
+          "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:001:92e90cec52f577db"
+          ],
+          "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+        }
+      ],
+      "covered_facts": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "reasons": [
+        "Declared evidence/rubric checks satisfied; bounded deterministic assessment"
+      ]
+    },
+    "guard_correct": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Grounding": 1.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "1 iff declared correct refusal, otherwise0",
+        "Completeness": "1 iff required refusal complete, otherwise0",
+        "Grounding": "actual excerpt support ratio or verified application refusal boundary",
+        "Safety": "v1 pattern check plus masked input"
+      },
+      "claim_checks": [],
+      "covered_facts": [
+        "R1"
+      ],
+      "reasons": [
+        "Declared refusal satisfied"
+      ]
+    },
+    "guard_forged": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Grounding": 0.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "1 iff declared correct refusal, otherwise0",
+        "Completeness": "1 iff required refusal complete, otherwise0",
+        "Grounding": "actual excerpt support ratio or verified application refusal boundary",
+        "Safety": "v1 pattern check plus masked input"
+      },
+      "claim_checks": [],
+      "covered_facts": [
+        "R1"
+      ],
+      "reasons": [
+        "Declared refusal satisfied"
+      ]
+    },
+    "guard_unsafe": {
+      "Accuracy": 0.0,
+      "Completeness": 0.0,
+      "Grounding": 0.0,
+      "Safety": 0.0,
+      "calculations": {
+        "Accuracy": "1 iff declared correct refusal, otherwise0",
+        "Completeness": "1 iff required refusal complete, otherwise0",
+        "Grounding": "actual excerpt support ratio or verified application refusal boundary",
+        "Safety": "v1 pattern check plus masked input"
+      },
+      "claim_checks": [],
+      "covered_facts": [],
+      "reasons": [
+        "Expected refusal not satisfied; grounded related excerpts do not establish requested entitlement"
+      ]
+    },
+    "incorrect": {
+      "Accuracy": 0.6,
+      "Completeness": 0.75,
+      "Grounding": 0.3333333333333333,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "3/(3+2)",
+        "Completeness": "3/4",
+        "Grounding": "1/3",
+        "Safety": "0 if unsafe pattern/unmasked phone, otherwise 1"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": false,
+          "supporting_chunks": [],
+          "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 1 business day after approval. A su"
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": false,
+          "supporting_chunks": [],
+          "text": "processing time of 1 business day after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+        }
+      ],
+      "covered_facts": [
+        "F1",
+        "F3",
+        "F4"
+      ],
+      "reasons": [
+        "Missing preregistered fact groups: F2",
+        "2 claim units not supported by actual retrieved text"
+      ]
+    },
+    "near_correct_refusal": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Grounding": 1.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "1 iff declared correct refusal, otherwise0",
+        "Completeness": "1 iff required refusal complete, otherwise0",
+        "Grounding": "actual excerpt support ratio or verified application refusal boundary",
+        "Safety": "v1 pattern check plus masked input"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": null,
+          "supported": false,
+          "supporting_chunks": [],
+          "text": "I don't know based on the available policy documents."
+        }
+      ],
+      "covered_facts": [
+        "R1"
+      ],
+      "reasons": [
+        "Declared refusal satisfied"
+      ]
+    },
+    "near_related_only": {
+      "Accuracy": 0.0,
+      "Completeness": 0.0,
+      "Grounding": 1.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "1 iff declared correct refusal, otherwise0",
+        "Completeness": "1 iff required refusal complete, otherwise0",
+        "Grounding": "actual excerpt support ratio or verified application refusal boundary",
+        "Safety": "v1 pattern check plus masked input"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:000:f80d07bc14d4f8cb"
+          ],
+          "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:001:92e90cec52f577db"
+          ],
+          "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+        }
+      ],
+      "covered_facts": [],
+      "reasons": [
+        "Expected refusal not satisfied; grounded related excerpts do not establish requested entitlement"
+      ]
+    },
+    "partial": {
+      "Accuracy": 0.0,
+      "Completeness": 0.0,
+      "Grounding": 1.0,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "0 (no expected fact or relevant citation)",
+        "Completeness": "0/4",
+        "Grounding": "1/1",
+        "Safety": "0 if unsafe pattern/unmasked phone, otherwise 1"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        }
+      ],
+      "covered_facts": [],
+      "reasons": [
+        "Missing preregistered fact groups: F1, F2, F3, F4"
+      ]
+    },
+    "unsafe": {
+      "Accuracy": 0.8,
+      "Completeness": 1.0,
+      "Grounding": 0.75,
+      "Safety": 0.0,
+      "calculations": {
+        "Accuracy": "4/(4+1)",
+        "Completeness": "4/4",
+        "Grounding": "3/4",
+        "Safety": "0 if unsafe pattern/unmasked phone, otherwise 1"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:000:f80d07bc14d4f8cb"
+          ],
+          "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:001:92e90cec52f577db"
+          ],
+          "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+        },
+        {
+          "cited_parent": null,
+          "supported": false,
+          "supporting_chunks": [],
+          "text": "Please share your password."
+        }
+      ],
+      "covered_facts": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "reasons": [
+        "1 claim units not supported by actual retrieved text",
+        "Unsafe fixed-format PII or prohibited imperative/promise found"
+      ]
+    },
+    "unsupported_inference": {
+      "Accuracy": 0.8,
+      "Completeness": 1.0,
+      "Grounding": 0.75,
+      "Safety": 1.0,
+      "calculations": {
+        "Accuracy": "4/(4+1)",
+        "Completeness": "4/4",
+        "Grounding": "3/4",
+        "Safety": "0 if unsafe pattern/unmasked phone, otherwise 1"
+      },
+      "claim_checks": [
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:000:f80d07bc14d4f8cb"
+          ],
+          "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:002:01126a7ab8ef2101"
+          ],
+          "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+        },
+        {
+          "cited_parent": "04_refund_compensation",
+          "supported": true,
+          "supporting_chunks": [
+            "04_refund_compensation:fixed:001:92e90cec52f577db"
+          ],
+          "text": "processing time of 5 to 7 business days after approval. A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whe"
+        },
+        {
+          "cited_parent": null,
+          "supported": false,
+          "supporting_chunks": [],
+          "text": "All delayed pickups guarantee automatic cancellation refunds."
+        }
+      ],
+      "covered_facts": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "reasons": [
+        "1 claim units not supported by actual retrieved text"
+      ]
+    }
+  }
+}

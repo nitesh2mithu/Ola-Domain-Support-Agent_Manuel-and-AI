@@ -115,9 +115,9 @@
             },
             {
               "completion_tokens": 274,
-              "prompt_tokens": 2569,
+              "prompt_tokens": 2676,
               "stage": "CrewAI/composer",
-              "total_tokens": 2843
+              "total_tokens": 2950
             },
             {
               "completion_tokens": 25,
@@ -132,8 +132,8 @@
               "total_tokens": 3025
             }
           ],
-          "simulated_cost_usd": "0.027308",
-          "simulated_tokens": 13654,
+          "simulated_cost_usd": "0.027522",
+          "simulated_tokens": 13761,
           "token_cap": 50000
         },
         "cache": {
@@ -734,9 +734,9 @@
             },
             {
               "completion_tokens": 239,
-              "prompt_tokens": 2460,
+              "prompt_tokens": 2567,
               "stage": "CrewAI/composer",
-              "total_tokens": 2699
+              "total_tokens": 2806
             },
             {
               "completion_tokens": 25,
@@ -751,8 +751,8 @@
               "total_tokens": 2741
             }
           ],
-          "simulated_cost_usd": "0.025312",
-          "simulated_tokens": 12656,
+          "simulated_cost_usd": "0.025526",
+          "simulated_tokens": 12763,
           "token_cap": 50000
         },
         "cache": {
@@ -1343,9 +1343,9 @@
             },
             {
               "completion_tokens": 242,
-              "prompt_tokens": 2475,
+              "prompt_tokens": 2583,
               "stage": "CrewAI/composer",
-              "total_tokens": 2717
+              "total_tokens": 2825
             },
             {
               "completion_tokens": 25,
@@ -1360,8 +1360,8 @@
               "total_tokens": 2775
             }
           ],
-          "simulated_cost_usd": "0.025614",
-          "simulated_tokens": 12807,
+          "simulated_cost_usd": "0.02583",
+          "simulated_tokens": 12915,
           "token_cap": 50000
         },
         "cache": {
@@ -1950,9 +1950,9 @@
             },
             {
               "completion_tokens": 239,
-              "prompt_tokens": 2483,
+              "prompt_tokens": 2590,
               "stage": "CrewAI/composer",
-              "total_tokens": 2722
+              "total_tokens": 2829
             },
             {
               "completion_tokens": 25,
@@ -1967,8 +1967,8 @@
               "total_tokens": 2786
             }
           ],
-          "simulated_cost_usd": "0.02569",
-          "simulated_tokens": 12845,
+          "simulated_cost_usd": "0.025904",
+          "simulated_tokens": 12952,
           "token_cap": 50000
         },
         "cache": {
@@ -2556,9 +2556,9 @@
             },
             {
               "completion_tokens": 228,
-              "prompt_tokens": 2461,
+              "prompt_tokens": 2568,
               "stage": "CrewAI/composer",
-              "total_tokens": 2689
+              "total_tokens": 2796
             },
             {
               "completion_tokens": 25,
@@ -2573,8 +2573,8 @@
               "total_tokens": 2717
             }
           ],
-          "simulated_cost_usd": "0.025282",
-          "simulated_tokens": 12641,
+          "simulated_cost_usd": "0.025496",
+          "simulated_tokens": 12748,
           "token_cap": 50000
         },
         "cache": {
@@ -3164,9 +3164,9 @@
             },
             {
               "completion_tokens": 235,
-              "prompt_tokens": 2465,
+              "prompt_tokens": 2572,
               "stage": "CrewAI/composer",
-              "total_tokens": 2700
+              "total_tokens": 2807
             },
             {
               "completion_tokens": 25,
@@ -3181,8 +3181,8 @@
               "total_tokens": 2741
             }
           ],
-          "simulated_cost_usd": "0.025364",
-          "simulated_tokens": 12682,
+          "simulated_cost_usd": "0.025578",
+          "simulated_tokens": 12789,
           "token_cap": 50000
         },
         "cache": {
@@ -3769,9 +3769,9 @@
             },
             {
               "completion_tokens": 222,
-              "prompt_tokens": 2427,
+              "prompt_tokens": 2534,
               "stage": "CrewAI/composer",
-              "total_tokens": 2649
+              "total_tokens": 2756
             },
             {
               "completion_tokens": 25,
@@ -3786,8 +3786,8 @@
               "total_tokens": 2637
             }
           ],
-          "simulated_cost_usd": "0.024676",
-          "simulated_tokens": 12338,
+          "simulated_cost_usd": "0.02489",
+          "simulated_tokens": 12445,
           "token_cap": 50000
         },
         "cache": {
@@ -4376,9 +4376,9 @@
             },
             {
               "completion_tokens": 214,
-              "prompt_tokens": 2388,
+              "prompt_tokens": 2496,
               "stage": "CrewAI/composer",
-              "total_tokens": 2602
+              "total_tokens": 2710
             },
             {
               "completion_tokens": 25,
@@ -4393,8 +4393,8 @@
               "total_tokens": 2547
             }
           ],
-          "simulated_cost_usd": "0.023948",
-          "simulated_tokens": 11974,
+          "simulated_cost_usd": "0.024164",
+          "simulated_tokens": 12082,
           "token_cap": 50000
         },
         "cache": {
@@ -4983,9 +4983,9 @@
             },
             {
               "completion_tokens": 216,
-              "prompt_tokens": 2382,
+              "prompt_tokens": 2489,
               "stage": "CrewAI/composer",
-              "total_tokens": 2598
+              "total_tokens": 2705
             },
             {
               "completion_tokens": 25,
@@ -5000,8 +5000,8 @@
               "total_tokens": 2534
             }
           ],
-          "simulated_cost_usd": "0.023858",
-          "simulated_tokens": 11929,
+          "simulated_cost_usd": "0.024072",
+          "simulated_tokens": 12036,
           "token_cap": 50000
         },
         "cache": {
@@ -5596,9 +5596,9 @@
             },
             {
               "completion_tokens": 241,
-              "prompt_tokens": 2459,
+              "prompt_tokens": 2566,
               "stage": "CrewAI/composer",
-              "total_tokens": 2700
+              "total_tokens": 2807
             },
             {
               "completion_tokens": 25,
@@ -5613,8 +5613,8 @@
               "total_tokens": 2738
             }
           ],
-          "simulated_cost_usd": "0.025282",
-          "simulated_tokens": 12641,
+          "simulated_cost_usd": "0.025496",
+          "simulated_tokens": 12748,
           "token_cap": 50000
         },
         "cache": {
@@ -6209,9 +6209,9 @@
             },
             {
               "completion_tokens": 236,
-              "prompt_tokens": 2475,
+              "prompt_tokens": 2583,
               "stage": "CrewAI/composer",
-              "total_tokens": 2711
+              "total_tokens": 2819
             },
             {
               "completion_tokens": 25,
@@ -6226,8 +6226,8 @@
               "total_tokens": 2763
             }
           ],
-          "simulated_cost_usd": "0.025536",
-          "simulated_tokens": 12768,
+          "simulated_cost_usd": "0.025752",
+          "simulated_tokens": 12876,
           "token_cap": 50000
         },
         "cache": {
@@ -6815,9 +6815,9 @@
             },
             {
               "completion_tokens": 242,
-              "prompt_tokens": 2486,
+              "prompt_tokens": 2594,
               "stage": "CrewAI/composer",
-              "total_tokens": 2728
+              "total_tokens": 2836
             },
             {
               "completion_tokens": 25,
@@ -6832,8 +6832,8 @@
               "total_tokens": 2798
             }
           ],
-          "simulated_cost_usd": "0.025712",
-          "simulated_tokens": 12856,
+          "simulated_cost_usd": "0.025928",
+          "simulated_tokens": 12964,
           "token_cap": 50000
         },
         "cache": {
@@ -7391,9 +7391,9 @@
             },
             {
               "completion_tokens": 39,
-              "prompt_tokens": 1984,
+              "prompt_tokens": 2091,
               "stage": "CrewAI/composer",
-              "total_tokens": 2023
+              "total_tokens": 2130
             },
             {
               "completion_tokens": 25,
@@ -7408,8 +7408,8 @@
               "total_tokens": 1378
             }
           ],
-          "simulated_cost_usd": "0.015978",
-          "simulated_tokens": 7989,
+          "simulated_cost_usd": "0.016192",
+          "simulated_tokens": 8096,
           "token_cap": 50000
         },
         "cache": {
@@ -7865,9 +7865,9 @@
             },
             {
               "completion_tokens": 39,
-              "prompt_tokens": 1979,
+              "prompt_tokens": 2086,
               "stage": "CrewAI/composer",
-              "total_tokens": 2018
+              "total_tokens": 2125
             },
             {
               "completion_tokens": 25,
@@ -7882,8 +7882,8 @@
               "total_tokens": 1368
             }
           ],
-          "simulated_cost_usd": "0.015856",
-          "simulated_tokens": 7928,
+          "simulated_cost_usd": "0.01607",
+          "simulated_tokens": 8035,
           "token_cap": 50000
         },
         "cache": {
@@ -8332,32 +8332,32 @@
               "total_tokens": 603
             },
             {
-              "completion_tokens": 69,
-              "prompt_tokens": 712,
+              "completion_tokens": 74,
+              "prompt_tokens": 718,
               "stage": "CrewAI/ticket",
-              "total_tokens": 781
+              "total_tokens": 792
             },
             {
-              "completion_tokens": 90,
-              "prompt_tokens": 1535,
+              "completion_tokens": 95,
+              "prompt_tokens": 1648,
               "stage": "CrewAI/composer",
-              "total_tokens": 1625
+              "total_tokens": 1743
             },
             {
               "completion_tokens": 25,
-              "prompt_tokens": 359,
+              "prompt_tokens": 377,
               "stage": "AutoGen/reviewer",
-              "total_tokens": 384
+              "total_tokens": 402
             },
             {
               "completion_tokens": 34,
-              "prompt_tokens": 479,
+              "prompt_tokens": 497,
               "stage": "AutoGen/editor",
-              "total_tokens": 513
+              "total_tokens": 531
             }
           ],
-          "simulated_cost_usd": "0.00891",
-          "simulated_tokens": 4455,
+          "simulated_cost_usd": "0.00924",
+          "simulated_tokens": 4620,
           "token_cap": 50000
         },
         "cache": {
@@ -8380,6 +8380,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           }
@@ -8433,6 +8434,7 @@
               "found": false,
               "recommend_escalation": false,
               "record_id": "OLA-9999",
+              "reopen_count": null,
               "resolution_time_hours": null,
               "status": null
             },
@@ -8450,6 +8452,7 @@
               "found": false,
               "recommend_escalation": false,
               "record_id": "OLA-9999",
+              "reopen_count": null,
               "resolution_time_hours": null,
               "status": null
             }
@@ -8476,6 +8479,7 @@
                   "found": false,
                   "recommend_escalation": false,
                   "record_id": "OLA-9999",
+                  "reopen_count": null,
                   "resolution_time_hours": null,
                   "status": null
                 },
@@ -8512,6 +8516,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           }
@@ -8530,7 +8535,7 @@
           "structured_requested": true,
           "transcript": [
             {
-              "content": "{\"draft\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}, \"original_context\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}, \"kind\": \"ticket\", \"requested\": true}]}",
+              "content": "{\"draft\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}, \"original_context\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}, \"kind\": \"ticket\", \"requested\": true}]}",
               "source": "user"
             },
             {
@@ -8566,6 +8571,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           }
@@ -8586,6 +8592,7 @@
               "found": false,
               "recommend_escalation": false,
               "record_id": "OLA-9999",
+              "reopen_count": null,
               "resolution_time_hours": null,
               "status": null
             },
@@ -8600,7 +8607,7 @@
           "role": "system"
         },
         {
-          "content": "{\"actual_tool_results\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}, \"expected\": {\"expected_facts\": [], \"id\": \"E15\", \"kind\": \"unknown_ticket\", \"query\": \"Check OLA-9999 status.\", \"relevant_documents\": [], \"topic\": null}, \"query\": \"Check OLA-9999 status.\", \"response\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}}",
+          "content": "{\"actual_tool_results\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}, \"expected\": {\"expected_facts\": [], \"id\": \"E15\", \"kind\": \"unknown_ticket\", \"query\": \"Check OLA-9999 status.\", \"relevant_documents\": [], \"topic\": null}, \"query\": \"Check OLA-9999 status.\", \"response\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}}",
           "role": "user"
         }
       ],

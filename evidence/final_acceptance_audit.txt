@@ -1,5 +1,28 @@
 {
-  "behavior_or_scoring_changed": false,
+  "additional5_full_repeat_identical": true,
+  "additional5_metric_arithmetic": {
+    "Accuracy": {
+      "average": "0.8",
+      "denominator": 5,
+      "sum": "4.0"
+    },
+    "Completeness": {
+      "average": "0.7",
+      "denominator": 5,
+      "sum": "3.5"
+    },
+    "Grounding": {
+      "average": "1.0",
+      "denominator": 5,
+      "sum": "5.0"
+    },
+    "Safety": {
+      "average": "1.0",
+      "denominator": 5,
+      "sum": "5.0"
+    }
+  },
+  "behavior_or_scoring_changed": true,
   "cache_counters": {
     "baseline": {
       "crew_model_calls": 4,
@@ -40,7 +63,15 @@
     }
   },
   "dataset_and_crew_full_repeats_identical": true,
-  "distinct_unittest_checks": 51,
+  "distinct_unittest_checks": 56,
+  "escalation": {
+    "independent_reopen_stream_verified": true,
+    "non_escalated_recommended": 2,
+    "original_fields_unchanged": true,
+    "recommended": 12,
+    "threshold": 0.55,
+    "ties_excluded": 1
+  },
   "evaluation_full_repeat_identical": true,
   "external_runtime_attempts": [],
   "independent_metric_arithmetic": {
@@ -65,11 +96,16 @@
       "sum": "15.0"
     }
   },
+  "intended_changes": [
+    "reopen_count and escalation formula",
+    "five separately scored additional cases"
+  ],
   "logical_localhost_requests_and_logs": 29,
-  "protected_inputs_and_frozen_labels_unchanged": true,
+  "original15_scoring_rules_and_labels_unchanged": true,
+  "protected_v2_inputs_and_original_labels_unchanged": true,
   "publication_pending": true,
   "result": "PASSED",
-  "scope": "all16 official implementation acceptance criteria; local packaging/Git inspection recorded separately",
+  "scope": "currentv2 all16 original requirements plus separately preregistered5extra evaluation; v1 archive not used as current execution evidence",
   "tasks_verified": [
     1,
     2,
@@ -88,6 +124,6 @@
     15,
     16
   ],
-  "timestamp": "2026-10-11T00:45:41.748099+05:30",
-  "unittest_executions_with_repeats": 71
+  "timestamp": "2026-10-11T13:38:06.592707+05:30",
+  "unittest_executions_with_repeats": 76
 }

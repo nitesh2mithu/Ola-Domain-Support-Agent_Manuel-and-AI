@@ -36,6 +36,7 @@ def generate_tickets(seed: int = SEED, count: int = RECORD_COUNT) -> list[dict]:
     if type(seed) is not int or type(count) is not int or count < 40:
         raise ValueError("seed must be an integer and count must be an integer >=40")
     rng = random.Random(seed)
+    reopen_rng = random.Random(seed + 1)  # Separate stream; original RNG draw order is unchanged.
     tickets = []
     for number in range(1, count + 1):
         category = rng.choices(CATEGORIES, weights=CATEGORY_WEIGHTS, k=1)[0]
@@ -50,6 +51,7 @@ def generate_tickets(seed: int = SEED, count: int = RECORD_COUNT) -> list[dict]:
             "days_since_created": rng.randint(minimum_age, 30),
             "escalated": status == "Escalated",
             "amount_inr": rng.randint(*AMOUNT_RANGE_INR),
+            "reopen_count": reopen_rng.randint(0, 3),
         })
     return tickets
 
@@ -67,7 +69,7 @@ def validate_tickets(tickets: list[dict]) -> dict:
     required_types = {
         "record_id": str, "category": str, "status": str,
         "resolution_time_hours": int, "days_since_created": int,
-        "escalated": bool, "amount_inr": int,
+        "escalated": bool, "amount_inr": int, "reopen_count": int,
     }
     ids = set()
     for ticket in tickets:
@@ -90,6 +92,8 @@ def validate_tickets(tickets: list[dict]) -> dict:
             raise ValueError("Active escalation must match Escalated status")
         if ticket["status"] in ("Resolved", "Closed") and ticket["days_since_created"] * 24 < ticket["resolution_time_hours"]:
             raise ValueError("Terminal ticket age shorter than resolution duration")
+        if not 0 <= ticket["reopen_count"] <= 3:
+            raise ValueError("reopen_count outside 0–3")
         if not AMOUNT_RANGE_INR[0] <= ticket["amount_inr"] <= AMOUNT_RANGE_INR[1]:
             raise ValueError("amount_inr outside configured range")
     categories = Counter(t["category"] for t in tickets)

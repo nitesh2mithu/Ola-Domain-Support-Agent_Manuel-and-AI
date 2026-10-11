@@ -1,0 +1,26 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9714.28it/s]
+<PROJECT>/tests/milestone_04_acceptance.py:38: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  cls.app = SupportSession(cache_enabled=False)
+setUpClass (__main__.MilestoneFourTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (__main__.MilestoneFourTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT>/tests/milestone_04_acceptance.py", line 40, in setUpClass
+    'ticket_results': [check_support_ticket_status(t['record_id']) for t in SUPPORT_TICKETS],
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT>/tests/milestone_04_acceptance.py", line 40, in <listcomp>
+    'ticket_results': [check_support_ticket_status(t['record_id']) for t in SUPPORT_TICKETS],
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT>/support/tickets.py", line 39, in check_support_ticket_status
+    score = escalation_score(ticket['escalated'], ticket['days_since_created'], t['reopen_count'])
+                                                                                ^
+NameError: name 't' is not defined
+
+----------------------------------------------------------------------
+Ran 0 tests in 1.086s
+
+FAILED (errors=1)

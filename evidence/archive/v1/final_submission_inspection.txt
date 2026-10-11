@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-11T00:47:09.160639+05:30",
+  "scope": "intended allowlist",
+  "result": "PASSED",
+  "files_inspected": 265,
+  "total_text_bytes": 10064863,
+  "findings": [],
+  "checks": [
+    "credential signatures and high-entropy assignment literals",
+    "credential URLs",
+    "personal absolute paths",
+    "raw fabricated phone test sequence",
+    "full fixed phone pattern with digest/decimal false-positive classification",
+    "binary/unknown formats",
+    "runtime/secret directories",
+    "noncurated live logs"
+  ],
+  "limitations": "Static patterns are not exhaustive secret detection. Fixed phone-pattern runs inside long hexadecimal digests or decimal metrics are classified as numeric false positives; runtime masking verified separately."
+}

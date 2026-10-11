@@ -145,7 +145,7 @@ class JudgeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Actual preceding crew output/context is a positive control, not a score map.
-        previous=json.loads((ROOT/'evidence/milestone_04_acceptance.json').read_text())['cases']['policy']
+        previous=json.loads((ROOT/'evidence/archive/v1/milestone_04_acceptance.json').read_text())['cases']['policy']
         cls.response=previous['response']
         cls.tools={e['kind']:e['result'] for e in previous['events'] if e['event']=='tool_executed'}
         cls.case=next(c for c in json.loads((ROOT/'evaluation/support_queries.json').read_text()) if c['topic']=='04_refund_compensation')
@@ -189,7 +189,7 @@ class JudgeTests(unittest.TestCase):
 
     def test_10_freeze_and_offline(self):
         import hashlib
-        freeze=json.loads((ROOT/'evidence/milestone_05_evaluation_freeze.json').read_text())
+        freeze=json.loads((ROOT/'evidence/archive/v1/milestone_05_evaluation_freeze.json').read_text())
         for file,digest in freeze['sha256'].items():self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest)
         self.assertEqual(NETWORK_ATTEMPTS,[]);self.assertEqual(FORBIDDEN_PROCESS_ATTEMPTS,[])
 

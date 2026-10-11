@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT_CAPSTONE>/scripts/verify_v2_review.py", line 110, in <module>
+    main()
+  File "<PROJECT_CAPSTONE>/scripts/verify_v2_review.py", line 51, in main
+    assert target.is_relative_to(temporary) and member.isfile()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

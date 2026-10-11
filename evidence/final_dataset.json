@@ -6,6 +6,7 @@
       "days_since_created": 7,
       "escalated": false,
       "record_id": "OLA-0001",
+      "reopen_count": 0,
       "resolution_time_hours": 82,
       "status": "Open"
     },
@@ -15,6 +16,7 @@
       "days_since_created": 18,
       "escalated": false,
       "record_id": "OLA-0002",
+      "reopen_count": 2,
       "resolution_time_hours": 15,
       "status": "Open"
     },
@@ -24,6 +26,7 @@
       "days_since_created": 16,
       "escalated": false,
       "record_id": "OLA-0003",
+      "reopen_count": 1,
       "resolution_time_hours": 33,
       "status": "Open"
     },
@@ -33,6 +36,7 @@
       "days_since_created": 7,
       "escalated": false,
       "record_id": "OLA-0004",
+      "reopen_count": 3,
       "resolution_time_hours": 57,
       "status": "Open"
     },
@@ -42,6 +46,7 @@
       "days_since_created": 25,
       "escalated": false,
       "record_id": "OLA-0005",
+      "reopen_count": 2,
       "resolution_time_hours": 1,
       "status": "Resolved"
     },
@@ -51,6 +56,7 @@
       "days_since_created": 6,
       "escalated": false,
       "record_id": "OLA-0006",
+      "reopen_count": 0,
       "resolution_time_hours": 51,
       "status": "In Progress"
     },
@@ -60,6 +66,7 @@
       "days_since_created": 27,
       "escalated": false,
       "record_id": "OLA-0007",
+      "reopen_count": 3,
       "resolution_time_hours": 49,
       "status": "In Progress"
     },
@@ -69,6 +76,7 @@
       "days_since_created": 23,
       "escalated": false,
       "record_id": "OLA-0008",
+      "reopen_count": 3,
       "resolution_time_hours": 129,
       "status": "Resolved"
     },
@@ -78,6 +86,7 @@
       "days_since_created": 9,
       "escalated": false,
       "record_id": "OLA-0009",
+      "reopen_count": 0,
       "resolution_time_hours": 18,
       "status": "In Progress"
     },
@@ -87,6 +96,7 @@
       "days_since_created": 22,
       "escalated": false,
       "record_id": "OLA-0010",
+      "reopen_count": 3,
       "resolution_time_hours": 3,
       "status": "Resolved"
     },
@@ -96,6 +106,7 @@
       "days_since_created": 30,
       "escalated": false,
       "record_id": "OLA-0011",
+      "reopen_count": 2,
       "resolution_time_hours": 71,
       "status": "Closed"
     },
@@ -105,6 +116,7 @@
       "days_since_created": 11,
       "escalated": true,
       "record_id": "OLA-0012",
+      "reopen_count": 3,
       "resolution_time_hours": 110,
       "status": "Escalated"
     },
@@ -114,6 +126,7 @@
       "days_since_created": 22,
       "escalated": false,
       "record_id": "OLA-0013",
+      "reopen_count": 3,
       "resolution_time_hours": 38,
       "status": "In Progress"
     },
@@ -123,6 +136,7 @@
       "days_since_created": 5,
       "escalated": false,
       "record_id": "OLA-0014",
+      "reopen_count": 1,
       "resolution_time_hours": 74,
       "status": "Open"
     },
@@ -132,6 +146,7 @@
       "days_since_created": 26,
       "escalated": false,
       "record_id": "OLA-0015",
+      "reopen_count": 0,
       "resolution_time_hours": 85,
       "status": "Closed"
     },
@@ -141,6 +156,7 @@
       "days_since_created": 24,
       "escalated": false,
       "record_id": "OLA-0016",
+      "reopen_count": 0,
       "resolution_time_hours": 102,
       "status": "In Progress"
     },
@@ -150,6 +166,7 @@
       "days_since_created": 12,
       "escalated": false,
       "record_id": "OLA-0017",
+      "reopen_count": 0,
       "resolution_time_hours": 44,
       "status": "Open"
     },
@@ -159,6 +176,7 @@
       "days_since_created": 8,
       "escalated": false,
       "record_id": "OLA-0018",
+      "reopen_count": 3,
       "resolution_time_hours": 44,
       "status": "Closed"
     },
@@ -168,6 +186,7 @@
       "days_since_created": 7,
       "escalated": false,
       "record_id": "OLA-0019",
+      "reopen_count": 1,
       "resolution_time_hours": 62,
       "status": "Closed"
     },
@@ -177,6 +196,7 @@
       "days_since_created": 11,
       "escalated": false,
       "record_id": "OLA-0020",
+      "reopen_count": 0,
       "resolution_time_hours": 72,
       "status": "Resolved"
     },
@@ -186,6 +206,7 @@
       "days_since_created": 7,
       "escalated": true,
       "record_id": "OLA-0021",
+      "reopen_count": 1,
       "resolution_time_hours": 24,
       "status": "Escalated"
     },
@@ -195,6 +216,7 @@
       "days_since_created": 27,
       "escalated": false,
       "record_id": "OLA-0022",
+      "reopen_count": 3,
       "resolution_time_hours": 4,
       "status": "Open"
     },
@@ -204,6 +226,7 @@
       "days_since_created": 19,
       "escalated": false,
       "record_id": "OLA-0023",
+      "reopen_count": 1,
       "resolution_time_hours": 58,
       "status": "Open"
     },
@@ -213,6 +236,7 @@
       "days_since_created": 16,
       "escalated": true,
       "record_id": "OLA-0024",
+      "reopen_count": 3,
       "resolution_time_hours": 63,
       "status": "Escalated"
     },
@@ -222,6 +246,7 @@
       "days_since_created": 22,
       "escalated": false,
       "record_id": "OLA-0025",
+      "reopen_count": 2,
       "resolution_time_hours": 1,
       "status": "Closed"
     },
@@ -231,6 +256,7 @@
       "days_since_created": 24,
       "escalated": true,
       "record_id": "OLA-0026",
+      "reopen_count": 1,
       "resolution_time_hours": 80,
       "status": "Escalated"
     },
@@ -240,6 +266,7 @@
       "days_since_created": 0,
       "escalated": false,
       "record_id": "OLA-0027",
+      "reopen_count": 3,
       "resolution_time_hours": 62,
       "status": "In Progress"
     },
@@ -249,6 +276,7 @@
       "days_since_created": 30,
       "escalated": false,
       "record_id": "OLA-0028",
+      "reopen_count": 0,
       "resolution_time_hours": 17,
       "status": "Resolved"
     },
@@ -258,6 +286,7 @@
       "days_since_created": 16,
       "escalated": false,
       "record_id": "OLA-0029",
+      "reopen_count": 0,
       "resolution_time_hours": 21,
       "status": "In Progress"
     },
@@ -267,6 +296,7 @@
       "days_since_created": 17,
       "escalated": false,
       "record_id": "OLA-0030",
+      "reopen_count": 0,
       "resolution_time_hours": 24,
       "status": "In Progress"
     },
@@ -276,6 +306,7 @@
       "days_since_created": 0,
       "escalated": true,
       "record_id": "OLA-0031",
+      "reopen_count": 1,
       "resolution_time_hours": 16,
       "status": "Escalated"
     },
@@ -285,6 +316,7 @@
       "days_since_created": 8,
       "escalated": false,
       "record_id": "OLA-0032",
+      "reopen_count": 0,
       "resolution_time_hours": 10,
       "status": "Closed"
     },
@@ -294,6 +326,7 @@
       "days_since_created": 2,
       "escalated": true,
       "record_id": "OLA-0033",
+      "reopen_count": 1,
       "resolution_time_hours": 14,
       "status": "Escalated"
     },
@@ -303,6 +336,7 @@
       "days_since_created": 25,
       "escalated": false,
       "record_id": "OLA-0034",
+      "reopen_count": 2,
       "resolution_time_hours": 18,
       "status": "Closed"
     },
@@ -312,6 +346,7 @@
       "days_since_created": 8,
       "escalated": true,
       "record_id": "OLA-0035",
+      "reopen_count": 2,
       "resolution_time_hours": 25,
       "status": "Escalated"
     },
@@ -321,6 +356,7 @@
       "days_since_created": 29,
       "escalated": false,
       "record_id": "OLA-0036",
+      "reopen_count": 0,
       "resolution_time_hours": 7,
       "status": "In Progress"
     },
@@ -330,6 +366,7 @@
       "days_since_created": 16,
       "escalated": false,
       "record_id": "OLA-0037",
+      "reopen_count": 0,
       "resolution_time_hours": 91,
       "status": "Resolved"
     },
@@ -339,6 +376,7 @@
       "days_since_created": 7,
       "escalated": true,
       "record_id": "OLA-0038",
+      "reopen_count": 0,
       "resolution_time_hours": 8,
       "status": "Escalated"
     },
@@ -348,6 +386,7 @@
       "days_since_created": 18,
       "escalated": false,
       "record_id": "OLA-0039",
+      "reopen_count": 0,
       "resolution_time_hours": 33,
       "status": "Open"
     },
@@ -357,6 +396,7 @@
       "days_since_created": 8,
       "escalated": false,
       "record_id": "OLA-0040",
+      "reopen_count": 3,
       "resolution_time_hours": 11,
       "status": "Resolved"
     },
@@ -366,6 +406,7 @@
       "days_since_created": 17,
       "escalated": false,
       "record_id": "OLA-0041",
+      "reopen_count": 2,
       "resolution_time_hours": 3,
       "status": "Closed"
     },
@@ -375,6 +416,7 @@
       "days_since_created": 4,
       "escalated": true,
       "record_id": "OLA-0042",
+      "reopen_count": 2,
       "resolution_time_hours": 73,
       "status": "Escalated"
     },
@@ -384,6 +426,7 @@
       "days_since_created": 25,
       "escalated": false,
       "record_id": "OLA-0043",
+      "reopen_count": 3,
       "resolution_time_hours": 31,
       "status": "In Progress"
     },
@@ -393,6 +436,7 @@
       "days_since_created": 11,
       "escalated": false,
       "record_id": "OLA-0044",
+      "reopen_count": 1,
       "resolution_time_hours": 59,
       "status": "Open"
     },
@@ -402,6 +446,7 @@
       "days_since_created": 22,
       "escalated": false,
       "record_id": "OLA-0045",
+      "reopen_count": 1,
       "resolution_time_hours": 4,
       "status": "Closed"
     },
@@ -411,6 +456,7 @@
       "days_since_created": 8,
       "escalated": false,
       "record_id": "OLA-0046",
+      "reopen_count": 0,
       "resolution_time_hours": 17,
       "status": "Resolved"
     },
@@ -420,6 +466,7 @@
       "days_since_created": 5,
       "escalated": false,
       "record_id": "OLA-0047",
+      "reopen_count": 2,
       "resolution_time_hours": 58,
       "status": "In Progress"
     },
@@ -429,6 +476,7 @@
       "days_since_created": 15,
       "escalated": false,
       "record_id": "OLA-0048",
+      "reopen_count": 0,
       "resolution_time_hours": 5,
       "status": "Closed"
     },
@@ -438,6 +486,7 @@
       "days_since_created": 3,
       "escalated": false,
       "record_id": "OLA-0049",
+      "reopen_count": 2,
       "resolution_time_hours": 5,
       "status": "Resolved"
     },
@@ -447,6 +496,7 @@
       "days_since_created": 27,
       "escalated": true,
       "record_id": "OLA-0050",
+      "reopen_count": 2,
       "resolution_time_hours": 31,
       "status": "Escalated"
     },
@@ -456,6 +506,7 @@
       "days_since_created": 12,
       "escalated": false,
       "record_id": "OLA-0051",
+      "reopen_count": 1,
       "resolution_time_hours": 1,
       "status": "Open"
     },
@@ -465,6 +516,7 @@
       "days_since_created": 14,
       "escalated": false,
       "record_id": "OLA-0052",
+      "reopen_count": 0,
       "resolution_time_hours": 10,
       "status": "Resolved"
     },
@@ -474,6 +526,7 @@
       "days_since_created": 9,
       "escalated": true,
       "record_id": "OLA-0053",
+      "reopen_count": 0,
       "resolution_time_hours": 60,
       "status": "Escalated"
     },
@@ -483,6 +536,7 @@
       "days_since_created": 1,
       "escalated": true,
       "record_id": "OLA-0054",
+      "reopen_count": 2,
       "resolution_time_hours": 18,
       "status": "Escalated"
     },
@@ -492,6 +546,7 @@
       "days_since_created": 29,
       "escalated": true,
       "record_id": "OLA-0055",
+      "reopen_count": 3,
       "resolution_time_hours": 68,
       "status": "Escalated"
     },
@@ -501,6 +556,7 @@
       "days_since_created": 28,
       "escalated": false,
       "record_id": "OLA-0056",
+      "reopen_count": 2,
       "resolution_time_hours": 14,
       "status": "Closed"
     },
@@ -510,6 +566,7 @@
       "days_since_created": 12,
       "escalated": false,
       "record_id": "OLA-0057",
+      "reopen_count": 3,
       "resolution_time_hours": 34,
       "status": "Open"
     },
@@ -519,6 +576,7 @@
       "days_since_created": 19,
       "escalated": true,
       "record_id": "OLA-0058",
+      "reopen_count": 0,
       "resolution_time_hours": 19,
       "status": "Escalated"
     },
@@ -528,6 +586,7 @@
       "days_since_created": 18,
       "escalated": false,
       "record_id": "OLA-0059",
+      "reopen_count": 3,
       "resolution_time_hours": 161,
       "status": "In Progress"
     },
@@ -537,6 +596,7 @@
       "days_since_created": 22,
       "escalated": false,
       "record_id": "OLA-0060",
+      "reopen_count": 3,
       "resolution_time_hours": 89,
       "status": "In Progress"
     }
@@ -575,6 +635,9 @@
     ],
     "record_id": [
       "str"
+    ],
+    "reopen_count": [
+      "int"
     ],
     "resolution_time_hours": [
       "int"
@@ -839,10 +902,10 @@
   ],
   "python_version": "3.11.17",
   "record_count": 60,
-  "regeneration_sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "regeneration_sha256": "4bc5e6702e2bc760832157a0cece8f93cf0cf93224e6c09a94f40e98520407cf",
   "result": "PASSED",
   "seed": 42,
-  "sha256": "359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111",
+  "sha256": "4bc5e6702e2bc760832157a0cece8f93cf0cf93224e6c09a94f40e98520407cf",
   "status_counts": {
     "Closed": 11,
     "Escalated": 14,

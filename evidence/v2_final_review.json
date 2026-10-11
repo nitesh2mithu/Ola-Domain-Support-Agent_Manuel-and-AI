@@ -1,0 +1,92 @@
+{
+  "README_lines": 177,
+  "archived_records": {
+    "byte_identical": 182,
+    "markdown_link_only_changes": 1
+  },
+  "baseline_refs_preserved": true,
+  "branch": "polish-v2",
+  "current_findings": [],
+  "escalation_comparison": {
+    "method": "independent exact Decimal calculations against all60 fresh lookup results and archived v1 results",
+    "rank": 48,
+    "v1_non_escalated": 0,
+    "v1_recommended": 12,
+    "v1_threshold": 0.613333,
+    "v2_non_escalated": [
+      {
+        "days_since_created": 27,
+        "record_id": "OLA-0007",
+        "reopen_count": 3,
+        "score": 0.57,
+        "status": "In Progress"
+      },
+      {
+        "days_since_created": 27,
+        "record_id": "OLA-0022",
+        "reopen_count": 3,
+        "score": 0.57,
+        "status": "Open"
+      }
+    ],
+    "v2_recommended": 12,
+    "v2_threshold": 0.55,
+    "v2_ties_excluded": 1
+  },
+  "exact_dependency_pins_verified": 163,
+  "intended_files_scanned": 353,
+  "learnings_words": 215,
+  "limitations": "Pattern scanning is bounded; no remote branch or visibility verification is claimed. Archive Markdown links may change, but prose is preserved.",
+  "original_checkout_preservation_verified": true,
+  "reachable_history_scans": [
+    {
+      "commit": "66251f65dc703b38d67f6f0cc1e6006b50ca7845",
+      "files": 265,
+      "findings": []
+    },
+    {
+      "commit": "64e19e9036e160bc93109fb2766d7e15c9d0a448",
+      "files": 267,
+      "findings": []
+    },
+    {
+      "commit": "bc11f3dd798577d944a38cf18a62cea3e28428e8",
+      "files": 275,
+      "findings": []
+    },
+    {
+      "commit": "bd00a6b29c70bfea6fbb144f27e3b915bfbde3b2",
+      "files": 283,
+      "findings": []
+    },
+    {
+      "commit": "f5a6def1d0d2df0dd6139f3f82ebf6f6d4e2acc2",
+      "files": 297,
+      "findings": []
+    },
+    {
+      "commit": "4f0fdfa54c1b43768237de67d860e6b0454f9372",
+      "files": 298,
+      "findings": []
+    },
+    {
+      "commit": "c0952aefab2439bd951edbdac1590d666eb12349",
+      "files": 346,
+      "findings": []
+    },
+    {
+      "commit": "9711d22dcaee7dbd1e99fd4832a48f5979e5b83e",
+      "files": 349,
+      "findings": []
+    },
+    {
+      "commit": "a4b342766f5645559329a77abd7eaa04ef840ac2",
+      "files": 353,
+      "findings": []
+    }
+  ],
+  "relative_links_verified": 279,
+  "result": "PASSED",
+  "reviewed_head": "a4b342766f5645559329a77abd7eaa04ef840ac2",
+  "timestamp": "2026-10-11T13:41:06.534052+05:30"
+}

@@ -1013,6 +1013,7 @@ Actual validated answer:
     "found": false,
     "recommend_escalation": false,
     "record_id": "OLA-9999",
+    "reopen_count": null,
     "resolution_time_hours": null,
     "status": null
   }
@@ -1020,7 +1021,7 @@ Actual validated answer:
 ```
 
 Actual retrieved/lookup evidence:
-- {"days_since_created": null, "error": "unknown_record_id", "escalated": null, "escalation_score": null, "escalation_threshold": null, "found": false, "recommend_escalation": false, "record_id": "OLA-9999", "resolution_time_hours": null, "status": null}
+- {"days_since_created": null, "error": "unknown_record_id", "escalated": null, "escalation_score": null, "escalation_threshold": null, "found": false, "recommend_escalation": false, "record_id": "OLA-9999", "reopen_count": null, "resolution_time_hours": null, "status": null}
 
 Judge result and reproducible calculations:
 ```json

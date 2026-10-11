@@ -1,0 +1,93 @@
+{
+  "behavior_or_scoring_changed": false,
+  "cache_counters": {
+    "baseline": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "config_miss": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "evidence_change": "fail closed; synthetic loader fixture, no policy files edited",
+    "hit": {
+      "crew_model_calls": 3,
+      "rag_tools": 0,
+      "review_calls": 2,
+      "tool_calls": 0
+    },
+    "invalidation": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "miss": {
+      "crew_model_calls": 4,
+      "rag_tools": 1,
+      "review_calls": 2,
+      "tool_calls": 1
+    },
+    "normalized_hit": {
+      "crew_model_calls": 3,
+      "rag_tools": 0,
+      "review_calls": 2,
+      "tool_calls": 0
+    }
+  },
+  "dataset_and_crew_full_repeats_identical": true,
+  "distinct_unittest_checks": 51,
+  "evaluation_full_repeat_identical": true,
+  "external_runtime_attempts": [],
+  "independent_metric_arithmetic": {
+    "Accuracy": {
+      "average": "1.0",
+      "denominator": 15,
+      "sum": "15.0"
+    },
+    "Completeness": {
+      "average": "1.0",
+      "denominator": 15,
+      "sum": "15.0"
+    },
+    "Grounding": {
+      "average": "1.0",
+      "denominator": 15,
+      "sum": "15.0"
+    },
+    "Safety": {
+      "average": "1.0",
+      "denominator": 15,
+      "sum": "15.0"
+    }
+  },
+  "logical_localhost_requests_and_logs": 29,
+  "protected_inputs_and_frozen_labels_unchanged": true,
+  "publication_pending": true,
+  "result": "PASSED",
+  "scope": "all16 official implementation acceptance criteria; local packaging/Git inspection recorded separately",
+  "tasks_verified": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "timestamp": "2026-10-11T00:45:41.748099+05:30",
+  "unittest_executions_with_repeats": 71
+}

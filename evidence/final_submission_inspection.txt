@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-11T00:47:09.160639+05:30",
+  "timestamp": "2026-10-11T09:14:16.440686+05:30",
   "scope": "intended allowlist",
   "result": "PASSED",
-  "files_inspected": 265,
-  "total_text_bytes": 10064863,
+  "files_inspected": 342,
+  "total_text_bytes": 15038364,
   "findings": [],
   "checks": [
     "credential signatures and high-entropy assignment literals",

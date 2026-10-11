@@ -3,7 +3,7 @@ import os
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_DIR = ROOT / ".models" / "all-MiniLM-L6-v2"
-MODEL_MANIFEST = ROOT / "evidence" / "milestone_03_model_manifest.json"
+MODEL_MANIFEST = ROOT / "evidence" / "model_manifest.json"
 DB_DIR = ROOT / ".runtime" / "rag" / "chroma"
 QUERY_FILE = ROOT / "evaluation" / "rag_queries.json"
 CHUNK_SIZE = 300

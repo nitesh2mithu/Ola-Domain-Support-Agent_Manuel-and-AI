@@ -1,4 +1,8 @@
-"""Reproduce evidence, privacy, immutable-input and final-document checks."""
+"""Historical v1 stage audit; stage-specific assertions remain unchanged.
+
+This cannot certify current v2 inputs. Use scripts.run_final_verification and
+scripts.verify_final_acceptance for v2. Rerun output never overwrites the archive.
+"""
 import hashlib
 import json
 import re
@@ -10,12 +14,12 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     load=lambda name:json.loads((ROOT/name).read_text())
-    for filename,digest in load('evidence/milestone_05_input_manifest.json').items():
+    for filename,digest in load('evidence/archive/v1/milestone_05_input_manifest.json').items():
         assert hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()==digest,filename
-    for filename,digest in load('evidence/milestone_05_evaluation_freeze.json')['sha256'].items():
+    for filename,digest in load('evidence/archive/v1/milestone_05_evaluation_freeze.json')['sha256'].items():
         assert hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()==digest,filename
-    a=load('evidence/milestone_05_evaluation.json')
-    assert a==load('evidence/milestone_05_evaluation_repeat.json')
+    a=load('evidence/archive/v1/milestone_05_evaluation.json')
+    assert a==load('evidence/archive/v1/milestone_05_evaluation_repeat.json')
     cases=a['results'];assert len(cases)==15
     assert {c['case']['topic'] for c in cases if c['case']['kind']=='policy'}=={p.stem for p in (ROOT/'knowledge_base').glob('*.md')}
     assert sum(c['case']['kind']=='out_of_scope' for c in cases)>=2
@@ -24,14 +28,14 @@ def main():
         assert all(0<=v<=1 for v in values)
         assert sum(values)==a['metric_sums'][metric]
         assert a['averages'][metric]==sum(values)/15
-    focused=load('evidence/milestone_05_focused.json');assert focused['acceptance']['passed']
+    focused=load('evidence/archive/v1/milestone_05_focused.json');assert focused['acceptance']['passed']
     f=focused['judge_fixtures']
     assert f['incorrect_number']['verdict']['Accuracy']<f['correct']['verdict']['Accuracy']
     assert f['unsupported']['verdict']['Grounding']<f['supported']['verdict']['Grounding']
     assert f['incomplete']['verdict']['Completeness']<f['complete']['verdict']['Completeness']
     assert f['unsafe']['verdict']['Safety']==0 and f['safe']['verdict']['Safety']==1
-    live=load('evidence/milestone_05_localhost.json');assert live['passed']
-    rows=[json.loads(l) for l in (ROOT/'evidence/milestone_05_logs_localhost.jsonl').read_text().splitlines()]
+    live=load('evidence/archive/v1/milestone_05_localhost.json');assert live['passed']
+    rows=[json.loads(l) for l in (ROOT/'evidence/archive/v1/milestone_05_logs_localhost.jsonl').read_text().splitlines()]
     expected=len(live['http'])+len(live['websocket'])
     assert len(rows)==expected==live['log_check']['logical_requests']
     assert len({r['trace_id'] for r in rows})==expected
@@ -40,19 +44,20 @@ def main():
     assert live['disconnect']['during_request'] and live['disconnect']['removed_session'] and live['disconnect']['other_client_continued']
     assert not live['offline']['runtime_external_attempts']
     assert set(live['offline']['negative_controls_blocked'])=={'external_dns','external_ip','other_loopback_port','udp','child_process'}
-    docs=['README.md','PROJECT_STATUS.md','DEVELOPMENT_PROCESS.md','ERROR_LOG.md','REQUIREMENTS_TRACKER.md']
+    docs=['README.md','docs/PROJECT_STATUS.md','docs/DEVELOPMENT_PROCESS.md','docs/ERROR_LOG.md','docs/REQUIREMENTS_TRACKER.md']
     links=0
     for filename in docs:
         assert (ROOT/filename).stat().st_size
         for target in re.findall(r'\]\(([^)]+)\)',(ROOT/filename).read_text()):
             if not target.startswith(('https:','http:','#')):
-                assert (ROOT/target.split('#')[0]).is_file(),(filename,target)
+                resolved = ((ROOT/filename).parent/target.split('#')[0]).resolve()
+                assert resolved.is_relative_to(ROOT) and (resolved.is_file() or resolved.is_dir()),(filename,target)
                 links+=1
-    statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
+    statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'docs/REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
     assert len(statuses)==16 and all(statuses[i]=='PASSED' for i in range(1,14))
     assert statuses[14]=='IN PROGRESS' and statuses[15]==statuses[16]=='NOT STARTED'
-    assert 'Status: OPEN' not in (ROOT/'ERROR_LOG.md').read_text()
-    assert (ROOT/'PROJECT_STATUS.md').read_text().startswith('# CHATGPT REVIEW HANDOFF')
+    assert 'Status: OPEN' not in (ROOT/'docs/ERROR_LOG.md').read_text()
+    assert (ROOT/'docs/PROJECT_STATUS.md').read_text().startswith('# REVIEW NOTES')
     artifact_count=0
     for path in (ROOT/'evidence').glob('milestone_05_*'):
         if path.suffix in ('.md','.txt','.json','.jsonl'):
@@ -69,7 +74,9 @@ def main():
             'runtime_external_attempts':[],'external_negative_controls_blocked':live['offline']['negative_controls_blocked'],
             'sanitized_milestone_artifacts_checked':artifact_count,'evidence_links_checked':links,
             'task_statuses':statuses,'public_repository_created':False}
-    (ROOT/'evidence/milestone_05_documentation_audit.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+    destination = ROOT/'.runtime/historical-audits/milestone_05_documentation_audit.json'
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     print(json.dumps(result,indent=2,sort_keys=True))
 
 

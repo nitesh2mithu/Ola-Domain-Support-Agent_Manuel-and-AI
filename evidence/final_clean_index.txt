@@ -1,6 +1,6 @@
 
 Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
-Loading weights: 100%|██████████| 103/103 [00:00<00:00, 14543.94it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11416.54it/s]
 {
   "calibration_preserved": true,
   "index_fingerprint": "6a3978d64ba278e0e3f61ec2963f83ed30cb9f0cde2b6637c6c54a6cd10efdd3",

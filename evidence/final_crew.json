@@ -44,32 +44,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1532,
+            "completion_tokens": 109,
+            "prompt_tokens": 1642,
             "stage": "CrewAI/composer",
-            "total_tokens": 1639
+            "total_tokens": 1751
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 380,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 405
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 491,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 545
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009018",
-        "simulated_tokens": 4509,
+        "simulated_cost_usd": "0.00929",
+        "simulated_tokens": 4645,
         "token_cap": 50000
       },
       "cache": {
@@ -79,7 +79,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -87,11 +87,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.37,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0004",
+          "reopen_count": 3,
           "resolution_time_hours": 57,
           "status": "Open"
         }
@@ -140,11 +141,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.37,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0004",
+            "reopen_count": 3,
             "resolution_time_hours": 57,
             "status": "Open"
           },
@@ -157,11 +159,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.37,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0004",
+            "reopen_count": 3,
             "resolution_time_hours": 57,
             "status": "Open"
           }
@@ -183,11 +186,12 @@
                 "days_since_created": 7,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.093333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.37,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0004",
+                "reopen_count": 3,
                 "resolution_time_hours": 57,
                 "status": "Open"
               },
@@ -211,7 +215,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -219,11 +223,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.37,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0004",
+          "reopen_count": 3,
           "resolution_time_hours": 57,
           "status": "Open"
         }
@@ -242,7 +247,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"resolution_time_hours\": 57, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"resolution_time_hours\": 57, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"resolution_time_hours\": 57, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.37, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"reopen_count\": 3, \"resolution_time_hours\": 57, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.37, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"reopen_count\": 3, \"resolution_time_hours\": 57, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.37, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0004\", \"reopen_count\": 3, \"resolution_time_hours\": 57, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -252,7 +257,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -260,12 +265,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0004: status Open; resolution_time_hours 57; escalation_score 0.370000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -273,11 +278,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.37,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0004",
+          "reopen_count": 3,
           "resolution_time_hours": 57,
           "status": "Open"
         }
@@ -293,11 +299,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.37,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0004",
+            "reopen_count": 3,
             "resolution_time_hours": 57,
             "status": "Open"
           },
@@ -344,32 +351,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 68,
-            "prompt_tokens": 711,
+            "completion_tokens": 70,
+            "prompt_tokens": 714,
             "stage": "CrewAI/ticket",
-            "total_tokens": 779
+            "total_tokens": 784
           },
           {
-            "completion_tokens": 110,
-            "prompt_tokens": 1534,
+            "completion_tokens": 112,
+            "prompt_tokens": 1644,
             "stage": "CrewAI/composer",
-            "total_tokens": 1644
+            "total_tokens": 1756
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 376,
+            "prompt_tokens": 385,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 401
+            "total_tokens": 410
           },
           {
             "completion_tokens": 55,
-            "prompt_tokens": 496,
+            "prompt_tokens": 506,
             "stage": "AutoGen/editor",
-            "total_tokens": 551
+            "total_tokens": 561
           }
         ],
-        "simulated_cost_usd": "0.009054",
-        "simulated_tokens": 4527,
+        "simulated_cost_usd": "0.009326",
+        "simulated_tokens": 4663,
         "token_cap": 50000
       },
       "cache": {
@@ -379,7 +386,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).",
+        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -387,11 +394,12 @@
           "days_since_created": 11,
           "error": null,
           "escalated": true,
-          "escalation_score": 0.746667,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.81,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": true,
           "record_id": "OLA-0012",
+          "reopen_count": 3,
           "resolution_time_hours": 110,
           "status": "Escalated"
         }
@@ -440,11 +448,12 @@
             "days_since_created": 11,
             "error": null,
             "escalated": true,
-            "escalation_score": 0.746667,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.81,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": true,
             "record_id": "OLA-0012",
+            "reopen_count": 3,
             "resolution_time_hours": 110,
             "status": "Escalated"
           },
@@ -457,11 +466,12 @@
             "days_since_created": 11,
             "error": null,
             "escalated": true,
-            "escalation_score": 0.746667,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.81,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": true,
             "record_id": "OLA-0012",
+            "reopen_count": 3,
             "resolution_time_hours": 110,
             "status": "Escalated"
           }
@@ -483,11 +493,12 @@
                 "days_since_created": 11,
                 "error": null,
                 "escalated": true,
-                "escalation_score": 0.746667,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.81,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": true,
                 "record_id": "OLA-0012",
+                "reopen_count": 3,
                 "resolution_time_hours": 110,
                 "status": "Escalated"
               },
@@ -511,7 +522,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).",
+        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -519,11 +530,12 @@
           "days_since_created": 11,
           "error": null,
           "escalated": true,
-          "escalation_score": 0.746667,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.81,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": true,
           "record_id": "OLA-0012",
+          "reopen_count": 3,
           "resolution_time_hours": 110,
           "status": "Escalated"
         }
@@ -542,7 +554,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.746667, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"resolution_time_hours\": 110, \"status\": \"Escalated\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.746667, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"resolution_time_hours\": 110, \"status\": \"Escalated\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.746667, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"resolution_time_hours\": 110, \"status\": \"Escalated\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.81, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"reopen_count\": 3, \"resolution_time_hours\": 110, \"status\": \"Escalated\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.81, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"reopen_count\": 3, \"resolution_time_hours\": 110, \"status\": \"Escalated\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 11, \"error\": null, \"escalated\": true, \"escalation_score\": 0.81, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": true, \"record_id\": \"OLA-0012\", \"reopen_count\": 3, \"resolution_time_hours\": 110, \"status\": \"Escalated\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -552,7 +564,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).",
+              "final_answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -560,12 +572,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).",
+          "final_answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.746667; recommend_escalation true (score > 0.613333).",
+        "answer": "Ticket OLA-0012: status Escalated; resolution_time_hours 110; escalation_score 0.810000; recommend_escalation true (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -573,11 +585,12 @@
           "days_since_created": 11,
           "error": null,
           "escalated": true,
-          "escalation_score": 0.746667,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.81,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": true,
           "record_id": "OLA-0012",
+          "reopen_count": 3,
           "resolution_time_hours": 110,
           "status": "Escalated"
         }
@@ -593,11 +606,12 @@
             "days_since_created": 11,
             "error": null,
             "escalated": true,
-            "escalation_score": 0.746667,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.81,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": true,
             "record_id": "OLA-0012",
+            "reopen_count": 3,
             "resolution_time_hours": 110,
             "status": "Escalated"
           },
@@ -645,9 +659,9 @@
           },
           {
             "completion_tokens": 43,
-            "prompt_tokens": 1472,
+            "prompt_tokens": 1579,
             "stage": "CrewAI/composer",
-            "total_tokens": 1515
+            "total_tokens": 1622
           },
           {
             "completion_tokens": 23,
@@ -662,8 +676,8 @@
             "total_tokens": 322
           }
         ],
-        "simulated_cost_usd": "0.00629",
-        "simulated_tokens": 3145,
+        "simulated_cost_usd": "0.006504",
+        "simulated_tokens": 3252,
         "token_cap": 50000
       },
       "cache": {
@@ -841,32 +855,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1533,
+            "completion_tokens": 110,
+            "prompt_tokens": 1643,
             "stage": "CrewAI/composer",
-            "total_tokens": 1640
+            "total_tokens": 1753
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 381,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 406
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 492,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 546
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009022",
-        "simulated_tokens": 4511,
+        "simulated_cost_usd": "0.009296",
+        "simulated_tokens": 4648,
         "token_cap": 50000
       },
       "cache": {
@@ -876,7 +890,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -884,11 +898,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -937,11 +952,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -954,11 +970,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
@@ -980,11 +997,12 @@
                 "days_since_created": 16,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.213333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.26,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0003",
+                "reopen_count": 1,
                 "resolution_time_hours": 33,
                 "status": "Open"
               },
@@ -1008,7 +1026,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1016,11 +1034,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1039,7 +1058,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -1049,7 +1068,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -1057,12 +1076,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1070,11 +1089,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1090,11 +1110,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -1141,32 +1162,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1533,
+            "completion_tokens": 110,
+            "prompt_tokens": 1643,
             "stage": "CrewAI/composer",
-            "total_tokens": 1640
+            "total_tokens": 1753
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 381,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 406
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 492,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 546
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.00902",
-        "simulated_tokens": 4510,
+        "simulated_cost_usd": "0.009294",
+        "simulated_tokens": 4647,
         "token_cap": 50000
       },
       "cache": {
@@ -1176,7 +1197,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1184,11 +1205,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1237,11 +1259,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -1254,11 +1277,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
@@ -1280,11 +1304,12 @@
                 "days_since_created": 16,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.213333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.26,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0003",
+                "reopen_count": 1,
                 "resolution_time_hours": 33,
                 "status": "Open"
               },
@@ -1308,7 +1333,7 @@
         "ticket_from_memory": true
       },
       "response": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1316,11 +1341,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1339,7 +1365,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -1349,7 +1375,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -1357,12 +1383,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1370,11 +1396,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1390,11 +1417,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -1441,32 +1469,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1533,
+            "completion_tokens": 110,
+            "prompt_tokens": 1643,
             "stage": "CrewAI/composer",
-            "total_tokens": 1640
+            "total_tokens": 1753
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 381,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 406
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 492,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 546
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.00902",
-        "simulated_tokens": 4510,
+        "simulated_cost_usd": "0.009294",
+        "simulated_tokens": 4647,
         "token_cap": 50000
       },
       "cache": {
@@ -1476,7 +1504,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1484,11 +1512,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1537,11 +1566,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -1554,11 +1584,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           }
@@ -1580,11 +1611,12 @@
                 "days_since_created": 16,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.213333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.26,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0003",
+                "reopen_count": 1,
                 "resolution_time_hours": 33,
                 "status": "Open"
               },
@@ -1608,7 +1640,7 @@
         "ticket_from_memory": true
       },
       "response": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1616,11 +1648,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1639,7 +1672,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.213333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 16, \"error\": null, \"escalated\": false, \"escalation_score\": 0.26, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0003\", \"reopen_count\": 1, \"resolution_time_hours\": 33, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -1649,7 +1682,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -1657,12 +1690,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -1670,11 +1703,12 @@
           "days_since_created": 16,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.213333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.26,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0003",
+          "reopen_count": 1,
           "resolution_time_hours": 33,
           "status": "Open"
         }
@@ -1690,11 +1724,12 @@
             "days_since_created": 16,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.213333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.26,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0003",
+            "reopen_count": 1,
             "resolution_time_hours": 33,
             "status": "Open"
           },
@@ -1747,32 +1782,32 @@
             "total_tokens": 1618
           },
           {
-            "completion_tokens": 66,
-            "prompt_tokens": 1724,
+            "completion_tokens": 69,
+            "prompt_tokens": 1728,
             "stage": "CrewAI/ticket",
-            "total_tokens": 1790
+            "total_tokens": 1797
           },
           {
-            "completion_tokens": 330,
-            "prompt_tokens": 2537,
+            "completion_tokens": 334,
+            "prompt_tokens": 2648,
             "stage": "CrewAI/composer",
-            "total_tokens": 2867
+            "total_tokens": 2982
           },
           {
             "completion_tokens": 27,
-            "prompt_tokens": 2657,
+            "prompt_tokens": 2670,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 2684
+            "total_tokens": 2697
           },
           {
             "completion_tokens": 267,
-            "prompt_tokens": 2780,
+            "prompt_tokens": 2793,
             "stage": "AutoGen/editor",
-            "total_tokens": 3047
+            "total_tokens": 3060
           }
         ],
-        "simulated_cost_usd": "0.03043",
-        "simulated_tokens": 15215,
+        "simulated_cost_usd": "0.030726",
+        "simulated_tokens": 15363,
         "token_cap": 50000
       },
       "cache": {
@@ -1782,7 +1817,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
         "citations": [
           "04_refund_compensation",
           "08_service_credit"
@@ -1793,11 +1828,12 @@
           "days_since_created": 18,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.24,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.38,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0002",
+          "reopen_count": 2,
           "resolution_time_hours": 15,
           "status": "Open"
         }
@@ -2023,11 +2059,12 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           },
@@ -2040,11 +2077,12 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           }
@@ -2137,11 +2175,12 @@
                 "days_since_created": 18,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.24,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.38,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0002",
+                "reopen_count": 2,
                 "resolution_time_hours": 15,
                 "status": "Open"
               },
@@ -2165,7 +2204,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
         "citations": [
           "04_refund_compensation",
           "08_service_credit"
@@ -2176,11 +2215,12 @@
           "days_since_created": 18,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.24,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.38,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0002",
+          "reopen_count": 2,
           "resolution_time_hours": 15,
           "status": "Open"
         }
@@ -2199,7 +2239,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\\n\\nRetrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.24, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"resolution_time_hours\": 15, \"status\": \"Open\"}}, \"original_context\": {\"rag\": {\"answer\": \"Retrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"collection\": \"ola_fixed_6a3978d64ba2\", \"excerpts\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"document_id\": \"04_refund_compensation\", \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"document_id\": \"04_refund_compensation\", \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"document_id\": \"08_service_credit\", \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"fallback\": false, \"hits\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"cosine_similarity\": 0.6298048496246338, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 300, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"cosine_similarity\": 0.5849444270133972, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 626, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 480, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"cosine_similarity\": 0.4871840476989746, \"document_id\": \"08_service_credit\", \"metadata\": {\"document_id\": \"08_service_credit\", \"end\": 300, \"source\": \"knowledge_base/08_service_credit.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Service-credit policy\"}, \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"strategy\": \"fixed\", \"threshold\": 0.390774130821228}, \"ticket\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.24, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"resolution_time_hours\": 15, \"status\": \"Open\"}}, \"stages\": [{\"data\": {\"answer\": \"Retrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"collection\": \"ola_fixed_6a3978d64ba2\", \"excerpts\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"document_id\": \"04_refund_compensation\", \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"document_id\": \"04_refund_compensation\", \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"document_id\": \"08_service_credit\", \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"fallback\": false, \"hits\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"cosine_similarity\": 0.6298048496246338, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 300, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"cosine_similarity\": 0.5849444270133972, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 626, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 480, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"cosine_similarity\": 0.4871840476989746, \"document_id\": \"08_service_credit\", \"metadata\": {\"document_id\": \"08_service_credit\", \"end\": 300, \"source\": \"knowledge_base/08_service_credit.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Service-credit policy\"}, \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"strategy\": \"fixed\", \"threshold\": 0.390774130821228}, \"kind\": \"rag\", \"requested\": true}, {\"data\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.24, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"resolution_time_hours\": 15, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\\n\\nRetrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.38, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"reopen_count\": 2, \"resolution_time_hours\": 15, \"status\": \"Open\"}}, \"original_context\": {\"rag\": {\"answer\": \"Retrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"collection\": \"ola_fixed_6a3978d64ba2\", \"excerpts\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"document_id\": \"04_refund_compensation\", \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"document_id\": \"04_refund_compensation\", \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"document_id\": \"08_service_credit\", \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"fallback\": false, \"hits\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"cosine_similarity\": 0.6298048496246338, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 300, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"cosine_similarity\": 0.5849444270133972, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 626, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 480, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"cosine_similarity\": 0.4871840476989746, \"document_id\": \"08_service_credit\", \"metadata\": {\"document_id\": \"08_service_credit\", \"end\": 300, \"source\": \"knowledge_base/08_service_credit.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Service-credit policy\"}, \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"strategy\": \"fixed\", \"threshold\": 0.390774130821228}, \"ticket\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.38, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"reopen_count\": 2, \"resolution_time_hours\": 15, \"status\": \"Open\"}}, \"stages\": [{\"data\": {\"answer\": \"Retrieved policy excerpts:\\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\", \"citations\": [\"04_refund_compensation\", \"08_service_credit\"], \"collection\": \"ola_fixed_6a3978d64ba2\", \"excerpts\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"document_id\": \"04_refund_compensation\", \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"document_id\": \"04_refund_compensation\", \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"document_id\": \"08_service_credit\", \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"fallback\": false, \"hits\": [{\"chunk_id\": \"04_refund_compensation:fixed:000:f80d07bc14d4f8cb\", \"cosine_similarity\": 0.6298048496246338, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 300, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\"}, {\"chunk_id\": \"04_refund_compensation:fixed:002:01126a7ab8ef2101\", \"cosine_similarity\": 0.5849444270133972, \"document_id\": \"04_refund_compensation\", \"metadata\": {\"document_id\": \"04_refund_compensation\", \"end\": 626, \"source\": \"knowledge_base/04_refund_compensation.md\", \"start\": 480, \"strategy\": \"fixed\", \"title\": \"Refund and compensation policy\"}, \"text\": \"ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\"}, {\"chunk_id\": \"08_service_credit:fixed:000:73e5b77be6988721\", \"cosine_similarity\": 0.4871840476989746, \"document_id\": \"08_service_credit\", \"metadata\": {\"document_id\": \"08_service_credit\", \"end\": 300, \"source\": \"knowledge_base/08_service_credit.md\", \"start\": 0, \"strategy\": \"fixed\", \"title\": \"Service-credit policy\"}, \"text\": \"A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se\"}], \"strategy\": \"fixed\", \"threshold\": 0.390774130821228}, \"kind\": \"rag\", \"requested\": true}, {\"data\": {\"days_since_created\": 18, \"error\": null, \"escalated\": false, \"escalation_score\": 0.38, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0002\", \"reopen_count\": 2, \"resolution_time_hours\": 15, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -2209,7 +2249,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+              "final_answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -2217,12 +2257,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+          "final_answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.240000; recommend_escalation false (score > 0.613333).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
+        "answer": "Ticket OLA-0002: status Open; resolution_time_hours 15; escalation_score 0.380000; recommend_escalation false (score > 0.550000).\n\nRetrieved policy excerpts:\n[04_refund_compensation] A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su\n[04_refund_compensation] ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement.\n[08_service_credit] A support supervisor may approve a noncash service credit up to INR 150 for a verified service interruption when a cash refund does not already compensate the same loss. Apply an approved service credit to the customer's fabricated capstone account balance, with validity of 30 days from issuance. Se",
         "citations": [
           "04_refund_compensation",
           "08_service_credit"
@@ -2233,11 +2273,12 @@
           "days_since_created": 18,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.24,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.38,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0002",
+          "reopen_count": 2,
           "resolution_time_hours": 15,
           "status": "Open"
         }
@@ -2324,11 +2365,12 @@
             "days_since_created": 18,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.24,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.38,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0002",
+            "reopen_count": 2,
             "resolution_time_hours": 15,
             "status": "Open"
           },
@@ -2375,32 +2417,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1532,
+            "completion_tokens": 109,
+            "prompt_tokens": 1642,
             "stage": "CrewAI/composer",
-            "total_tokens": 1639
+            "total_tokens": 1751
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 380,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 405
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 491,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 545
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009018",
-        "simulated_tokens": 4509,
+        "simulated_cost_usd": "0.00929",
+        "simulated_tokens": 4645,
         "token_cap": 50000
       },
       "cache": {
@@ -2410,7 +2452,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -2418,11 +2460,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -2471,11 +2514,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -2488,11 +2532,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
@@ -2514,11 +2559,12 @@
                 "days_since_created": 7,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.093333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.07,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0001",
+                "reopen_count": 0,
                 "resolution_time_hours": 82,
                 "status": "Open"
               },
@@ -2542,7 +2588,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [
           "phone_masked"
@@ -2552,11 +2598,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -2575,7 +2622,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -2585,7 +2632,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -2593,12 +2640,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -2606,11 +2653,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -2626,11 +2674,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -2684,9 +2733,9 @@
           },
           {
             "completion_tokens": 239,
-            "prompt_tokens": 2484,
+            "prompt_tokens": 2591,
             "stage": "CrewAI/composer",
-            "total_tokens": 2723
+            "total_tokens": 2830
           },
           {
             "completion_tokens": 25,
@@ -2701,8 +2750,8 @@
             "total_tokens": 2787
           }
         ],
-        "simulated_cost_usd": "0.025656",
-        "simulated_tokens": 12828,
+        "simulated_cost_usd": "0.02587",
+        "simulated_tokens": 12935,
         "token_cap": 50000
       },
       "cache": {
@@ -3193,9 +3242,9 @@
           },
           {
             "completion_tokens": 239,
-            "prompt_tokens": 2484,
+            "prompt_tokens": 2591,
             "stage": "CrewAI/composer",
-            "total_tokens": 2723
+            "total_tokens": 2830
           },
           {
             "completion_tokens": 25,
@@ -3210,8 +3259,8 @@
             "total_tokens": 2787
           }
         ],
-        "simulated_cost_usd": "0.025656",
-        "simulated_tokens": 12828,
+        "simulated_cost_usd": "0.02587",
+        "simulated_tokens": 12935,
         "token_cap": 50000
       },
       "cache": {
@@ -3702,9 +3751,9 @@
           },
           {
             "completion_tokens": 239,
-            "prompt_tokens": 2484,
+            "prompt_tokens": 2591,
             "stage": "CrewAI/composer",
-            "total_tokens": 2723
+            "total_tokens": 2830
           },
           {
             "completion_tokens": 25,
@@ -3719,8 +3768,8 @@
             "total_tokens": 2787
           }
         ],
-        "simulated_cost_usd": "0.025656",
-        "simulated_tokens": 12828,
+        "simulated_cost_usd": "0.02587",
+        "simulated_tokens": 12935,
         "token_cap": 50000
       },
       "cache": {
@@ -4204,32 +4253,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1532,
+            "completion_tokens": 109,
+            "prompt_tokens": 1642,
             "stage": "CrewAI/composer",
-            "total_tokens": 1639
+            "total_tokens": 1751
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 380,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 405
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 491,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 545
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009018",
-        "simulated_tokens": 4509,
+        "simulated_cost_usd": "0.00929",
+        "simulated_tokens": 4645,
         "token_cap": 50000
       },
       "cache": {
@@ -4239,7 +4288,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4247,11 +4296,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4300,11 +4350,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -4317,11 +4368,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
@@ -4343,11 +4395,12 @@
                 "days_since_created": 7,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.093333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.07,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0001",
+                "reopen_count": 0,
                 "resolution_time_hours": 82,
                 "status": "Open"
               },
@@ -4371,7 +4424,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4379,11 +4432,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4402,7 +4456,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -4412,7 +4466,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -4420,12 +4474,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4433,11 +4487,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4453,11 +4508,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -4504,32 +4560,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1532,
+            "completion_tokens": 109,
+            "prompt_tokens": 1642,
             "stage": "CrewAI/composer",
-            "total_tokens": 1639
+            "total_tokens": 1751
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 380,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 405
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 491,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 545
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009018",
-        "simulated_tokens": 4509,
+        "simulated_cost_usd": "0.00929",
+        "simulated_tokens": 4645,
         "token_cap": 50000
       },
       "cache": {
@@ -4539,7 +4595,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4547,11 +4603,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4600,11 +4657,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -4617,11 +4675,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
@@ -4643,11 +4702,12 @@
                 "days_since_created": 7,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.093333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.07,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0001",
+                "reopen_count": 0,
                 "resolution_time_hours": 82,
                 "status": "Open"
               },
@@ -4671,7 +4731,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4679,11 +4739,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4702,7 +4763,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -4712,7 +4773,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -4720,12 +4781,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -4733,11 +4794,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -4753,11 +4815,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -4805,9 +4868,9 @@
           },
           {
             "completion_tokens": 43,
-            "prompt_tokens": 1472,
+            "prompt_tokens": 1579,
             "stage": "CrewAI/composer",
-            "total_tokens": 1515
+            "total_tokens": 1622
           },
           {
             "completion_tokens": 23,
@@ -4822,8 +4885,8 @@
             "total_tokens": 322
           }
         ],
-        "simulated_cost_usd": "0.00629",
-        "simulated_tokens": 3145,
+        "simulated_cost_usd": "0.006504",
+        "simulated_tokens": 3252,
         "token_cap": 50000
       },
       "cache": {
@@ -4986,32 +5049,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 67,
-            "prompt_tokens": 710,
+            "completion_tokens": 69,
+            "prompt_tokens": 713,
             "stage": "CrewAI/ticket",
-            "total_tokens": 777
+            "total_tokens": 782
           },
           {
-            "completion_tokens": 107,
-            "prompt_tokens": 1532,
+            "completion_tokens": 109,
+            "prompt_tokens": 1642,
             "stage": "CrewAI/composer",
-            "total_tokens": 1639
+            "total_tokens": 1751
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 371,
+            "prompt_tokens": 380,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 396
+            "total_tokens": 405
           },
           {
             "completion_tokens": 54,
-            "prompt_tokens": 491,
+            "prompt_tokens": 501,
             "stage": "AutoGen/editor",
-            "total_tokens": 545
+            "total_tokens": 555
           }
         ],
-        "simulated_cost_usd": "0.009018",
-        "simulated_tokens": 4509,
+        "simulated_cost_usd": "0.00929",
+        "simulated_tokens": 4645,
         "token_cap": 50000
       },
       "cache": {
@@ -5021,7 +5084,7 @@
         "misses": 0
       },
       "draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -5029,11 +5092,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -5082,11 +5146,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -5099,11 +5164,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           }
@@ -5125,11 +5191,12 @@
                 "days_since_created": 7,
                 "error": null,
                 "escalated": false,
-                "escalation_score": 0.093333,
-                "escalation_threshold": 0.613333,
+                "escalation_score": 0.07,
+                "escalation_threshold": 0.55,
                 "found": true,
                 "recommend_escalation": false,
                 "record_id": "OLA-0001",
+                "reopen_count": 0,
                 "resolution_time_hours": 82,
                 "status": "Open"
               },
@@ -5153,7 +5220,7 @@
         "ticket_from_memory": false
       },
       "response": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -5161,11 +5228,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -5184,7 +5252,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.093333, \"escalation_threshold\": 0.613333, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"answered\", \"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"original_context\": {\"ticket\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": 7, \"error\": null, \"escalated\": false, \"escalation_score\": 0.07, \"escalation_threshold\": 0.55, \"found\": true, \"recommend_escalation\": false, \"record_id\": \"OLA-0001\", \"reopen_count\": 0, \"resolution_time_hours\": 82, \"status\": \"Open\"}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -5194,7 +5262,7 @@
           {
             "content": {
               "approved": true,
-              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+              "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
               "reason": "Draft matches original tool evidence."
             },
             "source": "Final_Editor"
@@ -5202,12 +5270,12 @@
         ],
         "verdict": {
           "approved": true,
-          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+          "final_answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
           "reason": "Draft matches original tool evidence."
         }
       },
       "review_draft": {
-        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).",
+        "answer": "Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).",
         "citations": [],
         "guardrails": [],
         "outcome": "answered",
@@ -5215,11 +5283,12 @@
           "days_since_created": 7,
           "error": null,
           "escalated": false,
-          "escalation_score": 0.093333,
-          "escalation_threshold": 0.613333,
+          "escalation_score": 0.07,
+          "escalation_threshold": 0.55,
           "found": true,
           "recommend_escalation": false,
           "record_id": "OLA-0001",
+          "reopen_count": 0,
           "resolution_time_hours": 82,
           "status": "Open"
         }
@@ -5235,11 +5304,12 @@
             "days_since_created": 7,
             "error": null,
             "escalated": false,
-            "escalation_score": 0.093333,
-            "escalation_threshold": 0.613333,
+            "escalation_score": 0.07,
+            "escalation_threshold": 0.55,
             "found": true,
             "recommend_escalation": false,
             "record_id": "OLA-0001",
+            "reopen_count": 0,
             "resolution_time_hours": 82,
             "status": "Open"
           },
@@ -5286,32 +5356,32 @@
             "total_tokens": 603
           },
           {
-            "completion_tokens": 69,
-            "prompt_tokens": 712,
+            "completion_tokens": 74,
+            "prompt_tokens": 718,
             "stage": "CrewAI/ticket",
-            "total_tokens": 781
+            "total_tokens": 792
           },
           {
-            "completion_tokens": 90,
-            "prompt_tokens": 1535,
+            "completion_tokens": 95,
+            "prompt_tokens": 1648,
             "stage": "CrewAI/composer",
-            "total_tokens": 1625
+            "total_tokens": 1743
           },
           {
             "completion_tokens": 25,
-            "prompt_tokens": 359,
+            "prompt_tokens": 377,
             "stage": "AutoGen/reviewer",
-            "total_tokens": 384
+            "total_tokens": 402
           },
           {
             "completion_tokens": 34,
-            "prompt_tokens": 479,
+            "prompt_tokens": 497,
             "stage": "AutoGen/editor",
-            "total_tokens": 513
+            "total_tokens": 531
           }
         ],
-        "simulated_cost_usd": "0.00891",
-        "simulated_tokens": 4455,
+        "simulated_cost_usd": "0.00924",
+        "simulated_tokens": 4620,
         "token_cap": 50000
       },
       "cache": {
@@ -5334,6 +5404,7 @@
           "found": false,
           "recommend_escalation": false,
           "record_id": "OLA-9999",
+          "reopen_count": null,
           "resolution_time_hours": null,
           "status": null
         }
@@ -5387,6 +5458,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           },
@@ -5404,6 +5476,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           }
@@ -5430,6 +5503,7 @@
                 "found": false,
                 "recommend_escalation": false,
                 "record_id": "OLA-9999",
+                "reopen_count": null,
                 "resolution_time_hours": null,
                 "status": null
               },
@@ -5466,6 +5540,7 @@
           "found": false,
           "recommend_escalation": false,
           "record_id": "OLA-9999",
+          "reopen_count": null,
           "resolution_time_hours": null,
           "status": null
         }
@@ -5484,7 +5559,7 @@
         "structured_requested": true,
         "transcript": [
           {
-            "content": "{\"draft\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}, \"original_context\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"resolution_time_hours\": null, \"status\": null}, \"kind\": \"ticket\", \"requested\": true}]}",
+            "content": "{\"draft\": {\"answer\": \"Ticket OLA-9999 was not found (unknown_record_id).\", \"citations\": [], \"guardrails\": [], \"outcome\": \"not_found\", \"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}, \"original_context\": {\"ticket\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}}, \"stages\": [{\"data\": null, \"kind\": \"rag\", \"requested\": false}, {\"data\": {\"days_since_created\": null, \"error\": \"unknown_record_id\", \"escalated\": null, \"escalation_score\": null, \"escalation_threshold\": null, \"found\": false, \"recommend_escalation\": false, \"record_id\": \"OLA-9999\", \"reopen_count\": null, \"resolution_time_hours\": null, \"status\": null}, \"kind\": \"ticket\", \"requested\": true}]}",
             "source": "user"
           },
           {
@@ -5520,6 +5595,7 @@
           "found": false,
           "recommend_escalation": false,
           "record_id": "OLA-9999",
+          "reopen_count": null,
           "resolution_time_hours": null,
           "status": null
         }
@@ -5540,6 +5616,7 @@
             "found": false,
             "recommend_escalation": false,
             "record_id": "OLA-9999",
+            "reopen_count": null,
             "resolution_time_hours": null,
             "status": null
           },
@@ -5593,9 +5670,9 @@
           },
           {
             "completion_tokens": 39,
-            "prompt_tokens": 1984,
+            "prompt_tokens": 2091,
             "stage": "CrewAI/composer",
-            "total_tokens": 2023
+            "total_tokens": 2130
           },
           {
             "completion_tokens": 25,
@@ -5610,8 +5687,8 @@
             "total_tokens": 1378
           }
         ],
-        "simulated_cost_usd": "0.015978",
-        "simulated_tokens": 7989,
+        "simulated_cost_usd": "0.016192",
+        "simulated_tokens": 8096,
         "token_cap": 50000
       },
       "cache": {
@@ -6003,7 +6080,7 @@
         "role": "human"
       },
       {
-        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"escalation_score\":0.213333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
+        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"reopen_count\":1,\"escalation_score\":0.26,\"escalation_threshold\":0.55,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
         "role": "ai"
       },
       {
@@ -6011,7 +6088,7 @@
         "role": "human"
       },
       {
-        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"escalation_score\":0.213333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
+        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"reopen_count\":1,\"escalation_score\":0.26,\"escalation_threshold\":0.55,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
         "role": "ai"
       },
       {
@@ -6019,7 +6096,7 @@
         "role": "human"
       },
       {
-        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.213333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"escalation_score\":0.213333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
+        "content": "{\"answer\":\"Ticket OLA-0003: status Open; resolution_time_hours 33; escalation_score 0.260000; recommend_escalation false (score > 0.550000).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0003\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":33,\"days_since_created\":16,\"escalated\":false,\"reopen_count\":1,\"escalation_score\":0.26,\"escalation_threshold\":0.55,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[]}",
         "role": "ai"
       }
     ],
@@ -6133,7 +6210,7 @@
       "role": "human"
     },
     {
-      "content": "{\"answer\":\"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.093333; recommend_escalation false (score > 0.613333).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0001\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":82,\"days_since_created\":7,\"escalated\":false,\"escalation_score\":0.093333,\"escalation_threshold\":0.613333,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[\"phone_masked\"]}",
+      "content": "{\"answer\":\"Ticket OLA-0001: status Open; resolution_time_hours 82; escalation_score 0.070000; recommend_escalation false (score > 0.550000).\",\"outcome\":\"answered\",\"citations\":[],\"ticket\":{\"record_id\":\"OLA-0001\",\"found\":true,\"status\":\"Open\",\"resolution_time_hours\":82,\"days_since_created\":7,\"escalated\":false,\"reopen_count\":0,\"escalation_score\":0.07,\"escalation_threshold\":0.55,\"recommend_escalation\":false,\"error\":null},\"guardrails\":[\"phone_masked\"]}",
       "role": "ai"
     }
   ],
@@ -6152,87 +6229,88 @@
   "ticket_distribution": {
     "above_threshold": 12,
     "at_threshold": 1,
-    "formula": "round(0.6*int(escalated) + 0.4*(days_since_created/30), 6)",
-    "max": 0.986667,
-    "min": 0.0,
+    "formula": "round(0.4*int(escalated) + 0.3*(days_since_created/30) + 0.3*(reopen_count/3), 6)",
+    "max": 0.99,
+    "min": 0.06,
     "normalized_recency": "1 - days_since_created/30; age signal = 1 - normalized_recency",
     "percentile_method": "nearest rank: ceil(0.8*N), strict score > threshold",
     "rank": 48,
     "record_count": 60,
     "scores_sorted": [
-      0.0,
-      0.04,
-      0.066667,
-      0.066667,
+      0.06,
+      0.07,
       0.08,
-      0.093333,
-      0.093333,
-      0.093333,
-      0.106667,
-      0.106667,
-      0.106667,
-      0.106667,
+      0.08,
+      0.09,
+      0.11,
       0.12,
-      0.146667,
-      0.146667,
+      0.14,
+      0.15,
+      0.15,
       0.16,
       0.16,
-      0.16,
-      0.186667,
-      0.2,
-      0.213333,
-      0.213333,
-      0.213333,
-      0.226667,
-      0.226667,
+      0.17,
+      0.17,
+      0.18,
+      0.21,
+      0.22,
+      0.23,
       0.24,
-      0.24,
-      0.24,
-      0.253333,
-      0.293333,
-      0.293333,
-      0.293333,
-      0.293333,
-      0.293333,
-      0.306667,
+      0.25,
+      0.26,
+      0.26,
+      0.29,
+      0.29,
+      0.3,
+      0.3,
       0.32,
-      0.333333,
-      0.333333,
-      0.333333,
-      0.346667,
-      0.36,
-      0.36,
-      0.373333,
-      0.386667,
-      0.4,
-      0.4,
-      0.6,
-      0.613333,
-      0.626667,
-      0.653333,
-      0.693333,
-      0.693333,
-      0.706667,
-      0.72,
-      0.746667,
-      0.813333,
-      0.853333,
-      0.92,
-      0.96,
-      0.986667
+      0.37,
+      0.37,
+      0.38,
+      0.38,
+      0.38,
+      0.42,
+      0.42,
+      0.45,
+      0.45,
+      0.47,
+      0.48,
+      0.48,
+      0.49,
+      0.5,
+      0.5,
+      0.52,
+      0.52,
+      0.52,
+      0.52,
+      0.53,
+      0.55,
+      0.57,
+      0.57,
+      0.57,
+      0.59,
+      0.61,
+      0.64,
+      0.68,
+      0.74,
+      0.81,
+      0.86,
+      0.87,
+      0.99
     ],
-    "threshold": 0.613333
+    "threshold": 0.55
   },
   "ticket_results": [
     {
       "days_since_created": 7,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.093333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.07,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0001",
+      "reopen_count": 0,
       "resolution_time_hours": 82,
       "status": "Open"
     },
@@ -6240,11 +6318,12 @@
       "days_since_created": 18,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.24,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.38,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0002",
+      "reopen_count": 2,
       "resolution_time_hours": 15,
       "status": "Open"
     },
@@ -6252,11 +6331,12 @@
       "days_since_created": 16,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.213333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.26,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0003",
+      "reopen_count": 1,
       "resolution_time_hours": 33,
       "status": "Open"
     },
@@ -6264,11 +6344,12 @@
       "days_since_created": 7,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.093333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.37,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0004",
+      "reopen_count": 3,
       "resolution_time_hours": 57,
       "status": "Open"
     },
@@ -6276,11 +6357,12 @@
       "days_since_created": 25,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.333333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.45,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0005",
+      "reopen_count": 2,
       "resolution_time_hours": 1,
       "status": "Resolved"
     },
@@ -6288,11 +6370,12 @@
       "days_since_created": 6,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.08,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.06,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0006",
+      "reopen_count": 0,
       "resolution_time_hours": 51,
       "status": "In Progress"
     },
@@ -6300,11 +6383,12 @@
       "days_since_created": 27,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.36,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.57,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": false,
+      "recommend_escalation": true,
       "record_id": "OLA-0007",
+      "reopen_count": 3,
       "resolution_time_hours": 49,
       "status": "In Progress"
     },
@@ -6312,11 +6396,12 @@
       "days_since_created": 23,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.306667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.53,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0008",
+      "reopen_count": 3,
       "resolution_time_hours": 129,
       "status": "Resolved"
     },
@@ -6324,11 +6409,12 @@
       "days_since_created": 9,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.12,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.09,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0009",
+      "reopen_count": 0,
       "resolution_time_hours": 18,
       "status": "In Progress"
     },
@@ -6336,11 +6422,12 @@
       "days_since_created": 22,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.293333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.52,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0010",
+      "reopen_count": 3,
       "resolution_time_hours": 3,
       "status": "Resolved"
     },
@@ -6348,11 +6435,12 @@
       "days_since_created": 30,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.4,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.5,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0011",
+      "reopen_count": 2,
       "resolution_time_hours": 71,
       "status": "Closed"
     },
@@ -6360,11 +6448,12 @@
       "days_since_created": 11,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.746667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.81,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0012",
+      "reopen_count": 3,
       "resolution_time_hours": 110,
       "status": "Escalated"
     },
@@ -6372,11 +6461,12 @@
       "days_since_created": 22,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.293333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.52,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0013",
+      "reopen_count": 3,
       "resolution_time_hours": 38,
       "status": "In Progress"
     },
@@ -6384,11 +6474,12 @@
       "days_since_created": 5,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.066667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.15,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0014",
+      "reopen_count": 1,
       "resolution_time_hours": 74,
       "status": "Open"
     },
@@ -6396,11 +6487,12 @@
       "days_since_created": 26,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.346667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.26,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0015",
+      "reopen_count": 0,
       "resolution_time_hours": 85,
       "status": "Closed"
     },
@@ -6408,11 +6500,12 @@
       "days_since_created": 24,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.32,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.24,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0016",
+      "reopen_count": 0,
       "resolution_time_hours": 102,
       "status": "In Progress"
     },
@@ -6420,11 +6513,12 @@
       "days_since_created": 12,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.16,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.12,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0017",
+      "reopen_count": 0,
       "resolution_time_hours": 44,
       "status": "Open"
     },
@@ -6432,11 +6526,12 @@
       "days_since_created": 8,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.106667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.38,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0018",
+      "reopen_count": 3,
       "resolution_time_hours": 44,
       "status": "Closed"
     },
@@ -6444,11 +6539,12 @@
       "days_since_created": 7,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.093333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.17,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0019",
+      "reopen_count": 1,
       "resolution_time_hours": 62,
       "status": "Closed"
     },
@@ -6456,11 +6552,12 @@
       "days_since_created": 11,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.146667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.11,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0020",
+      "reopen_count": 0,
       "resolution_time_hours": 72,
       "status": "Resolved"
     },
@@ -6468,11 +6565,12 @@
       "days_since_created": 7,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.693333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.57,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0021",
+      "reopen_count": 1,
       "resolution_time_hours": 24,
       "status": "Escalated"
     },
@@ -6480,11 +6578,12 @@
       "days_since_created": 27,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.36,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.57,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": false,
+      "recommend_escalation": true,
       "record_id": "OLA-0022",
+      "reopen_count": 3,
       "resolution_time_hours": 4,
       "status": "Open"
     },
@@ -6492,11 +6591,12 @@
       "days_since_created": 19,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.253333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.29,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0023",
+      "reopen_count": 1,
       "resolution_time_hours": 58,
       "status": "Open"
     },
@@ -6504,11 +6604,12 @@
       "days_since_created": 16,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.813333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.86,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0024",
+      "reopen_count": 3,
       "resolution_time_hours": 63,
       "status": "Escalated"
     },
@@ -6516,11 +6617,12 @@
       "days_since_created": 22,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.293333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.42,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0025",
+      "reopen_count": 2,
       "resolution_time_hours": 1,
       "status": "Closed"
     },
@@ -6528,11 +6630,12 @@
       "days_since_created": 24,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.92,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.74,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0026",
+      "reopen_count": 1,
       "resolution_time_hours": 80,
       "status": "Escalated"
     },
@@ -6540,11 +6643,12 @@
       "days_since_created": 0,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.0,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.3,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0027",
+      "reopen_count": 3,
       "resolution_time_hours": 62,
       "status": "In Progress"
     },
@@ -6552,11 +6656,12 @@
       "days_since_created": 30,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.4,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.3,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0028",
+      "reopen_count": 0,
       "resolution_time_hours": 17,
       "status": "Resolved"
     },
@@ -6564,11 +6669,12 @@
       "days_since_created": 16,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.213333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.16,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0029",
+      "reopen_count": 0,
       "resolution_time_hours": 21,
       "status": "In Progress"
     },
@@ -6576,11 +6682,12 @@
       "days_since_created": 17,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.226667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.17,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0030",
+      "reopen_count": 0,
       "resolution_time_hours": 24,
       "status": "In Progress"
     },
@@ -6588,11 +6695,12 @@
       "days_since_created": 0,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.6,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.5,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0031",
+      "reopen_count": 1,
       "resolution_time_hours": 16,
       "status": "Escalated"
     },
@@ -6600,11 +6708,12 @@
       "days_since_created": 8,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.106667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.08,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0032",
+      "reopen_count": 0,
       "resolution_time_hours": 10,
       "status": "Closed"
     },
@@ -6612,11 +6721,12 @@
       "days_since_created": 2,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.626667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.52,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": true,
+      "recommend_escalation": false,
       "record_id": "OLA-0033",
+      "reopen_count": 1,
       "resolution_time_hours": 14,
       "status": "Escalated"
     },
@@ -6624,11 +6734,12 @@
       "days_since_created": 25,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.333333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.45,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0034",
+      "reopen_count": 2,
       "resolution_time_hours": 18,
       "status": "Closed"
     },
@@ -6636,11 +6747,12 @@
       "days_since_created": 8,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.706667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.68,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0035",
+      "reopen_count": 2,
       "resolution_time_hours": 25,
       "status": "Escalated"
     },
@@ -6648,11 +6760,12 @@
       "days_since_created": 29,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.386667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.29,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0036",
+      "reopen_count": 0,
       "resolution_time_hours": 7,
       "status": "In Progress"
     },
@@ -6660,11 +6773,12 @@
       "days_since_created": 16,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.213333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.16,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0037",
+      "reopen_count": 0,
       "resolution_time_hours": 91,
       "status": "Resolved"
     },
@@ -6672,11 +6786,12 @@
       "days_since_created": 7,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.693333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.47,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": true,
+      "recommend_escalation": false,
       "record_id": "OLA-0038",
+      "reopen_count": 0,
       "resolution_time_hours": 8,
       "status": "Escalated"
     },
@@ -6684,11 +6799,12 @@
       "days_since_created": 18,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.24,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.18,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0039",
+      "reopen_count": 0,
       "resolution_time_hours": 33,
       "status": "Open"
     },
@@ -6696,11 +6812,12 @@
       "days_since_created": 8,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.106667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.38,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0040",
+      "reopen_count": 3,
       "resolution_time_hours": 11,
       "status": "Resolved"
     },
@@ -6708,11 +6825,12 @@
       "days_since_created": 17,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.226667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.37,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0041",
+      "reopen_count": 2,
       "resolution_time_hours": 3,
       "status": "Closed"
     },
@@ -6720,11 +6838,12 @@
       "days_since_created": 4,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.653333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.64,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0042",
+      "reopen_count": 2,
       "resolution_time_hours": 73,
       "status": "Escalated"
     },
@@ -6732,11 +6851,12 @@
       "days_since_created": 25,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.333333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.55,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0043",
+      "reopen_count": 3,
       "resolution_time_hours": 31,
       "status": "In Progress"
     },
@@ -6744,11 +6864,12 @@
       "days_since_created": 11,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.146667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.21,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0044",
+      "reopen_count": 1,
       "resolution_time_hours": 59,
       "status": "Open"
     },
@@ -6756,11 +6877,12 @@
       "days_since_created": 22,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.293333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.32,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0045",
+      "reopen_count": 1,
       "resolution_time_hours": 4,
       "status": "Closed"
     },
@@ -6768,11 +6890,12 @@
       "days_since_created": 8,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.106667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.08,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0046",
+      "reopen_count": 0,
       "resolution_time_hours": 17,
       "status": "Resolved"
     },
@@ -6780,11 +6903,12 @@
       "days_since_created": 5,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.066667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.25,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0047",
+      "reopen_count": 2,
       "resolution_time_hours": 58,
       "status": "In Progress"
     },
@@ -6792,11 +6916,12 @@
       "days_since_created": 15,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.2,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.15,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0048",
+      "reopen_count": 0,
       "resolution_time_hours": 5,
       "status": "Closed"
     },
@@ -6804,11 +6929,12 @@
       "days_since_created": 3,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.04,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.23,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0049",
+      "reopen_count": 2,
       "resolution_time_hours": 5,
       "status": "Resolved"
     },
@@ -6816,11 +6942,12 @@
       "days_since_created": 27,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.96,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.87,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0050",
+      "reopen_count": 2,
       "resolution_time_hours": 31,
       "status": "Escalated"
     },
@@ -6828,11 +6955,12 @@
       "days_since_created": 12,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.16,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.22,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0051",
+      "reopen_count": 1,
       "resolution_time_hours": 1,
       "status": "Open"
     },
@@ -6840,11 +6968,12 @@
       "days_since_created": 14,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.186667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.14,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0052",
+      "reopen_count": 0,
       "resolution_time_hours": 10,
       "status": "Resolved"
     },
@@ -6852,11 +6981,12 @@
       "days_since_created": 9,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.72,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.49,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": true,
+      "recommend_escalation": false,
       "record_id": "OLA-0053",
+      "reopen_count": 0,
       "resolution_time_hours": 60,
       "status": "Escalated"
     },
@@ -6864,11 +6994,12 @@
       "days_since_created": 1,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.613333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.61,
+      "escalation_threshold": 0.55,
       "found": true,
-      "recommend_escalation": false,
+      "recommend_escalation": true,
       "record_id": "OLA-0054",
+      "reopen_count": 2,
       "resolution_time_hours": 18,
       "status": "Escalated"
     },
@@ -6876,11 +7007,12 @@
       "days_since_created": 29,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.986667,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.99,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0055",
+      "reopen_count": 3,
       "resolution_time_hours": 68,
       "status": "Escalated"
     },
@@ -6888,11 +7020,12 @@
       "days_since_created": 28,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.373333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.48,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0056",
+      "reopen_count": 2,
       "resolution_time_hours": 14,
       "status": "Closed"
     },
@@ -6900,11 +7033,12 @@
       "days_since_created": 12,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.16,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.42,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0057",
+      "reopen_count": 3,
       "resolution_time_hours": 34,
       "status": "Open"
     },
@@ -6912,11 +7046,12 @@
       "days_since_created": 19,
       "error": null,
       "escalated": true,
-      "escalation_score": 0.853333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.59,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": true,
       "record_id": "OLA-0058",
+      "reopen_count": 0,
       "resolution_time_hours": 19,
       "status": "Escalated"
     },
@@ -6924,11 +7059,12 @@
       "days_since_created": 18,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.24,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.48,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0059",
+      "reopen_count": 3,
       "resolution_time_hours": 161,
       "status": "In Progress"
     },
@@ -6936,11 +7072,12 @@
       "days_since_created": 22,
       "error": null,
       "escalated": false,
-      "escalation_score": 0.293333,
-      "escalation_threshold": 0.613333,
+      "escalation_score": 0.52,
+      "escalation_threshold": 0.55,
       "found": true,
       "recommend_escalation": false,
       "record_id": "OLA-0060",
+      "reopen_count": 3,
       "resolution_time_hours": 89,
       "status": "In Progress"
     }

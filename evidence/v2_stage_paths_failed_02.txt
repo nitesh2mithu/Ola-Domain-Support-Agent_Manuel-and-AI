@@ -1,0 +1,57 @@
+test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) ... 
+  test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) (script='verify_milestone_05.py') ... ERROR
+  test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) (script='verify_milestone_06.py') ... FAIL
+test_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) ... 
+  test_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) (stage='05') ... FAIL
+  test_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) (stage='06') ... FAIL
+
+======================================================================
+ERROR: test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) (script='verify_milestone_05.py')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 29, in test_actual_link_loops_support_moved_docs_and_directory_links
+    execute(nodes, namespace)
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 18, in execute
+    exec(compile(ast.Module(body=nodes, type_ignores=[]), '<actual stage-audit statements>', 'exec'), namespace)
+  File "<actual stage-audit statements>", line 49, in <module>
+NameError: name 'file' is not defined
+
+======================================================================
+FAIL: test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) (script='verify_milestone_06.py')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 29, in test_actual_link_loops_support_moved_docs_and_directory_links
+    execute(nodes, namespace)
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 18, in execute
+    exec(compile(ast.Module(body=nodes, type_ignores=[]), '<actual stage-audit statements>', 'exec'), namespace)
+  File "<actual stage-audit statements>", line 64, in <module>
+AssertionError: ('README.md', 'knowledge_base/')
+
+======================================================================
+FAIL: test_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) (stage='05')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 46, in test_actual_writers_preserve_archived_evidence
+    self.assertEqual(historic.read_text(), 'preserved archive sentinel')
+AssertionError: '{\n  "result": "fixture"\n}\n' != 'preserved archive sentinel'
++ preserved archive sentinel- {
+-   "result": "fixture"
+- }
+
+
+======================================================================
+FAIL: test_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) (stage='06')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/tests/v2_documentation.py", line 46, in test_actual_writers_preserve_archived_evidence
+    self.assertEqual(historic.read_text(), 'preserved archive sentinel')
+AssertionError: '{\n  "result": "fixture"\n}\n' != 'preserved archive sentinel'
++ preserved archive sentinel- {
+-   "result": "fixture"
+- }
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.010s
+
+FAILED (failures=3, errors=1)
