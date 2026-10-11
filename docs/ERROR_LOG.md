@@ -325,3 +325,20 @@ Verification result: complete rerun exit 0; all seven reachable snapshots scanne
 Status: RESOLVED
 
 ERROR-019 verified 2026-10-11T13:32:38.816061+05:30: resolved the temporary root before path comparison; full history/archive/link/pin scan passed. Original failure retained, containment assertion unchanged. Fresh runtime suite and independent all16 acceptance also passed; no application, label or scoring changes in this session.
+
+## ERROR-020
+Date: 2026-10-11T13:35:49.790539+05:30
+Milestone: Final local v2 script review
+Component: historical stage-audit link/output paths and focused test extraction
+Command: `.venv311/bin/python -m tests.v2_documentation`
+Error message: Ran2tests;3failed subtests and1error.
+Relevant traceback: [sanitized failure](../evidence/v2_stage_paths_failed_01.txt).
+Root cause: stage06 links accept files only; both output writers overwrite archived reports (demonstrated with temporary sentinels, real archive untouched). Stage05 also references file instead of filename; first test extraction omitted its preceding docs assignment, so that fixture error must be corrected before verifying the actual loop.
+Fix attempted: NONE yet.
+Verification command: same focused tests using the actual script statements; complete archive review afterward.
+Verification result: focused actual-link/output checks2/2 PASSED; complete archive review confirms182byte-identical records and one Markdown link-only change.
+Status: RESOLVED
+
+ERROR-020 fixture correction rerun: still Ran2tests,3failures/1error; now stage05 correctly demonstrates NameError undefined file. Stage06 directory rejection and both temporary archive overwrites persist. [Full second failure](../evidence/v2_stage_paths_failed_02.txt). Fix not yet attempted on stage scripts.
+
+ERROR-020 verified 2026-10-11T13:36:52.833098+05:30: corrected stage05 filename variable and both contained file/directory link checks; report writers now target excluded .runtime/historical-audits. Actual AST link/write tests2/2 passed, archive sentinel preserved; full real archive integrity review passed. Stage-specific historical assertions unchanged; these utilities do not certify v2. [Successful output](../evidence/v2_stage_paths_verified.txt).

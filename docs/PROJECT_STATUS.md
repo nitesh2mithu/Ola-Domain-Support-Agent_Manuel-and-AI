@@ -9,7 +9,7 @@
 - Escalation: original seven fields and seed42 preserved; independent reopening seed43; threshold0.55 with one excluded tie, 12 recommendations including two non-escalated (v1 zero). All60 lookup scores verified.
 - Evaluation: original15 Accuracy/Grounding/Completeness/Safety1.0/1.0/1.0/1.0; extra5 0.8/1.0/0.7/1.0. X01 fails preregistered refusal; X04 covers two of four expected facts. Original labels and scoring unchanged.
 - Review: 177-line README; 215-word learnings; history scan of seven reachable snapshots has no findings. Archive integrity and266links verified. Exact163pins compatible with Python3.11.17; pinned model unchanged.
-- Errors/blockers: no OPEN errors. ERROR-016/017/018 fixes retained and reverified; new ERROR-019 review-helper path-normalization failure recorded, fixed and verified. Final packaging checks pending, no readiness claim yet.
+- Errors/blockers: no OPEN errors. ERROR-016/017/018 fixes retained and reverified; new ERROR-019 review-helper path-normalization and ERROR-020 historical-script link/output failures recorded, fixed and verified. Two additional documentation behavior tests passed; historical phase assertions retained. Final packaging checks pending, no readiness claim yet.
 - Evidence: [fresh acceptance](../evidence/final_acceptance_audit.json), [history/archive review](../evidence/v2_final_review.json), [offline ledger](../evidence/final_offline_execution.json), [localhost ledger](../evidence/final_localhost_execution.json).
 - Next: finish documentation/content gates, inspect staged/committed bytes, record exact local publication candidate for user review. Personal contributions in README still need user confirmation.
 

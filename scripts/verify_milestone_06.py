@@ -1,4 +1,8 @@
-"""Evidence/document integrity audit for Milestone6, not final submission audit."""
+"""Historical v1 stage audit; stage-specific assertions remain unchanged.
+
+This cannot certify current v2 inputs. Use scripts.run_final_verification and
+scripts.verify_final_acceptance for v2. Rerun output never overwrites the archive.
+"""
 import hashlib
 import json
 import re
@@ -61,7 +65,8 @@ def main():
         text=(ROOT/file).read_text();assert text.strip()
         for target in re.findall(r'\]\(([^)]+)\)',text):
             if not target.startswith(('http:','https:','#')):
-                assert ((ROOT/file).parent/target.split('#')[0]).is_file(),(file,target)
+                resolved = ((ROOT/file).parent/target.split('#')[0]).resolve()
+                assert resolved.is_relative_to(ROOT) and (resolved.is_file() or resolved.is_dir()),(file,target)
                 links+=1
     statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'docs/REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
     assert len(statuses)==16 and all(s=='PASSED' for s in statuses.values())
@@ -82,7 +87,9 @@ def main():
         'evaluation_reports_identical':True,'averages':e['averages'],'averages_changed':False,
         'evidence_links_checked':links,'dependency_pins_unchanged':len(pins),'external_runtime_attempts':[],
         'public_repository_created':False,'final_submission_readiness_claimed':False}
-    (ROOT/'evidence/archive/v1/milestone_06_documentation_audit.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
+    destination = ROOT/'.runtime/historical-audits/milestone_06_documentation_audit.json'
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
     print(json.dumps(result,sort_keys=True,indent=2))
 
 if __name__=='__main__':main()

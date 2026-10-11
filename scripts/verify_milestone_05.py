@@ -1,4 +1,8 @@
-"""Reproduce evidence, privacy, immutable-input and final-document checks."""
+"""Historical v1 stage audit; stage-specific assertions remain unchanged.
+
+This cannot certify current v2 inputs. Use scripts.run_final_verification and
+scripts.verify_final_acceptance for v2. Rerun output never overwrites the archive.
+"""
 import hashlib
 import json
 import re
@@ -46,7 +50,8 @@ def main():
         assert (ROOT/filename).stat().st_size
         for target in re.findall(r'\]\(([^)]+)\)',(ROOT/filename).read_text()):
             if not target.startswith(('https:','http:','#')):
-                assert ((ROOT/file).parent/target.split('#')[0]).is_file(),(filename,target)
+                resolved = ((ROOT/filename).parent/target.split('#')[0]).resolve()
+                assert resolved.is_relative_to(ROOT) and (resolved.is_file() or resolved.is_dir()),(filename,target)
                 links+=1
     statuses={int(r.split('|')[1]):r.split('|')[-2].strip() for r in (ROOT/'docs/REQUIREMENTS_TRACKER.md').read_text().splitlines() if re.match(r'^\| \d+ \|',r)}
     assert len(statuses)==16 and all(statuses[i]=='PASSED' for i in range(1,14))
@@ -69,7 +74,9 @@ def main():
             'runtime_external_attempts':[],'external_negative_controls_blocked':live['offline']['negative_controls_blocked'],
             'sanitized_milestone_artifacts_checked':artifact_count,'evidence_links_checked':links,
             'task_statuses':statuses,'public_repository_created':False}
-    (ROOT/'evidence/archive/v1/milestone_05_documentation_audit.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+    destination = ROOT/'.runtime/historical-audits/milestone_05_documentation_audit.json'
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     print(json.dumps(result,indent=2,sort_keys=True))
 
 
