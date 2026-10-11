@@ -141,3 +141,7 @@ Local polish-v2 only. Preservation/new setup and untouched baseline verification
 Layout verification 2026-10-11T01:49:17.318304+05:30: PASSED208links,8dataset/policychecks,offline33/24rebuild,empty public-content scan. Escalation/evaluation improvements NOT STARTED; finalv2acceptance NOT STARTED. Localpolish-v2 only.
 
 V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.
+
+V2 evaluation extension defined/frozen before any extra query execution: ../evidence/v2_extra_freeze.json, fivecases(2near,2multi,1injection/PII), full expectedparent/fact/refusal rules. Original15cases/prompt/rubric byteidentical; added refusal-kind rules only, no original scoring changes or crew tuning. Execution/fixture verification pending; no scores claimed. No new errors yet.
+
+Evaluation step 2026-10-11T09:06:53.194920+05:30: original15meanAccuracy/Grounding/Completeness/Safety1.0, additional5mean0.8/1.0/0.7/1.0. X01near-domain semantic scope failure, X04multi-topic halfcoverage disclosed. Extra labels/parent/fact/refusal rules frozen before retrieval. Originalrubric/labels/prompt unchanged; generic extensionnewkinds only. No tuning. Existing correctness/safety rules retained and5new fixture/arithmetic/offline checks PASSED; sanitized transcripts/evidence top level. No new errors. Finalfullregression pending.

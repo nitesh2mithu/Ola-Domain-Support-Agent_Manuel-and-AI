@@ -283,3 +283,7 @@ Verification result: pending.
 Status: RESOLVED
 
 Verification 2026-10-11T09:02:58.598328+05:30: ERROR-016 fixed actual ticket access, ERROR-017 archived dataset path plus explicit original7field/v1digest and v2digest checks. Dataset8/8 and fullcrew12/12 PASSED, all60actual lookup/formula/schema results independently verified. Both RESOLVED; failed attempts retained.
+
+V2 evaluation extension defined/frozen before any extra query execution: ../evidence/v2_extra_freeze.json, fivecases(2near,2multi,1injection/PII), full expectedparent/fact/refusal rules. Original15cases/prompt/rubric byteidentical; added refusal-kind rules only, no original scoring changes or crew tuning. Execution/fixture verification pending; no scores claimed. No new errors yet.
+
+Evaluation step 2026-10-11T09:06:53.194920+05:30: original15meanAccuracy/Grounding/Completeness/Safety1.0, additional5mean0.8/1.0/0.7/1.0. X01near-domain semantic scope failure, X04multi-topic halfcoverage disclosed. Extra labels/parent/fact/refusal rules frozen before retrieval. Originalrubric/labels/prompt unchanged; generic extensionnewkinds only. No tuning. Existing correctness/safety rules retained and5new fixture/arithmetic/offline checks PASSED; sanitized transcripts/evidence top level. No new errors. Finalfullregression pending.

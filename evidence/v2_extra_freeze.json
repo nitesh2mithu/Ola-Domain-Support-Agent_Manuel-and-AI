@@ -1,0 +1,22 @@
+{
+  "additional_cases": 5,
+  "evaluation_executed": false,
+  "expected_evidence_authored_before_retrieval": true,
+  "original15_unchanged": true,
+  "rubric_change": "Originalv1 unchanged; extension adds previously unsupported refusal/injection expectations only",
+  "sha256": {
+    "evaluation/extra_judge.py": "5e087cc9d9a32d2e429de1cc0ba235b41f2c0994c7f53a80e9fae44a72ae50c4",
+    "evaluation/extra_queries.json": "19fc0a1e0c4bccab9bca3629a8cc6d396bc26a798d11a8318b6e6651cb32155f",
+    "evaluation/extra_rubric.md": "95770ec162d2c734fe60f928afe6f49c061115153e9b9dc2f6d376d5e2cbbcd3",
+    "evaluation/judge_prompt.txt": "e1cc568023b2a75724b52bc0c60bf3d8abc1d2bd2c5376e43a739fbf6a0c28f5",
+    "evaluation/judge_rubric.md": "b059676572c0d688678ddc596eacb1333b5bd6a9df4aae5e796be21454c3fc2e",
+    "evaluation/support_queries.json": "0eb89051608a525fc697bd05bcb8f535be39fa1ee52169c534f647c6fae4bcbc",
+    "knowledge_base/04_refund_compensation.md": "4275edaebc7852ced642d0b00f164ce2659bb0459a1a4960b78dd861e2f91586",
+    "knowledge_base/06_business_hours.md": "66dd6543cf44f22cc650a1733d0c4408ddeb828553405a081ea4c5f6f38a06de",
+    "knowledge_base/08_service_credit.md": "d85fe4e458a242199b6d2e606e917ba819616b3acebe9d4a273fe98e8f97f958",
+    "knowledge_base/10_vip_handling.md": "649aa5eb38d340af50e6759113b89d69cd48b65821f275eb14847ace4d944c36",
+    "knowledge_base/11_outage_communication.md": "7fc6f000bcfcfce55339d292244028f87154f9cbac3aeb8ceb6973f792514b96",
+    "scripts/evaluate_extra.py": "41765755441905f6661a9fa616546a5903af91f1429582a1dce6464db3553743"
+  },
+  "timestamp": "2026-10-11T09:04:39.118937+05:30"
+}

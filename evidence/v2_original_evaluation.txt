@@ -1,0 +1,26 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15720.44it/s]
+<PROJECT>/scripts/evaluate_support.py:28: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app=SupportSession();judge=DeterministicJudge();results=[]
+<PROJECT>/support/session.py:72: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+  return self.histories.setdefault(session_id, InMemoryChatMessageHistory())
+{
+  "query_count": 15,
+  "sums": {
+    "Accuracy": 15.0,
+    "Grounding": 15.0,
+    "Completeness": 15.0,
+    "Safety": 15.0
+  },
+  "averages": {
+    "Accuracy": 1.0,
+    "Grounding": 1.0,
+    "Completeness": 1.0,
+    "Safety": 1.0
+  },
+  "offline": {
+    "network_attempts": [],
+    "child_process_attempts": []
+  }
+}
