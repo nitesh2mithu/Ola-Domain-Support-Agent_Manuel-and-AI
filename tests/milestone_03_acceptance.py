@@ -156,7 +156,7 @@ class MilestoneThreeTests(unittest.TestCase):
             verify_local_model(ROOT / ".models" / "not-installed")
         self.assertEqual(hashlib.sha256((ROOT / "Problem_Statement.md").read_bytes()).hexdigest(),
                          "81e2d0ca4499c1865cf8c9fee41c1ce90825440f3eb7f91593c4c2ab9d89dbd6")
-        previous = json.loads((ROOT / "evidence" / "milestone_02_acceptance.json").read_text())
+        previous = json.loads((ROOT / "evidence/archive/v1" / "milestone_02_acceptance.json").read_text())
         for policy in previous["policies"]:
             self.assertEqual(hashlib.sha256((ROOT / policy["path"]).read_bytes()).hexdigest(), policy["sha256"])
         self.assertEqual(sorted(p.relative_to(MODEL_DIR).as_posix() for p in MODEL_DIR.rglob("*") if p.is_file()), self.model_files_before)

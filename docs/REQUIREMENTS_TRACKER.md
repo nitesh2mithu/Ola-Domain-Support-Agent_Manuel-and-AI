@@ -82,3 +82,9 @@ Evidence: [GitHub verification](../evidence/publication_github_verification.json
 All task PASSED rows above describe v1/baseline execution. Layout refactor IN PROGRESS; final current-v2 acceptance not yet run. No labels/policies/calibration/behavior changes.
 
 Layout-only requirements regression: Task1/2 executed8/8 and Task3 index-reader rebuild33/24 verified; remaining behaviors unchanged, prior fresh baseline evidence retained separately. Finalv2all-task run pending.
+
+V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.
+
+V2 Step3 verification: Task1 dataset checks8/8 PASSED with strengthened original-field invariance/reopen type/range negatives. Task6/7 current v2 lookup/crew acceptance FAILED before tests (ERROR-016). Historical PASSED rows remain v1-only; current v2 finalall16acceptance not established. Tasks8–16 not rerun after Step3. No extra evaluation/new rubric/scoring changes. Stopped as instructed.
+
+Escalation verified 2026-10-11T09:02:58.598328+05:30: seed42/alloriginalfields/distributions preserved; independent seed43 reopening stream. Score rounded6decimal, nearest-rank48of60 threshold0.55, strictgreater excludes1ties;12recommended including2non-escalated. All60actualticket scores independently checked, dataset8/8 and crew12/12 PASSED. Errors016/017 RESOLVED after execution. Evidence: [change record](../evidence/v2_escalation_change.json), [crew output](../evidence/v2_escalation_crew.txt). No network/dependencies/application changes beyond intended score/schema. Local-only separate commit follows.

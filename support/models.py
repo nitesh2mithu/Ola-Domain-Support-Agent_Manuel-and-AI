@@ -14,6 +14,7 @@ class TicketResult(StrictModel):
     resolution_time_hours: int | None = Field(default=None, ge=1, le=168)
     days_since_created: int | None = Field(default=None, ge=0, le=30)
     escalated: bool | None = None
+    reopen_count: int | None = Field(default=None, ge=0, le=3)
     escalation_score: float | None = Field(default=None, ge=0, le=1)
     escalation_threshold: float | None = Field(default=None, ge=0, le=1)
     recommend_escalation: bool = False
@@ -22,7 +23,7 @@ class TicketResult(StrictModel):
     @model_validator(mode='after')
     def consistent_lookup(self):
         values = (self.status, self.resolution_time_hours, self.days_since_created,
-                  self.escalated, self.escalation_score, self.escalation_threshold)
+                  self.escalated, self.reopen_count, self.escalation_score, self.escalation_threshold)
         if self.found and (any(v is None for v in values) or self.error is not None):
             raise ValueError('Found ticket requires all evidence fields and no error')
         if not self.found and (any(v is not None for v in values) or self.recommend_escalation or not self.error):

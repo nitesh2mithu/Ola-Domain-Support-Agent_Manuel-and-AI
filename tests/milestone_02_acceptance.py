@@ -29,7 +29,7 @@ EXPECTED_CATEGORIES = {"Billing", "Technical Issue", "Account Access", "Product 
 EXPECTED_STATUSES = {"Open", "In Progress", "Escalated", "Resolved", "Closed"}
 FIELD_TYPES = {
     "record_id": str, "category": str, "status": str,
-    "resolution_time_hours": int, "days_since_created": int, "escalated": bool,
+    "resolution_time_hours": int, "days_since_created": int, "escalated": bool, "reopen_count": int,
 }
 # Independent topic/meaning anchors; headings alone do not satisfy coverage.
 TOPICS = {
@@ -108,6 +108,11 @@ class MilestoneTwoTests(unittest.TestCase):
             self.assertEqual(first, dataset.SUPPORT_TICKETS)
             self.assertIsNot(first, second)
             self.assertIsNot(first[0], second[0])
+            historic=json.loads((ROOT/"evidence/archive/v1/final_dataset.json").read_text())["all_records"]
+            self.assertEqual([{k:v for k,v in t.items() if k!="reopen_count"} for t in first], historic)
+            self.assertTrue(all(type(t["reopen_count"]) is int and 0<=t["reopen_count"]<=3 for t in first))
+            reopen_rng=random.Random(43)
+            self.assertEqual([t["reopen_count"] for t in first],[reopen_rng.randint(0,3) for _ in first])
             self.assertNotEqual(first, dataset.generate_tickets(seed=43))
         finally:
             random.setstate(global_state)
@@ -117,6 +122,7 @@ class MilestoneTwoTests(unittest.TestCase):
         mutations = [("days_since_created", True), ("days_since_created", -1),
                      ("days_since_created", 31), ("escalated", 1),
                      ("resolution_time_hours", 169), ("resolution_time_hours", 0),
+                     ("reopen_count", True), ("reopen_count", -1), ("reopen_count", 4),
                      ("amount_inr", 5001), ("category", "Unknown"), ("status", "Unknown")]
         for field, value in mutations:
             with self.subTest(field=field, value=value):

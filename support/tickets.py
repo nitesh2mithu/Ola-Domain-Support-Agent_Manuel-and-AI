@@ -5,18 +5,18 @@ from dataset import SUPPORT_TICKETS
 from support.models import TicketResult
 
 
-def escalation_score(escalated: bool, days_since_created: int) -> float:
-    if type(escalated) is not bool or type(days_since_created) is not int or not 0 <= days_since_created <= 30:
-        raise ValueError('Expected boolean flag and integer age in [0,30]')
+def escalation_score(escalated: bool, days_since_created: int, reopen_count: int = 0) -> float:
+    if type(escalated) is not bool or type(days_since_created) is not int or not 0 <= days_since_created <= 30 or type(reopen_count) is not int or not 0 <= reopen_count <= 3:
+        raise ValueError('Expected boolean flag, integer age in [0,30], integer reopen_count in [0,3]')
     # Age = 1 - recency; older tickets have more triage urgency.
-    return round(0.6 * int(escalated) + 0.4 * days_since_created / 30, 6)
+    return round(0.4 * int(escalated) + 0.3 * days_since_created / 30 + 0.3 * reopen_count / 3, 6)
 
 
 def distribution_report() -> dict:
-    scores = sorted(escalation_score(t['escalated'], t['days_since_created']) for t in SUPPORT_TICKETS)
+    scores = sorted(escalation_score(t['escalated'], t['days_since_created'], t['reopen_count']) for t in SUPPORT_TICKETS)
     rank = math.ceil(0.8 * len(scores))
     threshold = scores[rank - 1]
-    return {'formula': 'round(0.6*int(escalated) + 0.4*(days_since_created/30), 6)',
+    return {'formula': 'round(0.4*int(escalated) + 0.3*(days_since_created/30) + 0.3*(reopen_count/3), 6)',
             'normalized_recency': '1 - days_since_created/30; age signal = 1 - normalized_recency',
             'percentile_method': 'nearest rank: ceil(0.8*N), strict score > threshold',
             'record_count': len(scores), 'rank': rank, 'threshold': threshold,
@@ -36,8 +36,8 @@ def check_support_ticket_status(record_id: str) -> dict:
     ticket = next((t for t in SUPPORT_TICKETS if t['record_id'] == record_id), None)
     if ticket is None:
         return TicketResult(record_id=record_id, found=False, error='unknown_record_id').model_dump()
-    score = escalation_score(ticket['escalated'], ticket['days_since_created'])
+    score = escalation_score(ticket['escalated'], ticket['days_since_created'], ticket['reopen_count'])
     return TicketResult(record_id=record_id, found=True, status=ticket['status'],
         resolution_time_hours=ticket['resolution_time_hours'], days_since_created=ticket['days_since_created'],
-        escalated=ticket['escalated'], escalation_score=score, escalation_threshold=ESCALATION_THRESHOLD,
+        escalated=ticket['escalated'], reopen_count=ticket['reopen_count'], escalation_score=score, escalation_threshold=ESCALATION_THRESHOLD,
         recommend_escalation=score > ESCALATION_THRESHOLD).model_dump()

@@ -145,7 +145,7 @@ class JudgeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Actual preceding crew output/context is a positive control, not a score map.
-        previous=json.loads((ROOT/'evidence/milestone_04_acceptance.json').read_text())['cases']['policy']
+        previous=json.loads((ROOT/'evidence/archive/v1/milestone_04_acceptance.json').read_text())['cases']['policy']
         cls.response=previous['response']
         cls.tools={e['kind']:e['result'] for e in previous['events'] if e['event']=='tool_executed'}
         cls.case=next(c for c in json.loads((ROOT/'evaluation/support_queries.json').read_text()) if c['topic']=='04_refund_compensation')

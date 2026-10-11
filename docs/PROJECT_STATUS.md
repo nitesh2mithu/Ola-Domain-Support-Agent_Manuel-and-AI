@@ -1,5 +1,24 @@
 # REVIEW NOTES
 
+## Latest v2 status — 2026-10-11T09:02:58.598328+05:30
+Escalation correction/verification PASSED; dataset8/8 and crew12/12, all60scores/schema validated, seed43 reopening stream reproduces and original7fields identical. ERROR-016/017 RESOLVED, no current blockers. Threshold dynamically measured0.55,12recommendations,2non-escalated; ties excluded. Steps4–7 remain pending. Below snapshots are historical and superseded.
+
+
+## Current v2 review status
+
+- Last updated: 2026-10-11T01:52:23.476237+05:30
+- Branch: local polish-v2, not pushed. Publicmain remains preservedv1 head64e19e9036e160bc93109fb2766d7e15c9d0a448.
+- Preservation/setup/baseline verification PASSED; layout commitbc11f3d (187moves,208links,8datasetchecks,33/24offlineindexrebuild,cleanstatic scan).
+- Step3 IN PROGRESS/FAILED verification: dataset8/8 PASSED; crew failed before tests with ERROR-016 NameError in lookup. Strict stop requested; no fix attempted. Uncommitted changes retained.
+- Measured intended escalation: threshold0.55,12recommended including2non-escalated (v1threshold0.613333,12allalreadyescalated). Formula/generation/hash change record: ../evidence/v2_escalation_change.json. Results do not establish functioning crew behavior.
+- Steps4–7 NOT STARTED, including extra evaluation/short README/learnings/AI note/finalv2verification/report. README remains a v1 narrative with relocated links.
+- Original15 labels unchanged; their fresh baseline evaluation averaged1.0 on allfour metrics. No improved-implementation evaluation was executed; additional5cases not defined/run.
+- Open blocker: ERROR-016. Next: user reviews failure and approves correction/resumption.
+- Review files: CHANGELOG_V2.md, ERROR_LOG.md, ../evidence/v2_escalation_crew_failed.txt, ../evidence/v2_escalation_change.json, ../evidence/v2_layout_changes.json; source dataset.py/support/tickets.py/support/models.py/tests.
+
+## Historical v1 review notes
+
+
 Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
 
 - Current milestone: public repository publication PASSED; the publication-record commit preserves the verified submission commit.
@@ -120,3 +139,5 @@ Statuses: NOT STARTED, IN PROGRESS, PASSED, FAILED, BLOCKED. PASSED requires exe
 Local polish-v2 only. Preservation/new setup and untouched baseline verification PASSED. Layout changes IN PROGRESS; no v2 behavior/acceptance claim. ../evidence/v2_layout_changes.json records exact moves. No new errors encountered.
 
 Layout verification 2026-10-11T01:49:17.318304+05:30: PASSED208links,8dataset/policychecks,offline33/24rebuild,empty public-content scan. Escalation/evaluation improvements NOT STARTED; finalv2acceptance NOT STARTED. Localpolish-v2 only.
+
+V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.

@@ -197,7 +197,7 @@ class Acceptance(unittest.TestCase):
                                 'session_transcripts':{s:app.transcript(s) for s in ['a','b','c']}};save()
 
     def test_06_preservation_and_offline(self):
-        for file,digest in json.loads((ROOT/'evidence/milestone_06_input_manifest.json').read_text()).items():
+        for file,digest in json.loads((ROOT/'evidence/final_input_manifest.json').read_text()).items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
         self.assertEqual(verify_local_model(),self.model_before)
         self.assertEqual(NETWORK_ATTEMPTS,[]);self.assertEqual(FORBIDDEN_PROCESS_ATTEMPTS,[])

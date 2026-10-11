@@ -59,21 +59,21 @@ class MilestoneFourTests(unittest.TestCase):
 
     def test_01_all_ticket_fields_scores_distribution_and_invalid_inputs(self):
         threshold = distribution_report()['threshold']
-        independent = sorted(round(.6*int(t['escalated'])+.4*t['days_since_created']/30,6) for t in SUPPORT_TICKETS)
+        independent = sorted(round(.4*int(t['escalated'])+.3*t['days_since_created']/30+.3*t['reopen_count']/3,6) for t in SUPPORT_TICKETS)
         self.assertEqual(threshold, independent[math.ceil(.8*len(independent))-1])
-        self.assertEqual(threshold, .613333)
+        self.assertEqual(threshold, 0.55)
         self.assertEqual(sum(s > threshold for s in independent), 12)
         for original, result in zip(SUPPORT_TICKETS, self.report['ticket_results']):
             self.assertEqual(result['status'], original['status'])
             self.assertEqual(result['resolution_time_hours'], original['resolution_time_hours'])
-            self.assertEqual(result['escalation_score'], round(.6*int(original['escalated'])+.4*original['days_since_created']/30,6))
+            self.assertEqual(result['escalation_score'], round(.4*int(original['escalated'])+.3*original['days_since_created']/30+.3*original['reopen_count']/3,6))
             self.assertEqual(result['recommend_escalation'], result['escalation_score'] > threshold)
             TicketResult.model_validate(result)
         self.assertEqual(escalation_score(False,0),0)
-        self.assertEqual(escalation_score(True,30),1)
+        self.assertEqual(escalation_score(True,30,3),1)
         self.assertLess(escalation_score(False,0),escalation_score(False,30))
         self.assertLess(escalation_score(False,15),escalation_score(True,15))
-        for bad in [('True',3),(False,True),(False,-1),(False,31)]:
+        for bad in [('True',3),(False,True),(False,-1),(False,31),(False,0,True),(False,0,-1),(False,0,4)]:
             with self.assertRaises(ValueError): escalation_score(*bad)
         with self.assertRaises(TypeError): check_support_ticket_status(1)
         self.assertEqual(check_support_ticket_status('bad')['error'],'invalid_record_id')
@@ -157,7 +157,7 @@ class MilestoneFourTests(unittest.TestCase):
         for source in SUPPORT_TICKETS:
             if source['escalated']:
                 result=self.ask('escalated_ticket',f"Check {source['record_id']} status.",'escalated-demo')
-                self.assertEqual(result['response']['ticket']['escalation_score'],escalation_score(True,source['days_since_created']))
+                self.assertEqual(result['response']['ticket']['escalation_score'],escalation_score(True,source['days_since_created'],source['reopen_count']))
                 break
 
     def test_07_phone_mask_before_model_and_memory(self):
@@ -231,8 +231,12 @@ class MilestoneFourTests(unittest.TestCase):
     def test_12_preserved_inputs_offline_controls_and_zero_attempts(self):
         self.assertEqual(hashlib.sha256((ROOT/'Problem_Statement.md').read_bytes()).hexdigest(),
                          '81e2d0ca4499c1865cf8c9fee41c1ce90825440f3eb7f91593c4c2ab9d89dbd6')
-        previous=json.loads((ROOT/'evidence/milestone_02_acceptance.json').read_text())
-        self.assertEqual(dataset_fingerprint(SUPPORT_TICKETS),previous['dataset']['sha256'] if 'dataset' in previous else previous['sha256'])
+        previous=json.loads((ROOT/'evidence/archive/v1/milestone_02_acceptance.json').read_text())
+        original_fields=[{k:v for k,v in t.items() if k!='reopen_count'} for t in SUPPORT_TICKETS]
+        self.assertEqual(original_fields,previous['all_records'])
+        self.assertEqual(dataset_fingerprint(original_fields),previous['sha256'])
+        current=json.loads((ROOT/'evidence/v2_escalation_change.json').read_text())
+        self.assertEqual(dataset_fingerprint(SUPPORT_TICKETS),current['v2_dataset_hash'])
         for policy in previous['policies']:
             self.assertEqual(hashlib.sha256((ROOT/policy['path']).read_bytes()).hexdigest(),policy['sha256'])
         self.assertEqual(verify_local_model(),self.before_model)

@@ -628,3 +628,18 @@ Verify layout links/model reader/dataset requirements; then record result and ma
 
 ### Layout verification — 2026-10-11T01:49:17.318304+05:30
 -208 Markdown relative links verified,0 missing; existing dataset/policy suite8/8 passed; moved-model-reader offline rebuild33/24 succeeded, exit0. Full intended source/text scan273 files with empty findings. Sanitized dataset/index transcripts at ../evidence/v2_layout_dataset.txt and v2_layout_indexes.txt. No runtime behavior change. Exact187 git moves listed in v2_layout_changes.json; local-only layout commit follows.
+
+V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.
+
+### V2 Step3 verification failure — 2026-10-11T01:52:23.476237+05:30
+- Existing dataset/policy suite8/8 passed. Original7fields identical to v1 for all60records; independent reopen seed43,0–3 integers; escalation14/60=23.33%. Score threshold0.55 vs v1 0.613333;12 recommended including2 non-escalated vs v1 zero. All examples/hash/formula/tie rules in v2_escalation_change.json.
+- Existing crew12-test module failed before running tests: NameError undefined t in support/tickets.py record lookup. ERROR-016 recorded, complete sanitized transcript saved; no test weakened and no fix attempted. Strict userstop rule: no Step4–7 or finalv2readiness claim.
+- One local improvement commit bc11f3d (layout) exists; Step3 implementation/documentation/evidence remains uncommitted for review. Originalcheckout and both publicmain baselines unchanged,polish-v2 unpushed. Save full review diff againstv1 outside repositories; no additional code changes.
+
+## Session 012 — escalation correction and remaining v2 work
+User approved correcting ERROR-016 and routine in-scope debugging/resumption. Inspected retained Git changes, current status/changelog/error history and full failed evidence. Corrected lookup reopen_count caller from undefined t to actual ticket. Distribution comprehension correctly uses its local t. Prior work/failure evidence retained; original checkout/tag/remote baselines untouched. Dataset/crew verification follows; error remains OPEN until executed success.
+
+### Correction verification — 2026-10-11T09:01:47.249018+05:30
+Dataset8/8 passed; actual crew11 tests passed including scores/tool invocations/schema/memory/guards. Test12 failed on missed historical dataset reader path (ERROR-017 recorded before fix). Original ERROR-016 no longer occurs, but resolve only after complete suite passes. Preserve failed output; update archive reader and explicit original-field/hash assertions rather than weakening integrity checks.
+
+Escalation verified 2026-10-11T09:02:58.598328+05:30: seed42/alloriginalfields/distributions preserved; independent seed43 reopening stream. Score rounded6decimal, nearest-rank48of60 threshold0.55, strictgreater excludes1ties;12recommended including2non-escalated. All60actualticket scores independently checked, dataset8/8 and crew12/12 PASSED. Errors016/017 RESOLVED after execution. Evidence: [change record](../evidence/v2_escalation_change.json), [crew output](../evidence/v2_escalation_crew.txt). No network/dependencies/application changes beyond intended score/schema. Local-only separate commit follows.

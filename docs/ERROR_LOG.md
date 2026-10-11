@@ -253,3 +253,33 @@ Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repo
 Version 2 preservation/setup/baseline: no errors. User requires stop on any failed check; no fix will be attempted automatically.
 
 Layout verification: no failed checks/commands; no new open errors.
+
+V2 escalation implementation: intended change recorded in ../evidence/v2_escalation_change.json and CHANGELOG_V2.md. Original-field invariance verified; dataset60records14escalated (23.33%) preserved. Tests pending; no new acceptance pass claimed and no failed check so far.
+
+## ERROR-016
+Date: 2026-10-11T01:52:23.476237+05:30
+Milestone: V2 Step3 escalation
+Component: support/tickets.py lookup
+Command: `.venv311/bin/python -m tests.milestone_04_acceptance --report evidence/v2_escalation_crew.json`
+Error message: NameError: name t is not defined.
+Relevant traceback: [complete sanitized failure](../evidence/v2_escalation_crew_failed.txt); Ran0tests, FAILED(errors=1), exit1.
+Root cause: automatic string edit used loop-variable t for reopen_count inside lookup, whose actual record variable is ticket.
+Fix attempted: NONE; user explicitly requires stop on any failed check.
+Verification command: same crew suite after separate user approval of correction.
+Verification result: NOT RUN; failure remains uncorrected. Dataset suite8/8 PASSED separately.
+Status: RESOLVED
+
+## ERROR-017
+Date: 2026-10-11T09:01:47.249018+05:30
+Milestone: V2 escalation/path regression
+Component: tests/milestone_04_acceptance.py test12
+Command: existing crew acceptance module
+Error message: FileNotFoundError evidence/milestone_02_acceptance.json.
+Relevant traceback: [sanitized failure](../evidence/v2_escalation_crew_failed_02.txt). Ran12tests;11 passed,1error.
+Root cause: historical dataset evidence reader missed archive move; subsequent whole-dataset comparison must account explicitly for authorized reopen_count addition.
+Fix attempted: NONE yet.
+Verification command: full dataset and crew suites.
+Verification result: pending.
+Status: RESOLVED
+
+Verification 2026-10-11T09:02:58.598328+05:30: ERROR-016 fixed actual ticket access, ERROR-017 archived dataset path plus explicit original7field/v1digest and v2digest checks. Dataset8/8 and fullcrew12/12 PASSED, all60actual lookup/formula/schema results independently verified. Both RESOLVED; failed attempts retained.
