@@ -37,7 +37,8 @@ def main():
     assert re.findall(r'^## (.+)$',readme,re.M)==sections
     assert not re.search(r'Milestone|PASSED|ERROR-0\d+|handoff|authorized|course.portal|marks disclaimer',readme,re.I)
     assert 150<=len((ROOT/'docs/LEARNINGS.md').read_text().split())<=250
-    assert '[CONFIRM: my own contributions]' in readme
+    assert 'I used AI assistance throughout development. The repository records the implementation, executed verification, and known limitations.' in readme
+    assert not re.search(r'CONFIRM|TODO|TBD|FIXME|\[INSERT', readme + (ROOT/'docs/LEARNINGS.md').read_text())
     # Check all archived Markdown links; historic records stay distinct.
     for path in (ROOT/'evidence/archive/v1').rglob('*.md'):
         for target in re.findall(r'\]\(([^)]+)\)',path.read_text()):

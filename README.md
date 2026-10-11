@@ -174,4 +174,4 @@ Python audit hooks cover exercised Python calls, not arbitrary native-code traff
 
 AI assistance contributed to scaffolding, dataset and policy drafting, implementation, debugging, test execution and documentation/review. Generated work was verified through executed checks, including preserved failures and negative fixtures. The record does not establish which design or testing work the student performed personally.
 
-**[CONFIRM: my own contributions]**
+I used AI assistance throughout development. The repository records the implementation, executed verification, and known limitations.

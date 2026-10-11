@@ -2,11 +2,11 @@
 
 ## Current Version 2 state
 
-- Last updated: 2026-10-11T13:40:17.061417+05:30 (Asia/Kolkata).
+- Last updated: 2026-10-11T14:04:09.195822+05:30 (Asia/Kolkata).
 - Verdict: **READY FOR REVIEW**. All 16 official implementation criteria are verified on current v2; no unresolved errors or technical blockers.
 - Branch: local `polish-v2`. Original v1 checkout, `main`, `origin/main` and annotated `v1.0.0` remain at the preserved baseline. No push, merge, deployment or submission.
 - Completed: lookup correction, independently seeded reopening, verified score/threshold/ties, documentation/archive moves, original 15 plus five frozen extra evaluation cases, concise README, evidence-based learnings and honest AI attribution.
-- Fresh tests: 56 distinct runtime checks / 76 executions passed, plus two documentation behavior checks. Actual localhost18HTTP+11WebSocket messages produced29correlated masked log rows; disconnect survival and concurrent isolation passed.
+- Latest runtime acceptance (previous session): 56 distinct runtime checks / 76 executions passed, plus two documentation behavior checks. Actual localhost18HTTP+11WebSocket messages produced29correlated masked log rows; disconnect survival and concurrent isolation passed.
 - Determinism/offline: dataset, uncached crew and both evaluation sets repeat identically across processes. No external runtime attempts; narrow localhost access only during API tests. Empty offline indexes rebuilt0→33fixed/0→24sentence without recalibration or downloads.
 - Escalation: original seven fields/seed42 preserved; reopening seed43 independent of status. Measured p80 threshold0.55, one excluded tie,12recommendations including two non-escalated at0.57; v1 threshold0.613333 selected12allalready escalated. All60fresh/v1 scores independently checked with exact Decimal arithmetic.
 - Evaluation (Accuracy/Grounding/Completeness/Safety): original15=1.0/1.0/1.0/1.0; extra5=0.8/1.0/0.7/1.0. X01 fails the preregistered refusal expectation; X04 covers two of four expected facts. Original labels/prompt/rubric unchanged; no post-result tuning.
@@ -15,7 +15,8 @@
 - Errors: ERROR-016 remains verified RESOLVED. ERROR-019 canonical temporary-root comparison and ERROR-020 historical-script link/output issues were recorded before fixes and verified afterward; failed attempts retained. Historical stage assertions remain intact, outputs cannot overwrite archived reports.
 - Evidence: [task-by-task report](FINAL_ACCEPTANCE_REPORT.md), [independent acceptance](../evidence/final_acceptance_audit.json), [offline ledger](../evidence/final_offline_execution.json), [localhost ledger](../evidence/final_localhost_execution.json), [review/history/score checks](../evidence/v2_final_review.json), [documentation gate](../evidence/final_documentation_audit.json), [intended content scan](../evidence/final_submission_inspection.json), [script behavior checks](../evidence/v2_stage_paths_verified.txt).
 - Limitations: lexical MOCK judge/review, bounded pattern masking and static scanning, Python audit hooks rather than an OS/native firewall, process-local sessions/cache. Measured near-domain/multi-topic weaknesses retained.
-- Next: user reviews the local diff and confirms the README personal-contribution placeholder. Exact publication candidate is the final local HEAD returned after the evidence-record commit; inspect with `git rev-parse HEAD`. Publication requires separate approval.
+- Editorial cleanup: replaced the README placeholder with the user-provided factual AI-assistance statement; detailed disclosure and all findings retained. Documentation/link checks PASSED this session; application and other Python sources unchanged except the documentation gate. Prior runtime acceptance evidence remains byte-identical and applicable.
+- Next: user reviews the local diff and approves publication. Exact publication candidate is the final local HEAD returned after the evidence-record commit; inspect with `git rev-parse HEAD`. Publication requires separate approval.
 
 ## Historical states — superseded
 

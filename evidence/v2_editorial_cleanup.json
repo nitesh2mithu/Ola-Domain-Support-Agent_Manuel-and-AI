@@ -1,0 +1,62 @@
+{
+  "LEARNINGS_unchanged": true,
+  "README_lines": 177,
+  "README_only_change_is_exact_replacement": true,
+  "acceptance_baseline_commit": "c913a6766ba849c7b2084f209f28f980be0bdb2c",
+  "application_and_other_python_files_unchanged": 54,
+  "application_suites_rerun": false,
+  "commands": [
+    {
+      "command": ".venv311/bin/python -m scripts.verify_final_documents",
+      "exit_code": 0,
+      "output": "{\n  \"completed_track_declaration_verified\": true,\n  \"documents_checked\": [\n    \"docs/LEARNINGS.md\",\n    \"docs/CHANGELOG_V2.md\",\n    \"README.md\",\n    \"docs/PROJECT_STATUS.md\",\n    \"docs/DEVELOPMENT_PROCESS.md\",\n    \"docs/ERROR_LOG.md\",\n    \"docs/REQUIREMENTS_TRACKER.md\",\n    \"docs/FINAL_ACCEPTANCE_REPORT.md\"\n  ],\n  \"evidence_links_checked\": 240,\n  \"ignore_rules_verified\": true,\n  \"local_review_gate\": \"current v2 task, source, links, README, learnings and exclusion checks; improvements remain local\",\n  \"official_task_rows\": 16,\n  \"publication_or_submission_performed\": false,\n  \"required_source_package_completeness\": true,\n  \"result\": \"PASSED\",\n  \"setup_excluded_model_download_and_clean_index_recipe_verified\": true,\n  \"timestamp\": \"2026-10-11T14:04:09.285461+05:30\",\n  \"unresolved_errors\": 0\n}\n"
+    },
+    {
+      "command": ".venv311/bin/python -m tests.v2_documentation",
+      "exit_code": 0,
+      "output": "test_actual_link_loops_support_moved_docs_and_directory_links (__main__.DocumentationPaths.test_actual_link_loops_support_moved_docs_and_directory_links) ... ok\ntest_actual_writers_preserve_archived_evidence (__main__.DocumentationPaths.test_actual_writers_preserve_archived_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.033s\n\nOK\n"
+    },
+    {
+      "command": ".venv311/bin/python -m scripts.verify_v2_review --no-write",
+      "exit_code": 0,
+      "output": "{\n  \"README_lines\": 177,\n  \"archived_records\": {\n    \"byte_identical\": 182,\n    \"markdown_link_only_changes\": 1\n  },\n  \"baseline_refs_preserved\": true,\n  \"branch\": \"polish-v2\",\n  \"current_findings\": [],\n  \"escalation_comparison\": {\n    \"method\": \"independent exact Decimal calculations against all60 fresh lookup results and archived v1 results\",\n    \"rank\": 48,\n    \"v1_non_escalated\": 0,\n    \"v1_recommended\": 12,\n    \"v1_threshold\": 0.613333,\n    \"v2_non_escalated\": [\n      {\n        \"days_since_created\": 27,\n        \"record_id\": \"OLA-0007\",\n        \"reopen_count\": 3,\n        \"score\": 0.57,\n        \"status\": \"In Progress\"\n      },\n      {\n        \"days_since_created\": 27,\n        \"record_id\": \"OLA-0022\",\n        \"reopen_count\": 3,\n        \"score\": 0.57,\n        \"status\": \"Open\"\n      }\n    ],\n    \"v2_recommended\": 12,\n    \"v2_threshold\": 0.55,\n    \"v2_ties_excluded\": 1\n  },\n  \"exact_dependency_pins_verified\": 163,\n  \"intended_files_scanned\": 353,\n  \"learnings_words\": 215,\n  \"limitations\": \"Pattern scanning is bounded; no remote branch or visibility verification is claimed. Archive Markdown links may change, but prose is preserved.\",\n  \"original_checkout_preservation_verified\": true,\n  \"reachable_history_scans\": [\n    {\n      \"commit\": \"66251f65dc703b38d67f6f0cc1e6006b50ca7845\",\n      \"files\": 265,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"64e19e9036e160bc93109fb2766d7e15c9d0a448\",\n      \"files\": 267,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"bc11f3dd798577d944a38cf18a62cea3e28428e8\",\n      \"files\": 275,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"bd00a6b29c70bfea6fbb144f27e3b915bfbde3b2\",\n      \"files\": 283,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"f5a6def1d0d2df0dd6139f3f82ebf6f6d4e2acc2\",\n      \"files\": 297,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"4f0fdfa54c1b43768237de67d860e6b0454f9372\",\n      \"files\": 298,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"c0952aefab2439bd951edbdac1590d666eb12349\",\n      \"files\": 346,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"9711d22dcaee7dbd1e99fd4832a48f5979e5b83e\",\n      \"files\": 349,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"a4b342766f5645559329a77abd7eaa04ef840ac2\",\n      \"files\": 353,\n      \"findings\": []\n    },\n    {\n      \"commit\": \"c913a6766ba849c7b2084f209f28f980be0bdb2c\",\n      \"files\": 353,\n      \"findings\": []\n    }\n  ],\n  \"relative_links_verified\": 279,\n  \"result\": \"PASSED\",\n  \"reviewed_head\": \"c913a6766ba849c7b2084f209f28f980be0bdb2c\",\n  \"timestamp\": \"2026-10-11T14:04:34.377245+05:30\"\n}\n"
+    }
+  ],
+  "final_documentation_gate": {
+    "completed_track_declaration_verified": true,
+    "documents_checked": [
+      "docs/LEARNINGS.md",
+      "docs/CHANGELOG_V2.md",
+      "README.md",
+      "docs/PROJECT_STATUS.md",
+      "docs/DEVELOPMENT_PROCESS.md",
+      "docs/ERROR_LOG.md",
+      "docs/REQUIREMENTS_TRACKER.md",
+      "docs/FINAL_ACCEPTANCE_REPORT.md"
+    ],
+    "evidence_links_checked": 243,
+    "ignore_rules_verified": true,
+    "local_review_gate": "current v2 task, source, links, README, learnings and exclusion checks; improvements remain local",
+    "official_task_rows": 16,
+    "publication_or_submission_performed": false,
+    "required_source_package_completeness": true,
+    "result": "PASSED",
+    "setup_excluded_model_download_and_clean_index_recipe_verified": true,
+    "timestamp": "2026-10-11T14:05:27.164590+05:30",
+    "unresolved_errors": 0
+  },
+  "git_diff_check": "PASSED",
+  "intended_content_scan": {
+    "files_inspected": 354,
+    "findings": [],
+    "result": "PASSED"
+  },
+  "latest_all16_acceptance_still_applies": true,
+  "new_failures": 0,
+  "original_v1_preserved": true,
+  "previous_evidence_files_byte_identical_except_documentation_audit": 259,
+  "relative_links_verified": 279,
+  "result": "PASSED",
+  "statement": "I used AI assistance throughout development. The repository records the implementation, executed verification, and known limitations.",
+  "timestamp": "2026-10-11T14:05:23.891625+05:30"
+}
