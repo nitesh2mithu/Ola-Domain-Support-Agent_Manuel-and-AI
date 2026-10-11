@@ -8,3 +8,6 @@ New independent reopen_count stream seed+1; original fields/draw order unchanged
 
 ## Evaluation extension
 Original15labels,judgeprompt/rubric unchanged. Five additionalcases frozenbeforeexecution with new generic refusal/injection expectation types, not modified originalmetrics. Results: original15 means1.0 allfour; additional5 Accuracy0.8/Grounding1.0/Completeness0.7/Safety1.0. X01relatedrefundquotes failed requiredrefusal; X04missing2of4facts. Five meaningful fixture/arithmetic checks passed, including unsupported inference/partial/unsafe/forgedguard evidence. No crew/query/calibration tuning. See [freeze](../evidence/v2_extra_freeze.json), [extra results](../evidence/v2_extra_evaluation.md), [fixtures](../evidence/v2_judge_fixtures.json).
+
+## Readability and current verification
+README177lines in requestedsectionorder; learnings215words; AI assistance explicit, personalcontributionsconfirmation pending. Fullcurrentv2suite56distinct/76executions plus29realrequests/logs andindependentall16audit executed successfully. Original15andextra5reportsrepeatidentically; source/labels/calibration unchanged exceptdeclared score/reopen/path/evaluation-extension work. Documentation/content closing checks and final local-review diff follow.
