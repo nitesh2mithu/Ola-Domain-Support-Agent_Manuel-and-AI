@@ -1,0 +1,93 @@
+{
+  "application_changes_this_publication": false,
+  "application_tests_rerun": false,
+  "deployment_or_portal_submission": false,
+  "documentation_record_commit": "created after this record, then pushed normally; v2.0.0 remains at verified release merge commit",
+  "editorial_submission_commit": "74ca0f92af8026f1876fa05cc5698522e0ce2f7d",
+  "github_checks": {
+    "active_branch_rules": [],
+    "basis": "recorded local acceptance and executed publication preflight",
+    "check_runs": 0,
+    "commit_statuses": 0,
+    "merge_state": "CLEAN",
+    "mergeable": "MERGEABLE",
+    "remote_CI_pass_claimed": false,
+    "required_checks": [],
+    "workflows": 0
+  },
+  "github_release_tree_and_readme_verification": {
+    "README_bytes_equal": true,
+    "README_relative_links_verified": 28,
+    "README_rendered_heading_code_and_attribution_verified": true,
+    "current_content_findings": [],
+    "default_branch": "main",
+    "files": 355,
+    "limitations": "Static pattern inspection is bounded; runtime acceptance remains the recorded local MOCK checks, no remote CI pass is claimed.",
+    "merge_commit": "dae0867753bc7ab17f924a66dd9aa7362e2e8bfa",
+    "no_external_deployment_or_portal_submission": true,
+    "no_unintended_files": true,
+    "public": true,
+    "pull_request": "https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI/pull/1",
+    "remote_local_blob_equality": true,
+    "repository": "https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI",
+    "required_files_verified": [
+      "README.md",
+      "Problem_Statement.md",
+      "docs/PROJECT_STATUS.md",
+      "docs/DEVELOPMENT_PROCESS.md",
+      "docs/ERROR_LOG.md",
+      "docs/REQUIREMENTS_TRACKER.md",
+      "docs/FINAL_ACCEPTANCE_REPORT.md",
+      "docs/LEARNINGS.md",
+      "evidence/final_acceptance_audit.json",
+      "evidence/final_evaluation.json",
+      "evidence/v2_extra_evaluation.json"
+    ],
+    "result": "PASSED",
+    "timestamp": "2026-10-11T23:40:10.924538+05:30",
+    "tree": "a4c44986acf27c83843d0e57811cf00d412727c0",
+    "v1_remote_checkout_and_tag_unchanged": true,
+    "verified_main": "dae0867753bc7ab17f924a66dd9aa7362e2e8bfa"
+  },
+  "local_acceptance_evidence_still_applicable": true,
+  "merge_method": "merge commit; all reviewed history retained",
+  "publication_documentation_checks": {
+    "all_python_files_unchanged": 55,
+    "protected_inputs_unchanged": true,
+    "relative_links": 283,
+    "result": "PASSED"
+  },
+  "publication_record_content_scan": {
+    "cause": "Git hash joined to prose prevented digest classification",
+    "error": "ERROR-021",
+    "failed_evidence": "evidence/v2_publication_document_scan_failed_01.json",
+    "fix": "delimit hash in documentation only; scanner/application unchanged",
+    "full_scan": {
+      "files_inspected": 357,
+      "findings": [],
+      "result": "PASSED"
+    },
+    "initial_result": "FAILED",
+    "staged_scan": {
+      "files_inspected": 8,
+      "findings": [],
+      "result": "PASSED"
+    },
+    "status": "RESOLVED"
+  },
+  "pull_request": "https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI/pull/1",
+  "pull_request_state": "MERGED",
+  "repository": "https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI",
+  "result": "PASSED",
+  "reviewed_branch_head": "65d99708f74fc7b62059fb24abbf8fa59caf1d13",
+  "timestamp": "2026-10-11T23:42:49.912429+05:30",
+  "v1_repository": "https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_all-ai_v.1",
+  "verified_release_main": "dae0867753bc7ab17f924a66dd9aa7362e2e8bfa",
+  "version_tag": {
+    "annotated": true,
+    "commit": "dae0867753bc7ab17f924a66dd9aa7362e2e8bfa",
+    "name": "v2.0.0",
+    "tag_object": "e176fbe55e638b280f036ed50d5ce6639711046f",
+    "verified_on_GitHub": true
+  }
+}

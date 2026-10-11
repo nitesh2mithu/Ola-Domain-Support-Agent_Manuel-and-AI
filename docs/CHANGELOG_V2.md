@@ -18,4 +18,8 @@ Fresh runtime verification passed all56 distinct checks /76 executions,29 real H
 
 ERROR-019 corrected macOS temporary-path canonicalization in the new reproducible history review helper. ERROR-020 corrected a historical audit link-base variable, supported contained directory links and redirected audit output to excluded runtime storage, protecting archived reports. Existing stage assertions remain intact. Failed attempts were retained before fixes; both errors were resolved only after actual verification.
 
-[Review evidence](../evidence/v2_final_review.json) includes reachable-history hygiene, archive preservation, exact dependency pins and independent old/new score arithmetic. Local commits9711d22 and a4b3427 separate these corrections. The final evidence/documentation refresh is a separate local commit; no improvement push or merge.
+[Review evidence](../evidence/v2_final_review.json) includes reachable-history hygiene, archive preservation, exact dependency pins and independent old/new score arithmetic. Local commits9711d22 and a4b3427 separate these corrections. The final evidence/documentation refresh was a separate local commit before the approved publication.
+
+## Version 2 publication — 2026-10-11T23:42:49.912429+05:30
+
+[PR1](https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI/pull/1) merged preserving all reviewed history; annotated v2.0.0 points to `dae0867753bc7ab17f924a66dd9aa7362e2e8bfa`. Publicmain exacttree/README/docs/evidence verification passed; v1remote/checkout/tag unchanged. GitHub CI0; recorded local56distinct/76executions,2docchecks and29realrequests used, with mock/evaluation limitations retained. Publication-only docs updates follow the release commit; no application change, deployment or portal submission.

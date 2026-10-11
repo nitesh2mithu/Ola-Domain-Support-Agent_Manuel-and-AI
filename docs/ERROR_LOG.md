@@ -350,3 +350,20 @@ Editorial session 2026-10-11T14:04:09.195822+05:30: no new execution errors. Rep
 Editorial verification 2026-10-11T14:05:23.891625+05:30: all requested documentation/link checks passed; no new failures or unresolved errors. Evidence: ../evidence/v2_editorial_cleanup.json.
 
 Publication preflight 2026-10-11T23:36:31.307775+05:30: restricted-network auth-status command returned exit1; authorized network diagnostic verified same existing credentials exit0, no change required. Recorded failed attempt/diagnosis in Session015 and preflight evidence. No open runtime errors or publication blockers; remote main matches expected baseline.
+
+Publication 2026-10-11T23:42:49.912429+05:30: push/PR/history-preserving merge/defaultbranch verification/annotated tagpush all succeeded. No new errors or unresolved blockers. Initial restricted-network authentication diagnostic retained in preflight; actual existing credentials verified. No remote CI configured; no passing-check fabrication. [Record](../evidence/v2_publication_verification.json).
+
+## ERROR-021
+Date: 2026-10-11T23:45:31.441716+05:30
+Milestone: Version2 publication record
+Component: DEVELOPMENT_PROCESS tag-object prose / strict content scan
+Command: `.venv311/bin/python -m scripts.inspect_submission --no-write`, then staged equivalent.
+Error message: unclassified_fixed_phone_pattern at DEVELOPMENT_PROCESS line748; intended and staged scans FAILED. Closing-record assertion stopped before adding a success claim; no documentation commit/push occurred.
+Relevant traceback: AssertionError on scan.result == PASSED in closing snippet; [actual scan report](../evidence/v2_publication_document_scan_failed_01.json).
+Root cause: hexadecimal tag-object ID was joined to surrounding words, preventing strict scanner digest classification; numeric run within the public Git object ID matched the phone pattern. No actual phone data introduced.
+Fix attempted: NONE yet. Delimit the Git hash in prose; keep scanner unchanged.
+Verification command: full intended and staged scans plus link/source checks.
+Verification result: unchanged strict intended and staged scans both PASSED with zero findings after delimiters were corrected; no application or scanner changes.
+Status: RESOLVED
+
+ERROR-021 verified 2026-10-11T23:47:15.211119+05:30: full/staged scans exit0 with zero findings; hexadecimal tag ID separated from adjacent prose. Original failed scan retained; rules unchanged. No raw phone introduced or published. No unresolved errors.

@@ -1,6 +1,6 @@
 # Version 2 Acceptance Report
 
-**Verdict: READY FOR REVIEW — all 16 official implementation requirements verified on current v2 code.** The five additional evaluation cases expose known scope/coverage weaknesses. Documentation/content closing checks passed and are recorded below; no improvement push, merge, publication, deployment or submission.
+**Verdict: VERSION 2 PUBLISHED — all 16 official implementation requirements retain verified acceptance.** The five additional evaluation cases expose measured scope/coverage weaknesses. Publication is verified through PR1 and annotated v2.0.0; no service deployment or course-portal submission.
 
 Source: unchanged `Problem_Statement.md`. All original policies, calibrated RAG configuration and original 15 evaluation labels/prompt/rubric remain unchanged. Original requirements allocate Parts1–4:30/30/20/20, with no individual task marks.
 
@@ -63,7 +63,7 @@ Runner records exact commands, exit codes and full sanitized output in [offline 
 
 Version1 repository: https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_all-ai_v.1
 New baseline repository: https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI
-V1 implementation:`66251f65dc703b38d67f6f0cc1e6006b50ca7845`; preservedhead/annotatedtagv1.0.0:`64e19e9036e160bc93109fb2766d7e15c9d0a448`. Newcheckout:`../Ola-Domain-Support-Agent_Manuel-and-AI`, branchlocal`polish-v2`only. Baselinepublicmain/tag unchanged; improvements are unpushed.
+V1 implementation:`66251f65dc703b38d67f6f0cc1e6006b50ca7845`; preservedhead/annotatedtagv1.0.0:`64e19e9036e160bc93109fb2766d7e15c9d0a448`. Newcheckout:`../Ola-Domain-Support-Agent_Manuel-and-AI`, Version2main now includes the reviewed polish-v2 commits through merge commit `dae0867753bc7ab17f924a66dd9aa7362e2e8bfa`. The separate v1repository/checkout/v1.0.0 remain unchanged.
 
 Fullbundle:`../ola-v1-backup.bundle`outside repositories. Complete reviewdiff:`../polish-v2-vs-v1.diff`outside repository; regenerate after final local commit. [Exact187moves/preservation/baselineverification](../evidence/v2_layout_changes.json) and [historicalv1report](archive/v1_FINAL_ACCEPTANCE_REPORT.md) distinguish v1 from currentv2 evidence. Freshnewenv/model/indexsetup completed without copying oldenv/weights/runtime/keys.
 
@@ -77,8 +77,16 @@ The two new documentation behavior checks execute actual historical-script link/
 
 README has 177 lines and the required 13-section order; LEARNINGS has 215 words. The AI note describes documented assistant work and includes the user-provided factual assistance statement; it claims no personal design, coding or testing contributions. [History/archive/pin/link review](../evidence/v2_final_review.json) scans every reachable Git snapshot, independently recalculates all60 current/v1 scores with Decimal, verifies163 exact pins, and confirms182 archived records byte-identical plus one Markdown record with link-target changes only. No runtime/model/index/credential artifacts are intended for publication. Setup instructions specify the pinned free model download and index recreation; the fresh offline rebuild started with zero items in both collections and produced33/24.
 
-Final content/documentation gates passed after the corrections; exact staged and committed bytes are verified during local commit closure. All current/archive links resolve, Git metadata scan has no findings, and actual ignore checks exclude secrets/runtime/models/indexes while retaining curated evidence. [Document audit](../evidence/final_documentation_audit.json), [content scan](../evidence/final_submission_inspection.json) and the review evidence record actual gate outputs. The final local commit is proposed for user review only; no push, merge, deployment or submission is authorized in this session. No personal-contribution claim is made. Publication still requires user approval.
+Final content/documentation gates passed after the corrections; exact staged and committed bytes are verified during local commit closure. All current/archive links resolve, Git metadata scan has no findings, and actual ignore checks exclude secrets/runtime/models/indexes while retaining curated evidence. [Document audit](../evidence/final_documentation_audit.json), [content scan](../evidence/final_submission_inspection.json) and the review evidence record actual gate outputs. User authorized Version2 push/PR/history-preserving merge/tag. No personal-contribution claim is made, no deployment or portal submission performed.
 
 Local correction commits: `9711d22` (canonical history review) and `a4b3427` (historical link/output paths). The following audit-record commit contains refreshed runtime evidence and this final report; its exact SHA is obtained from local `polish-v2` HEAD after commit. No application behavior, frozen labels or scoring changed in the review session.
 
 Editorial cleanup 2026-10-11T14:05:23.891625+05:30: exact user-provided AI-assistance statement replaces the contribution placeholder; detailed disclosure preserved and LEARNINGS unchanged. Documentation/link checks passed. Existing application code and runtime acceptance evidence are unchanged; previous all16 verification remains applicable. [Editorial evidence](../evidence/v2_editorial_cleanup.json). No application tests rerun, behavior changes or publication actions.
+
+## Verified Version 2 publication
+
+[Version2 repository](https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI), [merged PR1](https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI/pull/1), annotated `v2.0.0` → `dae0867753bc7ab17f924a66dd9aa7362e2e8bfa`. All reviewed commits retained. Public/defaultmain, exact remote/local file-tree equality, README content/rendering/relative links, moved documentation/current evidence, content scan and unchanged separate v1remote/checkout/tag verified. [Publication evidence](../evidence/v2_publication_verification.json).
+
+No GitHub Actions workflows, check runs, statuses or required branch checks are configured. Merge used the recorded local acceptance results; no remote CI pass is claimed. Original15 averages are1.0 on allfour metrics under the declared MOCK rubric; extra5 Accuracy0.8/Grounding1.0/Completeness0.7/Safety1.0 honestly preserve weaknesses. Application/runtime acceptance unchanged during publication; no newapplication tests claimed. The release tag remains at the verified merge commit; a subsequent documentation-only publication-record commit is pushed to main, with finalHEAD verified after that push.
+
+Publication-record scan caught an undelimited hexadecimal tag hash as a phone-pattern false-positive (ERROR-021). Only prose delimiters changed; strict full/staged scans passed afterward and the original failed result is retained. No application/scanner change or actual phone publication.

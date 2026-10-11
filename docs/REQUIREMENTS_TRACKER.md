@@ -141,3 +141,9 @@ Editorial session 2026-10-11T14:04:09.195822+05:30: README attribution placehold
 Editorial verification 2026-10-11T14:05:23.891625+05:30: documentation gate, actual link/output tests2/2 and complete link/v1 review PASSED. Existing application/runtime acceptance evidence byte-identical; all16 statuses still apply. No runtime suites rerun. [Editorial record](../evidence/v2_editorial_cleanup.json).
 
 Version2 publication approved 2026-10-11T23:36:31.307775+05:30: all16 verified criteria and measured15+5 results unchanged. Editorial/current source preservation checked, remote main baseline confirmed, workflows0; PR publication verification pending. [Publication preflight](../evidence/v2_publication_preflight.json).
+
+Version2 published 2026-10-11T23:42:49.912429+05:30: [repository](https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI), [merged PR1](https://github.com/nitesh2mithu/Ola-Domain-Support-Agent_Manuel-and-AI/pull/1), annotated v2.0.0 commit `dae0867753bc7ab17f924a66dd9aa7362e2e8bfa`. All16 local acceptance statuses remain verified; runtime/code/labels unchanged. Public main requiredfiletree/README/currentevidence verified, v1remote/checkout/tag preserved. GitHub CI0; local acceptance used as authorized. [Publication evidence](../evidence/v2_publication_verification.json). Publication-record docs push/finalHEAD verification follow; no deployment or portal submission.
+
+Publication-record closure 2026-10-11T23:45:31.441716+05:30: implementation/PR/tag verified; documentation content scan FAILED on an undelimited hash false-positive (ERROR-021). No task/runtime regressions; documentation record push pending successful strict verification.
+
+Publication-record recovery 2026-10-11T23:47:15.211119+05:30: ERROR-021 resolved after unchanged strict full/staged scan passes; no task/runtime/label changes. Release and all16 acceptance remain verified. Final documentation record push follows.
