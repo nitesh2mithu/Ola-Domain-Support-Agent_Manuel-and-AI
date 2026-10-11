@@ -55,7 +55,38 @@ def main():
         assert total==Decimal(str(e['metric_sums'][metric])) and abs(average-Decimal(str(e['averages'][metric])))<Decimal('1e-12')
         averages[metric]={'sum':str(total),'denominator':15,'average':str(average)}
     assert e['averages']==load('archive/v1/milestone_06_evaluation.json')['averages']
+    extra=load('v2_extra_evaluation.json');assert extra==load('v2_extra_evaluation_repeat.json')
+    assert extra['query_count']==len(extra['results'])==5
+    extra_cases=json.loads((ROOT/'evaluation/extra_queries.json').read_text())
+    assert [r['case'] for r in extra['results']]==extra_cases
+    for file,digest in load('v2_extra_freeze.json')['sha256'].items():
+        assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
+    extra_averages={}
+    for metric in ('Accuracy','Grounding','Completeness','Safety'):
+        total=sum(Decimal(str(r['verdict'][metric])) for r in extra['results'])
+        assert total==Decimal(str(extra['metric_sums'][metric]))
+        assert abs(total/5-Decimal(str(extra['averages'][metric])))<Decimal('1e-12')
+        extra_averages[metric]={'sum':str(total),'denominator':5,'average':str(total/5)}
+    assert not extra['offline']['network_attempts'] and not extra['offline']['child_process_attempts']
+    fixtures=load('v2_judge_fixtures.json');assert fixtures['acceptance']['passed'] and fixtures['acceptance']['tests_run']==5
+    assert 'Ran 5 tests' in (ROOT/'evidence/final_judge_fixtures.txt').read_text()
+    dataset=load('final_dataset.json');historic=load('archive/v1/final_dataset.json')
+    original_fields=[{k:v for k,v in t.items() if k!='reopen_count'} for t in dataset['all_records']]
+    assert original_fields==historic['all_records']
+    import random
+    rng=random.Random(43)
+    assert [t['reopen_count'] for t in dataset['all_records']]==[rng.randint(0,3) for _ in original_fields]
+    scores=[round(.4*int(t['escalated'])+.3*t['days_since_created']/30+.3*t['reopen_count']/3,6) for t in dataset['all_records']]
+    score_threshold=sorted(scores)[math.ceil(.8*len(scores))-1]
     crew=load('final_crew.json');assert crew['acceptance']['passed']
+    for t,score,actual in zip(dataset['all_records'],scores,crew['ticket_results']):
+        assert actual['escalation_score']==score and actual['reopen_count']==t['reopen_count']
+        assert actual['escalation_threshold']==score_threshold and actual['recommend_escalation']==(score>score_threshold)
+    escalation={'threshold':score_threshold,'ties_excluded':scores.count(score_threshold),
+                'recommended':sum(x>score_threshold for x in scores),
+                'non_escalated_recommended':sum(x>score_threshold and not t['escalated'] for t,x in zip(dataset['all_records'],scores)),
+                'original_fields_unchanged':True,'independent_reopen_stream_verified':True}
+
     for key,kind in [('ticket','ticket'),('policy','rag')]:
         c=crew['cases'][key];assert c['kickoff_executed'] and c['framework_pydantic_validated']
         assert len(c['agents'])>=3 and any(x['event']=='tool_executed' and x['kind']==kind for x in c['events'])
@@ -92,12 +123,14 @@ def main():
         assert not offline.get('network_attempts') and not offline.get('child_process_attempts')
     assert not hard['checks']['offline']['network_attempts']
     result={'timestamp':datetime.now(ZoneInfo('Asia/Calcutta')).isoformat(),'result':'PASSED','tasks_verified':list(range(1,17)),
-            'distinct_unittest_checks':51,'unittest_executions_with_repeats':71,'logical_localhost_requests_and_logs':29,
+            'distinct_unittest_checks':56,'unittest_executions_with_repeats':76,'logical_localhost_requests_and_logs':29,
             'dataset_and_crew_full_repeats_identical':True,'evaluation_full_repeat_identical':True,
             'independent_metric_arithmetic':averages,'rag_calibration_and_arithmetic':calculations,'cache_counters':counters,
-            'behavior_or_scoring_changed':False,'protected_inputs_and_frozen_labels_unchanged':True,
+            'behavior_or_scoring_changed':True,'intended_changes':['reopen_count and escalation formula','five separately scored additional cases'],
+            'original15_scoring_rules_and_labels_unchanged':True,'protected_v2_inputs_and_original_labels_unchanged':True,
+            'additional5_metric_arithmetic':extra_averages,'additional5_full_repeat_identical':True,'escalation':escalation,
             'external_runtime_attempts':[],'publication_pending':True,
-            'scope':'all16 official implementation acceptance criteria; local packaging/Git inspection recorded separately'}
+            'scope':'currentv2 all16 original requirements plus separately preregistered5extra evaluation; v1 archive not used as current execution evidence'}
     (ROOT/'evidence/final_acceptance_audit.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['rag_calibration_and_arithmetic']},indent=2,sort_keys=True))
 

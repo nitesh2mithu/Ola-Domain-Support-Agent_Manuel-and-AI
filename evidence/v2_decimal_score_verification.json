@@ -1,0 +1,8 @@
+{
+  "lookups": 60,
+  "method": "independent exactDecimal:0.4flag+days/100+reopen/10, quantize6decimals",
+  "recommended": 12,
+  "result": "PASSED",
+  "threshold": 0.55,
+  "ties_excluded": 1
+}

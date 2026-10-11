@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<PROJECT>/scripts/verify_final_documents.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "<PROJECT>/scripts/verify_final_documents.py", line 28, in main
+    assert ((ROOT/name).parent/target.split('#')[0]).is_file(),(name,target);links+=1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('README.md', 'knowledge_base/')

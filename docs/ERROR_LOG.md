@@ -287,3 +287,26 @@ Verification 2026-10-11T09:02:58.598328+05:30: ERROR-016 fixed actual ticket acc
 V2 evaluation extension defined/frozen before any extra query execution: ../evidence/v2_extra_freeze.json, fivecases(2near,2multi,1injection/PII), full expectedparent/fact/refusal rules. Original15cases/prompt/rubric byteidentical; added refusal-kind rules only, no original scoring changes or crew tuning. Execution/fixture verification pending; no scores claimed. No new errors yet.
 
 Evaluation step 2026-10-11T09:06:53.194920+05:30: original15meanAccuracy/Grounding/Completeness/Safety1.0, additional5mean0.8/1.0/0.7/1.0. X01near-domain semantic scope failure, X04multi-topic halfcoverage disclosed. Extra labels/parent/fact/refusal rules frozen before retrieval. Originalrubric/labels/prompt unchanged; generic extensionnewkinds only. No tuning. Existing correctness/safety rules retained and5new fixture/arithmetic/offline checks PASSED; sanitized transcripts/evidence top level. No new errors. Finalfullregression pending.
+
+Documentation/readability step: README177lines in requested13-section order with measured original15/extra5 scores, required design/calibration/P-R/score/setup/telemetry/offline statements, no administrative wording; LEARNINGS215words, recorded findings only, no personal experience claims. AI note explicitly lists AI-assisted work and student-contribution confirmation placeholder. Final runner now includes extra5twice and5judge checks; verifier independently checks currentv2 score/reopen/15+5arithmetic/freeze/repeats, while preserving all original16 checks. Final execution pending; no pass yet.
+
+Currentv2 finalruntime verification 2026-10-11T09:12:57.510673+05:30:56distinct checks76executions allPASSED; actual29HTTP/WSrequestlogs/disconnect/isolation/masking; original15evaluationrepeatall1.0 andextra5repeat0.8/1.0/0.7/1.0; independent arithmetic/hash/reopen/score/calibration/all16criteria PASSED; emptyoffline33/24indexrebuild PASSED. No new errors/fixes ornetworkdownloads. Documentation/contentclosinggates next.
+
+## ERROR-018
+Date: 2026-10-11T09:13:30.535504+05:30
+Milestone: V2 finaldocumentation
+Component: scripts.verify_final_documents
+Command: `.venv311/bin/python -m scripts.verify_final_documents`
+Error message: AssertionError README.md knowledge_base/.
+Relevant traceback: [sanitized failure](../evidence/v2_documentation_failed_01.txt).
+Root cause: originallinkchecker accepted files only; rewritten README intentionally links valid repository directories as well. Content scan338files passed.
+Fix attempted: NONE yet; validate existent file/directory targets contained in project, retaining missing-target detection.
+Verification command: documentationgate and full Markdown linkcheck.
+Verification result: pending.
+Status: RESOLVED
+
+ERROR-018 fix verification 2026-10-11T09:14:15.359332+05:30: file-or-directory validation with resolved-root containment checked independently across262active/archive links, no missingtargets. Directorylink bug RESOLVED. Earlier isolatedgate temporarily deferred only bookkeeping open-error assertion to verify linkfix; not a completed gate claim. Normalunpatched fullgate follows. No permanentassertion removed; no model/testcriteria weakened.
+
+Final normaldocumentation/content verification 2026-10-11T09:15:07.192035+05:30: exit0 bothgates,262independentlinks/file-directorycontainment passed; active8docs/model-download/emptyindexrecipes/16currenttaskrows/sourcecompleteness/ignorerules verified;177lineREADME/215wordlearnings; artifactscan empty. ERROR-018RESOLVED verified; noopenerrors/blockers. Fullruntime56distinct/76executions and29realrequests alreadypassed; no runtimecode changes after thosechecks. Localdocumentation and finalaudit commits next; no improvements pushed.
+
+Localreviewclosure 2026-10-11T09:16:54.219364+05:30: currentruntime/all16/76checks and29HTTPWSlogs PASSED; exact163dependencycompatibility and60exactDecimalscores PASSED. Documentation/links/staticcontent gates passed. No unresolvederrors; localimprovements complete for userreview, not pushed/merged/published/deployed/submitted. Finalcommit/diff/cleanbranch verification follows; record its returnedhash in finalresponse to avoid self-referential commitrecords.

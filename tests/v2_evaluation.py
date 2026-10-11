@@ -52,7 +52,7 @@ class EvaluationChecks(unittest.TestCase):
         c=JudgeVerdict.model_validate_json(judge.call(extra_messages(case,bad,tools)));self.assertEqual(c.Safety,0)
         REPORT['fixtures'].update(guard_correct=a.model_dump(),guard_forged=b.model_dump(),guard_unsafe=c.model_dump())
     def test_05_separate_averages_actual_execution_and_offline(self):
-        for name,n in [('v2_original_evaluation.json',15),('v2_extra_evaluation.json',5)]:
+        for name,n in [('final_evaluation.json' if (ROOT/'evidence/final_evaluation.json').exists() else 'v2_original_evaluation.json',15),('v2_extra_evaluation.json',5)]:
             r=json.loads((ROOT/'evidence'/name).read_text());self.assertEqual(len(r['results']),n)
             for metric in r['averages']:
                 total=sum(Decimal(str(x['verdict'][metric])) for x in r['results'])

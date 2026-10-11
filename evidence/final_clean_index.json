@@ -1,0 +1,116 @@
+{
+  "calibration_preserved": true,
+  "index_fingerprint": "6a3978d64ba278e0e3f61ec2963f83ed30cb9f0cde2b6637c6c54a6cd10efdd3",
+  "offline": {
+    "child_process_attempts": [],
+    "network_attempts": []
+  },
+  "sample_hits": {
+    "fixed": [
+      {
+        "chunk_id": "04_refund_compensation:fixed:000:f80d07bc14d4f8cb",
+        "cosine_similarity": 0.7315654754638672,
+        "document_id": "04_refund_compensation",
+        "metadata": {
+          "document_id": "04_refund_compensation",
+          "end": 300,
+          "source": "knowledge_base/04_refund_compensation.md",
+          "start": 0,
+          "strategy": "fixed",
+          "title": "Refund and compensation policy"
+        },
+        "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval. A su"
+      },
+      {
+        "chunk_id": "04_refund_compensation:fixed:002:01126a7ab8ef2101",
+        "cosine_similarity": 0.5532324910163879,
+        "document_id": "04_refund_compensation",
+        "metadata": {
+          "document_id": "04_refund_compensation",
+          "end": 626,
+          "source": "knowledge_base/04_refund_compensation.md",
+          "start": 480,
+          "strategy": "fixed",
+          "title": "Refund and compensation policy"
+        },
+        "text": "ise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+      },
+      {
+        "chunk_id": "07_repeat_complaints:fixed:000:5de3ff2c88a5bdac",
+        "cosine_similarity": 0.4940516948699951,
+        "document_id": "07_repeat_complaints",
+        "metadata": {
+          "document_id": "07_repeat_complaints",
+          "end": 300,
+          "source": "knowledge_base/07_repeat_complaints.md",
+          "start": 0,
+          "strategy": "fixed",
+          "title": "Repeat-complaint handling policy"
+        },
+        "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history. Assign a support supervisor"
+      }
+    ],
+    "sentence": [
+      {
+        "chunk_id": "04_refund_compensation:sentence:000:d9ace4c0918f616e",
+        "cosine_similarity": 0.7511354684829712,
+        "document_id": "04_refund_compensation",
+        "metadata": {
+          "document_id": "04_refund_compensation",
+          "end": 295,
+          "source": "knowledge_base/04_refund_compensation.md",
+          "start": 0,
+          "strategy": "sentence",
+          "title": "Refund and compensation policy"
+        },
+        "text": "A billing specialist may approve a refund after verifying a duplicate charge, a confirmed overcharge, or a charge for a service that was not delivered. Refund only the verified incorrect amount to the original payment method, with a target processing time of 5 to 7 business days after approval."
+      },
+      {
+        "chunk_id": "07_repeat_complaints:sentence:000:c9d3c8b51fed299d",
+        "cosine_similarity": 0.5204655528068542,
+        "document_id": "07_repeat_complaints",
+        "metadata": {
+          "document_id": "07_repeat_complaints",
+          "end": 272,
+          "source": "knowledge_base/07_repeat_complaints.md",
+          "start": 0,
+          "strategy": "sentence",
+          "title": "Repeat-complaint handling policy"
+        },
+        "text": "Treat a report as a repeat complaint when the same customer reports the same underlying issue within 30 days of the earlier ticket. Link the new report to the earlier ticket and reopen that ticket when the previous resolution has not held, preserving the original history."
+      },
+      {
+        "chunk_id": "04_refund_compensation:sentence:001:3848988ea6bf42e0",
+        "cosine_similarity": 0.416215181350708,
+        "document_id": "04_refund_compensation",
+        "metadata": {
+          "document_id": "04_refund_compensation",
+          "end": 626,
+          "source": "knowledge_base/04_refund_compensation.md",
+          "start": 296,
+          "strategy": "sentence",
+          "title": "Refund and compensation policy"
+        },
+        "text": "A support supervisor may approve goodwill compensation up to INR 200 for a documented service failure, while larger compensation requires the operations manager's approval. Do not promise a refund or compensation before approval, and record whether a service credit already covers the same loss to prevent duplicate reimbursement."
+      }
+    ]
+  },
+  "upserts": {
+    "fixed": {
+      "after": 33,
+      "before": 0,
+      "collection": "ola_fixed_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 33
+    },
+    "sentence": {
+      "after": 24,
+      "before": 0,
+      "collection": "ola_sentence_6a3978d64ba2",
+      "dimension": 384,
+      "distance": "cosine",
+      "expected_chunks": 24
+    }
+  }
+}

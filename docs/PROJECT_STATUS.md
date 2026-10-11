@@ -1,10 +1,29 @@
 # REVIEW NOTES
 
-## Latest v2 status — 2026-10-11T09:02:58.598328+05:30
+## Current Version 2 state
+
+- Last updated: 2026-10-11T09:12:57.510673+05:30
+- Branch: local `polish-v2`; no improvement pushes or merge. Both main/tag baselines and originalcheckout preserved.
+- Current milestone: all16 original requirements and requested localimprovements verified in current runtime; documentation/content gates PASSED. Local v2 work complete for user review; commits and external diff verified at closure.
+- Overallprogress: implementation/evaluation/readability complete. Extra5 knownquality weaknesses remain honestly reported.
+- Completed: lookupcorrection; originalfield-preserving independentreopen stream; actualscore/p80/ties/recommendationverification;187doc/evidence moves;5extra labels/rules frozenbeforeexecution;177lineREADME;215wordlearnings; honestAI note; complete currentoffline/localhost/independent audit.
+- Tests:56distinct checks/76executions allpassed;29real HTTP/WSrequestlogs; original15and extra5fresh-processreports identical; dataset/uncachedcrew repeats identical; emptyindexes rebuilt33/24 offline. No externalruntime attempts.
+- Evaluation original15:Accuracy/Grounding/Completeness/Safety1.0/1.0/1.0/1.0. Extra5:0.8/1.0/0.7/1.0. X01scope-refusal failure andX04halfcoverage disclosed; originalrubric/labels/prompt unchanged.
+- Escalation:seed42original7fields identical;reopenseed43;newhash4bc5e6702e2bc760832157a0cece8f93cf0cf93224e6c09a94f40e98520407cf. Threshold0.55,p80rank48,oneexcludedtie;12recommendations,2nonescalated(v1:0). All60actualscores independentlychecked.
+- Environment: Python3.11.17 `.venv311`,163pins unchanged in requirements-api.lock. CrewAI/core1.15.27,AutoGen0.7.5,Pydantic2.12.5,LangChaincore1.6.9,FastAPI0.143.0,ST6.1.0,Chroma1.5.9. PinnedMiniLM revision1110a243fdf4706b3f48f1d95db1a4f5529b4d41.
+- Errors/blockers:none. ERROR-016/017resolved after dataset8/8 andcrew12/12;allfailure evidence retained. Currentknownlimitations are not hidden blockers.
+- Evidence: `../evidence/final_acceptance_audit.json`, final_offline_execution.json, final_localhost_execution.json, final_rag.md, final_crew.json, final_evaluation.md, v2_extra_evaluation.md, v2_judge_fixtures.json, v2_escalation_change.json. Report:`FINAL_ACCEPTANCE_REPORT.md`; changes:`CHANGELOG_V2.md`.
+- Lastsuccess: current all16 acceptance, emptyofflineindex rebuild, normal documentation/source/content gates and262link checks. Next: userreviews localdiff and [CONFIRM: my own contributions]. No automaticpublication/deployment/submission.
+
+## Historical states — superseded
+
+### Prior review snapshot
+
+### Latest v2 status — 2026-10-11T09:02:58.598328+05:30
 Escalation correction/verification PASSED; dataset8/8 and crew12/12, all60scores/schema validated, seed43 reopening stream reproduces and original7fields identical. ERROR-016/017 RESOLVED, no current blockers. Threshold dynamically measured0.55,12recommendations,2non-escalated; ties excluded. Steps4–7 remain pending. Below snapshots are historical and superseded.
 
 
-## Current v2 review status
+### Current v2 review status
 
 - Last updated: 2026-10-11T01:52:23.476237+05:30
 - Branch: local polish-v2, not pushed. Publicmain remains preservedv1 head64e19e9036e160bc93109fb2766d7e15c9d0a448.
@@ -16,7 +35,7 @@ Escalation correction/verification PASSED; dataset8/8 and crew12/12, all60scores
 - Open blocker: ERROR-016. Next: user reviews failure and approves correction/resumption.
 - Review files: CHANGELOG_V2.md, ERROR_LOG.md, ../evidence/v2_escalation_crew_failed.txt, ../evidence/v2_escalation_change.json, ../evidence/v2_layout_changes.json; source dataset.py/support/tickets.py/support/models.py/tests.
 
-## Historical v1 review notes
+### Historical v1 review notes
 
 
 Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repository](https://github.com/nitesh2mithu/ola-domain-support-agent), default branch main, published submission commit `66251f65dc703b38d67f6f0cc1e6006b50ca7845`. GitHub public visibility, exact265-file tree equality, rendered README heading/code blocks and all relative file links PASSED. ERROR-015 resolved by verified browser CLI login; no unresolved errors or blockers. Publication documentation update is committed separately after this submission commit; final remote head is verified after pushing that update. No course-portal submission or external deployment.
@@ -28,7 +47,7 @@ Publication verified — 2026-10-11T01:00:13.850996+05:30: [public capstone repo
 - Open errors/blockers: none; all15 errors resolved. Review questions: none required for publication.
 - Next action: user submits the single repository link through the course portal by8November2026. No service deployment performed.
 
-## Historical prepublication handoffs
+### Historical prepublication handoffs
 
 Earlier local-audit handoff below is historical; its publication-approval statements are superseded by this update.
 
@@ -45,7 +64,7 @@ Earlier local-audit handoff below is historical; its publication-approval statem
 - Requirements: all16 implementation criteria PASSED. Required publicGitHub link/submission still pending; no grade or completed-publication claim. Deadline8November2026.
 - Proposed next action: user approves creating one public repository named `ola-domain-support-agent`, addingorigin and pushing the inspected main commit. No remote,push,externaldeployment or submission has occurred.
 
-## Current project state
+### Current project state
 
 | Item | Status |
 |---|---|
@@ -59,9 +78,9 @@ Earlier local-audit handoff below is historical; its publication-approval statem
 | Last successful checks | Final acceptance/static scan/Git package completeness and clean status; closure document/staged/committed-byte scans PASSED |
 | Next recommended task | Submit published repository link by8November2026 |
 
-## Historical milestone snapshots
+### Historical milestone snapshots
 
-## Milestone 5 acceptance results
+### Milestone 5 acceptance results
 
 | Task/area | Actual result |
 |---|---|
@@ -74,7 +93,7 @@ Earlier local-audit handoff below is historical; its publication-approval statem
 
 Earlier results below are historical.
 
-## Milestone 4 acceptance results
+### Milestone 4 acceptance results
 
 | Task/area | Actual result |
 |---|---|
@@ -89,7 +108,7 @@ Earlier results below are historical.
 
 Historical milestone results follow.
 
-## Milestone 3 acceptance results
+### Milestone 3 acceptance results
 
 | Area | Actual result |
 |---|---|
@@ -104,7 +123,7 @@ Historical milestone results follow.
 
 Comparison uses top-k=3 chunks: multiple fixed chunks often map to one parent, which improves document precision for this sample. This result is reported transparently; no claim of broader retrieval quality or near-domain safety. Earlier milestone tables below are historical.
 
-## Milestone 2 acceptance results
+### Milestone 2 acceptance results
 
 | Acceptance area | Actual result |
 |---|---|
@@ -119,7 +138,7 @@ Comparison uses top-k=3 chunks: multiple fixed chunks often map to one parent, w
 
 All Milestone 2 criteria met. Cross-process dataset fingerprint: `359ce560dcc70008c7fa5f00dc913374b5d90db74815a7f726b4ef1e1e9d8111`. Existing CrewAI credential-path shim remains a historical compatibility note for later integration; no new compatibility issues.
 
-## Milestone 1 smoke checks (historical; not rerun in Milestone 2)
+### Milestone 1 smoke checks (historical; not rerun in Milestone 2)
 
 | Check | Actual result |
 |---|---|
@@ -134,7 +153,7 @@ One urllib3 loopback socket construction (`connection.py:_has_ipv6`) recorded se
 
 Statuses: NOT STARTED, IN PROGRESS, PASSED, FAILED, BLOCKED. PASSED requires executed acceptance verification. Milestone smoke success does not imply an official task is fully complete.
 
-## Current v2 work
+### Current v2 work
 
 Local polish-v2 only. Preservation/new setup and untouched baseline verification PASSED. Layout changes IN PROGRESS; no v2 behavior/acceptance claim. ../evidence/v2_layout_changes.json records exact moves. No new errors encountered.
 
@@ -145,3 +164,11 @@ V2 escalation implementation: intended change recorded in ../evidence/v2_escalat
 V2 evaluation extension defined/frozen before any extra query execution: ../evidence/v2_extra_freeze.json, fivecases(2near,2multi,1injection/PII), full expectedparent/fact/refusal rules. Original15cases/prompt/rubric byteidentical; added refusal-kind rules only, no original scoring changes or crew tuning. Execution/fixture verification pending; no scores claimed. No new errors yet.
 
 Evaluation step 2026-10-11T09:06:53.194920+05:30: original15meanAccuracy/Grounding/Completeness/Safety1.0, additional5mean0.8/1.0/0.7/1.0. X01near-domain semantic scope failure, X04multi-topic halfcoverage disclosed. Extra labels/parent/fact/refusal rules frozen before retrieval. Originalrubric/labels/prompt unchanged; generic extensionnewkinds only. No tuning. Existing correctness/safety rules retained and5new fixture/arithmetic/offline checks PASSED; sanitized transcripts/evidence top level. No new errors. Finalfullregression pending.
+
+Documentation/readability step: README177lines in requested13-section order with measured original15/extra5 scores, required design/calibration/P-R/score/setup/telemetry/offline statements, no administrative wording; LEARNINGS215words, recorded findings only, no personal experience claims. AI note explicitly lists AI-assisted work and student-contribution confirmation placeholder. Final runner now includes extra5twice and5judge checks; verifier independently checks currentv2 score/reopen/15+5arithmetic/freeze/repeats, while preserving all original16 checks. Final execution pending; no pass yet.
+
+Documentationgate 2026-10-11T09:13:30.535504+05:30 failed on validdirectorylink knowledge_base/: recordedERROR-018 beforefix. Allruntimechecks/338filecontent scan passed; no application failure. Linkvalidation will explicitly support existing contained directories without dropping missing/path checks.
+
+Documentationfix 2026-10-11T09:14:15.359332+05:30: ERROR-018 existingfolderlink handling verified across262links with existence andrepo-containment checks; no assertions weakened. Resolvedafterindependentverification. Normalfullgate rerun next; runtime76checks/all16audit unaffected. README177/learning215confirmed.
+
+Localreviewclosure 2026-10-11T09:16:54.219364+05:30: currentruntime/all16/76checks and29HTTPWSlogs PASSED; exact163dependencycompatibility and60exactDecimalscores PASSED. Documentation/links/staticcontent gates passed. No unresolvederrors; localimprovements complete for userreview, not pushed/merged/published/deployed/submitted. Finalcommit/diff/cleanbranch verification follows; record its returnedhash in finalresponse to avoid self-referential commitrecords.

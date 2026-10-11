@@ -1,0 +1,178 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 29555.54it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:43: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  cls.app=SupportSession();cls.model_before=verify_local_model()
+test_01_real_integrated_approval_and_revision (__main__.Acceptance.test_01_real_integrated_approval_and_revision) ... 
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 28343.61it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:51: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  approve=self.ask('approval',app=SupportSession(cache_enabled=False))
+<PROJECT_CAPSTONE>/support/session.py:72: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+  return self.histories.setdefault(session_id, InMemoryChatMessageHistory())
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 29555.54it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:52: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  revise=self.ask('revision',app=SupportSession(cache_enabled=False,draft_transform=unsupported))
+ok
+test_02_ticket_boundary_identity_rejection (__main__.Acceptance.test_02_ticket_boundary_identity_rejection) ... ok
+test_03_token_cost_caps_and_shared_accounting (__main__.Acceptance.test_03_token_cost_caps_and_shared_accounting) ... 
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 34599.82it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:90: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  oversized=self.ask('oversized','x'*4000,app=SupportSession(token_cap=500))
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 31062.22it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:91: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  cost=self.ask('cost_oversized','x'*4000,app=SupportSession(token_cap=50000,cost_cap='0.0001'))
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 26163.60it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:95: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  normal=self.ask('accounted_budget',app=SupportSession(cache_enabled=False))
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 32086.55it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:108: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  partial=self.ask('review_budget_refusal',app=SupportSession(token_cap=crew_units+1))
+Error processing publish message for Policy_Compliance_Reviewer_dc0c00d6-1b1e-4e93-9af9-9288b4028384/dc0c00d6-1b1e-4e93-9af9-9288b4028384
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_sequential_routed_agent.py", line 67, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 485, in on_message_impl
+    return await h(self, message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 268, in wrapper
+    return_value = await func(self, message, ctx)  # type: ignore
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_chat_agent_container.py", line 133, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/agents/_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/agents/_assistant_agent.py", line 1109, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/support/review.py", line 44, in create
+    self.budget.charge('AutoGen/'+self.role,inputs,content)
+  File "<PROJECT_CAPSTONE>/support/governance.py", line 34, in charge
+    raise BudgetExceeded('Simulated per-request token or cost budget exceeded')
+support.governance.BudgetExceeded: Simulated per-request token or cost budget exceeded
+Error processing publish message for Final_Editor_dc0c00d6-1b1e-4e93-9af9-9288b4028384/dc0c00d6-1b1e-4e93-9af9-9288b4028384
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_sequential_routed_agent.py", line 72, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 486, in on_message_impl
+    return await self.on_unhandled_message(message, ctx)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_chat_agent_container.py", line 195, in on_unhandled_message
+    raise ValueError(f"Unhandled message in agent container: {type(message)}")
+ValueError: Unhandled message in agent container: <class 'autogen_agentchat.teams._group_chat._events.GroupChatError'>
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 26997.46it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:113: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  partial_cost_app=SupportSession(cost_cap=cost_cap)
+Error processing publish message for Policy_Compliance_Reviewer_0df92149-78bd-4191-b15a-2c4cd384a166/0df92149-78bd-4191-b15a-2c4cd384a166
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_sequential_routed_agent.py", line 67, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 485, in on_message_impl
+    return await h(self, message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 268, in wrapper
+    return_value = await func(self, message, ctx)  # type: ignore
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_chat_agent_container.py", line 133, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/agents/_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/agents/_assistant_agent.py", line 1109, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/support/review.py", line 44, in create
+    self.budget.charge('AutoGen/'+self.role,inputs,content)
+  File "<PROJECT_CAPSTONE>/support/governance.py", line 34, in charge
+    raise BudgetExceeded('Simulated per-request token or cost budget exceeded')
+support.governance.BudgetExceeded: Simulated per-request token or cost budget exceeded
+Error processing publish message for Final_Editor_0df92149-78bd-4191-b15a-2c4cd384a166/0df92149-78bd-4191-b15a-2c4cd384a166
+Traceback (most recent call last):
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_sequential_routed_agent.py", line 72, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_core/_routed_agent.py", line 486, in on_message_impl
+    return await self.on_unhandled_message(message, ctx)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_CAPSTONE>/.venv311/lib/python3.11/site-packages/autogen_agentchat/teams/_group_chat/_chat_agent_container.py", line 195, in on_unhandled_message
+    raise ValueError(f"Unhandled message in agent container: {type(message)}")
+ValueError: Unhandled message in agent container: <class 'autogen_agentchat.teams._group_chat._events.GroupChatError'>
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 26064.15it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:118: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  early=self.ask('crew_budget_refusal',app=SupportSession(token_cap=100))
+Error executing listener call_llm_native_tools: Simulated per-request token or cost budget exceeded
+Error executing listener call_llm_native_tools: Simulated per-request token or cost budget exceeded
+Error executing listener call_llm_native_tools: Simulated per-request token or cost budget exceeded
+ok
+test_04_cache_baseline_hit_miss_and_invalidation (__main__.Acceptance.test_04_cache_baseline_hit_miss_and_invalidation) ... 
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 28980.57it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:125: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app=SupportSession();baseline=self.ask('uncached_baseline',app=SupportSession(cache_enabled=False))
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 50386.44it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:125: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app=SupportSession();baseline=self.ask('uncached_baseline',app=SupportSession(cache_enabled=False))
+ok
+test_05_cache_sessions_guards_validation_and_logging (__main__.Acceptance.test_05_cache_sessions_guards_validation_and_logging) ... 
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 26829.79it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:150: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app=SupportSession()
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 25923.39it/s]
+<PROJECT_CAPSTONE>/api/app.py:42: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  app.state.service=SupportService(session_factory())
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 27162.11it/s]
+<PROJECT_CAPSTONE>/tests/milestone_06_acceptance.py:184: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+  api2=create_app(log2,session_factory=lambda:SupportSession(draft_transform=unsupported))
+ok
+test_06_preservation_and_offline (__main__.Acceptance.test_06_preservation_and_offline) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.995s
+
+OK

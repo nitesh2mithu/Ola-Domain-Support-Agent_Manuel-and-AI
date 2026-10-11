@@ -28,6 +28,9 @@ def main():
           ('framework',['-m','smoke_tests.run_offline']),
           ('evaluation',['-m','scripts.evaluate_support','--report','evidence/final_evaluation.json']),
           ('evaluation_repeat',['-m','scripts.evaluate_support','--report','evidence/final_evaluation_repeat.json'])]
+    jobs += [('extra',['-m','scripts.evaluate_extra','--report','evidence/v2_extra_evaluation.json']),
+             ('extra_repeat',['-m','scripts.evaluate_extra','--report','evidence/v2_extra_evaluation_repeat.json']),
+             ('judge_fixtures',['-m','tests.v2_evaluation'])]
     if args.phase=='localhost':jobs=[('localhost',['-m','tests.milestone_05_localhost'])]
     report={'phase':args.phase,'started':datetime.now(ZoneInfo('Asia/Calcutta')).isoformat(),'jobs':[],'passed':False}
     result_path=ROOT/f'evidence/final_{args.phase}_execution.json'
