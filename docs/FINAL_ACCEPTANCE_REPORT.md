@@ -1,19 +1,21 @@
 # Version 2 Acceptance Report
 
-**Verdict: all 16 official requirements verified on current v2 code; local review only.** The five additional evaluation cases expose known scope/coverage weaknesses. Documentation/content closing checks passed and are recorded below; no improvement push, merge, publication, deployment or submission.
+**Verdict: READY FOR REVIEW — all 16 official implementation requirements verified on current v2 code.** The five additional evaluation cases expose known scope/coverage weaknesses. Documentation/content closing checks passed and are recorded below; no improvement push, merge, publication, deployment or submission.
 
 Source: unchanged `Problem_Statement.md`. All original policies, calibrated RAG configuration and original 15 evaluation labels/prompt/rubric remain unchanged. Original requirements allocate Parts1–4:30/30/20/20, with no individual task marks.
 
 ## Executed current verification
 
--56 distinct automated checks,76 executions including fresh dataset/crew repeats; all passed. Dataset8twice, RAG8, crew12twice, focused11, integrated review/governance/cache6, framework6 and additional judge/average fixtures5.
--Actual localhost Uvicorn HTTP/WebSocket:18HTTP+11messages,29exact correlated masked log entries; malformed requests, session isolation, concurrent clients and mid-request disconnect/survivor passed.
--Required15queries executed twice with unchanged labels/rules, each Accuracy/Grounding/Completeness/Safety average1.0; allscore sums/averages independently recomputed.
--Additional5queries executed twice, reports exactly match. Accuracy0.8,Grounding1.0,Completeness0.7,Safety1.0; independent sums4.0/5,5.0/5,3.5/5,5.0/5. X01relatedrefundexcerpts failed expected undocumented-entitlement refusal; X04missing2of4facts. No post-result tuning or dropping cases.
--Datasetandfulluncachedcrewreports identical across processes; alloriginal7fields remain equal to v1. Separate seed43 reopening stream independently reproduced. All60lookup/schema/scores checked; threshold0.55,rank48,tiecount1 excluded,12recommendations including2non-escalated vs v1zero at0.613333.
--Both RAG strategies use actual local embeddings/upserts/stableparents; measured threshold midpoints/parent-deduplicated fractions independently checked. FixedP/R1.0/1.0; sentence0.5555555556/1.0.
--Real three-agent CrewAI/tool calls, memory/schema/guards, two-agent AutoGen structured approval/revision, identity-bound permission rejection, combined simulated budget caps and cache counters verified. Policy hit4→3crewmodelcalls,1→0RAGtoolcalls; review2 retained.
--Offline runtime:zeroexternal attempts; keys absent and telemetry disabled before imports. API permits only declaredlocalhost traffic; externalDNS/IP/otherport/UDP/process controls reject. Initiallyemptyindexes rebuiltoffline33fixed/24sentence preservingcalibration. Model files/pins unchanged.
+Fresh review: 2026-10-11T13:38:06.527038+05:30 (Asia/Kolkata). Both requested final verification commands were executed again; results below are from current processes.
+
+- 56 distinct automated checks,76 executions including fresh dataset/crew repeats; all passed. Dataset8twice, RAG8, crew12twice, focused11, integrated review/governance/cache6, framework6 and additional judge/average fixtures5.
+- Actual localhost Uvicorn HTTP/WebSocket:18HTTP+11messages,29exact correlated masked log entries; malformed requests, session isolation, concurrent clients and mid-request disconnect/survivor passed.
+- Required15queries executed twice with unchanged labels/rules, each Accuracy/Grounding/Completeness/Safety average1.0; allscore sums/averages independently recomputed.
+- Additional5queries executed twice, reports exactly match. Accuracy0.8,Grounding1.0,Completeness0.7,Safety1.0; independent sums4.0/5,5.0/5,3.5/5,5.0/5. X01relatedrefundexcerpts failed expected undocumented-entitlement refusal; X04missing2of4facts. No post-result tuning or dropping cases.
+- Datasetandfulluncachedcrewreports identical across processes; alloriginal7fields remain equal to v1. Separate seed43 reopening stream independently reproduced. All60lookup/schema/scores checked; threshold0.55,rank48,tiecount1 excluded,12recommendations including2non-escalated vs v1zero at0.613333.
+- Both RAG strategies use actual local embeddings/upserts/stableparents; measured threshold midpoints/parent-deduplicated fractions independently checked. FixedP/R1.0/1.0; sentence0.5555555556/1.0.
+- Real three-agent CrewAI/tool calls, memory/schema/guards, two-agent AutoGen structured approval/revision, identity-bound permission rejection, combined simulated budget caps and cache counters verified. Policy hit4→3crewmodelcalls,1→0RAGtoolcalls; review2 retained.
+- Offline runtime:zeroexternal attempts; keys absent and telemetry disabled before imports. API permits only declaredlocalhost traffic; externalDNS/IP/otherport/UDP/process controls reject. Initiallyemptyindexes rebuiltoffline33fixed/24sentence preservingcalibration. Model files/pins unchanged.
 
 ## Reproduction commands
 
@@ -21,9 +23,11 @@ Source: unchanged `Problem_Statement.md`. All original policies, calibrated RAG 
 .venv311/bin/python -m scripts.run_final_verification
 .venv311/bin/python -m scripts.run_final_verification --phase localhost
 .venv311/bin/python -m scripts.verify_final_acceptance
-.venv311/bin/python -m scripts.rebuild_indexes --db-dir .runtime/v2-clean-check --report evidence/final_clean_index.json
+.venv311/bin/python -m scripts.rebuild_indexes --db-dir .runtime/final-review-clean-index --report evidence/final_clean_index.json
 .venv311/bin/python -m scripts.inspect_submission
 .venv311/bin/python -m scripts.verify_final_documents
+.venv311/bin/python -m tests.v2_documentation
+.venv311/bin/python -m scripts.verify_v2_review --no-write
 ```
 
 Runner records exact commands, exit codes and full sanitized output in [offline ledger](../evidence/final_offline_execution.json) and [localhost ledger](../evidence/final_localhost_execution.json). Commands A–H below map to existing test modules: A=tests.milestone_02_acceptance;B=tests.milestone_03_acceptance;C=tests.milestone_04_acceptance;D=tests.milestone_05_focused;E=tests.milestone_05_localhost;F=scripts.evaluate_support;G=tests.milestone_06_acceptance;H=smoke_tests.run_offline. Run via `.venv311/bin/python -m`; the ledger includes arguments and current-evidence environment prefix.
@@ -67,4 +71,12 @@ Fullbundle:`../ola-v1-backup.bundle`outside repositories. Complete reviewdiff:`.
 
 MOCK scores are deterministic lexical/extractive proxies on a smallknowncorpus, not semantic quality or safety certification. Near-domain scope and multi-topic coverage remain measured weaknesses; code is not tuned to hide them. Chunks mayrepeat/cut sentences; exact-evidence review rejects somevalidparaphrases. Python audit hooks cover exercisedPython paths,not arbitrarynativecalls/OSfirewall. Budgets simulatedceil(chars/4)atUSD0.002/1000,actualspend0. In-processsessions/cache, no productionauth, noautomaticfinancial/recordmutation. PinnedLangChaindeprecations and narrowCrewcredential-storage shim documented.
 
-ERROR-016lookup and017archive reader were recorded before fixes and resolved after dataset8/8/crew12/12; unsuccessful attempts retained. No current errors/blockers. README177lines/13sections; LEARNINGS215words; AI note honestlydeclares assistantwork and contributionconfirmation placeholder. Normal current documentation/public-content gates PASSED: all sources and ignore rules, README177lines/13sections, LEARNINGS215words, all16currenttaskrows, noopenerrors, validfile/directorylinks. Independent broad linkcheck262targets passed; complete artifactscan findings empty. [Document audit](../evidence/final_documentation_audit.json), [content scan](../evidence/final_submission_inspection.json), [link check](../evidence/v2_final_link_check.json). FinalGitcleanstate/diff reviewed after localcommit.
+ERROR-016 lookup and ERROR-017 archive reader were resolved after actual dataset/crew verification; fresh full suites confirm that they remain fixed. ERROR-018 directory links, ERROR-019 temporary-path normalization and ERROR-020 historical-script paths/output destinations were recorded before fixes and verified afterward. Failed attempts remain preserved; there are no OPEN errors.
+
+The two new documentation behavior checks execute actual historical-script link/write statements: both pass, and archived sentinels remain unchanged. Historical milestone verifiers retain their stage-specific assertions; they cannot certify current v2 inputs. Their output now goes to excluded `.runtime/historical-audits`. Current verification uses the final commands above.
+
+README has 177 lines and the required 13-section order; LEARNINGS has 215 words. The AI note describes documented assistant work and retains the student's contribution-confirmation placeholder. [History/archive/pin/link review](../evidence/v2_final_review.json) scans every reachable Git snapshot, independently recalculates all60 current/v1 scores with Decimal, verifies163 exact pins, and confirms182 archived records byte-identical plus one Markdown record with link-target changes only. No runtime/model/index/credential artifacts are intended for publication. Setup instructions specify the pinned free model download and index recreation; the fresh offline rebuild started with zero items in both collections and produced33/24.
+
+Final content/documentation gates passed after the corrections; exact staged and committed bytes are verified during local commit closure. All current/archive links resolve, Git metadata scan has no findings, and actual ignore checks exclude secrets/runtime/models/indexes while retaining curated evidence. [Document audit](../evidence/final_documentation_audit.json), [content scan](../evidence/final_submission_inspection.json) and the review evidence record actual gate outputs. The final local commit is proposed for user review only; no push, merge, deployment or submission is authorized in this session. Personal contributions remain a claim requiring user confirmation.
+
+Local correction commits: `9711d22` (canonical history review) and `a4b3427` (historical link/output paths). The following audit-record commit contains refreshed runtime evidence and this final report; its exact SHA is obtained from local `polish-v2` HEAD after commit. No application behavior, frozen labels or scoring changed in the review session.
